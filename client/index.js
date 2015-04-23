@@ -1,13 +1,11 @@
-Template.body.helpers({
-	toc: function() {
-		console.log("Here")
-		return null
-	}
-})
-
 Template.body.events({
-	'click h1, click h2, click h3': function(e) {
+	'click h1, click h2, click h3, click h4, click h5, click h6': function(e) {
 		Scroll.click(e)
+	},
+	'click a[href^="/"]': function(e) {
+		e.preventDefault()
+		var url = $(e.currentTarget).attr('href')
+		Scroll.scrollUrl(url)
 	}
 })
 

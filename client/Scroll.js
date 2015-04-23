@@ -11,11 +11,15 @@ Scroll = {
 		}, 500);
 	},
 	changeUrl: function(elementId) {
-		url = '/' + elementId
-		window.history.pushState('', '', url);
+		if (elementId[0] != '/')
+			elementId = '/' + elementId
+		window.history.pushState('', '', elementId);
 	},
-	scrollUrl: function() {
-		var url = window.location.pathname
+	scrollUrl: function(url) {
+		if (url)
+			Scroll.changeUrl(url)
+		else
+			var url = window.location.pathname
 		var id = decodeURIComponent(url).substring(1)
 		Scroll.scrollTo(id)
 	}
