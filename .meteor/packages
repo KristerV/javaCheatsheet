@@ -9,5 +9,6 @@ autopublish
 insecure
 less
 mquandalle:jade
-percolate:velocityjs
 simple:markdown-templating
+twbs:bootstrap
+fezvrasta:bootstrap-material-design
