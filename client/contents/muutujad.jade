@@ -25,10 +25,15 @@ template(name="muutujad")
 	h3#andmetyybid-vaartus Väärtus
 
 	h4#vaartus-ohukoht1 Ohukoht1
-	p Igal arvu andmetüübil on oma miinimum ja maksimum võimalik arv, mida andmetüüp suudab hoida. Näiteks kui sul on <code>byte a = 127</code>, siis <code>a + 1</code> toob tulemuseks <code>-128</code>, sest arv jätkub teisest otsast.
+	p Igal arvu andmetüübil on oma miinimum ja maksimum võimalik arv, mida andmetüüp suudab hoida. Kui üritad maksimumi ületada, jätkab loendur teisest otsast. Näiteks <code>int</code> andmetüübi maksimum on 2147483647:
+	pre
+		code
+			| int a = 2147483647;
+			| int b = a + 1;
+			| System.out.println("b = " + b); // b = -2147483648
 
 	h4#vaartus-ohukoht2 Ohukoht2
-	p Võtame lihtsa tehte: 2.0 - 1.1 = 0.9. Ainult, et tegelikult tuleb Javas vastuseks 0.899999999999999. Kohati uskumatu, et selline viga on sees. Seda esineb ka teistes riistvaralähedastest keeltes. Lahenduseks on kas kasutada int tüüpi muutujaid (näiteks 23.34€ on 2334) või BigDecimal klassi arvutusteks. 
+	p Võtame lihtsa tehte: <code>2.0 - 1.1 = 0.9</code>. Ainult, et tegelikult tuleb Javas vastuseks 0.899999999999998. Kohati uskumatu, et selline viga on sees, aga see polegi üldse nii ebatavaline. Seda esineb ka teistes riistvaralähedastest keeltes. Lahenduseks on kas kasutada int tüüpi muutujaid (näiteks 23.34€ on 2334) või BigDecimal klassi arvutusteks. 
 
 	h4#muutuja-arvud Arvud
 
@@ -400,3 +405,380 @@ template(name="muutujad")
 			p ja programm printis välja kaks sõnumit: "H-H-H-Hopssuuuu.." ja "500".
 
 	h3#andmetyybid-kogum-vaartusi Kogum väärtusi
+
+	p Kui andmete kogus suureneb oleks mõistlik saja muutuja asemel kasutada ühte nimekirja. Näiteks kui on spordivõistlused ja võistleja nr 1 tegi 10 katset. Siis 10 muutuja asemel saan öelda:
+	pre
+		code int[] võistleja1 = {76, 56, 75, 45, 56, 76, 65, 67, 45, 54};
+
+	p Kujuta ette, kui võistlejaid on samuti kümme ja igaühel on 10 tulemust. Siis jällegi ei ole meil tarvis kümmet muutujat vaid ühte head HashMapi, mille sees on omakorda ArrayList:
+	pre
+		code
+			| HashMap tulemused = new HashMap();                  // Loo HashMap
+			| ArrayList voistleja = new ArrayList();              // Loo ArrayList
+			| 
+			| for (int i = 0; i &lt; 10; i++) {                      // iga võistleja kohta
+			|     voistleja.clear();                              // tühjenda eelnevad katsed
+			| 
+			|     for (int j = 0; j &lt; 10; j++) {                  // iga katse kohta
+			|         voistleja.add((int) (Math.random() * 100)); // genereeri katse tulemus
+			|     }
+			| 
+			|     tulemused.put("võistleja"+i, voistleja);        // salvesta tulemus
+			| }
+			| 
+			| System.out.println("tulemused = " + tulemused);
+
+	p Antud koodi on raske mõista, aga tulemuseks on ilus tabel:
+
+	pre
+		code
+			| tulemused = {
+			|     võistleja2 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54],
+			|     võistleja1 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54],
+			|     võistleja0 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54],
+			|     võistleja6 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54],
+			|     võistleja5 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54],
+			|     võistleja4 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54],
+			|     võistleja3 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54],
+			|     võistleja9 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54],
+			|     võistleja8 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54],
+			|     võistleja7 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54]
+			| }
+
+	p Kui mul on siis hiljem vaja näiteks võistleja nr 6 tulemust nr 7, siis küsin selle välja ühe reaga:
+	pre
+		code int t = (int) ((ArrayList) tulemused.get("võistleja6")).get(7);
+	p See üks rida on muidugi suhteliselt keeruline, aga andmed on meil vähemalt struktureeritud ja korras.
+
+
+	.panel.panel-info
+		h4#Massiiv.panel-heading Massiiv
+		.panel-body
+			p Hoiab mitmeid väärtusi korraga, aga ainult ühte tüüpi ja kogust muuta ei saa.
+			.text-success + lihtne kasutada
+			.text-danger - nimekirja pikkust ei saa muuta pärast esimest kasutamist
+			.text-danger - hoiab ainult ühte andmetüüpi korraga
+			.text-info indeksi põhine (loendamine algab nullist)
+			br
+			strong Näide
+			.row
+				.col-sm-3
+					p Ettevalmistus
+				.col-sm-9
+					pre
+						code
+							| int[] a = new int[6];
+							| a[0] = 9;
+							| a[1] = 11;
+							| a[5] = 54;
+							| System.out.println(Arrays.toString(a));
+			.row
+				.col-sm-3
+					p Tulemus
+				.col-sm-9
+					pre
+						code
+							| [9, 11, 0, 0, 0, 54]
+			br
+			strong Kasutamine
+			.row
+				.col-sm-3
+					p Loo uus
+				.col-sm-9
+					pre
+						code
+							| int[] a = new int[6];
+							| int[] a = {6, 3, 2, 7};
+							| 
+							| String[] a = new String[6];
+							| String[] a = {"mina", "olen", "sõnede", "massiiv"};
+			.row
+				.col-sm-3
+					p Küsi väärtus indeksil 5
+				.col-sm-9
+					pre
+						code a[5]
+			.row
+				.col-sm-3
+					p Määra väärtus indeksil 5
+				.col-sm-9
+					pre
+						code a[5] = 8;
+			.row
+				.col-sm-3
+					p Nimekirja pikkus
+				.col-sm-9
+					pre
+						code a.length
+			.row
+				.col-sm-3
+					p Võrdlemine
+				.col-sm-9
+					pre
+						code Arrays.equals(a, b)
+			.row
+				.col-sm-3
+					p Sorteeri tähestikulises järjekorras
+				.col-sm-9
+					pre
+						code Arrays.sort(a)
+			.row
+				.col-sm-3
+					p Prindi välja
+				.col-sm-9
+					pre
+						code System.out.println(Arrays.toString(a))
+
+	.panel.panel-info
+		h4#ArrayList.panel-heading ArrayList
+		.panel-body
+			p Hoiab eri tüüpi väärtusi ja nimekirja pikkus muutub vastavalt sisule.
+			.text-success + hoiab erinevaid andmetüüpe segamini
+			.text-success + nimekirja pikkus muutub vastavalt sisule
+			.text-danger - kasutamine on veidi keerulisem kui massiivi puhul
+			.text-info indeksi põhine (loendamine algab nullist)
+			br
+			strong Näide
+			.row
+				.col-sm-3
+					p Ettevalmistus
+				.col-sm-9
+					pre
+						code
+							| ArrayList a = new ArrayList();
+							| a.add("Sõne");
+							| a.add(54);
+							| a.add(87.90);
+							| System.out.println("a = " + a);
+			.row
+				.col-sm-3
+					p Tulemus
+				.col-sm-9
+					pre
+						code [Sõne, 54, 87.9]
+			br
+			strong Kasutamine
+			.row
+				.col-sm-3
+					p Loo uus
+				.col-sm-9
+					pre
+						code
+							| ArrayList a = new ArrayList();
+							| ArrayList&lt;String&gt; a = new ArrayList();
+							| ArrayList&lt;Integer&gt; a = new ArrayList();
+			.row
+				.col-sm-3
+					p Mis on indeksil
+				.col-sm-9
+					pre
+						code a.get(i)
+			.row
+				.col-sm-3
+					p Asenda indeksil i olev väärtus uue väärtusega b
+				.col-sm-9
+					pre
+						code a.set(i, b)
+			.row
+				.col-sm-3
+					p Lisa väärtus nimekirja lõppu
+				.col-sm-9
+					pre
+						code a.add(väärtus)
+			.row
+				.col-sm-3
+					p Eemalda väärtus
+				.col-sm-9
+					pre
+						code a.remove(väärtus)
+			.row
+				.col-sm-3
+					p Tühjenda nimekiri
+				.col-sm-9
+					pre
+						code a.clear()
+			.row
+				.col-sm-3
+					p Nimekirja pikkus
+				.col-sm-9
+					pre
+						code a.size()
+			.row
+				.col-sm-3
+					p Kas sisud on võrdsed?
+				.col-sm-9
+					pre
+						code a.equals(b)
+			.row
+				.col-sm-3
+					p Mis indeksil on väärtus?
+				.col-sm-9
+					pre
+						code a.indexOf(väärtus)
+			.row
+				.col-sm-3
+					p Sorteeri tähestiku järgi
+				.col-sm-9
+					pre
+						code Collections.sort(a)
+			.row
+				.col-sm-3
+					p Kas sisaldab väärtust?
+				.col-sm-9
+					pre
+						code a.contains(väärtus)
+			.row
+				.col-sm-3
+					p Prindi
+				.col-sm-9
+					pre
+						code System.out.println(a)
+			.row
+				.col-sm-3
+					p kas on tühi?
+				.col-sm-9
+					pre
+						code a.isEmpty()
+
+	.panel.panel-info
+		h4#HashMap.panel-heading HashMap
+		.panel-body
+			p Hoiab &lt;võti, väärtus&gt; andmeid.
+			.text-success + lihtsustab keeruliste andmete hoidmist
+			.text-danger - keeruline kasutada
+			.text-info Siin ei ole indekseid, ehk ei ole ka võtmete järjekorda võimalik määrata.
+			br
+			strong Lihtsam näide &lt;String, Integer&gt; andmestruktuurist.
+			.row
+				.col-sm-3
+					p Ettevalmistus:
+				.col-sm-9
+					pre
+						code
+							| HashMap&lt;String, Integer&gt; a = new HashMap&lt;&gt;();
+							| 
+							| a.put("Peeter", 35);
+							| a.put("Mari", 38);
+							| a.put("Janika", 15);
+							| a.put("Mikk", 3);
+							| 
+							| System.out.println("a = " + a);
+			.row
+				.col-sm-3
+					p Tulemus:
+				.col-sm-9
+					pre
+						code
+							| {
+							|     Peeter = 35, 
+							|     Mikk = 3, 
+							|     Janika = 15, 
+							|     Mari = 38
+							| }
+			br
+			strong Keerulisem näide &lt;String, HashMap&gt; andmestruktuurist.
+			.row
+				.col-sm-3
+					p Ettevalmistus:
+				.col-sm-9
+					pre
+						code
+							| HashMap&lt;String, HashMap&gt; a = new HashMap&lt;&gt;());
+							| HashMap milvi_andmed = new HashMap();
+							| HashMap laika_andmed = new HashMap();
+							| 
+							| milvi_andmed.put("vanus", 25);
+							| milvi_andmed.put("elukoht", "Põlva");
+							| laika_andmed.put("vanus", 66);
+							| laika_andmed.put("elukoht", "Kosmos");
+							| 
+							| a.put("Milvi", milvi_andmed);
+							| a.put("Laika", laika_andmed);
+							| 
+							| System.out.println("a = " + a);
+			.row
+				.col-sm-3
+					p Tulemus:
+				.col-sm-9
+					pre
+						code
+							| {
+							|     Laika = {
+							|         vanus = 66,
+							|         elukoht = Kosmos
+							|     },
+							|     Milvi = {
+							|         vanus = 25,
+							|         elukoht = Põlva
+							|     }
+							| }
+			br
+			strong Kasutamine
+			.row
+				.col-sm-3
+					p Loo uus
+				.col-sm-9
+					pre
+						code
+							| HashMap a = new HashMap();
+							| HashMap&lt;String, Integer%gt; a = new HasMap&lt;%gt;();
+			.row
+				.col-sm-3
+					p Mis väärtus on võtmel
+				.col-sm-9
+					pre
+						code a.get(võti)
+			.row
+				.col-sm-3
+					p Asenda väärtus võtmel või lisa uus võti-väärtus paar
+				.col-sm-9
+					pre
+						code a.put(võti, väärtus)
+			.row
+				.col-sm-3
+					p Eemalda võti koos väärtusega
+				.col-sm-9
+					pre
+						code a.remove(võti)
+			.row
+				.col-sm-3
+					p Tühjenda nimekiri
+				.col-sm-9
+					pre
+						code a.clear()
+			.row
+				.col-sm-3
+					p Nimekirja pikkus
+				.col-sm-9
+					pre
+						code a.size()
+			.row
+				.col-sm-3
+					p Kas sisud on võrdsed?
+				.col-sm-9
+					pre
+						code a.equals(b)
+			.row
+				.col-sm-3
+					p Kas võti on olemas
+				.col-sm-9
+					pre
+						code a.containsKey();
+			.row
+				.col-sm-3
+					p Kas väärtus on olemas
+				.col-sm-9
+					pre
+						code a.containsValue();
+			.row
+				.col-sm-3
+					p Prindi välja
+				.col-sm-9
+					pre
+						code System.out.println(a)
+			.row
+				.col-sm-3
+					p kas on tühi?
+				.col-sm-9
+					pre
+						code a.isEmpty()
