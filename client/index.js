@@ -9,6 +9,10 @@ Template.body.events({
 	}
 })
 
+Template.body.rendered = function() {
+	Prism.highlightAll()
+}
+
 Meteor.startup(function(){
 	Meteor.setTimeout(function(){
 		Scroll.scrollUrl()

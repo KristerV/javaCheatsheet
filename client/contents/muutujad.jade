@@ -30,7 +30,7 @@ template(name="muutujad")
 	h4#vaartus-ohukoht2 Ohukoht2
 	p Võtame lihtsa tehte: 2.0 - 1.1 = 0.9. Ainult, et tegelikult tuleb Javas vastuseks 0.899999999999999. Kohati uskumatu, et selline viga on sees. Seda esineb ka teistes riistvaralähedastest keeltes. Lahenduseks on kas kasutada int tüüpi muutujaid (näiteks 23.34€ on 2334) või BigDecimal klassi arvutusteks. 
 
-	h3#muutuja-arvud Arvud
+	h4#muutuja-arvud Arvud
 
 	.panel.panel-info
 		h4#byte.panel-heading byte
@@ -204,7 +204,7 @@ template(name="muutujad")
 							| int c = a.intValue();
 							| double d = a.doubleValue();
 
-	h3#muutuja-soned Sõned
+	h4#muutuja-soned Sõned
 
 	.panel.panel-info
 		h4#char.panel-heading char
@@ -341,7 +341,7 @@ template(name="muutujad")
 					pre
 						code a.equals(b);
 
-	h3#muutuja-muu Muu
+	h4#muutuja-muu Muu
 
 	.panel.panel-info
 		h4#boolean.panel-heading boolean
@@ -370,10 +370,10 @@ template(name="muutujad")
 					.text-danger <code>||</code> ei ole LL, ega ii. <code>||</code> on "pipe" ehk <kbd>AltGr + &lt;</kbd>;
 
 	.panel.panel-info
-		h4#Object.panel-heading Object
+		h4#Objekt.panel-heading Objekt
 		.panel-body
-			p keerulisemad objektid. ArrayList ja String on samuti objektid, aga siin pean silmas kõiki objekte. Need võivad tulla Java APIst või oled sa ise neid loonud.
-
+			p keerulisemad objektid.
+			p ArrayList ja String on samuti objektid, aga siin pean silmas kõiki objekte. Need võivad tulla Java APIst või oled sa ise neid loonud.
 			p Näiteks, kui tegin ise klassi Hobune:
 			pre
 				code
@@ -398,5 +398,5 @@ template(name="muutujad")
 					|     }
 					| }
 			p ja programm printis välja kaks sõnumit: "H-H-H-Hopssuuuu.." ja "500".
-			
+
 	h3#andmetyybid-kogum-vaartusi Kogum väärtusi
