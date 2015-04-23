@@ -372,5 +372,31 @@ template(name="muutujad")
 	.panel.panel-info
 		h4#Object.panel-heading Object
 		.panel-body
-			p keerulisemad objektid, nagu ArrayList
+			p keerulisemad objektid. ArrayList ja String on samuti objektid, aga siin pean silmas kõiki objekte. Need võivad tulla Java APIst või oled sa ise neid loonud.
+
+			p Näiteks, kui tegin ise klassi Hobune:
+			pre
+				code
+					| public class Hobune {
+					|     int kaal = 500;
+					|     String nimi = "Hopsu";
+					| 
+					|     public void ytleOmaNimi() {
+					|         System.out.println("H-H-H-Hopssuuuu..");
+					|     }
+					| }
+			p siis nüüd saan oma main meetodi sees luua "Hobune" klassist uue objekti ja kasutada tema <code>public</code> meetode.
+			pre
+				code
+					| public class MinuProgramm {
+					|     public static void main(String[] args) {
+					| 
+					|         Hobune h = new Hobune();    // uus hobuse objekt
+					|         h.ytleOmaNimi();            // kasutan tema meetodi
+					|         System.out.println(h.kaal); // küsin välja hobuse kaalu
+					| 
+					|     }
+					| }
+			p ja programm printis välja kaks sõnumit: "H-H-H-Hopssuuuu.." ja "500".
+			
 	h3#andmetyybid-kogum-vaartusi Kogum väärtusi
