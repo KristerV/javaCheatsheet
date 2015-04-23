@@ -14,9 +14,9 @@ template(name="muutujad")
 	p Kui võtame suvalise hunniku Java andmetüüpe [int, double, String, ArrayList], siis näeme, et osad on suure algustähtedega, osad on väiksega. See ei ole programmeerija suva järgi vaid tuleneb selle tüübi võimalustest. Näiteks int tüüpi muutuja on lihtsalt täisarv ja temaga ei saagi peale arvutamise midagi teha. String on aga sõne ja temaga saab igast pulli teha:
 	pre
 		code
-			| String nimi = "Krister"; 			// Teen uue muutuja
-			| nimi = nimi.replace('r', 'l'); 	// muudan kõik 'r' tähed 'l' tähtedeks
-			| System.out.println(nimi);			// Nimi on nüüd "Klistel" - hahaha!
+			| String nimi = "Krister";          // Teen uue muutuja
+			| nimi = nimi.replace('r', 'l');    // muudan kõik 'r' tähed 'l' tähtedeks
+			| System.out.println(nimi);         // Nimi on nüüd "Klistel" - hahaha!
 	p .replace() on meetod. Ja meetodid saavad ainult objektidel olla. Seega suure algustähega tüübid on objektid ja väikesega on primitiivid. Primitiivil ei ole meetode ja objektidel on.
 
 	h2#andmetyybid Andmetüübid
@@ -29,6 +29,8 @@ template(name="muutujad")
 
 	h4#vaartus-ohukoht2 Ohukoht2
 	p Võtame lihtsa tehte: 2.0 - 1.1 = 0.9. Ainult, et tegelikult tuleb Javas vastuseks 0.899999999999999. Kohati uskumatu, et selline viga on sees. Seda esineb ka teistes riistvaralähedastest keeltes. Lahenduseks on kas kasutada int tüüpi muutujaid (näiteks 23.34€ on 2334) või BigDecimal klassi arvutusteks. 
+
+	h3#muutuja-arvud Arvud
 
 	.panel.panel-info
 		h4#byte.panel-heading byte
@@ -202,6 +204,8 @@ template(name="muutujad")
 							| int c = a.intValue();
 							| double d = a.doubleValue();
 
+	h3#muutuja-soned Sõned
+
 	.panel.panel-info
 		h4#char.panel-heading char
 		.panel-body
@@ -217,7 +221,7 @@ template(name="muutujad")
 						code char a = 'a';
 			.row
 				.col-sm-3
-					p võrdle
+					p Võrdlemine
 				.col-sm-9
 					pre
 						code 
@@ -232,11 +236,138 @@ template(name="muutujad")
 		h4#String.panel-heading String
 		.panel-body
 			p Sõne, ehk jutumärkide vahele saab panna kõiki sümboleid
+			.text-danger Kindlasti kasuta topelt jutumärke!
+			br
+			strong Kasutamine
+			.row
+				.col-sm-3
+					p Loo uus
+				.col-sm-9
+					pre
+						code String a = "Lähme õue mängima.";
+			.row
+				.col-sm-3
+					p Võrdlemine
+				.col-sm-9
+					pre
+						code a.equals(b)
+			.row
+				.col-sm-3
+					p Liitmine
+				.col-sm-9
+					pre
+						code 
+							| "Tere, " + "hommikust" =&gt; "Tere, hommikust"
+							| "Vanus: " + 45         =&gt; "Vanus: 45"
+							| "Vanus: " + "45"       =&gt; "Vanus: 45"
+							| "45" + 5               =&gt; "455"
+
+			.row
+				.col-sm-3
+					p Tüübi muutmine
+				.col-sm-9
+					pre
+						code 
+							| int c = Integer.parseInt(a);
+							| double c = Double.parseDouble(a);
+			.row
+				.col-sm-3
+					p Kas sõne sisaldab "õue"
+				.col-sm-9
+					pre
+						code a.contains("õue");
+			.row
+				.col-sm-3
+					p Muuda kõik tähed suureks
+				.col-sm-9
+					pre
+						code a.toUpperCase();
+			.row
+				.col-sm-3
+					p Muuda kõik tähed väikseks
+				.col-sm-9
+					pre
+						code a.toLowerCase();
+			.row
+				.col-sm-3
+					p Poolita sõne tühikutega.
+				.col-sm-9
+					pre
+						code
+							| a.split(" ");
+							| // ["Lähme", "õue", "mängima."]
+			.row
+				.col-sm-3
+					p Asenda "õue" sõnega "arvutisse"
+				.col-sm-9
+					pre
+						code
+							| a.replace("õue", "arvutisse");
+							| // "Lähme arvutisse mängima."
+			.row
+				.col-sm-3
+					p Nagu replace(), aga <a href="http://regexone.com/" target="_blank">regex'iga</a>
+				.col-sm-9
+					pre
+						code a.replaceAll(regex, "uus väärtus");
+			.row
+				.col-sm-3
+					p Kas sõne on tühi?
+				.col-sm-9
+					pre
+						code a.isEmpty();
+			.row
+				.col-sm-3
+					p Mis indeksil on sõne "mängima"?
+				.col-sm-9
+					pre
+						code a.indexOf("mängima"); // 10
+			.row
+				.col-sm-3
+					p Mitu tähte on sõne pikk?
+				.col-sm-9
+					pre
+						code a.length(); // 18
+			.row
+				.col-sm-3
+					p Mis täht asub indeksil 0?
+				.col-sm-9
+					pre
+						code a.charAt(0); // 'L'
+			.row
+				.col-sm-3
+					p Kas sõne s ja b on identse sisuga?
+				.col-sm-9
+					pre
+						code a.equals(b);
+
+	h3#muutuja-muu Muu
 
 	.panel.panel-info
 		h4#boolean.panel-heading boolean
 		.panel-body
-			p true või false
+			p tõene või väär, ehk <code>true</code> või <code>false</code>.
+			br
+			strong Kasutamine
+			.row
+				.col-sm-3
+					p Loo uus
+				.col-sm-9
+					pre
+						code boolean a = true;
+			.row
+				.col-sm-3
+					p Võrdlemine
+				.col-sm-9
+					pre
+						code 
+							| true == true;
+							| true != false;
+							| true == true &amp;&amp; false == false;
+							| true == false || false == false;
+					.text-info <code>&amp;&amp;</code> on nagu "ja", ehk mõlemad tingimused peavad olema tõesed.
+					.text-info <code>||</code> on nagu "või", ehk üks tingimustest peab olema tõene.
+					.text-danger <code>||</code> ei ole LL, ega ii. <code>||</code> on "pipe" ehk <kbd>AltGr + &lt;</kbd>;
 
 	.panel.panel-info
 		h4#Object.panel-heading Object
