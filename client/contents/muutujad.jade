@@ -38,7 +38,7 @@ template(name="muutujad")
 	h4#muutuja-arvud Arvud
 
 	.panel.panel-info
-		h4#byte.panel-heading byte
+		h5#byte.panel-heading byte
 		.panel-body
 			p väikesed arvud (alates -128 kuni 127)
 			br
@@ -71,7 +71,7 @@ template(name="muutujad")
 						code double c = a;
 
 	.panel.panel-info
-		h4#int.panel-heading int
+		h5#int.panel-heading int
 		.panel-body
 			p täisarvud (alates -2'147'483'648 kuni 2'147'483'647)
 			p Tõenäoliselt kasutame int tüüpi muutujaid arvudega tegeledes.
@@ -115,7 +115,7 @@ template(name="muutujad")
 						code double c = a;
 
 	.panel.panel-info
-		h4#double.panel-heading double
+		h5#double.panel-heading double
 		.panel-body
 			p reaalarvud (komakohaga) (alates 4.9*10^-324 kuni 1.79*10^308)
 			.text-danger Reaalarvudega arvutamine on ebatäpne, vt. <a href="/vaartus-ohukoht2">Ohukoht2</a>
@@ -159,7 +159,7 @@ template(name="muutujad")
 					.text-danger typecast <code>(int)</code> ei ümarda arve vaid raiub julmalt koma maha. <code>double 8.76</code> on <code>int 8</code>. Ümardamiseks kasuta <code>Math.round()</code>.
 
 	.panel.panel-info
-		h4#BigDecimal.panel-heading BigDecimal
+		h5#BigDecimal.panel-heading BigDecimal
 		.panel-body
 			p kõik arvud (arvu suurust limiteerib vaid arvuti mälu)
 			p BigDecimal on vajalik, et reaalarvudega täpseid arvutusi teha.
@@ -212,7 +212,7 @@ template(name="muutujad")
 	h4#muutuja-soned Sõned
 
 	.panel.panel-info
-		h4#char.panel-heading char
+		h5#char.panel-heading char
 		.panel-body
 			p üksik täht
 			.text-danger Kindlasti kasuta ühekordseid jutumärke!
@@ -238,7 +238,7 @@ template(name="muutujad")
 							| 'a' &gt;= 'b';
 
 	.panel.panel-info
-		h4#String.panel-heading String
+		h5#String.panel-heading String
 		.panel-body
 			p Sõne, ehk jutumärkide vahele saab panna kõiki sümboleid
 			.text-danger Kindlasti kasuta topelt jutumärke!
@@ -349,7 +349,7 @@ template(name="muutujad")
 	h4#muutuja-muu Muu
 
 	.panel.panel-info
-		h4#boolean.panel-heading boolean
+		h5#boolean.panel-heading boolean
 		.panel-body
 			p tõene või väär, ehk <code>true</code> või <code>false</code>.
 			br
@@ -375,7 +375,7 @@ template(name="muutujad")
 					.text-danger <code>||</code> ei ole LL, ega ii. <code>||</code> on "pipe" ehk <kbd>AltGr + &lt;</kbd>;
 
 	.panel.panel-info
-		h4#Objekt.panel-heading Objekt
+		h5#Objekt.panel-heading Objekt
 		.panel-body
 			p keerulisemad objektid.
 			p ArrayList ja String on samuti objektid, aga siin pean silmas kõiki objekte. Need võivad tulla Java APIst või oled sa ise neid loonud.
@@ -452,7 +452,7 @@ template(name="muutujad")
 
 
 	.panel.panel-info
-		h4#Massiiv.panel-heading Massiiv
+		h5#Massiiv.panel-heading Massiiv
 		.panel-body
 			p Hoiab mitmeid väärtusi korraga, aga ainult ühte tüüpi ja kogust muuta ei saa.
 			.text-success + lihtne kasutada
@@ -530,7 +530,7 @@ template(name="muutujad")
 						code System.out.println(Arrays.toString(a))
 
 	.panel.panel-info
-		h4#ArrayList.panel-heading ArrayList
+		h5#ArrayList.panel-heading ArrayList
 		.panel-body
 			p Hoiab eri tüüpi väärtusi ja nimekirja pikkus muutub vastavalt sisule.
 			.text-success + hoiab erinevaid andmetüüpe segamini
@@ -641,7 +641,7 @@ template(name="muutujad")
 						code a.isEmpty()
 
 	.panel.panel-info
-		h4#HashMap.panel-heading HashMap
+		h5#HashMap.panel-heading HashMap
 		.panel-body
 			p Hoiab &lt;võti, väärtus&gt; andmeid.
 			.text-success + lihtsustab keeruliste andmete hoidmist

@@ -12,9 +12,10 @@ html, body {
 	padding: 1em;
 	width: 250px;
 	height: 100%;
-	background-color: rgba(0,0,0,0.2);
 	position: fixed;
-	overflow: auto;
+	overflow-x: hidden;
+	overflow-y: auto;
+	line-height: 1em;
 	*:not([id]) {
 		color: red !important;
 	}
@@ -24,24 +25,40 @@ html, body {
 	.panel, .panel-heading {
 		background-color: transparent;
 		width: auto;
-		color: black;
 		margin: 0;
+		padding: 0;
 		.no-shadow;
 	}
- 	h1, h2, h3, h4, h5, h6 {
+ 	h1, h2, h3, h4, h5, h6, .panel h5 {
+ 		color: black;
 		cursor: pointer;
+		margin-top: 0.3em;
+		margin-bottom: 0.3em;
+		font-size: 15px;
 	}
 	h1 {
+		font-size: 25px;
+		margin-left: 0px;
 	}
 	h2 {
+		// font-size: 20px;
 	}
 	h3 {
+		// font-size: 15px;
+		font-weight: bold;
+		margin-left: 15px;
 	}
 	h4 {
+		// font-size: 15px;
+		margin-left: 30px;
 	}
-	h5 {
+	h5, .panel-heading {
+		// font-size: 15px;
+		margin-left: 45px;
 	}
 	h6 {
+		// font-size: 15px;
+		margin-left: 60px;
 	}
 }
 
@@ -49,6 +66,9 @@ html, body {
 	padding: 1em;
 	max-width: 700px;
 	margin-left: 250px;
+	h5.panel-heading {
+		font-size: 1.5em;
+	}
 }
 
 img {
