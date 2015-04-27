@@ -1,14 +1,27 @@
 template(name="juhtimisstruktuurid")
 	h1#Juhtimisstruktuurid Juhtimisstruktuurid
 	p Juhtimisstruktuurid on programmeerija põhilised tööriistad, nagu ehitajal on haamer ja kruvikeeraja. Siin käsitleme kahte liiki: "kui" ja "kuni", ehk "kui" tingimus on täidetud käitu sedasi ja "kuni" tingimus on täidetud käitu sedasi. Muud neil vahet polegi, kui ühed juhivad programmi kulgemist vaid ühe korra ja teised panevad ühe koodi jupi tsükliliselt kordama.
-	p "Kui" tüüpi <strong>valikud</strong> on <code>if</code>, <code>switch</code> ja <code>try-catch</code>. "Kuni" tüüpi <strong>tsüklid</strong> on <code>while</code>, <code>or</code>, <code>foreach</code> ja <code>do..while</code>.
+	p "Kui" tüüpi <strong>valikud</strong> on <code>if</code>, <code>switch</code> ja <code>try-catch</code>. "Kuni" tüüpi <strong>tsüklid</strong> on <code>while</code>, <code>for</code>, <code>foreach</code> ja <code>do..while</code>.
 	h2#Valikud Valikud
 	.panel.panel-info
 		h3#if.panel-heading.bold if
 		.panel-body
+			p if on nagu raudtee hargnemine. Üks tee läheb Tartu poole, teine Viljandi. if lausega saab rongi (ehk programmi) vastavalt sihtpunktile juhatada õigele teele.
 			.row
 				.col-sm-3 Point
 				.col-sm-9 Teha programmis lihtsaid valikuid (==, !=, &lt;=, &gt;=, string.equals())
+			hr
+			.row
+				.col-sm-3 Süntaks
+				.col-sm-9
+					pre
+						code
+							| if (tingimus) {
+							|     tegevus
+							| } else {
+							|     alternatiivne tegevus
+							| }
+			hr
 			.row
 				.col-sm-3 Näite ülesanne
 				.col-sm-9 Kui punkte on 50 või rohkem, saab tudeng ainest läbi. Kui on vähem, siis ei saa.
@@ -30,6 +43,25 @@ template(name="juhtimisstruktuurid")
 			.row
 				.col-sm-3 Point
 				.col-sm-9 Teha paljude variantidega, aga lihtsama tingimusega (ainult ==), valikuid.
+			hr
+			.row
+				.col-sm-3 Süntaks
+				.col-sm-9
+					pre
+						code
+							| switch (muutuja) {
+							|     case väärtus1:
+							|         tegevus1;
+							|         break;
+							|     case väärtus2: // kasuta järgneva väärtuse tegevust
+							|     case väärtus3:
+							|         tegevus3;
+							|         break;
+							|     case väärtus4:
+							|         tegevus4;
+							|         break;
+							| }
+			hr
 			.row
 				.col-sm-3 Näite ülesanne
 				.col-sm-9 Järgmise aasta ilmateade: kui on suvi, paistab päike; kui on talv, sajab lund, kevadel ja sügisel sajab vihma.
@@ -58,6 +90,7 @@ template(name="juhtimisstruktuurid")
 			.row
 				.col-sm-3 Point
 				.col-sm-9 Try-catch on nagu if-else, ainult, et on mõeldud veaohtlike koodijuppidele.
+			hr
 			.row
 				.col-sm-3 Näite ülesanne
 				.col-sm-9 Loe kõvakettalt fail üles, kui millegipärast toiming ebaõnnestub, anna sellest teada.
