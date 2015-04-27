@@ -19,10 +19,10 @@ html, body {
 	*:not([id]) {
 		color: red !important;
 	}
-	p, img, pre, .panel-body, .panel-footer {
+	p, img, pre, .panel-body:not(.visible), .panel-footer {
 		display: none;
 	}
-	.panel, .panel-heading {
+	.panel, .panel-heading, .panel-body {
 		background-color: transparent;
 		width: auto;
 		margin: 0;
@@ -43,6 +43,7 @@ html, body {
 		font-size: 15px;
 	}
 	h1, h1.panel-heading {
+		margin-top: 1.3em;
 		font-size: 25px;
 	}
 	h2, h2.panel-heading {

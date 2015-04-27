@@ -8,10 +8,21 @@ template(name="javaAPI")
 	.panel.panel-info
 		h3.panel-heading#api-system-in System.in
 		.panel-body vt. <a href="/api-scanner">kuidas kasutatakse Scanner objekti</a>
-	.panel.panel-info
+	.panel
 		h3.panel-heading#api-system-out System.out
-		.panel-body
-	h2#api-math.bold Math
+		.panel-body.visible
+			p System.out võimaldab meil infot kasutajale näidata. Kõige tavalisem käsk on <code>System.out.println("Tere")</code> ja see näitab kasutajale konsoolis teksti "Tere".
+			.panel.panel-info
+				h4.panel-heading#api-System-out-print System.out.print()
+				.panel-body
+			.panel.panel-info
+				h4.panel-heading.bold#api-System-out-println System.out.println()
+				.panel-body
+			.panel.panel-info
+				h4.panel-heading#api-System-out-printf System.out.printf()
+				.panel-body
+
+	h2#api-math Math
 	.panel.panel-info
 		h3.panel-heading#api-math-abs Math.abs()
 		.panel-body

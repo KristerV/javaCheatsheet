@@ -1,7 +1,7 @@
 template(name="juhtimisstruktuurid")
 	h1#Juhtimisstruktuurid Juhtimisstruktuurid
 	p Juhtimisstruktuurid on programmeerija põhilised tööriistad, nagu ehitajal on haamer ja kruvikeeraja. Siin käsitleme kahte liiki: "kui" ja "kuni", ehk "kui" tingimus on täidetud käitu sedasi ja "kuni" tingimus on täidetud käitu sedasi. Muud neil vahet polegi, kui ühed juhivad programmi kulgemist vaid ühe korra ja teised panevad ühe koodi jupi tsükliliselt kordama.
-	p "Kui" tüüpi <strong>valikud</strong> on <code>if</code>, <code>switch</code> ja <code>try-catch</code>. "Kuni" tüüpi <strong>tsüklid</strong> on <code>while</code>, <code>for</code>, <code>foreach</code> ja <code>do..while</code>.
+	p "Kui" tüüpi <strong>valikud</strong> on <code>if</code>, <code>switch</code> ja <code>try-catch</code>. "Kuni" tüüpi <strong>tsüklid</strong> on <code>while</code>, <code>for</code>, <code>for each</code> ja <code>do..while</code>.
 	h2#Valikud Valikud
 	.panel.panel-info
 		h3#if.panel-heading.bold if
@@ -108,13 +108,14 @@ template(name="juhtimisstruktuurid")
 							| }
 
 	h2#Tsyklid Tsüklid
-	p Kui programmil on vaja nüüd mitte lihtsalt hargneda (otsus langetada) vaid ühte koodijuppi käiata kümneid või isegi tuhandeid kordi, siis on tsüklid selle jaoks. While tsükkel on selles mõttes universaalne, et sellega saab kõike teha, mida teistegagi. Teiste tsüklite mõte on lihtsustada kindlaid igapäevaseid toiminguid. Näiteks kui sul on vaja just numbritega mängida, siis saad for tsükliga kiiremini asja tehtud. Kui soovid massiivi väärtustega tegeleda, on foreach ideaalne.
+	p Kui programmil on vaja nüüd mitte lihtsalt hargneda (otsus langetada) vaid ühte koodijuppi käiata kümneid või isegi tuhandeid kordi, siis on tsüklid selle jaoks. While tsükkel on selles mõttes universaalne, et sellega saab kõike teha, mida teistegagi. Teiste tsüklite mõte on lihtsustada kindlaid igapäevaseid toiminguid. Näiteks kui sul on vaja just numbritega mängida, siis saad for tsükliga kiiremini asja tehtud. Kui soovid massiivi väärtustega tegeleda, on 'for each' ideaalne.
 	.panel.panel-info
 		h3#while.panel-heading.bold while
 		.panel-body
 			.row
 				.col-sm-3 Point
 				.col-sm-9 Korrata koodi kuni tingimus on tõene
+			hr
 			.row
 				.col-sm-3 Ül1: prindi numbrite jada 1-10
 				.col-sm-9 
@@ -125,9 +126,10 @@ template(name="juhtimisstruktuurid")
 							|     System.out.println(count + 1);
 							|     count = count + 1;
 							| }
+			hr
 			.row
 				.col-sm-3 
-					p Prindi välja väärtused massiivist
+					p Ül2: Prindi välja väärtused massiivist
 					pre
 						code
 							| String[] m = {
@@ -149,6 +151,7 @@ template(name="juhtimisstruktuurid")
 			.row
 				.col-sm-3 Point
 				.col-sm-9 Identne while tsükliga, aga käiatakse vähemalt ühe korra, sest tingimuse kontrollimine toimub lõpus.
+			hr
 			.row
 				.col-sm-3 Ül1: prindi numbrite jada 1-10
 				.col-sm-9 
@@ -159,9 +162,10 @@ template(name="juhtimisstruktuurid")
 							|     System.out.println(count + 1);
 							|     count = count + 1;
 							| } while (count &lt; 10);
+			hr
 			.row
 				.col-sm-3 
-					p Prindi välja väärtused massiivist
+					p Ül2: Prindi välja väärtused massiivist
 					pre
 						code
 							| String[] m = {
@@ -183,6 +187,7 @@ template(name="juhtimisstruktuurid")
 			.row
 				.col-sm-3 Point
 				.col-sm-9 Korrata koodi x arv kordi
+			hr
 			.row
 				.col-sm-3 Ül1: prindi numbrite jada 1-10
 				.col-sm-9 
@@ -191,9 +196,10 @@ template(name="juhtimisstruktuurid")
 							| for (int i = 0; i &lt; 10; i++) {
 							|     System.out.println(i + 1);
 							| }
+			hr
 			.row
 				.col-sm-3 
-					p Prindi välja väärtused massiivist
+					p Ül2: Prindi välja väärtused massiivist
 					pre
 						code
 							| String[] m = {
@@ -208,14 +214,15 @@ template(name="juhtimisstruktuurid")
 							|     System.out.println(m[i]);
 							| }
 	.panel.panel-info
-		h3#foreach.panel-heading foreach
+		h3#for-each.panel-heading for each
 		.panel-body
 			.row
 				.col-sm-3 Point
 				.col-sm-9 Käia tsükliga läbi mõni andmete kogum (nt. massiiv)
+			hr
 			.row
 				.col-sm-3 
-					p Prindi välja väärtused massiivist
+					p Ül2: Prindi välja väärtused massiivist
 					pre
 						code
 							| String[] m = {
