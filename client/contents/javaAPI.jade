@@ -15,103 +15,420 @@ template(name="javaAPI")
 			.panel.panel-info
 				h4.panel-heading#api-System-out-print System.out.print()
 				.panel-body
+					p print() kirjutab konsooli kõik väärtused järjest.
+					p Näide
+					pre
+						code
+							| int vanus = 5;
+							| String nimi = "Miku";
+							| 
+							| System.out.print("Minu nimi on " + nimi);
+							| System.out.print(" ja ");
+							| System.out.print("olen " + vanus + " aastat vana.");
+					p Tulemus:
+					pre
+						code
+							| Minu nimi on Miku ja olen 5 aastat vana.
 			.panel.panel-info
 				h4.panel-heading.bold#api-System-out-println System.out.println()
 				.panel-body
+					p Lühend 'ln' tähendab 'line' meetodist println(). See trükib konsooli oma kirje ja alustab uue reaga.
+					p Näide:
+					pre
+						code
+							| int vanus = 5;
+							| String nimi = "Miku";
+							| 
+							| System.out.println("Minu nimi on " + nimi);
+							| System.out.println(" ja ");
+							| System.out.println("olen " + vanus + " aastat vana.");
+					p Tulemus:
+					pre
+						code
+							| Minu nimi on Miku
+							|  ja 
+							| olen 5 aastat vana.
 			.panel.panel-info
 				h4.panel-heading#api-System-out-printf System.out.printf()
 				.panel-body
+					p Lühend 'f' tähendab 'format' meetodis printf(). See meetod on eriti paindlik ja annab kujundamiseks erilisi võimalusi. Eriti mugav on seda kasutada, kui esineb palju muutujaid.
+					p Et muutujaid kasutada, kasuta süntaksit printf(sõne, muutuja, muutuja, ...). Sõne sisse paned spetsiaalsed märgised (%s, %d, %n), et printf() teaks kuhu muutujad sisestada.
+					p Näide
+					pre
+						code
+							| int vanus = 5;
+							| String nimi = "Miku";
+							| 
+							| System.out.printf("Minu nimi on %s ja olen %d aastat vana.", nimi, vanus);
+					p tulemus:
+					pre
+						code
+							| Minu nimi on Miku ja olen 5 aastat vana.
+					strong Võimalused
+					.row
+						.col-sm-1 %s
+						.col-sm-2 String, ehk sõne
+						.col-sm-9
+							pre
+								code
+									| String nimi = "Peeter";
+									| System.out.printf("Tere, %s, võta istet.", nimi)
+									| // Tere, Peeter, võta istet.
+					.row
+						.col-sm-1 %d
+						.col-sm-2 int, ehk täisarv
+						.col-sm-9
+							pre
+								code
+									| int yhendus = 4;
+									| System.out.printf("Mul on %dG ühendus!", yhendus)
+									| // Mul on 4G ühendus!
+					.row
+						.col-sm-1 %f
+						.col-sm-2 float või double, ehk reaalarv
+						.col-sm-9
+							pre
+								code
+									| double pappi = 64.55;
+									| System.out.printf("Saan %.2f euroga Berliini.", pappi);
+									| // Saan 64.55 euroga Berliini.
+							.text-info '.2' käsib näidata vaid kahte komakohta.
+					.row
+						.col-sm-1 %n
+						.col-sm-2 Uus rida
+						.col-sm-9
+							pre
+								code
+									| 
+									| System.out.printf("Tere%nuus%nmaailm!");
+									| // Tere
+									| // uus
+									| // maailm!
 
-	h2#api-math Math
-	.panel.panel-info
-		h3.panel-heading#api-math-abs Math.abs()
+	.panel
+		h2.panel-heading#api-math Math
+		.panel-body.visible
+			p Math klass lihtsustab teatud matemaatilisi toiminguid.
+			.panel.panel-info
+				h3.panel-heading#api-math-abs Math.abs()
+				.panel-body
+					p Tagastab arvu absoluutväärtuse.
+					pre
+						code
+							| Math.abs(5);  // 5
+							| Math.abs(-5); // 5
+
+			.panel.panel-info
+				h3.panel-heading#api-math-min Math.min()
+				.panel-body
+					p Valib kahest arvust väiksema.
+					pre
+						code
+							| Math.min(1, 5);  // 1
+							| Math.min(89, 6); // 6
+
+			.panel.panel-info
+				h3.panel-heading#api-math-max Math.max()
+				.panel-body
+					p Valib kahest arvust suurema.
+					pre
+						code
+							| Math.max(1, 5);  // 5
+							| Math.max(89, 6); // 89
+
+			.panel.panel-info
+				h3.panel-heading.bold#api-math-pow Math.pow()
+				.panel-body
+					p Astendab esimese arvu teisega.
+					pre
+						code
+							| Math.pow(2, 5); // 32.0
+							| Math.pow(4, 8); // 65536.0
+
+			.panel.panel-info
+				h3.panel-heading.bold#api-math-random Math.random()
+				.panel-body
+					p Genereerib suvalise numbri vahemikus 0-0.999999999.
+					hr
+					.row
+						.col-sm-3 Genereeri arv nullist 0.99999ni
+						.col-sm-9
+							pre
+								code Math.random()
+					hr
+					.row
+						.col-sm-3 Genereeri kas null või üks.
+						.col-sm-9
+							pre
+								code (int) (Math.random() * 2)
+					hr
+					.row
+						.col-sm-3 Genereeri täisarv arv nullist sajani
+						.col-sm-9
+							pre
+								code (int) (Math.random() * 100)
+					hr
+					.row
+						.col-sm-3 Genereeri reaalarv 30st 40ni.
+						.col-sm-9
+							pre
+								code 30 + Math.random() * 10
+			.panel.panel-info
+				h3.panel-heading#api-math-round Math.round()
+				.panel-body
+					p Ümardaja
+					pre
+						code Math.round(45.5876); // 46
+						code Math.round(2.33);    // 2
+	.panel
+		h2.panel-heading#api-integer Integer
+		.panel-body.visible
+			.panel.panel-info
+				h3.panel-heading#api-integer-MIN_VALUE Integer.MIN_VALUE
+				.panel-body
+					p Integer või int kõige väiksem võimalik värtus. Vaata ka <a href="/vaartus-ohukoht1">Ohukoht1</a>
+					pre
+						code
+							| Integer.MIN_VALUE; // -2147483648
+			.panel.panel-info
+				h3.panel-heading#api-integer-MAX_VALUE Integer.MAX_VALUE
+				.panel-body
+					p Integer või int kõige suurem võimalik värtus. Vaata ka <a href="/vaartus-ohukoht1">Ohukoht1</a>
+					pre
+						code
+							| Integer.MAX_VALUE; // 2147483647
+			.panel.panel-info
+				h3.panel-heading#api-integer-parseInt Integer.parseInt(String)
+				.panel-body
+					p Kui sul on arv sõne kujul "25", siis parseInt muudab selle int'iks.
+					pre
+						code int a = Integer.parseInt("25");
+	.panel
+		h2.panel-heading#api-double Double
+		.panel-body.visible
+			.panel.panel-info
+				h3.panel-heading#api-double-MIN_VALUE Double.MIN_VALUE
+				.panel-body
+					p Double või double kõige väiksem võimalik värtus. Vaata ka <a href="/vaartus-ohukoht1">Ohukoht1</a>
+					pre
+						code
+							| Double.MIN_VALUE; // -2147483648
+			.panel.panel-info
+				h3.panel-heading#api-double-MAX_VALUE Double.MAX_VALUE
+				.panel-body
+					p Double või double kõige suurem võimalik värtus. Vaata ka <a href="/vaartus-ohukoht1">Ohukoht1</a>
+					pre
+						code
+							| Double.MAX_VALUE; // 2147483647
+			.panel.panel-info
+				h3.panel-heading#api-double-parseInt Double.parseDouble(String)
+				.panel-body
+					p Kui sul on arv sõne kujul "33.333", siis parseDouble muudab selle double'iks.
+					pre
+						code double a = Double.parseInt("33.333");
 		.panel-body
-	.panel.panel-info
-		h3.panel-heading#api-math-min Math.min()
-		.panel-body
-	.panel.panel-info
-		h3.panel-heading#api-math-max Math.max()
-		.panel-body
-	.panel.panel-info
-		h3.panel-heading.bold#api-math-pow Math.pow()
-		.panel-body
-	.panel.panel-info
-		h3.panel-heading.bold#api-math-random Math.random()
-		.panel-body
-	.panel.panel-info
-		h3.panel-heading#api-math-round Math.round()
-		.panel-body
-	h2#api-integer Integer
-	.panel.panel-info
-		h3.panel-heading#api-integer-MIN_VALUE Integer.MIN_VALUE
-		.panel-body
-	.panel.panel-info
-		h3.panel-heading#api-integer-MAX_VALUE Integer.MAX_VALUE
-		.panel-body
-	.panel.panel-info
-		h3.panel-heading#api-integer-parseInt Integer.parseInt(String)
-		.panel-body
-	h2#api-double Double
-	.panel.panel-info
-		h3.panel-heading#api-double-MIN_VALUE Double.MIN_VALUE
-		.panel-body
-	.panel.panel-info
-		h3.panel-heading#api-double-MAX_VALUE Double.MAX_VALUE
-		.panel-body
-	.panel.panel-info
-		h3.panel-heading#api-double-parseDouble Double.parseDouble(String)
-		.panel-body
-	h2#api-file File
-	.panel.panel-info
-		h3.panel-heading#api-file-File File
-		.panel-body
-	.panel.panel-info
-		h3.panel-heading#api-file-FileReader FileReader
-		.panel-body
-	.panel.panel-info
-		h3.panel-heading#api-file-FileWriter FileWriter
-		.panel-body
-	.panel.panel-info
-		h3.panel-heading#api-file-InputStream InputStream
-		.panel-body
-	.panel.panel-info
-		h3.panel-heading#api-file-OutputStream OutputStream
-		.panel-body
-	h2#api-scanner Scanner
-	.panel.panel-info
-		h3.panel-heading#api-scanner-next .next()
-		.panel-body
-	.panel.panel-info
-		h3.panel-heading#api-scanner-nextLine .nextLine()
-		.panel-body
-	.panel.panel-info
-		h3.panel-heading#api-scanner-nextInt .nextInt()
-		.panel-body
-	.panel.panel-info
-		h3.panel-heading#api-scanner-nextDouble .nextDouble()
-		.panel-body
+
+	.panel
+		h2.panel-heading#api-file File
+		.panel-body.visible
+			p Failide manipuleerimiseks on Javas palju viise. File, FileReaderi ja FileWriteri kasutamine on aga üks puisemaid ja lihtsasti arusaadavaid.
+			p File klass on selleks, et fail programmi tuua.
+			p FileReader on selleks, et faili sisu lugeda.
+			p FileWriter on selleks, et faili sisu muuta.
+			.panel.panel-info
+				h3.panel-heading#api-file-File File
+				.panel-body
+					.bold Kasutamine
+					.row
+						.col-sm-3 Loo uus File objekt.
+						.col-sm-9
+							pre
+								code File f = new File("tekst.txt");
+					.row
+						.col-sm-3 Loo uus fail kettale.
+						.col-sm-9
+							pre
+								code f.createNewFile();
+					.row
+						.col-sm-3 Kustuta fail kettalt.
+						.col-sm-9
+							pre
+								code f.delete();
+					.row
+						.col-sm-3 Võrdle kahe faili sisu.
+						.col-sm-9
+							pre
+								code f.equals(f2);
+					.row
+						.col-sm-3 Kas fail eksisteerib kettal?
+						.col-sm-9
+							pre
+								code f.exists();
+			.panel.panel-info
+				h3.panel-heading#api-file-FileReader Faili lugemine
+				.panel-body
+					pre
+						code
+							| File f = new File("tekst.txt");
+							| FileWriter writer = new FileWriter(f);
+							| writer.write("Rida üks\n");
+							| writer.write("Rida kaks\n");
+							| writer.write("Rida kolm\n");
+							| writer.close();
+			.panel.panel-info
+				h3.panel-heading#api-file-FileWriter Faili kirjutamine
+				.panel-body
+					pre
+						code
+							| File f = new File("tekst.txt");
+							| BufferedReader br = new BufferedReader(new FileReader(f));
+							| String line = br.readLine();
+							| while (line != null) {
+							| 	System.out.println(line);
+							| 	line = br.readLine();
+							| }
+							| br.close();
+	.panel
+		h2.panel-heading#api-scanner Scanner
+		.panel-body.visible
+			p Scanneriga saame kasutajalt sisendit. Konsooli põhises programmis on ennekõike klaviatuuri sisestusi vaja kätte saada.
+			strong Näite ülesanne
+			.row
+				.col-sm-3 Küsida kasutajalt tema nimi ja vanus.
+				.col-sm-9
+					pre
+						code
+							| Scanner sc = new Scanner(System.in);
+							| System.out.println("Mis on sinu nimi?");
+							| String nimi = sc.nextLine();
+							| System.out.println("Mis on sinu vanus?");
+							| int vanus = sc.nextInt();
+							| System.out.printf("Sinu nimi on %s ja vanus %d", nimi, vanus);
+			.row
+				.col-sm-3 Tulemus
+				.col-sm-9
+					pre
+						code
+							| Mis on sinu nimi?
+							| Peeter
+							| Mis on sinu vanus?
+							| 35
+							| Sinu nimi on Peeter ja vanus 35
+
+			.panel.panel-info
+				h3.panel-heading#api-scanner-next .next()
+				.panel-body
+					p Loeb kasutaja sisestust kuni järgmise tühikuni, annab tagasi Stringi.
+			.panel.panel-info
+				h3.panel-heading#api-scanner-nextLine .nextLine()
+				.panel-body
+					p Loeb kasutaja sisestust kuni rea lõpuni, annab tagasi Stringi.
+			.panel.panel-info
+				h3.panel-heading#api-scanner-nextInt .nextInt()
+				.panel-body
+					p Võtab kasutajalt täisarvu. Kui kasutaja sisestab täisarvu asemel midagi muud, tuleb error.
+			.panel.panel-info
+				h3.panel-heading#api-scanner-nextDouble .nextDouble()
+				.panel-body
+					p Võtab kasutajalt reaalarvu. Kui kasutaja sisestab reaalarvu asemel midagi muud, tuleb error.
 	h2#api-thread Thread
 	.panel.panel-info
 		h3.panel-heading#api-thread-sleep Thread.sleep(msec)
 		.panel-body
-	h2#api-timer Timer
-	.panel.panel-info
-		h3.panel-heading#api-timer-schedule .schedule()
+			p Paneb programmi ajutiselt pausile. See on kõige lihtsam viis aega simuleerida, kuid ta ei ole väga täpne ega paindlik. Vt. <a href="/api-timer">Timer</a>.
+			p Näiteks
+			pre
+				code
+					| System.out.println("Hommikust!");
+					| Thread.sleep(3000);
+					| System.out.println("Õhtust!");
+			p võtab aega 3 sekundit, sest vahepeal on nii pikk paus.
+	.panel
+		h2.panel-heading#api-timer Timer
+		.panel-body.visible
+			p Timer töötab nagu oleme spordis harjunud. Selle ülesandeks on käivitada mingi toiming mingi kindla aja pärast või siis tsükliliselt käivitada ühte toimingut iga kindla aja tagant.
+			p Timer ei allu enam tavalisele "järjest ülevalt alla" ülesehitusele. Kuna Timeri käivitatav kood läheb käiku vastavalt ajale, siis ta käivitab selleks eraldi Threadi. Kui tuua analoogia programmi ja rongi vahel, siis Timeri käivitudes tekib juurde veel üks rong, mis on esialgse programmi rööbaste kõrval.
+			p Näiteks:
+			pre
+				code
+					| System.out.println("START");
+					| Timer timer = new Timer();
+					| timer.schedule(new TimerTask() {
+					|     public void run() {
+					|         System.out.println("TIMER");
+					|     }
+					| }, 4000);
+					| System.out.println("Koodi lõpp");
+			p Prindib välja
+			pre
+				code
+					| START
+					| Koodi lõpp
+					| TIMER
+			p Pane tähele, et "Koodi lõpp" jõudis konsooli 4 sekundit varem, kui "TIMER", kuigi koodis on "TIMER" eespool.
+			.panel.panel-info
+				h3.panel-heading#api-timer-schedule .schedule()
+				.panel-body
+					.row
+						.col-sm-3 Käivita toiming nelja sekundi pärast ühe korra
+						.col-sm-9
+							pre
+								code
+									| Timer timer = new Timer();
+									| timer.schedule(new TimerTask() {
+									|     public void run() {
+									|         // sinu toimingud
+									|     }
+									| }, 4000);
+					.row
+						.col-sm-3 Käivita toiming iga sekund, kuid alusta alles viiendal sekundil
+						.col-sm-9
+							pre
+								code
+									| Timer timer = new Timer();
+									| timer.schedule(new TimerTask() {
+									|     public void run() {
+									|         // sinu toimingud
+									|     }
+									| }, 5000, 1000);
+			.panel.panel-info
+				h3.panel-heading#api-timer-scheduleAtFixedRate .scheduleAtFixedRate()
+				.panel-body
+					p Vt. <a href="/api-timer-schedule">.schedule()</a>. Ainuke vahe on see, et fixed rate käivitub ajaliselt väga täpselt. Näiteks kui meil on vaja, et toimingud käivituksid iga 5 sekundi tagant, aga arvuti on jäänud aeglaseks, siis .scheduleAtFixedRate() käivitab koodi kellaajalise täpsusega, .schedule() aga ei arvesta mitte aega vaid millal viimane tsükkel lõppes.
+	.panel
+		h2.panel-heading#api-arrays Arrays
+		.panel-body.visible
+			p Arrays klass on massiividega manipuleerimiseks. Kuna massiiv (näiteks in[]) on primitiiv, siis tal ei ole enda meetode. Nagu ArrayListil on täitsa enda .equals() olemas, siis massiivi puhul võtamegi abiks Arrays klassi sama toimingu jaoks.
+			.panel.panel-info
+				h3.panel-heading#api-arrays-sort Arrays.sort()
+				.panel-body
+					p Sorteeri massiivi väärtused tähestikulises järjekorras.
+					pre
+						code
+							| String[] a = {"ccc", "aaa", "bbb"};
+							| Arrays.sort(a);
+			.panel.panel-info
+				h3.panel-heading#api-arrays-equals Arrays.equals()
+				.panel-body
+					p Võrdle, kas kaks massiivi on samasugused. Kusjuures, massiivis olevad elemendid peavad olema samas järjekorras, et neid massiive samasugusteks nimetada.
+					pre
+						code
+							| String[] a = {"ccc", "aaa", "bbb"};
+							| String[] b = {"ccc", "aaa", "bbb"};
+							| System.out.println(Arrays.equals(a, b));
+			.panel.panel-info
+				h3.panel-heading#api-arrays-toString Arrays.toString()
+				.panel-body
+					p Kui massiiv lihtsalt niisama välja printida, tuleb konsooli mingi imelik kood. See kood on pistmist sellega, kuidas arvutis mälu töötab. Meie aga tahame näha massiivi sisu ja seega kasutame .toString() meetodi.
+					pre
+						code Arrays.toString(a)
+	.panel
+		h2.panel-heading#api-collections Collections
 		.panel-body
-	.panel.panel-info
-		h3.panel-heading#api-timer-scheduleAtFixedRate .scheduleAtFixedRate()
-		.panel-body
-	h2#api-arrays Arrays
-	.panel.panel-info
-		h3.panel-heading#api-arrays-sort Arrays.sort()
-		.panel-body
-	.panel.panel-info
-		h3.panel-heading#api-arrays-equals Arrays.equals()
-		.panel-body
-	.panel.panel-info
-		h3.panel-heading#api-arrays-toString Arrays.toString()
-		.panel-body
-	h2#api-collections Collections
-	.panel.panel-info
-		h3.panel-heading#api-collections-sort Collections.sort()
-		.panel-body
+			p Nagu massiividel on Arrays abiks, on ArrayListil, HashMapil ja muudel Collectionitel ka oma abistav klass.
+			.panel.panel-info
+				h3.panel-heading#api-collections-sort Collections.sort()
+				.panel-body
+					p Kuigi ArrayListil on oma .equals() meetod, siis tema .sort() meetod ei tööta päris nii nagu võiks arvata. Collections.sort() aitab meil sorteerida sisalduvad elemendid tähestikulises järjekorras.
+					pre
+						code Collections.sort(a);
