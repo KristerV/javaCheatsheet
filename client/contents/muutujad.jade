@@ -1,784 +1,785 @@
 template(name="muutujad")
-	h1#muutujad Muutujad
-	img#muutujaKast.w200(src="images/muutujad/kast.svg" align="right")
-	p Muutuja on sisuliselt nagu kast, kuhu saad ühe asja sisse panna. Sa pead ütlema kuidas kasti nimetada ja mis tüüpi asju sa sinna sisse tahad panna.
-	p Näiteks kui soovime lapse vanust salvestada, siis sobib selleks int (integer, ehk täisarv) tüüp ja "mikuVanus" nimetus, siis Javas kirjutame seda järgnevalt:
-	pre
-		code int vanus = 5;
-	p Kui sooviksin selle lapse nime salvestada, kasutaksin tüüpi String, ehk sõne:
-	pre
-		code String nimi = "Mikk";
+	.muutujad
+		h1#muutujad Muutujad
+		img#muutujaKast.w200(src="images/muutujad/kast.svg" align="right")
+		p Muutuja on sisuliselt nagu kast, kuhu saad ühe asja sisse panna. Sa pead ütlema kuidas kasti nimetada ja mis tüüpi asju sa sinna sisse tahad panna.
+		p Näiteks kui soovime lapse vanust salvestada, siis sobib selleks int (integer, ehk täisarv) tüüp ja "mikuVanus" nimetus, siis Javas kirjutame seda järgnevalt:
+		pre
+			code int vanus = 5;
+		p Kui sooviksin selle lapse nime salvestada, kasutaksin tüüpi String, ehk sõne:
+		pre
+			code String nimi = "Mikk";
 
-	h3#primitiivid Primitiivid ja Objektid
+		h3#primitiivid Primitiivid ja Objektid
 
-	p Kui võtame suvalise hunniku Java andmetüüpe [int, double, String, ArrayList], siis näeme, et osad on suure algustähtedega, osad on väiksega. See ei ole programmeerija suva järgi vaid tuleneb selle tüübi võimalustest. Näiteks int tüüpi muutuja on lihtsalt täisarv ja temaga ei saagi peale arvutamise midagi teha. String on aga sõne ja temaga saab igast pulli teha:
-	pre
-		code
-			| String nimi = "Krister";          // Teen uue muutuja
-			| nimi = nimi.replace('r', 'l');    // muudan kõik 'r' tähed 'l' tähtedeks
-			| System.out.println(nimi);         // Nimi on nüüd "Klistel" - hahaha!
-	p .replace() on meetod. Ja meetodid saavad ainult objektidel olla. Seega suure algustähega tüübid on objektid ja väikesega on primitiivid. Primitiivil ei ole meetode ja objektidel on.
+		p Kui võtame suvalise hunniku Java andmetüüpe [int, double, String, ArrayList], siis näeme, et osad on suure algustähtedega, osad on väiksega. See ei ole programmeerija suva järgi vaid tuleneb selle tüübi võimalustest. Näiteks int tüüpi muutuja on lihtsalt täisarv ja temaga ei saagi peale arvutamise midagi teha. String on aga sõne ja temaga saab igast pulli teha:
+		pre
+			code
+				| String nimi = "Krister";          // Teen uue muutuja
+				| nimi = nimi.replace('r', 'l');    // muudan kõik 'r' tähed 'l' tähtedeks
+				| System.out.println(nimi);         // Nimi on nüüd "Klistel" - hahaha!
+		p .replace() on meetod. Ja meetodid saavad ainult objektidel olla. Seega suure algustähega tüübid on objektid ja väikesega on primitiivid. Primitiivil ei ole meetode ja objektidel on.
 
-	h2#andmetyybid Andmetüübid
-	p Andmetüüpe on kahte sorti. Sa kas tahad väärtust salvestada või tahad ühte muutujasse mitut väärtust korraga salvestada. Seega nad jagunevadki "väärtus" ja "kogum väärtusi" sotrideks.
+		h2#andmetyybid Andmetüübid
+		p Andmetüüpe on kahte sorti. Sa kas tahad väärtust salvestada või tahad ühte muutujasse mitut väärtust korraga salvestada. Seega nad jagunevadki "väärtus" ja "kogum väärtusi" sotrideks.
 
-	h3#andmetyybid-vaartus Väärtus
+		h3#andmetyybid-vaartus Väärtus
 
-	h4#vaartus-ohukoht1 Ohukoht1
-	p Igal arvu andmetüübil on oma miinimum ja maksimum võimalik arv, mida andmetüüp suudab hoida. Kui üritad maksimumi ületada, jätkab loendur teisest otsast. Näiteks <code>int</code> andmetüübi maksimum on 2147483647:
-	pre
-		code
-			| int a = 2147483647;
-			| int b = a + 1;
-			| System.out.println("b = " + b); // b = -2147483648
+		h4#vaartus-ohukoht1 Ohukoht1
+		p Igal arvu andmetüübil on oma miinimum ja maksimum võimalik arv, mida andmetüüp suudab hoida. Kui üritad maksimumi ületada, jätkab loendur teisest otsast. Näiteks <code>int</code> andmetüübi maksimum on 2147483647:
+		pre
+			code
+				| int a = 2147483647;
+				| int b = a + 1;
+				| System.out.println("b = " + b); // b = -2147483648
 
-	h4#vaartus-ohukoht2 Ohukoht2
-	p Võtame lihtsa tehte: <code>2.0 - 1.1 = 0.9</code>. Ainult, et tegelikult tuleb Javas vastuseks 0.899999999999998. Kohati uskumatu, et selline viga on sees, aga see polegi üldse nii ebatavaline. Seda esineb ka teistes riistvaralähedastest keeltes. Lahenduseks on kas kasutada int tüüpi muutujaid (näiteks 23.34€ on 2334) või BigDecimal klassi arvutusteks. 
+		h4#vaartus-ohukoht2 Ohukoht2
+		p Võtame lihtsa tehte: <code>2.0 - 1.1 = 0.9</code>. Ainult, et tegelikult tuleb Javas vastuseks 0.899999999999998. Kohati uskumatu, et selline viga on sees, aga see polegi üldse nii ebatavaline. Seda esineb ka teistes riistvaralähedastest keeltes. Lahenduseks on kas kasutada int tüüpi muutujaid (näiteks 23.34€ on 2334) või BigDecimal klassi arvutusteks. 
 
-	h4#muutuja-arvud Arvud
+		h4#muutuja-arvud Arvud
 
-	.panel.panel-info
-		h5#byte.panel-heading byte
-		.panel-body
-			p väikesed arvud (alates -128 kuni 127)
-			br
-			strong Kasutamine
-			.row
-				.col-sm-3
-					p Loo uus
-				.col-sm-9
-					pre
-						code byte a = 25;
-			.row
-				.col-sm-3
-					p Liitmine
-				.col-sm-9
-					pre
-						code
-							| byte c = (byte) (34 + 3);
-							| // (byte) on vajalik typecast, sest 34 ja 3 on algselt int tüüpi väärtused.
-			.row
-				.col-sm-3
-					p Võrdlemine
-				.col-sm-9
-					pre
-						code a == b;
-			.row
-				.col-sm-3
-					p Muuda tüüpi
-				.col-sm-9
-					pre
-						code double c = a;
+		.panel.panel-info
+			h5#byte.panel-heading byte
+			.panel-body
+				p väikesed arvud (alates -128 kuni 127)
+				br
+				strong Kasutamine
+				.row
+					.col-sm-3
+						p Loo uus
+					.col-sm-9
+						pre
+							code byte a = 25;
+				.row
+					.col-sm-3
+						p Liitmine
+					.col-sm-9
+						pre
+							code
+								| byte c = (byte) (34 + 3);
+								| // (byte) on vajalik typecast, sest 34 ja 3 on algselt int tüüpi väärtused.
+				.row
+					.col-sm-3
+						p Võrdlemine
+					.col-sm-9
+						pre
+							code a == b;
+				.row
+					.col-sm-3
+						p Muuda tüüpi
+					.col-sm-9
+						pre
+							code double c = a;
 
-	.panel.panel-info
-		h5#int.panel-heading.bold int
-		.panel-body
-			p täisarvud (alates -2'147'483'648 kuni 2'147'483'647)
-			p Tõenäoliselt kasutame int tüüpi muutujaid arvudega tegeledes.
-			br
-			strong Kasutamine
-			.row
-				.col-sm-3
-					p Loo uus
-				.col-sm-9
-					pre
-						code int a = 5;
-			.row
-				.col-sm-3
-					p Matemaatika
-				.col-sm-9
-					pre
-						code
-							| a + b;
-							| a - b;
-							| a * b;
-							| a / b;
-							| (int) Math.pow(a, b); // a astmes b
-					.text-danger Jagamine, Math.pow() ja muud arvutused võivad olla ebatäpsed, kuna int ei toeta komakohti.
-			.row
-				.col-sm-3
-					p Võrdlemine
-				.col-sm-9
-					pre
-						code
-							| a == b;
-							| a != b;
-							| a &lt; b; 
-							| a &lt;= b; 
-							| a &gt; b; 
-							| a &gt;= b; 
-			.row
-				.col-sm-3
-					p Muuda tüüpi
-				.col-sm-9
-					pre
-						code double c = a;
+		.panel.panel-info
+			h5#int.panel-heading.bold int
+			.panel-body
+				p täisarvud (alates -2'147'483'648 kuni 2'147'483'647)
+				p Tõenäoliselt kasutame int tüüpi muutujaid arvudega tegeledes.
+				br
+				strong Kasutamine
+				.row
+					.col-sm-3
+						p Loo uus
+					.col-sm-9
+						pre
+							code int a = 5;
+				.row
+					.col-sm-3
+						p Matemaatika
+					.col-sm-9
+						pre
+							code
+								| a + b;
+								| a - b;
+								| a * b;
+								| a / b;
+								| (int) Math.pow(a, b); // a astmes b
+						.text-danger Jagamine, Math.pow() ja muud arvutused võivad olla ebatäpsed, kuna int ei toeta komakohti.
+				.row
+					.col-sm-3
+						p Võrdlemine
+					.col-sm-9
+						pre
+							code
+								| a == b;
+								| a != b;
+								| a &lt; b; 
+								| a &lt;= b; 
+								| a &gt; b; 
+								| a &gt;= b; 
+				.row
+					.col-sm-3
+						p Muuda tüüpi
+					.col-sm-9
+						pre
+							code double c = a;
 
-	.panel.panel-info
-		h5#double.panel-heading double
-		.panel-body
-			p reaalarvud (komakohaga) (alates 4.9*10^-324 kuni 1.79*10^308)
-			.text-danger Reaalarvudega arvutamine on ebatäpne, vt. <a href="/vaartus-ohukoht2">Ohukoht2</a>
-			br
-			strong Kasutamine
-			.row
-				.col-sm-3
-					p Loo uus
-				.col-sm-9
-					pre
-						code double a = 8.76;
-			.row
-				.col-sm-3
-					p Matemaatika
-				.col-sm-9
-					pre
-						code
-							| a + b;
-							| a - b;
-							| a * b;
-							| a / b;
-							| Math.pow(a, b); // a astmes b
-			.row
-				.col-sm-3
-					p Võrdlemine
-				.col-sm-9
-					pre
-						code
-							| a == b;
-							| a != b;
-							| a &lt; b; 
-							| a &lt;= b; 
-							| a &gt; b; 
-							| a &gt;= b; 
-			.row
-				.col-sm-3
-					p Muuda tüüpi
-				.col-sm-9
-					pre
-						code int c = (int) a;
-					.text-danger typecast <code>(int)</code> ei ümarda arve vaid raiub julmalt koma maha. <code>double 8.76</code> on <code>int 8</code>. Ümardamiseks kasuta <code>Math.round()</code>.
+		.panel.panel-info
+			h5#double.panel-heading double
+			.panel-body
+				p reaalarvud (komakohaga) (alates 4.9*10^-324 kuni 1.79*10^308)
+				.text-danger Reaalarvudega arvutamine on ebatäpne, vt. <a href="/vaartus-ohukoht2">Ohukoht2</a>
+				br
+				strong Kasutamine
+				.row
+					.col-sm-3
+						p Loo uus
+					.col-sm-9
+						pre
+							code double a = 8.76;
+				.row
+					.col-sm-3
+						p Matemaatika
+					.col-sm-9
+						pre
+							code
+								| a + b;
+								| a - b;
+								| a * b;
+								| a / b;
+								| Math.pow(a, b); // a astmes b
+				.row
+					.col-sm-3
+						p Võrdlemine
+					.col-sm-9
+						pre
+							code
+								| a == b;
+								| a != b;
+								| a &lt; b; 
+								| a &lt;= b; 
+								| a &gt; b; 
+								| a &gt;= b; 
+				.row
+					.col-sm-3
+						p Muuda tüüpi
+					.col-sm-9
+						pre
+							code int c = (int) a;
+						.text-danger typecast <code>(int)</code> ei ümarda arve vaid raiub julmalt koma maha. <code>double 8.76</code> on <code>int 8</code>. Ümardamiseks kasuta <code>Math.round()</code>.
 
-	.panel.panel-info
-		h5#BigDecimal.panel-heading BigDecimal
-		.panel-body
-			p kõik arvud (arvu suurust limiteerib vaid arvuti mälu)
-			p BigDecimal on vajalik, et reaalarvudega täpseid arvutusi teha.
-			.text-danger NB! Et arvutused oleksid täpsed, peavad arvud olema jutumärkides, ehk sõne kujul.
-			br
-			strong Kasutamine
-			.row
-				.col-sm-3
-					p Loo uus
-				.col-sm-9
-					pre
-						code 
-							| BigDecimal a = new BigDecimal("2.00");
-							| BigDecimal b = new BigDecimal("1.1");
-			.row
-				.col-sm-3
-					p Matemaatika
-				.col-sm-9
-					pre
-						code
-							| a.subtract(b);    // a - b
-							| a.add(b);         // a + b
-							| a.divide(b)       // a / b (ohtlik!)
-							| a.divide(b, 3, BigDecimal.ROUND_HALF_UP); // õige
-							| a.multiply(b);    // a * b
-							| a.pow(3);         // a astmel 3
-					.text-info a.divide() annab errori, kui ei saa täpselt arvutada. Tuleb kasutada formaati
-					.text-info <code>a.divide(b, 3, BigDecimal.ROUND_HALF_UP)</code>, ehk
-					.text-info <code>a.divide(jagaja, komakohti, ümardamise valem)</code>.
-			.row
-				.col-sm-3
-					p Võrdlemine
-				.col-sm-9
-					pre
-						code
-							| a.equals(b)       // a == b
-							| a.compareTo(b)    // annab vastuseks -1, 0 või 1
-							|                   // -1 (a &lt; b)
-							|                   // 0 (a == b)
-							|                   // 1 (a &gt; b)
-			.row
-				.col-sm-3
-					p Muuda tüüpi
-				.col-sm-9
-					pre
-						code
-							| int c = a.intValue();
-							| double d = a.doubleValue();
+		.panel.panel-info
+			h5#BigDecimal.panel-heading BigDecimal
+			.panel-body
+				p kõik arvud (arvu suurust limiteerib vaid arvuti mälu)
+				p BigDecimal on vajalik, et reaalarvudega täpseid arvutusi teha.
+				.text-danger NB! Et arvutused oleksid täpsed, peavad arvud olema jutumärkides, ehk sõne kujul.
+				br
+				strong Kasutamine
+				.row
+					.col-sm-3
+						p Loo uus
+					.col-sm-9
+						pre
+							code 
+								| BigDecimal a = new BigDecimal("2.00");
+								| BigDecimal b = new BigDecimal("1.1");
+				.row
+					.col-sm-3
+						p Matemaatika
+					.col-sm-9
+						pre
+							code
+								| a.subtract(b);    // a - b
+								| a.add(b);         // a + b
+								| a.divide(b)       // a / b (ohtlik!)
+								| a.divide(b, 3, BigDecimal.ROUND_HALF_UP); // õige
+								| a.multiply(b);    // a * b
+								| a.pow(3);         // a astmel 3
+						.text-info a.divide() annab errori, kui ei saa täpselt arvutada. Tuleb kasutada formaati
+						.text-info <code>a.divide(b, 3, BigDecimal.ROUND_HALF_UP)</code>, ehk
+						.text-info <code>a.divide(jagaja, komakohti, ümardamise valem)</code>.
+				.row
+					.col-sm-3
+						p Võrdlemine
+					.col-sm-9
+						pre
+							code
+								| a.equals(b)       // a == b
+								| a.compareTo(b)    // annab vastuseks -1, 0 või 1
+								|                   // -1 (a &lt; b)
+								|                   // 0 (a == b)
+								|                   // 1 (a &gt; b)
+				.row
+					.col-sm-3
+						p Muuda tüüpi
+					.col-sm-9
+						pre
+							code
+								| int c = a.intValue();
+								| double d = a.doubleValue();
 
-	h4#muutuja-soned Sõned
+		h4#muutuja-soned Sõned
 
-	.panel.panel-info
-		h5#char.panel-heading char
-		.panel-body
-			p üksik täht
-			.text-danger Kindlasti kasuta ühekordseid jutumärke!
-			br
-			strong Kasutamine
-			.row
-				.col-sm-3
-					p Loo uus
-				.col-sm-9
-					pre
-						code char a = 'a';
-			.row
-				.col-sm-3
-					p Võrdlemine
-				.col-sm-9
-					pre
-						code 
-							| 'a' == 'b';
-							| 'a' != 'b';
-							| 'a' &lt; 'b';
-							| 'a' &gt; 'b';
-							| 'a' &lt;= 'b';
-							| 'a' &gt;= 'b';
+		.panel.panel-info
+			h5#char.panel-heading char
+			.panel-body
+				p üksik täht
+				.text-danger Kindlasti kasuta ühekordseid jutumärke!
+				br
+				strong Kasutamine
+				.row
+					.col-sm-3
+						p Loo uus
+					.col-sm-9
+						pre
+							code char a = 'a';
+				.row
+					.col-sm-3
+						p Võrdlemine
+					.col-sm-9
+						pre
+							code 
+								| 'a' == 'b';
+								| 'a' != 'b';
+								| 'a' &lt; 'b';
+								| 'a' &gt; 'b';
+								| 'a' &lt;= 'b';
+								| 'a' &gt;= 'b';
 
-	.panel.panel-info
-		h5#String.panel-heading.bold String
-		.panel-body
-			p Sõne, ehk jutumärkide vahele saab panna kõiki sümboleid
-			.text-danger Kindlasti kasuta topelt jutumärke!
-			br
-			strong Kasutamine
-			.row
-				.col-sm-3
-					p Loo uus
-				.col-sm-9
-					pre
-						code String a = "Lähme õue mängima.";
-			.row
-				.col-sm-3
-					p Võrdlemine
-				.col-sm-9
-					pre
-						code a.equals(b)
-			.row
-				.col-sm-3
-					p Liitmine
-				.col-sm-9
-					pre
-						code 
-							| "Tere, " + "hommikust" =&gt; "Tere, hommikust"
-							| "Vanus: " + 45         =&gt; "Vanus: 45"
-							| "Vanus: " + "45"       =&gt; "Vanus: 45"
-							| "45" + 5               =&gt; "455"
+		.panel.panel-info
+			h5#String.panel-heading.bold String
+			.panel-body
+				p Sõne, ehk jutumärkide vahele saab panna kõiki sümboleid
+				.text-danger Kindlasti kasuta topelt jutumärke!
+				br
+				strong Kasutamine
+				.row
+					.col-sm-3
+						p Loo uus
+					.col-sm-9
+						pre
+							code String a = "Lähme õue mängima.";
+				.row
+					.col-sm-3
+						p Võrdlemine
+					.col-sm-9
+						pre
+							code a.equals(b)
+				.row
+					.col-sm-3
+						p Liitmine
+					.col-sm-9
+						pre
+							code 
+								| "Tere, " + "hommikust" =&gt; "Tere, hommikust"
+								| "Vanus: " + 45         =&gt; "Vanus: 45"
+								| "Vanus: " + "45"       =&gt; "Vanus: 45"
+								| "45" + 5               =&gt; "455"
 
-			.row
-				.col-sm-3
-					p Tüübi muutmine
-				.col-sm-9
-					pre
-						code 
-							| int c = Integer.parseInt(a);
-							| double c = Double.parseDouble(a);
-			.row
-				.col-sm-3
-					p Kas sõne sisaldab "õue"
-				.col-sm-9
-					pre
-						code a.contains("õue");
-			.row
-				.col-sm-3
-					p Muuda kõik tähed suureks
-				.col-sm-9
-					pre
-						code a.toUpperCase();
-			.row
-				.col-sm-3
-					p Muuda kõik tähed väikseks
-				.col-sm-9
-					pre
-						code a.toLowerCase();
-			.row
-				.col-sm-3
-					p Poolita sõne tühikutega.
-				.col-sm-9
-					pre
-						code
-							| a.split(" ");
-							| // ["Lähme", "õue", "mängima."]
-			.row
-				.col-sm-3
-					p Asenda "õue" sõnega "arvutisse"
-				.col-sm-9
-					pre
-						code
-							| a.replace("õue", "arvutisse");
-							| // "Lähme arvutisse mängima."
-			.row
-				.col-sm-3
-					p Nagu replace(), aga <a href="http://regexone.com/" target="_blank">regex'iga</a>
-				.col-sm-9
-					pre
-						code a.replaceAll(regex, "uus väärtus");
-			.row
-				.col-sm-3
-					p Kas sõne on tühi?
-				.col-sm-9
-					pre
-						code a.isEmpty();
-			.row
-				.col-sm-3
-					p Mis indeksil on sõne "mängima"?
-				.col-sm-9
-					pre
-						code a.indexOf("mängima"); // 10
-			.row
-				.col-sm-3
-					p Mitu tähte on sõne pikk?
-				.col-sm-9
-					pre
-						code a.length(); // 18
-			.row
-				.col-sm-3
-					p Mis täht asub indeksil 0?
-				.col-sm-9
-					pre
-						code a.charAt(0); // 'L'
-			.row
-				.col-sm-3
-					p Kas sõne s ja b on identse sisuga?
-				.col-sm-9
-					pre
-						code a.equals(b);
+				.row
+					.col-sm-3
+						p Tüübi muutmine
+					.col-sm-9
+						pre
+							code 
+								| int c = Integer.parseInt(a);
+								| double c = Double.parseDouble(a);
+				.row
+					.col-sm-3
+						p Kas sõne sisaldab "õue"
+					.col-sm-9
+						pre
+							code a.contains("õue");
+				.row
+					.col-sm-3
+						p Muuda kõik tähed suureks
+					.col-sm-9
+						pre
+							code a.toUpperCase();
+				.row
+					.col-sm-3
+						p Muuda kõik tähed väikseks
+					.col-sm-9
+						pre
+							code a.toLowerCase();
+				.row
+					.col-sm-3
+						p Poolita sõne tühikutega.
+					.col-sm-9
+						pre
+							code
+								| a.split(" ");
+								| // ["Lähme", "õue", "mängima."]
+				.row
+					.col-sm-3
+						p Asenda "õue" sõnega "arvutisse"
+					.col-sm-9
+						pre
+							code
+								| a.replace("õue", "arvutisse");
+								| // "Lähme arvutisse mängima."
+				.row
+					.col-sm-3
+						p Nagu replace(), aga <a href="http://regexone.com/" target="_blank">regex'iga</a>
+					.col-sm-9
+						pre
+							code a.replaceAll(regex, "uus väärtus");
+				.row
+					.col-sm-3
+						p Kas sõne on tühi?
+					.col-sm-9
+						pre
+							code a.isEmpty();
+				.row
+					.col-sm-3
+						p Mis indeksil on sõne "mängima"?
+					.col-sm-9
+						pre
+							code a.indexOf("mängima"); // 10
+				.row
+					.col-sm-3
+						p Mitu tähte on sõne pikk?
+					.col-sm-9
+						pre
+							code a.length(); // 18
+				.row
+					.col-sm-3
+						p Mis täht asub indeksil 0?
+					.col-sm-9
+						pre
+							code a.charAt(0); // 'L'
+				.row
+					.col-sm-3
+						p Kas sõne s ja b on identse sisuga?
+					.col-sm-9
+						pre
+							code a.equals(b);
 
-	h4#muutuja-muu Muu
+		h4#muutuja-muu Muu
 
-	.panel.panel-info
-		h5#boolean.panel-heading.bold boolean
-		.panel-body
-			p tõene või väär, ehk <code>true</code> või <code>false</code>.
-			br
-			strong Kasutamine
-			.row
-				.col-sm-3
-					p Loo uus
-				.col-sm-9
-					pre
-						code boolean a = true;
-			.row
-				.col-sm-3
-					p Võrdlemine
-				.col-sm-9
-					pre
-						code 
-							| true == true;
-							| true != false;
-							| true == true &amp;&amp; false == false;
-							| true == false || false == false;
-					.text-info <code>&amp;&amp;</code> on nagu "ja", ehk mõlemad tingimused peavad olema tõesed.
-					.text-info <code>||</code> on nagu "või", ehk üks tingimustest peab olema tõene.
-					.text-danger <code>||</code> ei ole LL, ega ii. <code>||</code> on "pipe" ehk <kbd>AltGr + &lt;</kbd>;
+		.panel.panel-info
+			h5#boolean.panel-heading.bold boolean
+			.panel-body
+				p tõene või väär, ehk <code>true</code> või <code>false</code>.
+				br
+				strong Kasutamine
+				.row
+					.col-sm-3
+						p Loo uus
+					.col-sm-9
+						pre
+							code boolean a = true;
+				.row
+					.col-sm-3
+						p Võrdlemine
+					.col-sm-9
+						pre
+							code 
+								| true == true;
+								| true != false;
+								| true == true &amp;&amp; false == false;
+								| true == false || false == false;
+						.text-info <code>&amp;&amp;</code> on nagu "ja", ehk mõlemad tingimused peavad olema tõesed.
+						.text-info <code>||</code> on nagu "või", ehk üks tingimustest peab olema tõene.
+						.text-danger <code>||</code> ei ole LL, ega ii. <code>||</code> on "pipe" ehk <kbd>AltGr + &lt;</kbd>;
 
-	.panel.panel-info
-		h5#Objekt.panel-heading Objekt
-		.panel-body
-			p keerulisemad objektid.
-			p ArrayList ja String on samuti objektid, aga siin pean silmas kõiki objekte. Need võivad tulla Java APIst või oled sa ise neid loonud.
-			p Näiteks, kui tegin ise klassi Hobune:
-			pre
-				code
-					| public class Hobune {
-					|     int kaal = 500;
-					|     String nimi = "Hopsu";
-					| 
-					|     public void ytleOmaNimi() {
-					|         System.out.println("H-H-H-Hopssuuuu..");
-					|     }
-					| }
-			p siis nüüd saan oma main meetodi sees luua "Hobune" klassist uue objekti ja kasutada tema <code>public</code> meetode.
-			pre
-				code
-					| public class MinuProgramm {
-					|     public static void main(String[] args) {
-					| 
-					|         Hobune h = new Hobune();    // uus hobuse objekt
-					|         h.ytleOmaNimi();            // kasutan tema meetodi
-					|         System.out.println(h.kaal); // küsin välja hobuse kaalu
-					| 
-					|     }
-					| }
-			p ja programm printis välja kaks sõnumit: "H-H-H-Hopssuuuu.." ja "500".
+		.panel.panel-info
+			h5#Objekt.panel-heading Objekt
+			.panel-body
+				p keerulisemad objektid.
+				p ArrayList ja String on samuti objektid, aga siin pean silmas kõiki objekte. Need võivad tulla Java APIst või oled sa ise neid loonud.
+				p Näiteks, kui tegin ise klassi Hobune:
+				pre
+					code
+						| public class Hobune {
+						|     int kaal = 500;
+						|     String nimi = "Hopsu";
+						| 
+						|     public void ytleOmaNimi() {
+						|         System.out.println("H-H-H-Hopssuuuu..");
+						|     }
+						| }
+				p siis nüüd saan oma main meetodi sees luua "Hobune" klassist uue objekti ja kasutada tema <code>public</code> meetode.
+				pre
+					code
+						| public class MinuProgramm {
+						|     public static void main(String[] args) {
+						| 
+						|         Hobune h = new Hobune();    // uus hobuse objekt
+						|         h.ytleOmaNimi();            // kasutan tema meetodi
+						|         System.out.println(h.kaal); // küsin välja hobuse kaalu
+						| 
+						|     }
+						| }
+				p ja programm printis välja kaks sõnumit: "H-H-H-Hopssuuuu.." ja "500".
 
-	h3#andmetyybid-kogum-vaartusi Kogum väärtusi
+		h3#andmetyybid-kogum-vaartusi Kogum väärtusi
 
-	p Kui andmete kogus suureneb oleks mõistlik saja muutuja asemel kasutada ühte nimekirja. Näiteks kui on spordivõistlused ja võistleja nr 1 tegi 10 katset. Siis 10 muutuja asemel saan öelda:
-	pre
-		code int[] võistleja1 = {76, 56, 75, 45, 56, 76, 65, 67, 45, 54};
+		p Kui andmete kogus suureneb oleks mõistlik saja muutuja asemel kasutada ühte nimekirja. Näiteks kui on spordivõistlused ja võistleja nr 1 tegi 10 katset. Siis 10 muutuja asemel saan öelda:
+		pre
+			code int[] võistleja1 = {76, 56, 75, 45, 56, 76, 65, 67, 45, 54};
 
-	p Kujuta ette, kui võistlejaid on samuti kümme ja igaühel on 10 tulemust. Siis jällegi ei ole meil tarvis kümmet muutujat vaid ühte head HashMapi, mille sees on omakorda ArrayList:
-	pre
-		code
-			| HashMap tulemused = new HashMap();                  // Loo HashMap
-			| ArrayList voistleja = new ArrayList();              // Loo ArrayList
-			| 
-			| for (int i = 0; i &lt; 10; i++) {                      // iga võistleja kohta
-			|     voistleja.clear();                              // tühjenda eelnevad katsed
-			| 
-			|     for (int j = 0; j &lt; 10; j++) {                  // iga katse kohta
-			|         voistleja.add((int) (Math.random() * 100)); // genereeri katse tulemus
-			|     }
-			| 
-			|     tulemused.put("võistleja"+i, voistleja);        // salvesta tulemus
-			| }
-			| 
-			| System.out.println("tulemused = " + tulemused);
+		p Kujuta ette, kui võistlejaid on samuti kümme ja igaühel on 10 tulemust. Siis jällegi ei ole meil tarvis kümmet muutujat vaid ühte head HashMapi, mille sees on omakorda ArrayList:
+		pre
+			code
+				| HashMap tulemused = new HashMap();                  // Loo HashMap
+				| ArrayList voistleja = new ArrayList();              // Loo ArrayList
+				| 
+				| for (int i = 0; i &lt; 10; i++) {                      // iga võistleja kohta
+				|     voistleja.clear();                              // tühjenda eelnevad katsed
+				| 
+				|     for (int j = 0; j &lt; 10; j++) {                  // iga katse kohta
+				|         voistleja.add((int) (Math.random() * 100)); // genereeri katse tulemus
+				|     }
+				| 
+				|     tulemused.put("võistleja"+i, voistleja);        // salvesta tulemus
+				| }
+				| 
+				| System.out.println("tulemused = " + tulemused);
 
-	p Antud koodi on raske mõista, aga tulemuseks on ilus tabel:
+		p Antud koodi on raske mõista, aga tulemuseks on ilus tabel:
 
-	pre
-		code
-			| tulemused = {
-			|     võistleja2 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54],
-			|     võistleja1 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54],
-			|     võistleja0 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54],
-			|     võistleja6 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54],
-			|     võistleja5 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54],
-			|     võistleja4 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54],
-			|     võistleja3 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54],
-			|     võistleja9 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54],
-			|     võistleja8 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54],
-			|     võistleja7 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54]
-			| }
+		pre
+			code
+				| tulemused = {
+				|     võistleja2 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54],
+				|     võistleja1 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54],
+				|     võistleja0 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54],
+				|     võistleja6 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54],
+				|     võistleja5 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54],
+				|     võistleja4 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54],
+				|     võistleja3 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54],
+				|     võistleja9 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54],
+				|     võistleja8 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54],
+				|     võistleja7 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54]
+				| }
 
-	p Kui mul on siis hiljem vaja näiteks võistleja nr 6 tulemust nr 7, siis küsin selle välja ühe reaga:
-	pre
-		code int t = (int) ((ArrayList) tulemused.get("võistleja6")).get(7);
-	p See üks rida on muidugi suhteliselt keeruline, aga andmed on meil vähemalt struktureeritud ja korras.
+		p Kui mul on siis hiljem vaja näiteks võistleja nr 6 tulemust nr 7, siis küsin selle välja ühe reaga:
+		pre
+			code int t = (int) ((ArrayList) tulemused.get("võistleja6")).get(7);
+		p See üks rida on muidugi suhteliselt keeruline, aga andmed on meil vähemalt struktureeritud ja korras.
 
 
-	.panel.panel-info
-		h5#Massiiv.panel-heading.bold Massiiv
-		.panel-body
-			p Hoiab mitmeid väärtusi korraga, aga ainult ühte tüüpi ja kogust muuta ei saa.
-			.text-success + lihtne kasutada
-			.text-danger - nimekirja pikkust ei saa muuta pärast esimest kasutamist
-			.text-danger - hoiab ainult ühte andmetüüpi korraga
-			.text-info indeksi põhine (loendamine algab nullist)
-			br
-			strong Näide
-			.row
-				.col-sm-3
-					p Ettevalmistus
-				.col-sm-9
-					pre
-						code
-							| int[] a = new int[6];
-							| a[0] = 9;
-							| a[1] = 11;
-							| a[5] = 54;
-							| System.out.println(Arrays.toString(a));
-			.row
-				.col-sm-3
-					p Tulemus
-				.col-sm-9
-					pre
-						code
-							| [9, 11, 0, 0, 0, 54]
-			br
-			strong Kasutamine
-			.row
-				.col-sm-3
-					p Loo uus
-				.col-sm-9
-					pre
-						code
-							| int[] a = new int[6];
-							| int[] a = {6, 3, 2, 7};
-							| 
-							| String[] a = new String[6];
-							| String[] a = {"mina", "olen", "sõnede", "massiiv"};
-			.row
-				.col-sm-3
-					p Küsi väärtus indeksil 5
-				.col-sm-9
-					pre
-						code a[5]
-			.row
-				.col-sm-3
-					p Määra väärtus indeksil 5
-				.col-sm-9
-					pre
-						code a[5] = 8;
-			.row
-				.col-sm-3
-					p Nimekirja pikkus
-				.col-sm-9
-					pre
-						code a.length
-			.row
-				.col-sm-3
-					p Võrdlemine
-				.col-sm-9
-					pre
-						code Arrays.equals(a, b)
-			.row
-				.col-sm-3
-					p Sorteeri tähestikulises järjekorras
-				.col-sm-9
-					pre
-						code Arrays.sort(a)
-			.row
-				.col-sm-3
-					p Prindi välja
-				.col-sm-9
-					pre
-						code System.out.println(Arrays.toString(a))
+		.panel.panel-info
+			h5#Massiiv.panel-heading.bold Massiiv
+			.panel-body
+				p Hoiab mitmeid väärtusi korraga, aga ainult ühte tüüpi ja kogust muuta ei saa.
+				.text-success + lihtne kasutada
+				.text-danger - nimekirja pikkust ei saa muuta pärast esimest kasutamist
+				.text-danger - hoiab ainult ühte andmetüüpi korraga
+				.text-info indeksi põhine (loendamine algab nullist)
+				br
+				strong Näide
+				.row
+					.col-sm-3
+						p Ettevalmistus
+					.col-sm-9
+						pre
+							code
+								| int[] a = new int[6];
+								| a[0] = 9;
+								| a[1] = 11;
+								| a[5] = 54;
+								| System.out.println(Arrays.toString(a));
+				.row
+					.col-sm-3
+						p Tulemus
+					.col-sm-9
+						pre
+							code
+								| [9, 11, 0, 0, 0, 54]
+				br
+				strong Kasutamine
+				.row
+					.col-sm-3
+						p Loo uus
+					.col-sm-9
+						pre
+							code
+								| int[] a = new int[6];
+								| int[] a = {6, 3, 2, 7};
+								| 
+								| String[] a = new String[6];
+								| String[] a = {"mina", "olen", "sõnede", "massiiv"};
+				.row
+					.col-sm-3
+						p Küsi väärtus indeksil 5
+					.col-sm-9
+						pre
+							code a[5]
+				.row
+					.col-sm-3
+						p Määra väärtus indeksil 5
+					.col-sm-9
+						pre
+							code a[5] = 8;
+				.row
+					.col-sm-3
+						p Nimekirja pikkus
+					.col-sm-9
+						pre
+							code a.length
+				.row
+					.col-sm-3
+						p Võrdlemine
+					.col-sm-9
+						pre
+							code Arrays.equals(a, b)
+				.row
+					.col-sm-3
+						p Sorteeri tähestikulises järjekorras
+					.col-sm-9
+						pre
+							code Arrays.sort(a)
+				.row
+					.col-sm-3
+						p Prindi välja
+					.col-sm-9
+						pre
+							code System.out.println(Arrays.toString(a))
 
-	.panel.panel-info
-		h5#ArrayList.panel-heading ArrayList
-		.panel-body
-			p Hoiab eri tüüpi väärtusi ja nimekirja pikkus muutub vastavalt sisule.
-			.text-success + hoiab erinevaid andmetüüpe segamini
-			.text-success + nimekirja pikkus muutub vastavalt sisule
-			.text-danger - kasutamine on veidi keerulisem kui massiivi puhul
-			.text-info indeksi põhine (loendamine algab nullist)
-			br
-			strong Näide
-			.row
-				.col-sm-3
-					p Ettevalmistus
-				.col-sm-9
-					pre
-						code
-							| ArrayList a = new ArrayList();
-							| a.add("Sõne");
-							| a.add(54);
-							| a.add(87.90);
-							| System.out.println("a = " + a);
-			.row
-				.col-sm-3
-					p Tulemus
-				.col-sm-9
-					pre
-						code [Sõne, 54, 87.9]
-			br
-			strong Kasutamine
-			.row
-				.col-sm-3
-					p Loo uus
-				.col-sm-9
-					pre
-						code
-							| ArrayList a = new ArrayList();
-							| ArrayList&lt;String&gt; a = new ArrayList();
-							| ArrayList&lt;Integer&gt; a = new ArrayList();
-			.row
-				.col-sm-3
-					p Mis on indeksil
-				.col-sm-9
-					pre
-						code a.get(i)
-			.row
-				.col-sm-3
-					p Asenda indeksil i olev väärtus uue väärtusega b
-				.col-sm-9
-					pre
-						code a.set(i, b)
-			.row
-				.col-sm-3
-					p Lisa väärtus nimekirja lõppu
-				.col-sm-9
-					pre
-						code a.add(väärtus)
-			.row
-				.col-sm-3
-					p Eemalda väärtus
-				.col-sm-9
-					pre
-						code a.remove(väärtus)
-			.row
-				.col-sm-3
-					p Tühjenda nimekiri
-				.col-sm-9
-					pre
-						code a.clear()
-			.row
-				.col-sm-3
-					p Nimekirja pikkus
-				.col-sm-9
-					pre
-						code a.size()
-			.row
-				.col-sm-3
-					p Kas sisud on võrdsed?
-				.col-sm-9
-					pre
-						code a.equals(b)
-			.row
-				.col-sm-3
-					p Mis indeksil on väärtus?
-				.col-sm-9
-					pre
-						code a.indexOf(väärtus)
-			.row
-				.col-sm-3
-					p Sorteeri tähestiku järgi
-				.col-sm-9
-					pre
-						code Collections.sort(a)
-			.row
-				.col-sm-3
-					p Kas sisaldab väärtust?
-				.col-sm-9
-					pre
-						code a.contains(väärtus)
-			.row
-				.col-sm-3
-					p Prindi
-				.col-sm-9
-					pre
-						code System.out.println(a)
-			.row
-				.col-sm-3
-					p kas on tühi?
-				.col-sm-9
-					pre
-						code a.isEmpty()
+		.panel.panel-info
+			h5#ArrayList.panel-heading ArrayList
+			.panel-body
+				p Hoiab eri tüüpi väärtusi ja nimekirja pikkus muutub vastavalt sisule.
+				.text-success + hoiab erinevaid andmetüüpe segamini
+				.text-success + nimekirja pikkus muutub vastavalt sisule
+				.text-danger - kasutamine on veidi keerulisem kui massiivi puhul
+				.text-info indeksi põhine (loendamine algab nullist)
+				br
+				strong Näide
+				.row
+					.col-sm-3
+						p Ettevalmistus
+					.col-sm-9
+						pre
+							code
+								| ArrayList a = new ArrayList();
+								| a.add("Sõne");
+								| a.add(54);
+								| a.add(87.90);
+								| System.out.println("a = " + a);
+				.row
+					.col-sm-3
+						p Tulemus
+					.col-sm-9
+						pre
+							code [Sõne, 54, 87.9]
+				br
+				strong Kasutamine
+				.row
+					.col-sm-3
+						p Loo uus
+					.col-sm-9
+						pre
+							code
+								| ArrayList a = new ArrayList();
+								| ArrayList&lt;String&gt; a = new ArrayList();
+								| ArrayList&lt;Integer&gt; a = new ArrayList();
+				.row
+					.col-sm-3
+						p Mis on indeksil
+					.col-sm-9
+						pre
+							code a.get(i)
+				.row
+					.col-sm-3
+						p Asenda indeksil i olev väärtus uue väärtusega b
+					.col-sm-9
+						pre
+							code a.set(i, b)
+				.row
+					.col-sm-3
+						p Lisa väärtus nimekirja lõppu
+					.col-sm-9
+						pre
+							code a.add(väärtus)
+				.row
+					.col-sm-3
+						p Eemalda väärtus
+					.col-sm-9
+						pre
+							code a.remove(väärtus)
+				.row
+					.col-sm-3
+						p Tühjenda nimekiri
+					.col-sm-9
+						pre
+							code a.clear()
+				.row
+					.col-sm-3
+						p Nimekirja pikkus
+					.col-sm-9
+						pre
+							code a.size()
+				.row
+					.col-sm-3
+						p Kas sisud on võrdsed?
+					.col-sm-9
+						pre
+							code a.equals(b)
+				.row
+					.col-sm-3
+						p Mis indeksil on väärtus?
+					.col-sm-9
+						pre
+							code a.indexOf(väärtus)
+				.row
+					.col-sm-3
+						p Sorteeri tähestiku järgi
+					.col-sm-9
+						pre
+							code Collections.sort(a)
+				.row
+					.col-sm-3
+						p Kas sisaldab väärtust?
+					.col-sm-9
+						pre
+							code a.contains(väärtus)
+				.row
+					.col-sm-3
+						p Prindi
+					.col-sm-9
+						pre
+							code System.out.println(a)
+				.row
+					.col-sm-3
+						p kas on tühi?
+					.col-sm-9
+						pre
+							code a.isEmpty()
 
-	.panel.panel-info
-		h5#HashMap.panel-heading HashMap
-		.panel-body
-			p Hoiab &lt;võti, väärtus&gt; andmeid.
-			.text-success + lihtsustab keeruliste andmete hoidmist
-			.text-danger - keeruline kasutada
-			.text-info Siin ei ole indekseid, ehk ei ole ka võtmete järjekorda võimalik määrata.
-			br
-			strong Lihtsam näide &lt;String, Integer&gt; andmestruktuurist.
-			.row
-				.col-sm-3
-					p Ettevalmistus:
-				.col-sm-9
-					pre
-						code
-							| HashMap&lt;String, Integer&gt; a = new HashMap&lt;&gt;();
-							| 
-							| a.put("Peeter", 35);
-							| a.put("Mari", 38);
-							| a.put("Janika", 15);
-							| a.put("Mikk", 3);
-							| 
-							| System.out.println("a = " + a);
-			.row
-				.col-sm-3
-					p Tulemus:
-				.col-sm-9
-					pre
-						code
-							| {
-							|     Peeter = 35, 
-							|     Mikk = 3, 
-							|     Janika = 15, 
-							|     Mari = 38
-							| }
-			br
-			strong Keerulisem näide &lt;String, HashMap&gt; andmestruktuurist.
-			.row
-				.col-sm-3
-					p Ettevalmistus:
-				.col-sm-9
-					pre
-						code
-							| HashMap&lt;String, HashMap&gt; a = new HashMap&lt;&gt;());
-							| HashMap milvi_andmed = new HashMap();
-							| HashMap laika_andmed = new HashMap();
-							| 
-							| milvi_andmed.put("vanus", 25);
-							| milvi_andmed.put("elukoht", "Põlva");
-							| laika_andmed.put("vanus", 66);
-							| laika_andmed.put("elukoht", "Kosmos");
-							| 
-							| a.put("Milvi", milvi_andmed);
-							| a.put("Laika", laika_andmed);
-							| 
-							| System.out.println("a = " + a);
-			.row
-				.col-sm-3
-					p Tulemus:
-				.col-sm-9
-					pre
-						code
-							| {
-							|     Laika = {
-							|         vanus = 66,
-							|         elukoht = Kosmos
-							|     },
-							|     Milvi = {
-							|         vanus = 25,
-							|         elukoht = Põlva
-							|     }
-							| }
-			br
-			strong Kasutamine
-			.row
-				.col-sm-3
-					p Loo uus
-				.col-sm-9
-					pre
-						code
-							| HashMap a = new HashMap();
-							| HashMap&lt;String, Integer%gt; a = new HasMap&lt;%gt;();
-			.row
-				.col-sm-3
-					p Mis väärtus on võtmel
-				.col-sm-9
-					pre
-						code a.get(võti)
-			.row
-				.col-sm-3
-					p Asenda väärtus võtmel või lisa uus võti-väärtus paar
-				.col-sm-9
-					pre
-						code a.put(võti, väärtus)
-			.row
-				.col-sm-3
-					p Eemalda võti koos väärtusega
-				.col-sm-9
-					pre
-						code a.remove(võti)
-			.row
-				.col-sm-3
-					p Tühjenda nimekiri
-				.col-sm-9
-					pre
-						code a.clear()
-			.row
-				.col-sm-3
-					p Nimekirja pikkus
-				.col-sm-9
-					pre
-						code a.size()
-			.row
-				.col-sm-3
-					p Kas sisud on võrdsed?
-				.col-sm-9
-					pre
-						code a.equals(b)
-			.row
-				.col-sm-3
-					p Kas võti on olemas
-				.col-sm-9
-					pre
-						code a.containsKey();
-			.row
-				.col-sm-3
-					p Kas väärtus on olemas
-				.col-sm-9
-					pre
-						code a.containsValue();
-			.row
-				.col-sm-3
-					p Prindi välja
-				.col-sm-9
-					pre
-						code System.out.println(a)
-			.row
-				.col-sm-3
-					p kas on tühi?
-				.col-sm-9
-					pre
-						code a.isEmpty()
+		.panel.panel-info
+			h5#HashMap.panel-heading HashMap
+			.panel-body
+				p Hoiab &lt;võti, väärtus&gt; andmeid.
+				.text-success + lihtsustab keeruliste andmete hoidmist
+				.text-danger - keeruline kasutada
+				.text-info Siin ei ole indekseid, ehk ei ole ka võtmete järjekorda võimalik määrata.
+				br
+				strong Lihtsam näide &lt;String, Integer&gt; andmestruktuurist.
+				.row
+					.col-sm-3
+						p Ettevalmistus:
+					.col-sm-9
+						pre
+							code
+								| HashMap&lt;String, Integer&gt; a = new HashMap&lt;&gt;();
+								| 
+								| a.put("Peeter", 35);
+								| a.put("Mari", 38);
+								| a.put("Janika", 15);
+								| a.put("Mikk", 3);
+								| 
+								| System.out.println("a = " + a);
+				.row
+					.col-sm-3
+						p Tulemus:
+					.col-sm-9
+						pre
+							code
+								| {
+								|     Peeter = 35, 
+								|     Mikk = 3, 
+								|     Janika = 15, 
+								|     Mari = 38
+								| }
+				br
+				strong Keerulisem näide &lt;String, HashMap&gt; andmestruktuurist.
+				.row
+					.col-sm-3
+						p Ettevalmistus:
+					.col-sm-9
+						pre
+							code
+								| HashMap&lt;String, HashMap&gt; a = new HashMap&lt;&gt;());
+								| HashMap milvi_andmed = new HashMap();
+								| HashMap laika_andmed = new HashMap();
+								| 
+								| milvi_andmed.put("vanus", 25);
+								| milvi_andmed.put("elukoht", "Põlva");
+								| laika_andmed.put("vanus", 66);
+								| laika_andmed.put("elukoht", "Kosmos");
+								| 
+								| a.put("Milvi", milvi_andmed);
+								| a.put("Laika", laika_andmed);
+								| 
+								| System.out.println("a = " + a);
+				.row
+					.col-sm-3
+						p Tulemus:
+					.col-sm-9
+						pre
+							code
+								| {
+								|     Laika = {
+								|         vanus = 66,
+								|         elukoht = Kosmos
+								|     },
+								|     Milvi = {
+								|         vanus = 25,
+								|         elukoht = Põlva
+								|     }
+								| }
+				br
+				strong Kasutamine
+				.row
+					.col-sm-3
+						p Loo uus
+					.col-sm-9
+						pre
+							code
+								| HashMap a = new HashMap();
+								| HashMap&lt;String, Integer%gt; a = new HasMap&lt;%gt;();
+				.row
+					.col-sm-3
+						p Mis väärtus on võtmel
+					.col-sm-9
+						pre
+							code a.get(võti)
+				.row
+					.col-sm-3
+						p Asenda väärtus võtmel või lisa uus võti-väärtus paar
+					.col-sm-9
+						pre
+							code a.put(võti, väärtus)
+				.row
+					.col-sm-3
+						p Eemalda võti koos väärtusega
+					.col-sm-9
+						pre
+							code a.remove(võti)
+				.row
+					.col-sm-3
+						p Tühjenda nimekiri
+					.col-sm-9
+						pre
+							code a.clear()
+				.row
+					.col-sm-3
+						p Nimekirja pikkus
+					.col-sm-9
+						pre
+							code a.size()
+				.row
+					.col-sm-3
+						p Kas sisud on võrdsed?
+					.col-sm-9
+						pre
+							code a.equals(b)
+				.row
+					.col-sm-3
+						p Kas võti on olemas
+					.col-sm-9
+						pre
+							code a.containsKey();
+				.row
+					.col-sm-3
+						p Kas väärtus on olemas
+					.col-sm-9
+						pre
+							code a.containsValue();
+				.row
+					.col-sm-3
+						p Prindi välja
+					.col-sm-9
+						pre
+							code System.out.println(a)
+				.row
+					.col-sm-3
+						p kas on tühi?
+					.col-sm-9
+						pre
+							code a.isEmpty()
