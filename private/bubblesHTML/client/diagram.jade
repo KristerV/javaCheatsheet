@@ -1,0 +1,4 @@
+template(name="diagram")
+	.diagram
+		each node
+			.node(id="{{_id}}" data-parent="{{parent}}" style="top: {{top}}px; left: {{left}}px; font-size: {{size}}rem") {{text}}

@@ -1,0 +1,5 @@
+// Nodes.insert({text: "Java", _id: "1", top: 170, left: 300, importance: 1, parent: ''})
+// Nodes.insert({text: "if", _id: "2", top: 100, left: 200, importance: 2, parent: '1'})
+// Nodes.insert({text: "while", _id: "3", top: 30, left: 150, importance: 2, parent: '2'})
+// Nodes.insert({text: "class", _id: "4", top: 280, left: 300, importance: 2, parent: '1'})
+// Nodes.insert({text: "OOP", _id: "5", top: 350, left: 350, importance: 3, parent: '4'})

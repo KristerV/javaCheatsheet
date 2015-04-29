@@ -1,0 +1,29 @@
+.diagram {
+	height: 100%;
+	width: 100%;
+	.node {
+		position: absolute;
+		display: inline-block;
+		border-radius: 100%;
+		border: 2px solid black;
+		padding: 0.5em 1em 0.5em 1em;
+		background-color: white;
+	}
+	.line {
+		z-index: -1;
+		height: 0px;
+		border: 1px solid black;
+		-ms-transform-origin: 0% 0%; /* IE 9 */
+		-webkit-transform-origin: 0% 0%; /* Chrome, Safari, Opera */
+		transform-origin: 0% 0%;
+		position: absolute;
+		display: inline-block;
+	}
+	.lineContainer {
+		display: inline-block;
+		position: absolute;
+		overflow: visible;
+		width: 0;
+		height: 0;
+	}
+}
