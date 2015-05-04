@@ -1,7 +1,14 @@
 template(name="sisendValjund")
 	.sisend-valjund
 		h1#sisend-valjund Sisend Väljund
-		p Sisendiks saavad olla kõik vahendid, millega kasutaja arvutit mõjutab - klaviatuur, hiir, veebikaamera, puutetundlik ekraan. Meie tegeleme aga vaid klaviatuuriga (konsolis) ja hiirega (kasutajaliideses). Konsoolis saad klaviatuuri sisestusi kuulata Scanneriga ja tagasisidet anda print käsuga. Kasutajaliideses on nupud, teksti väljad ja muud vahendid.
+		p <strong>Sisendiks</strong> saavad olla kõik vahendid, millega kasutaja arvutit mõjutab - klaviatuur, hiir, veebikaamera, puutetundlik ekraan. Meie tegeleme neist vaid klaviatuuriga (konsoolis) ja hiirega (kasutajaliideses).
+		p <strong>Väljundiks</strong> on kõik viisid, kuidas kasutajale midagi ütelda või näidata. Meie puhul siis viisid, kuidas ekraanile midagi kuvada.
+		p <strong>Konsoolis</strong> saad klaviatuuri sisestusi kuulata <a ref="/api-scanner">Scanneriga</a> ja tagasisidet anda <a href="/api-system-out">print</a> käsuga. 
+		p <strong>Kasutajaliideses</strong> on nupud, teksti väljad ja muud vahendid. 
+		p Tegelikult võib sisendiks ja väljundiks olla ka arvuti <strong>failisüsteem</strong>, internet või muu kommunikatsioonivahend, neist käsitleme failihaldust.
 		h2#sv-Konsool Konsool
+		p Sisendiks vt. <a ref="/api-scanner">Scanner</a>
+		p Väljundiks vt. <a href="/api-system-out">System.out.print()</a>
 		h2#sv-File File
+		p Vt. <a href="/api-file">Java API - File</a>
 		h2#sv-JavaFX JavaFX
