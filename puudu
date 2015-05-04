@@ -1,0 +1,32 @@
+puudu
+=====
+
+Kuidas programmeerida
+---------------------
+probleemi lahendamine
+lahenduse tõlkimine algoritmi
+https://youtu.be/YMPzDiraNnA learned helplessness
+
+Veaohtlikud kohad
+-----------------
+ClassNotFoundException (vale klassi käivitad)
+ArrayIndexOutOfBounds
+Number tuleb 8.6535634789E120
+
+Knowledge
+---------
+kompilaator
+avaldis
+type casting
+giti kasutamine
+muid mõisteid
+
+IDE
+---
+all vasakul ikoon
+sout
+soutv
+psvm
+debugimine
+IDE errorite haldus
+alt+j
