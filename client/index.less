@@ -20,8 +20,8 @@ html, body {
 	line-height: 1em;
 
 
-	.muutujad, .juhtimisstruktuurid, .javaAPI, .class, .sisend-valjund {
-		border-left: 6px solid red;
+	& > *:not(img) {
+		border-left: 6px solid transparent;
 		padding-left: 1em;
 		//-webkit-box-shadow:inset 50px 0 40px -40px rgba(255,0,0,1);
 		//box-shadow:inset 50px 0 40px -40px rgba(255,0,0,1);
@@ -46,7 +46,7 @@ html, body {
 	*:not([id]) {
 		color: red !important;
 	}
-	p, strong, .row, img:not(.visible), pre, .panel-body:not(.visible), .panel-footer {
+	p, strong, .row:not(.visible), img:not(.visible), pre, .panel-body:not(.visible), .panel-footer {
 		display: none;
 	}
 	.panel, .panel-heading, .panel-body {
@@ -95,6 +95,11 @@ html, body {
 
 .bold {
 	font-weight: bold;
+}
+
+.paneImg {
+	width: 100%;
+	height: auto;
 }
 
 .layout-right {

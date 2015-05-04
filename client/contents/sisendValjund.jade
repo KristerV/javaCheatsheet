@@ -11,4 +11,348 @@ template(name="sisendValjund")
 		p Väljundiks vt. <a href="/api-system-out">System.out.print()</a>
 		h2#sv-File File
 		p Vt. <a href="/api-file">Java API - File</a>
-		h2#sv-JavaFX JavaFX
+		h2#javafx JavaFX
+		p JavaFX on paindlik kasutajaliidese ja graafika kuvaja, samas on ta <i>mõistlikult</i> lihtne kasutada. Kui sul on konsoolist kopp ees, siis võta JavaFX käsile.
+		p Kindlasti tundub see teema esialgu keeruline, aga kui töötad ühe korra asja läbi leiad, et tegelikult on kõik parajalt lihtne ja loogiline.
+		h3#javafx-application Application
+		p Esimene asi mis tuleb mõista on, et JavaFX ei ole su programmis enne, kui sa oma põhilist klassi <code>extends</code> klassiga <code>Application</code>.
+		pre
+			code
+				| public class MinuKlass extends Application {
+				| }
+		p Teine kõige tähtsam asi on see, et Application klassi laiendades ei alusta sa oma programmi mitte main() meetodiga, vaid start() meetodiga. Muud loogikat siin pole, kui ei Application lihtsalt töötab selliselt.
+		pre
+			code
+				| public class MinuKlass extends Application {
+				|     @Override
+				|     public void start(Stage primaryStage) {
+				|     }
+				| }
+		p <code>@Override</code> on märge, mis ütleb, et käesolev meetod on super klassist (Application) üle kirjutatud. Nimelt Application klassis on meetod start() juba olemas, aga meie kirjutame selle tegevused enda vajaduse järgi üle.
+		p <strong>primaryStage</strong> on meie esimene Stage, ehk lava, ehk aken, ehk Window. Võid, kuid ei pea seda kasutama.
+
+		h3#javafx-Ylesehitus Ülesehitus
+		p Kui JavaFX ülesehitust teatriga võrrelda, siis <strong>Stage</strong> on lava ja <strong>Scene</strong> on stseen. Lavakujunduseks on <strong>Layout</strong>, ehk kuidas esemed paigutuvad stseenis, ja esemed, ehk <strong>elemendid</strong>, ise.
+		.panel.panel-info
+			h4.panel-heading#javafx-Stage Stage
+			.panel-body
+				p Stage on programmi aken. Sisu tuleb ise panna, aga mõned kasulikud meetodid tal siiski on.
+				strong Näide
+				pre
+					code
+						| public class MinuKlass extends Application {
+						|     @Override
+						|     public void start(Stage primaryStage) {
+						|         primaryStage.setTitle("MinuÄpp");
+						|         primaryStage.show();
+						|     }
+						| }
+				img(src="/images/javafx/stage.png")
+				.row
+					.col-sm-3 Loo uus
+					.col-sm-9 
+						pre
+							code Stage stage = new Stage();
+				.row
+					.col-sm-3 Määra mis Scene on aktiivne.
+					.col-sm-9 
+						pre
+							code stage.setScene(scene);
+				.row
+					.col-sm-3 Muuda akna nimi
+					.col-sm-9 
+						pre
+							code stage.setTitle("Lahe proge!")
+				.row
+					.col-sm-3 Määra, kas akna suurust saab muuta.
+					.col-sm-9 
+						pre
+							code stage.setResizable(boolean);
+				.row
+					.col-sm-3 Too aken nähtavale
+					.col-sm-9 
+						pre
+							code stage.show();
+				.row
+					.col-sm-3 Peida aken
+					.col-sm-9 
+						pre
+							code stage.hide();
+		.panel.panel-info
+			h4.panel-heading#javafx-Scene Scene
+			.panel-body
+				p Scene on stseen, ehk nagu tühi konteiner, kus saab action toimuma hakata. Selline vahelüli on vajalik selleks, et saaks ühe käsuga kogu akna sisu ära vahetada. Näiteks kui avaneb programmi aken login vaatesse, siis edukalt sisse logides vahetad login vaate välja programmi vastu.
+				.row
+					.col-sm-3 Loo uus stseen
+					.col-sm-9 
+						pre
+							code 
+								| stack = new StackPane();
+								| Scene scene = new Scene(stack);
+						p.text-danger Stseeni ilma layoutita teha ei saa, sellepärast on StackPane Scene() sulgude vahel.
+				.row
+					.col-sm-3 Loo uus stseen kindla suurusega
+					.col-sm-9 
+						pre
+							code 
+								| stack = new StackPane();
+								| Scene scene = new Scene(stack, 400, 800);
+				.row
+					.col-sm-3 Muuda tausta värvi hex koodiga.
+					.col-sm-9 
+						pre
+							code scene.setFill(Paint.valueOf("#ff0000"));
+		.panel
+			h4.panel-heading#javafx-Layout Layout
+			.panel-body.visible
+				p Layout on lavakujunduses asjade paigutus. Võimalusi on palju. Et kujundused igal ekraanil töötaksid tuleb nad ehitada üles paindlikult, kombineerides erinevaid paneele.
+				p Layout ise ei ole objekt, mida saab luua, Layout kujuneb läbi paneelida.
+				p Täpsemalt saab infot <a href="https://docs.oracle.com/javafx/2/layout/builtin_layouts.htm#CHDGHCDG" target="_blank">Oracle dokumentatsioonist</a>
+				p.text-danger Impordi alati <strong>javafx paketist!</strong> Swing ja AWT on hiljuti aegunud tehnoloogiad.
+				.panel.panel-info
+					h5.panel-heading#javafx-layout-Pane Pane
+					.panel-body.visible
+						.row
+							.col-sm-3
+								img(src="/images/javafx/Pane.svg").paneImg
+							.col-sm-9 Kõige lihtsam (ja paindumatum) piksli põhine kujundus. Kõik ülejäänud paneelid pärinevad (extends) siit, st. kõik siinsed meetodid on olemas ka teistel paneelidel.
+						.row
+							.col-sm-3 Loo uus
+							.col-sm-9
+								pre
+									code Pane pane = new Pane();
+						.row
+							.col-sm-3 Lisa sisu hulka element.
+							.col-sm-9
+								pre
+									code pane.getChildren().add(element);
+						.row
+							.col-sm-3 Lisa sisu hulka mitu elementi korraga.
+							.col-sm-9
+								pre
+									code pane.getChildren().addAll(element, element, element);
+						.row
+							.col-sm-3 Positsioneeri sialduvad elemendid alla keskele.
+							.col-sm-9
+								pre
+									code pane.setAlignment(Pos.BOTTOM_CENTER);
+						.row
+							.col-sm-3 Liiguta paneeli allapoole 10 pikslit ja paremale 20 pikslit.
+							.col-sm-9
+								pre
+									code 
+										| pane.setTranslateY(10);
+										| pane.setTranslateX(20);
+						.row
+							.col-sm-3 Pööra paneeli 30 kraadi.
+							.col-sm-9
+								pre
+									code pane.setRotate(30);
+						.row
+							.col-sm-3 Vähenda mõõtmeid 50%
+							.col-sm-9
+								pre
+									code
+										| pane.setScaleX(0.5);
+										| pane.setScaleY(0.5);
+						.row
+							.col-sm-3 Määra eelistatud suuruseks 100x100 pikslit
+							.col-sm-9
+								pre
+									code pane.setPrefSize(100, 100);
+				.panel.panel-info
+					h5.panel-heading#javafx-layout-BorderPane BorderPane
+					.panel-body.visible
+						.row
+							.col-sm-3
+								img(src="/images/javafx/BorderPane.svg").paneImg
+							.col-sm-9 Tüüpiline veebikujundus, kus on päis ja jalus, vasak ja parem menüü ning sisu keskel.
+						.row
+							.col-sm-3 Loo uus
+							.col-sm-9
+								pre
+									code BorderPane border = new BorderPane();
+						.row
+							.col-sm-3 Lisa sisu ülemise kasti sisse
+							.col-sm-9
+								pre
+									code border.setTop(sisu);
+						.row
+							.col-sm-3 Lisa sisu alumise kasti sisse
+							.col-sm-9
+								pre
+									code border.setBottom(sisu);
+						.row
+							.col-sm-3 Lisa sisu vasaku kasti sisse
+							.col-sm-9
+								pre
+									code border.setLeft(sisu);
+						.row
+							.col-sm-3 Lisa sisu parema kasti sisse
+							.col-sm-9
+								pre
+									code border.setRight(sisu);
+						.row
+							.col-sm-3 Lisa sisu keskmise kasti sisse
+							.col-sm-9
+								pre
+									code border.setCenter(sisu);
+				.panel.panel-info
+					h5.panel-heading#javafx-layout-StackPane StackPane
+					.panel-body
+						.row
+							.col-sm-3
+								img(src="/images/javafx/StackPane.svg").paneImg
+							.col-sm-9 Kui on vaja elemente üksteise peale sobitada. Elemendid satuvad vaikimisi StackPane keskele.
+						.row
+							.col-sm-3 Loo uus
+							.col-sm-9
+								pre
+									code StackPane stack = new StackPane();
+						.row
+							.col-sm-3 Liiguta element üles paremale nurka
+							.col-sm-9
+								pre
+									code stack.setAlignment(element, Pos.TOP_RIGHT);
+						.row
+							.col-sm-3 Liiguta element alla keskele
+							.col-sm-9
+								pre
+									code stack.setAlignment(element, Pos.BOTTOM_CENTER);
+						.row
+							.col-sm-3
+							.col-sm-9
+								pre
+									code
+						.row
+							.col-sm-3
+							.col-sm-9
+								pre
+									code
+						.row
+							.col-sm-3
+							.col-sm-9
+								pre
+									code
+				.panel.panel-info
+					h5.panel-heading#javafx-layout-GridPane GridPane
+					.panel-body
+						.row
+							.col-sm-3
+								img(src="/images/javafx/GridPane.svg").paneImg
+							.col-sm-9 Asetab elemendid ruudustiku järgi tabelisse.
+						.row
+							.col-sm-3 Loo uus
+							.col-sm-9
+								pre
+									code GridPane grid = new GridPane();
+						.row
+							.col-sm-3 Lisa element rect ritta 3 veergu 4
+							.col-sm-9
+								pre
+									code grid.add(rect, 4, 3);
+						.row
+							.col-sm-3 Näita ruudustiku jooni
+							.col-sm-9
+								pre
+									code grid.setGridLinesVisible(true);
+				.panel.panel-info
+					h5.panel-heading#javafx-layout-VBox VBox
+					.panel-body
+						.row
+							.col-sm-3
+								img(src="/images/javafx/VBox.svg").paneImg
+							.col-sm-9 Paigutab elemendid üksteise alla.
+						.row
+							.col-sm-3 Loo uus
+							.col-sm-9
+								pre
+									code VBox vbox = new VBox();
+						.row
+							.col-sm-3 Lisa 2 pikslit vahet igale elemendile
+							.col-sm-9
+								pre
+									code vbox.setSpacing(2);
+				.panel.panel-info
+					h5.panel-heading#javafx-layout-Hbox Hbox
+					.panel-body
+						.row
+							.col-sm-3
+								img(src="/images/javafx/HBox.svg").paneImg
+							.col-sm-9 Paigutab elemendid vasakult paremale ja ei katke.
+						.row
+							.col-sm-3 Loo uus
+							.col-sm-9
+								pre
+									code Hbox hbox = new Hbox();
+						.row
+							.col-sm-3 Lisa 2 pikslit vahet igale elemendile
+							.col-sm-9
+								pre
+									code hbox.setSpacing(2);
+				.panel.panel-info
+					h5.panel-heading#javafx-layout-FlowPane FlowPane
+					.panel-body
+						.row
+							.col-sm-3
+								img(src="/images/javafx/FlowPane.svg").paneImg
+							.col-sm-9 Paigutab elemendid vasakult paremale, katkeb järgmisele reale kui sisu enam ära ei mahu.
+						.row
+							.col-sm-3 Loo uus
+							.col-sm-9
+								pre
+									code FlowPane flow = new FlowPane();
+						.row
+							.col-sm-3 Lisa vaba ruumi horisontaalselt 5 pikslit
+							.col-sm-9
+								pre
+									code flow.setHgap(5);
+						.row
+							.col-sm-3 Lisa vaba ruumi vertikaalselt 5 pikslit
+							.col-sm-9
+								pre
+									code flow.setVgap(5);
+				.panel.panel-info
+					h5.panel-heading#javafx-layout-TilePane TilePane
+					.panel-body
+						.row
+							.col-sm-3
+								img(src="/images/javafx/TilePane.svg").paneImg
+							.col-sm-9 Nagu FlowPane, ainult et elemendid saavad kõik identse suuruse.
+						.row
+							.col-sm-3 Loo uus
+							.col-sm-9
+								pre
+									code TilePane tile = new TilePane();
+						.row
+							.col-sm-3 Lisa vaba ruumi horisontaalselt 5 pikslit
+							.col-sm-9
+								pre
+									code flow.setHgap(5);
+						.row
+							.col-sm-3 Lisa vaba ruumi vertikaalselt 5 pikslit
+							.col-sm-9
+								pre
+									code flow.setVgap(5);
+				.panel.panel-info
+					h5.panel-heading#javafx-layout-AnchorPane AnchorPane
+					.panel-body
+						.row
+							.col-sm-3
+								img(src="/images/javafx/AnchorPane.svg").paneImg
+							.col-sm-9 Elemente on võimalik ankurdada servadesse ja nurkadesse.
+						.row
+							.col-sm-3 Loo uus
+							.col-sm-9
+								pre
+									code AnchorPane anchor = new AnchorPane();
+						.row
+							.col-sm-3 Ankurda element alla paremasse nurka
+							.col-sm-9
+								pre
+									code
+										| anchor.setBottomAnchor(element, 0.0);
+										| anchor.setRightAnchor(element, 0.0);
+		h3#javafx-Elemendid Elemendid
+		h4#javafx-Kasutajaliides Kasutajaliides
+		h4#javafx-Graafika Graafika
