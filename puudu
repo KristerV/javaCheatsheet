@@ -1,6 +1,10 @@
 puudu
 =====
 
+Kuidas õpetada
+--------------
+http://worrydream.com/LearnableProgramming/
+
 Kuidas programmeerida
 ---------------------
 probleemi lahendamine
@@ -19,14 +23,12 @@ kompilaator
 avaldis
 type casting
 giti kasutamine
-muid mõisteid
+muid mõisteid Jaanuse materjalist
+TIME - sleep, event, interval
+Java - graafikul näidata keerukust, stabiilsust, riistvara lähedust, võimalusi
 
 IDE
 ---
 all vasakul ikoon
-sout
-soutv
-psvm
-debugimine
+Debugimine
 IDE errorite haldus
-alt+j
