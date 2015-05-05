@@ -12,15 +12,41 @@ template(name="sisendValjund")
 		h2#sv-File File
 		p Vt. <a href="/api-file">Java API - File</a>
 		h2#javafx JavaFX
-		p JavaFX on paindlik kasutajaliidese ja graafika kuvaja, samas on ta <i>mõistlikult</i> lihtne kasutada. Kui sul on konsoolist kopp ees, siis võta JavaFX käsile.
+		p JavaFX on paindlik kasutajaliidese ja graafika kuvaja, samas on ta <i>mõistlikult</i> lihtne kasutada. Kui konsool su vajadusi enam ei rahulda, võta JavaFX ette.
 		p Kindlasti tundub see teema esialgu keeruline, aga kui töötad ühe korra asja läbi leiad, et tegelikult on kõik parajalt lihtne ja loogiline.
+		p Lihtne näide ühest JavaFX programmist on järgmine.
+		pre
+			code
+				| import javafx.application.Application;
+				| import javafx.scene.Scene;
+				| import javafx.scene.layout.StackPane;
+				| import javafx.scene.shape.Circle;
+				| import javafx.stage.Stage;
+				| 
+				| public class Valik extends Application{
+				| 
+				|     @Override
+				|     public void start(Stage primaryStage) throws Exception {
+				|         StackPane stack = new StackPane();
+				|         Scene scene = new Scene(stack, 150, 150);
+				|         primaryStage.setScene(scene);
+				| 
+				|         Circle ring = new Circle(30);
+				|         stack.getChildren().add(ring);
+				| 
+				|         primaryStage.show();
+				| 
+				|     }
+				| }
+		p See programm joonistab lihtsalt ühe ringi.
+		img(src="/images/javafx/ring.png")
 		h3#javafx-application Application
-		p Esimene asi mis tuleb mõista on, et JavaFX ei ole su programmis enne, kui sa oma põhilist klassi <code>extends</code> klassiga <code>Application</code>.
+		p Esimene asi mis tuleb mõista on, et JavaFX ei ole su programmis enne, kui sa oma põhilist klassi laiendanud (<code>extends</code>) klassiga <code>Application</code>.
 		pre
 			code
 				| public class MinuKlass extends Application {
 				| }
-		p Teine kõige tähtsam asi on see, et Application klassi laiendades ei alusta sa oma programmi mitte main() meetodiga, vaid start() meetodiga. Muud loogikat siin pole, kui ei Application lihtsalt töötab selliselt.
+		p Teine tähtis asi on see, et Application klassi laiendades ei alusta sa oma programmi mitte main() meetodiga, vaid start() meetodiga. Muud loogikat siin pole, kui ei Application lihtsalt töötab selliselt.
 		pre
 			code
 				| public class MinuKlass extends Application {
@@ -31,10 +57,9 @@ template(name="sisendValjund")
 		p <code>@Override</code> on märge, mis ütleb, et käesolev meetod on super klassist (Application) üle kirjutatud. Nimelt Application klassis on meetod start() juba olemas, aga meie kirjutame selle tegevused enda vajaduse järgi üle.
 		p <strong>primaryStage</strong> on meie esimene Stage, ehk lava, ehk aken, ehk Window. Võid, kuid ei pea seda kasutama.
 
-		h3#javafx-Ylesehitus Ülesehitus
-		p Kui JavaFX ülesehitust teatriga võrrelda, siis <strong>Stage</strong> on lava ja <strong>Scene</strong> on stseen. Lavakujunduseks on <strong>Layout</strong>, ehk kuidas esemed paigutuvad stseenis, ja esemed, ehk <strong>elemendid</strong>, ise.
+		p Kui JavaFX ülesehitust teatriga võrrelda, siis <strong>Stage</strong> on lava ja <strong>Scene</strong> on stseen. Lavakujunduseks on <strong>Layout</strong>, ehk kuidas esemed paigutuvad stseenis, ja esemed, ehk <strong>Node</strong>, ise.
 		.panel.panel-info
-			h4.panel-heading#javafx-Stage Stage
+			h3.panel-heading#javafx-Stage Stage
 			.panel-body
 				p Stage on programmi aken. Sisu tuleb ise panna, aga mõned kasulikud meetodid tal siiski on.
 				strong Näide
@@ -79,7 +104,7 @@ template(name="sisendValjund")
 						pre
 							code stage.hide();
 		.panel.panel-info
-			h4.panel-heading#javafx-Scene Scene
+			h3.panel-heading#javafx-Scene Scene
 			.panel-body
 				p Scene on stseen, ehk nagu tühi konteiner, kus saab action toimuma hakata. Selline vahelüli on vajalik selleks, et saaks ühe käsuga kogu akna sisu ära vahetada. Näiteks kui avaneb programmi aken login vaatesse, siis edukalt sisse logides vahetad login vaate välja programmi vastu.
 				.row
@@ -103,7 +128,7 @@ template(name="sisendValjund")
 						pre
 							code scene.setFill(Paint.valueOf("#ff0000"));
 		.panel
-			h4.panel-heading#javafx-Layout Layout
+			h3.panel-heading#javafx-Layout Layout
 			.panel-body.visible
 				p Layout on lavakujunduses asjade paigutus. Võimalusi on palju. Et kujundused igal ekraanil töötaksid tuleb nad ehitada üles paindlikult, kombineerides erinevaid paneele.
 				p Layout ise ei ole objekt, mida saab luua, Layout kujuneb läbi paneelida.
@@ -338,6 +363,338 @@ template(name="sisendValjund")
 									code
 										| anchor.setBottomAnchor(element, 0.0);
 										| anchor.setRightAnchor(element, 0.0);
-		h3#javafx-Elemendid Elemendid
+		h3#javafx-Node Node
+		p Node on nähtavad asjad, näiteks ring, tekst või nupp.
 		h4#javafx-Kasutajaliides Kasutajaliides
-		h4#javafx-Graafika Graafika
+		p Vt. lisaks <a href="https://docs.oracle.com/javafx/2/ui_controls/jfxpub-ui_controls.htm" target="_blank">Oracle UI Controls</a>.
+		.panel.panel-info
+			h5.panel-heading#javafx-Label Label
+			.panel-body
+				strong Kasutamine
+				.row
+					.col-sm-3
+					.col-sm-9
+						pre
+							code
+				.row
+					.col-sm-3
+					.col-sm-9
+						pre
+							code
+				.row
+					.col-sm-3
+					.col-sm-9
+						pre
+							code
+		.panel.panel-info
+			h5.panel-heading#javafx-TextField TextField
+			.panel-body
+				strong Kasutamine
+				.row
+					.col-sm-3
+					.col-sm-9
+						pre
+							code
+				.row
+					.col-sm-3
+					.col-sm-9
+						pre
+							code
+				.row
+					.col-sm-3
+					.col-sm-9
+						pre
+							code
+		.panel.panel-info
+			h5.panel-heading#javafx-PasswordField PasswordField
+			.panel-body
+				strong Kasutamine
+				.row
+					.col-sm-3
+					.col-sm-9
+						pre
+							code
+				.row
+					.col-sm-3
+					.col-sm-9
+						pre
+							code
+				.row
+					.col-sm-3
+					.col-sm-9
+						pre
+							code
+		.panel.panel-info
+			h5.panel-heading#javafx-Button Button
+			.panel-body
+				strong Kasutamine
+				.row
+					.col-sm-3
+					.col-sm-9
+						pre
+							code
+				.row
+					.col-sm-3
+					.col-sm-9
+						pre
+							code
+				.row
+					.col-sm-3
+					.col-sm-9
+						pre
+							code
+		.panel.panel-info
+			h5.panel-heading#javafx-ToggleButton ToggleButton
+			.panel-body
+				strong Kasutamine
+				.row
+					.col-sm-3
+					.col-sm-9
+						pre
+							code
+								| ToggleGroup g = new ToggleGroup();
+								| ToggleButton e1 = new ToggleButton("Nupp 1");
+								| ToggleButton e2 = new ToggleButton("Nupp 2");
+								| ToggleButton e3 = new ToggleButton("Nupp 3");
+								| e1.setToggleGroup(g);
+								| e2.setToggleGroup(g);
+								| e3.setToggleGroup(g);
+								| e3.setSelected(true);
+								| vbox.getChildren().addAll(e1, e2, e3);
+				.row
+					.col-sm-3
+					.col-sm-9
+						pre
+							code
+				.row
+					.col-sm-3
+					.col-sm-9
+						pre
+							code
+		.panel.panel-info
+			h5.panel-heading#javafx-RadioButton RadioButton
+			.panel-body
+				strong Kasutamine
+				.row
+					.col-sm-3
+					.col-sm-9
+						pre
+							code
+								| ToggleGroup g = new ToggleGroup();
+								| RadioButton e1 = new RadioButton("Nupp 1");
+								| RadioButton e2 = new RadioButton("Nupp 2");
+								| RadioButton e3 = new RadioButton("Nupp 3");
+								| e1.setToggleGroup(g);
+								| e2.setToggleGroup(g);
+								| e3.setToggleGroup(g);
+								| e3.setSelected(true);
+								| vbox.getChildren().addAll(e1, e2, e3);
+				.row
+					.col-sm-3
+					.col-sm-9
+						pre
+							code
+				.row
+					.col-sm-3
+					.col-sm-9
+						pre
+							code
+		.panel.panel-info
+			h5.panel-heading#javafx-CheckBox CheckBox
+			.panel-body
+				strong Kasutamine
+				.row
+					.col-sm-3
+					.col-sm-9
+						pre
+							code
+								| CheckBox e1 = new CheckBox("Nupp 1");
+								| CheckBox e2 = new CheckBox("Nupp 2");
+								| CheckBox e3 = new CheckBox("Nupp 3");
+								| e3.setSelected(true);
+								| vbox.getChildren().addAll(e1, e2, e3);
+				.row
+					.col-sm-3
+					.col-sm-9
+						pre
+							code
+				.row
+					.col-sm-3
+					.col-sm-9
+						pre
+							code
+		.panel.panel-info
+			h5.panel-heading#javafx-ChoiceBox ChoiceBox
+			.panel-body
+				strong Kasutamine
+				.row
+					.col-sm-3
+					.col-sm-9
+						pre
+							code
+								| ChoiceBox cb = new ChoiceBox(FXCollections.observableArrayList(
+								|         "Esimene", "Teine", "Kolmas")
+								| );
+								| pane.getChildren().add(cb);
+				.row
+					.col-sm-3
+					.col-sm-9
+						pre
+							code
+				.row
+					.col-sm-3
+					.col-sm-9
+						pre
+							code
+		.panel.panel-info
+			h5.panel-heading#javafx-Slider Slider
+			.panel-body
+				strong Kasutamine
+				.row
+					.col-sm-3
+					.col-sm-9
+						pre
+							code
+								| Slider slider = new Slider();
+								| slider.setMin(0);
+								| slider.setMax(100);
+								| slider.setValue(40);
+								| slider.setShowTickLabels(true);
+								| slider.setShowTickMarks(true);
+								| slider.setMajorTickUnit(50);
+								| slider.setMinorTickCount(5);
+								| slider.setBlockIncrement(10);
+								| vbox.getChildren().addAll(slider);
+				.row
+					.col-sm-3
+					.col-sm-9
+						pre
+							code
+				.row
+					.col-sm-3
+					.col-sm-9
+						pre
+							code
+		.panel.panel-info
+			h5.panel-heading#javafx-FileChooser FileChooser
+			.panel-body
+				strong Kasutamine
+				.row
+					.col-sm-3
+					.col-sm-9
+						pre
+							code
+								| FileChooser fileChooser = new FileChooser();
+								| fileChooser.showOpenDialog(primaryStage);
+				.row
+					.col-sm-3
+					.col-sm-9
+						pre
+							code
+				.row
+					.col-sm-3
+					.col-sm-9
+						pre
+							code
+		.panel.panel-info
+			h5.panel-heading#javafx-Chart Chart
+			.panel-body
+				p Vt. <a href="https://docs.oracle.com/javase/8/javafx/user-interface-tutorial/charts.htm" target="_blank">Oracle Charts</a>
+		h4#javafx-Joonis Joonis
+		.panel.panel-info
+			h5.panel-heading#javafx-Line Line
+			.panel-body
+				strong Kasutamine
+				.row
+					.col-sm-3
+					.col-sm-9
+						pre
+							code
+				.row
+					.col-sm-3
+					.col-sm-9
+						pre
+							code
+				.row
+					.col-sm-3
+					.col-sm-9
+						pre
+							code
+		.panel.panel-info
+			h5.panel-heading#javafx-Rectangle Rectangle
+			.panel-body
+				strong Kasutamine
+				.row
+					.col-sm-3
+					.col-sm-9
+						pre
+							code
+				.row
+					.col-sm-3
+					.col-sm-9
+						pre
+							code
+				.row
+					.col-sm-3
+					.col-sm-9
+						pre
+							code
+		.panel.panel-info
+			h5.panel-heading#javafx-Circle Circle
+			.panel-body
+				strong Kasutamine
+				.row
+					.col-sm-3
+					.col-sm-9
+						pre
+							code
+				.row
+					.col-sm-3
+					.col-sm-9
+						pre
+							code
+				.row
+					.col-sm-3
+					.col-sm-9
+						pre
+							code
+		.panel.panel-info
+			h5.panel-heading#javafx-Ellipse Ellipse
+			.panel-body
+				strong Kasutamine
+				.row
+					.col-sm-3
+					.col-sm-9
+						pre
+							code
+				.row
+					.col-sm-3
+					.col-sm-9
+						pre
+							code
+				.row
+					.col-sm-3
+					.col-sm-9
+						pre
+							code
+		.panel.panel-info
+			h5.panel-heading#javafx-Polygon Polygon
+			.panel-body
+				strong Kasutamine
+				.row
+					.col-sm-3
+					.col-sm-9
+						pre
+							code
+				.row
+					.col-sm-3
+					.col-sm-9
+						pre
+							code
+				.row
+					.col-sm-3
+					.col-sm-9
+						pre
+							code
+		h3 Sündmused
+		h3 Animatsioon
