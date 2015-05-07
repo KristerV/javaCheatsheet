@@ -19,6 +19,7 @@ Number tuleb 8.6535634789E120
 
 Knowledge
 ---------
+Color.rgb() Color.RED
 kompilaator
 avaldis
 type casting
@@ -32,3 +33,14 @@ IDE
 all vasakul ikoon
 Debugimine
 IDE errorite haldus
+
+
+i200.itcollege.ee
+-----------------
+TextField
+Button
+SubmitForm
+FileChooser
+
+
+WHY??
