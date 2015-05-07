@@ -478,6 +478,25 @@ template(name="sisendValjund")
 							.col-sm-9
 								pre
 									code a.clear()
+						hr
+						.row
+							.col-sm-3 Kui soovid iga muutuse peale reageerida
+							.col-sm-9
+								pre
+									code
+										| a.textProperty().addListener((observable, vanaVaartus, uusVaartus) -&gt; {
+										|     System.out.println("Uus väärtus: " + uusVaartus);
+										|     // Tegevus siia
+										| });
+						hr
+						.row
+							.col-sm-3 Kui soovid <kbd>enter</kbd> vajutamisele reageerida
+							.col-sm-9
+								pre
+									code
+										| a.setOnAction((event) -&gt; {
+										|     // Tegevus siia
+										| });
 				.panel.panel-info
 					h5.panel-heading#javafx-PasswordField PasswordField
 					.panel-body
@@ -512,7 +531,7 @@ template(name="sisendValjund")
 							.col-sm-4
 								img.img-responsive(src="/images/javafx/UI/Button.png")
 							.col-sm-8
-								p Kõige lihtsam nupp. Mis juhtub nupu vajutusel saad ise määrata läbi <a target="_blank" href="/javafx-syndmused">sündmuste</a>.
+								p Kõige lihtsam nupp. Mis juhtub nupu vajutusel saad ise määrata.
 								p Vt. ka <a target="_blank" href="/javafx-Kasutajaliides">Kasutajaliidese üldine kasutamine</a>.
 						hr
 						.row
@@ -526,7 +545,7 @@ template(name="sisendValjund")
 							.col-sm-9
 								pre
 									code
-										| btn.setOnAction(new EventHandler<ActionEvent>() {
+										| btn.setOnAction((event) -&gt; {
 										|     public void handle(ActionEvent e) {
 										|         // Siia tegevus, kui nupp on vajutatud.
 										|     }
@@ -578,6 +597,15 @@ template(name="sisendValjund")
 							.col-sm-9
 								pre
 									code
+										| ToggleGroup g = new ToggleGroup();
+										| RadioButton e1 = new RadioButton("Nupp 1");
+										| RadioButton e2 = new RadioButton("Nupp 2");
+										| RadioButton e3 = new RadioButton("Nupp 3");
+										| e1.setToggleGroup(g);
+										| e2.setToggleGroup(g);
+										| e3.setToggleGroup(g);
+										| e3.setSelected(true);
+										| vbox.getChildren().addAll(e1, e2, e3);
 				.panel.panel-info
 					h5.panel-heading#javafx-ToggleGroup ToggleGroup
 					.panel-body
@@ -649,6 +677,18 @@ template(name="sisendValjund")
 							.col-sm-9
 								pre
 									code cb.getValue();
+						.row
+							.col-sm-3 Reageeri valiku muutmisele.
+							.col-sm-9
+								pre
+									code 
+										| cb.getSelectionModel()
+										|   .selectedItemProperty()
+										|   .addListener(
+										|       (ObservableValue observable, Object oldValue, Object newValue) -&gt; {
+										|           // Do stuff
+										|           System.out.println(newValue);
+										| });
 				.panel.panel-info
 					h5.panel-heading#javafx-Slider Slider
 					.panel-body
@@ -706,18 +746,28 @@ template(name="sisendValjund")
 							.col-sm-9
 								pre
 									code slider.setOrientation(Orientation.VERTICAL);
+						hr
+						.row
+							.col-sm-3 Reageeri Slideri muutumise peale
+							.col-sm-9
+								pre
+									code 
+										| .valueProperty().addListener((observable, vanaVaartus, uusVaartus) -&gt; {
+										|     System.out.println("Uus väärtus on: " + uusVaartus.intValue());
+										| });
 				.panel.panel-info
 					h5.panel-heading#javafx-FileChooser FileChooser
 					.panel-body
 						p Kasutab kasutaja operatsioonisüsteemi failihaldurit, et leida kasutaja soovitud fail.
+						p Vt. ka terviklikumat näidet <a href="http://docs.oracle.com/javafx/2/ui_controls/file-chooser.htm" target="_blank">Oracle lehel</a>.
 						hr
 						.row
-							.col-sm-3 Ava failihaldur.
+							.col-sm-3 Ava failihaldur ja salvesta fail muutujasse file.
 							.col-sm-9
 								pre
 									code
 										| FileChooser fileChooser = new FileChooser();
-										| fileChooser.showOpenDialog(primaryStage);
+										| File file = fileChooser.showOpenDialog(primaryStage);
 						.row
 							.col-sm-3 Määra failihalduri akna pealkiri.
 							.col-sm-9
