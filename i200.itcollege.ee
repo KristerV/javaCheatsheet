@@ -1,12 +1,28 @@
 i200.itcollege.ee
 
+Ainest
+
 Intellij
 
 External resources
 
 How to approach a new program
+- enne probleemi lahendus paberil siis algoritmid koodis
 - viska lego maha
+- top down
+- alusta lõpust
 
 How to understand existing code
+- see result and think about how you would achieve it
+- find main() or constructor and follow line by line
+- google what you don't understand
 
-What to do when stuck
+Hädaabi
+- sulud / treppimine
+- IDE errorid
+- tuntud konsooli errorid
+- küsi foorumist / õppejõult
+
+GIT basics
+- point
+- commands
