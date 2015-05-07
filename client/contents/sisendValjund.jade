@@ -519,7 +519,18 @@ template(name="sisendValjund")
 							.col-sm-3 Määra nupu tekst
 							.col-sm-9
 								pre
-									code a.setText("Vajuta siia!");
+									code btn.setText("Vajuta siia!");
+						hr
+						.row
+							.col-sm-3 Määra mis juhtub kui nuppu vajutatakse
+							.col-sm-9
+								pre
+									code
+										| btn.setOnAction(new EventHandler<ActionEvent>() {
+										|     public void handle(ActionEvent e) {
+										|         // Siia tegevus, kui nupp on vajutatud.
+										|     }
+										| });
 				.panel.panel-info
 					h5.panel-heading#javafx-ToggleButton ToggleButton
 					.panel-body
@@ -894,4 +905,3 @@ template(name="sisendValjund")
 										|         10.0, 20.0
 										| });
 								p Antud näites on 3 otspunkti: [(0.0,0.0), (20.0, 10.0), (10.0, 20.0)]
-		h3 Sündmused
