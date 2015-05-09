@@ -1,7 +1,11 @@
 Template.body.helpers({
 	advancedMode: function () {
-		return Session.get('advancedMode')
+		return JSON.parse(localStorage.getItem('advancedMode'))
 	},
+	advancedButton: function() {
+		return Session.get('advancedMode')
+
+	}
 });
 
 Template.body.events({
@@ -14,9 +18,20 @@ Template.body.events({
 		Scroll.scrollUrl(url)
 	},
 	'click #advancedButton': function(e) {
-		var advancedMode = !Session.get('advancedMode')
+		var advancedMode = !JSON.parse(localStorage.getItem('advancedMode'))
 		Session.set('advancedMode', advancedMode)
 		localStorage.setItem('advancedMode', advancedMode)
+		if (advancedMode) {
+			$('.advanced')
+						.velocity("slideDown", { duration: 800 })
+						.velocity("fadeIn", { duration: 800 })
+		}
+		else {
+			$('.layout-left').animate({scrollTop: 0 }, 500);
+			$('.advanced')
+						.velocity({ opacity: 0 }, {delay: 500, duration: 800 })
+						.velocity("slideUp", {duration: 800 })
+		}
 	}
 })
 
