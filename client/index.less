@@ -21,7 +21,9 @@ html, body {
 	position: fixed;
 	overflow-x: hidden;
 	overflow-y: auto;
-	line-height: 1em;
+	* {
+		line-height: 1.7em;
+	}
 
 	& > *:not(img) {
 		border-left: 6px solid transparent;
@@ -67,16 +69,16 @@ html, body {
  	.panel h6 {
  		color: black;
 		cursor: pointer;
-		margin-top: 0.3em;
-		margin-bottom: 0.3em;
+		margin-top: 0 !important;
+		margin-bottom: 0 !important;
 		font-size: 15px;
 	}
 	h1, h1.panel-heading {
-		margin-top: 1.3em;
+		margin-top: 1.2em !important;
 		font-size: 25px;
 	}
 	h2, h2.panel-heading {
-		margin-top: 0.8em;
+		margin-top: 0.6em !important;
 		font-size: 18px;
 	}
 	h3, h3.panel-heading {
