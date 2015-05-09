@@ -19,6 +19,7 @@ Template.body.events({
 	},
 	'click #advancedButton': function(e) {
 		var advancedMode = !JSON.parse(localStorage.getItem('advancedMode'))
+		console.log(advancedMode)
 		Session.set('advancedMode', advancedMode)
 		localStorage.setItem('advancedMode', advancedMode)
 		if (advancedMode) {

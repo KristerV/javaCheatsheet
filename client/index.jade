@@ -3,9 +3,9 @@ head
 body
 	.layout.layout-left(class="{{#if advancedMode}}advancedMode{{/if}}")
 		+contents
-		if advancedMode
-			.btn.btn-warning#advancedButton Mul on segadus
+		if advancedButton
+			.btn.btn-danger.btn-block#advancedButton Mul on segadus
 		else
-			.btn.btn-success#advancedButton Kõik on selge
+			.btn.btn-success.btn-block#advancedButton Kõik on selge
 	.layout.layout-right.language-java(class="{{#if advancedMode}}advancedMode{{/if}}")
 		+contents
