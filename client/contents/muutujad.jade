@@ -25,20 +25,24 @@ template(name="muutujad")
 
 		h3#andmetyybid-vaartus Väärtus
 
-		h4#vaartus-ohukoht1 Ohukoht1
-		p Igal arvu andmetüübil on oma miinimum ja maksimum võimalik arv, mida andmetüüp suudab hoida. Kui üritad maksimumi ületada, jätkab loendur teisest otsast. Näiteks <code>int</code> andmetüübi maksimum on 2147483647:
-		pre
-			code
-				| int a = 2147483647;
-				| int b = a + 1;
-				| System.out.println("b = " + b); // b = -2147483648
+		.panel.panel-warning.advanced
+			h4.panel-heading#vaartus-ohukoht1 Ohukoht1
+			.panel-body
+				p Igal arvu andmetüübil on oma miinimum ja maksimum võimalik arv, mida andmetüüp suudab hoida. Kui üritad maksimumi ületada, jätkab loendur teisest otsast. Näiteks <code>int</code> andmetüübi maksimum on 2147483647:
+				pre
+					code
+						| int a = 2147483647;
+						| int b = a + 1;
+						| System.out.println("b = " + b); // b = -2147483648
 
-		h4#vaartus-ohukoht2 Ohukoht2
-		p Võtame lihtsa tehte: <code>2.0 - 1.1 = 0.9</code>. Ainult, et tegelikult tuleb Javas vastuseks 0.899999999999998. Kohati uskumatu, et selline viga on sees, aga see polegi üldse nii ebatavaline. Seda esineb ka teistes riistvaralähedastest keeltes. Lahenduseks on kas kasutada int tüüpi muutujaid (näiteks 23.34€ on 2334) või BigDecimal klassi arvutusteks. 
+		.panel.panel-warning.advanced
+			h4.panel-heading#vaartus-ohukoht2 Ohukoht2
+			.panel-body
+				p Võtame lihtsa tehte: <code>2.0 - 1.1 = 0.9</code>. Ainult, et tegelikult tuleb Javas vastuseks 0.899999999999998. Kohati uskumatu, et selline viga on sees, aga see polegi üldse nii ebatavaline. Seda esineb ka teistes riistvaralähedastest keeltes. Lahenduseks on kas kasutada int tüüpi muutujaid (näiteks 23.34€ on 2334) või BigDecimal klassi arvutusteks. 
 
 		h4#muutuja-arvud Arvud
 
-		.panel.panel-info
+		.panel.panel-info.advanced
 			h5#byte.panel-heading byte
 			.panel-body
 				p väikesed arvud (alates -128 kuni 127)
@@ -116,10 +120,10 @@ template(name="muutujad")
 							code double c = a;
 
 		.panel.panel-info
-			h5#double.panel-heading double
+			h5#double.panel-heading.bold double
 			.panel-body
 				p reaalarvud (komakohaga) (alates 4.9*10^-324 kuni 1.79*10^308)
-				.text-danger Reaalarvudega arvutamine on ebatäpne, vt. <a href="/vaartus-ohukoht2">Ohukoht2</a>
+				.text-danger.advanced Reaalarvudega arvutamine on ebatäpne, vt. <a href="/vaartus-ohukoht2">Ohukoht2</a>
 				br
 				strong Kasutamine
 				.row
@@ -159,7 +163,7 @@ template(name="muutujad")
 							code int c = (int) a;
 						.text-danger typecast <code>(int)</code> ei ümarda arve vaid raiub julmalt koma maha. <code>double 8.76</code> on <code>int 8</code>. Ümardamiseks kasuta <code>Math.round()</code>.
 
-		.panel.panel-info
+		.panel.panel-info.advanced
 			h5#BigDecimal.panel-heading BigDecimal
 			.panel-body
 				p kõik arvud (arvu suurust limiteerib vaid arvuti mälu)
@@ -212,7 +216,7 @@ template(name="muutujad")
 
 		h4#muutuja-soned Sõned
 
-		.panel.panel-info
+		.panel.panel-info.advanced
 			h5#char.panel-heading char
 			.panel-body
 				p üksik täht
@@ -375,7 +379,7 @@ template(name="muutujad")
 						.text-info <code>||</code> on nagu "või", ehk üks tingimustest peab olema tõene.
 						.text-danger <code>||</code> ei ole LL, ega ii. <code>||</code> on "pipe" ehk <kbd>AltGr + &lt;</kbd>;
 
-		.panel.panel-info
+		.panel.panel-info.advanced
 			h5#Objekt.panel-heading Objekt
 			.panel-body
 				p keerulisemad objektid.
@@ -411,46 +415,46 @@ template(name="muutujad")
 		pre
 			code int[] võistleja1 = {76, 56, 75, 45, 56, 76, 65, 67, 45, 54};
 
-		p Kujuta ette, kui võistlejaid on samuti kümme ja igaühel on 10 tulemust. Siis jällegi ei ole meil tarvis kümmet muutujat vaid ühte head HashMapi, mille sees on omakorda ArrayList:
-		pre
-			code
-				| HashMap tulemused = new HashMap();                  // Loo HashMap
-				| ArrayList voistleja = new ArrayList();              // Loo ArrayList
-				| 
-				| for (int i = 0; i &lt; 10; i++) {                      // iga võistleja kohta
-				|     voistleja.clear();                              // tühjenda eelnevad katsed
-				| 
-				|     for (int j = 0; j &lt; 10; j++) {                  // iga katse kohta
-				|         voistleja.add((int) (Math.random() * 100)); // genereeri katse tulemus
-				|     }
-				| 
-				|     tulemused.put("võistleja"+i, voistleja);        // salvesta tulemus
-				| }
-				| 
-				| System.out.println("tulemused = " + tulemused);
+		.advanced
+			p Kujuta ette, kui võistlejaid on samuti kümme ja igaühel on 10 tulemust. Siis jällegi ei ole meil tarvis kümmet muutujat vaid ühte head HashMapi, mille sees on omakorda ArrayList:
+			pre
+				code
+					| HashMap tulemused = new HashMap();                  // Loo HashMap
+					| ArrayList voistleja = new ArrayList();              // Loo ArrayList
+					| 
+					| for (int i = 0; i &lt; 10; i++) {                      // iga võistleja kohta
+					|     voistleja.clear();                              // tühjenda eelnevad katsed
+					| 
+					|     for (int j = 0; j &lt; 10; j++) {                  // iga katse kohta
+					|         voistleja.add((int) (Math.random() * 100)); // genereeri katse tulemus
+					|     }
+					| 
+					|     tulemused.put("võistleja"+i, voistleja);        // salvesta tulemus
+					| }
+					| 
+					| System.out.println("tulemused = " + tulemused);
 
-		p Antud koodi on raske mõista, aga tulemuseks on ilus tabel:
+			p Antud koodi on raske mõista, aga tulemuseks on ilus tabel:
 
-		pre
-			code
-				| tulemused = {
-				|     võistleja2 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54],
-				|     võistleja1 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54],
-				|     võistleja0 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54],
-				|     võistleja6 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54],
-				|     võistleja5 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54],
-				|     võistleja4 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54],
-				|     võistleja3 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54],
-				|     võistleja9 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54],
-				|     võistleja8 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54],
-				|     võistleja7 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54]
-				| }
+			pre
+				code
+					| tulemused = {
+					|     võistleja2 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54],
+					|     võistleja1 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54],
+					|     võistleja0 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54],
+					|     võistleja6 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54],
+					|     võistleja5 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54],
+					|     võistleja4 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54],
+					|     võistleja3 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54],
+					|     võistleja9 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54],
+					|     võistleja8 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54],
+					|     võistleja7 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54]
+					| }
 
-		p Kui mul on siis hiljem vaja näiteks võistleja nr 6 tulemust nr 7, siis küsin selle välja ühe reaga:
-		pre
-			code int t = (int) ((ArrayList) tulemused.get("võistleja6")).get(7);
-		p See üks rida on muidugi suhteliselt keeruline, aga andmed on meil vähemalt struktureeritud ja korras.
-
+			p Kui mul on siis hiljem vaja näiteks võistleja nr 6 tulemust nr 7, siis küsin selle välja ühe reaga:
+			pre
+				code int t = (int) ((ArrayList) tulemused.get("võistleja6")).get(7);
+			p See üks rida on muidugi suhteliselt keeruline, aga andmed on meil vähemalt struktureeritud ja korras.
 
 		.panel.panel-info
 			h5#Massiiv.panel-heading.bold Massiiv
@@ -530,7 +534,7 @@ template(name="muutujad")
 						pre
 							code System.out.println(Arrays.toString(a))
 
-		.panel.panel-info
+		.panel.panel-info.advanced
 			h5#ArrayList.panel-heading ArrayList
 			.panel-body
 				p Hoiab eri tüüpi väärtusi ja nimekirja pikkus muutub vastavalt sisule.
@@ -641,7 +645,7 @@ template(name="muutujad")
 						pre
 							code a.isEmpty()
 
-		.panel.panel-info
+		.panel.panel-info.advanced
 			h5#HashMap.panel-heading HashMap
 			.panel-body
 				p Hoiab &lt;võti, väärtus&gt; andmeid.

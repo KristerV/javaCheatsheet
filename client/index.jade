@@ -1,7 +1,11 @@
 head
 	title i200
 body
-	.layout-left
+	.layout.layout-left(class="{{#if advancedMode}}advancedMode{{/if}}")
 		+contents
-	.layout-right.language-java
+		if advancedMode
+			.btn.btn-warning#advancedButton Mul on segadus
+		else
+			.btn.btn-success#advancedButton Kõik on selge
+	.layout.layout-right.language-java(class="{{#if advancedMode}}advancedMode{{/if}}")
 		+contents

@@ -6,14 +6,14 @@ template(name="javaAPI")
 			code Math.pow(5, 7);
 		p Matemaatika on muidugi kõige lihtsam näide. Java API kaudu saab ka ligi kasutaja klaviatuurile, konsooli printimisele, faili toimingutele ja muudele vahenditele, mida muidu peaks ise välja mõtlema.
 		h2#api-system System
-		.panel.panel-info
+		.panel.panel-info.advanced
 			h3.panel-heading#api-system-in System.in
 			.panel-body vt. <a href="/api-scanner">kuidas kasutatakse Scanner objekti</a>
 		.panel
 			h3.panel-heading#api-system-out System.out
 			.panel-body.visible
 				p System.out võimaldab meil infot kasutajale näidata. Kõige tavalisem käsk on <code>System.out.println("Tere")</code> ja see näitab kasutajale konsoolis teksti "Tere".
-				.panel.panel-info
+				.panel.panel-info.advanced
 					h4.panel-heading#api-System-out-print System.out.print()
 					.panel-body
 						p print() kirjutab konsooli kõik väärtused järjest.
@@ -49,7 +49,7 @@ template(name="javaAPI")
 								| Minu nimi on Miku
 								|  ja 
 								| olen 5 aastat vana.
-				.panel.panel-info
+				.panel.panel-info.advanced
 					h4.panel-heading#api-System-out-printf System.out.printf()
 					.panel-body
 						p Lühend 'f' tähendab 'format' meetodis printf(). See meetod on eriti paindlik ja annab kujundamiseks erilisi võimalusi. Eriti mugav on seda kasutada, kui esineb palju muutujaid.
@@ -181,7 +181,7 @@ template(name="javaAPI")
 						pre
 							code Math.round(45.5876); // 46
 							code Math.round(2.33);    // 2
-		.panel
+		.panel.advanced
 			h2.panel-heading#api-integer Integer
 			.panel-body.visible
 				.panel.panel-info
@@ -204,7 +204,7 @@ template(name="javaAPI")
 						p Kui sul on arv sõne kujul "25", siis parseInt muudab selle int'iks.
 						pre
 							code int a = Integer.parseInt("25");
-		.panel
+		.panel.advanced
 			h2.panel-heading#api-double Double
 			.panel-body.visible
 				.panel.panel-info
@@ -229,7 +229,7 @@ template(name="javaAPI")
 							code double a = Double.parseInt("33.333");
 			.panel-body
 
-		.panel
+		.panel.advanced
 			h2.panel-heading#api-file File
 			.panel-body.visible
 				p Failide manipuleerimiseks on Javas palju viise. File, FileReaderi ja FileWriteri kasutamine on aga üks puisemaid ja lihtsasti arusaadavaid.
@@ -316,35 +316,37 @@ template(name="javaAPI")
 								| 35
 								| Sinu nimi on Peeter ja vanus 35
 
-				.panel.panel-info
+				.panel.panel-info.advanced
 					h3.panel-heading#api-scanner-next .next()
 					.panel-body
 						p Loeb kasutaja sisestust kuni järgmise tühikuni, annab tagasi Stringi.
 				.panel.panel-info
-					h3.panel-heading#api-scanner-nextLine .nextLine()
+					h3.panel-heading.bold#api-scanner-nextLine .nextLine()
 					.panel-body
 						p Loeb kasutaja sisestust kuni rea lõpuni, annab tagasi Stringi.
 				.panel.panel-info
-					h3.panel-heading#api-scanner-nextInt .nextInt()
+					h3.panel-heading.bold#api-scanner-nextInt .nextInt()
 					.panel-body
 						p Võtab kasutajalt täisarvu. Kui kasutaja sisestab täisarvu asemel midagi muud, tuleb error.
 				.panel.panel-info
-					h3.panel-heading#api-scanner-nextDouble .nextDouble()
+					h3.panel-heading.bold#api-scanner-nextDouble .nextDouble()
 					.panel-body
 						p Võtab kasutajalt reaalarvu. Kui kasutaja sisestab reaalarvu asemel midagi muud, tuleb error.
-		h2#api-thread Thread
-		.panel.panel-info
-			h3.panel-heading#api-thread-sleep Thread.sleep(msec)
-			.panel-body
-				p Paneb programmi ajutiselt pausile. See on kõige lihtsam viis aega simuleerida, kuid ta ei ole väga täpne ega paindlik. Vt. <a href="/api-timer">Timer</a>.
-				p Näiteks
-				pre
-					code
-						| System.out.println("Hommikust!");
-						| Thread.sleep(3000);
-						| System.out.println("Õhtust!");
-				p võtab aega 3 sekundit, sest vahepeal on nii pikk paus.
 		.panel
+			h2.panel-heading#api-thread Thread
+			.panel-body.visible
+				.panel.panel-info
+					h3.panel-heading.bold#api-thread-sleep Thread.sleep(msec)
+					.panel-body
+						p Paneb programmi ajutiselt pausile. See on kõige lihtsam viis aega simuleerida, kuid ta ei ole väga täpne ega paindlik. Vt. <a href="/api-timer">Timer</a>.
+						p Näiteks
+						pre
+							code
+								| System.out.println("Hommikust!");
+								| Thread.sleep(3000);
+								| System.out.println("Õhtust!");
+						p võtab aega 3 sekundit, sest vahepeal on nii pikk paus.
+		.panel.advanced
 			h2.panel-heading#api-timer Timer
 			.panel-body.visible
 				p Timer töötab nagu oleme spordis harjunud. Selle ülesandeks on käivitada mingi toiming mingi kindla aja pärast või siis tsükliliselt käivitada ühte toimingut iga kindla aja tagant.
@@ -396,7 +398,7 @@ template(name="javaAPI")
 					h3.panel-heading#api-timer-scheduleAtFixedRate .scheduleAtFixedRate()
 					.panel-body
 						p Vt. <a href="/api-timer-schedule">.schedule()</a>. Ainuke vahe on see, et fixed rate käivitub ajaliselt väga täpselt. Näiteks kui meil on vaja, et toimingud käivituksid iga 5 sekundi tagant, aga arvuti on jäänud aeglaseks, siis .scheduleAtFixedRate() käivitab koodi kellaajalise täpsusega, .schedule() aga ei arvesta mitte aega vaid millal viimane tsükkel lõppes.
-		.panel
+		.panel.advanced
 			h2.panel-heading#api-arrays Arrays
 			.panel-body.visible
 				p Arrays klass on massiividega manipuleerimiseks. Kuna massiiv (näiteks in[]) on primitiiv, siis tal ei ole enda meetode. Nagu ArrayListil on täitsa enda .equals() olemas, siis massiivi puhul võtamegi abiks Arrays klassi sama toimingu jaoks.
@@ -423,7 +425,7 @@ template(name="javaAPI")
 						p Kui massiiv lihtsalt niisama välja printida, tuleb konsooli mingi imelik kood. See kood on pistmist sellega, kuidas arvutis mälu töötab. Meie aga tahame näha massiivi sisu ja seega kasutame .toString() meetodi.
 						pre
 							code Arrays.toString(a)
-		.panel
+		.panel.advanced
 			h2.panel-heading#api-collections Collections
 			.panel-body.visible
 				p Nagu massiividel on Arrays abiks, on ArrayListil, HashMapil ja muudel Collectionitel ka oma abistav klass.

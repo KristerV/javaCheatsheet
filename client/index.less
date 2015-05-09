@@ -7,6 +7,9 @@ html, body {
 	margin: 0;
 }
 
+.layout:not(.advancedMode) .advanced {
+	display: none;
+}
 
 .layout-left {
 	box-sizing: border-box;
@@ -18,7 +21,6 @@ html, body {
 	overflow-x: hidden;
 	overflow-y: auto;
 	line-height: 1em;
-
 
 	& > *:not(img) {
 		border-left: 6px solid transparent;
@@ -41,7 +43,6 @@ html, body {
 	.sisend-valjund {
 		border-color: #FF7272;
 	}
-
 
 	*:not([id]) {
 		color: red !important;

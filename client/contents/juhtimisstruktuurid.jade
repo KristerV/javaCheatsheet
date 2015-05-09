@@ -2,7 +2,7 @@ template(name="juhtimisstruktuurid")
 	.juhtimisstruktuurid
 		h1#Juhtimisstruktuurid Juhtimisstruktuurid
 		p Juhtimisstruktuurid on programmeerija põhilised tööriistad, nagu ehitajal on haamer ja kruvikeeraja. Siin käsitleme kahte liiki: "kui" ja "kuni", ehk "kui" tingimus on täidetud käitu sedasi ja "kuni" tingimus on täidetud käitu sedasi. Muud neil vahet polegi, kui ühed juhivad programmi kulgemist vaid ühe korra ja teised panevad ühe koodi jupi tsükliliselt kordama.
-		p "Kui" tüüpi <strong>valikud</strong> on <code>if</code>, <code>switch</code> ja <code>try-catch</code>. "Kuni" tüüpi <strong>tsüklid</strong> on <code>while</code>, <code>for</code>, <code>for each</code> ja <code>do..while</code>.
+		p "Kui" tüüpi <strong>valikud</strong> on <code>if</code><span class="advanced">, <code>switch</code> ja <code>try-catch</code></span>. "Kuni" tüüpi <strong>tsüklid</strong> on <code>while</code><span class="advanced">, <code>for</code>, <code>for each</code> ja <code>do..while</code></span>.
 		h2#Valikud Valikud
 		.panel.panel-info
 			h3#if.panel-heading.bold if
@@ -38,7 +38,7 @@ template(name="juhtimisstruktuurid")
 								|     System.out.println("tudeng ei saanud ainest läbi");
 								| }
 
-		.panel.panel-info
+		.panel.panel-info.advanced
 			h3#switch.panel-heading switch
 			.panel-body
 				.row
@@ -85,7 +85,7 @@ template(name="juhtimisstruktuurid")
 								|         break;
 								| }
 
-		.panel.panel-info
+		.panel.panel-info.advanced
 			h3#try-catch.panel-heading try-catch
 			.panel-body
 				.row
@@ -146,7 +146,7 @@ template(name="juhtimisstruktuurid")
 								|     System.out.println(m[count]);
 								|     count = count + 1;
 								| }
-		.panel.panel-info
+		.panel.panel-info.advanced
 			h3#do-while.panel-heading do..while
 			.panel-body
 				.row
@@ -182,7 +182,7 @@ template(name="juhtimisstruktuurid")
 								|     System.out.println(m[count]);
 								|     count = count + 1;
 								| } while (count &lt; m.length);
-		.panel.panel-info
+		.panel.panel-info.advanced
 			h3#for.panel-heading for
 			.panel-body
 				.row
@@ -214,7 +214,7 @@ template(name="juhtimisstruktuurid")
 								| for (int i = 0; i &lt; m.length; i++) {
 								|     System.out.println(m[i]);
 								| }
-		.panel.panel-info
+		.panel.panel-info.advanced
 			h3#for-each.panel-heading for each
 			.panel-body
 				.row
