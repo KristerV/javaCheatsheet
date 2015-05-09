@@ -40,7 +40,7 @@ template(name="muutujad")
 			.panel-body
 				p Võtame lihtsa tehte: <code>2.0 - 1.1 = 0.9</code>. Ainult, et tegelikult tuleb Javas vastuseks 0.899999999999998. Kohati uskumatu, et selline viga on sees, aga see polegi üldse nii ebatavaline. Seda esineb ka teistes riistvaralähedastest keeltes. Lahenduseks on kas kasutada int tüüpi muutujaid (näiteks 23.34€ on 2334) või BigDecimal klassi arvutusteks. 
 
-		h4#muutuja-arvud Arvud
+		h4.advanced#muutuja-arvud Arvud
 
 		.panel.panel-info.advanced
 			h5#byte.panel-heading byte
@@ -112,7 +112,7 @@ template(name="muutujad")
 								| a &lt;= b; 
 								| a &gt; b; 
 								| a &gt;= b; 
-				.row
+				.row.advanced
 					.col-sm-3
 						p Muuda tüüpi
 					.col-sm-9
@@ -155,7 +155,7 @@ template(name="muutujad")
 								| a &lt;= b; 
 								| a &gt; b; 
 								| a &gt;= b; 
-				.row
+				.row.advanced
 					.col-sm-3
 						p Muuda tüüpi
 					.col-sm-9
@@ -214,7 +214,7 @@ template(name="muutujad")
 								| int c = a.intValue();
 								| double d = a.doubleValue();
 
-		h4#muutuja-soned Sõned
+		h4.advanced#muutuja-soned Sõned
 
 		.panel.panel-info.advanced
 			h5#char.panel-heading char
@@ -272,7 +272,7 @@ template(name="muutujad")
 								| "Vanus: " + "45"       =&gt; "Vanus: 45"
 								| "45" + 5               =&gt; "455"
 
-				.row
+				.row.advanced
 					.col-sm-3
 						p Tüübi muutmine
 					.col-sm-9
@@ -280,25 +280,25 @@ template(name="muutujad")
 							code 
 								| int c = Integer.parseInt(a);
 								| double c = Double.parseDouble(a);
-				.row
+				.row.advanced
 					.col-sm-3
 						p Kas sõne sisaldab "õue"
 					.col-sm-9
 						pre
 							code a.contains("õue");
-				.row
+				.row.advanced
 					.col-sm-3
 						p Muuda kõik tähed suureks
 					.col-sm-9
 						pre
 							code a.toUpperCase();
-				.row
+				.row.advanced
 					.col-sm-3
 						p Muuda kõik tähed väikseks
 					.col-sm-9
 						pre
 							code a.toLowerCase();
-				.row
+				.row.advanced
 					.col-sm-3
 						p Poolita sõne tühikutega.
 					.col-sm-9
@@ -306,7 +306,7 @@ template(name="muutujad")
 							code
 								| a.split(" ");
 								| // ["Lähme", "õue", "mängima."]
-				.row
+				.row.advanced
 					.col-sm-3
 						p Asenda "õue" sõnega "arvutisse"
 					.col-sm-9
@@ -314,19 +314,19 @@ template(name="muutujad")
 							code
 								| a.replace("õue", "arvutisse");
 								| // "Lähme arvutisse mängima."
-				.row
+				.row.advanced
 					.col-sm-3
 						p Nagu replace(), aga <a href="http://regexone.com/" target="_blank">regex'iga</a>
 					.col-sm-9
 						pre
 							code a.replaceAll(regex, "uus väärtus");
-				.row
+				.row.advanced
 					.col-sm-3
 						p Kas sõne on tühi?
 					.col-sm-9
 						pre
 							code a.isEmpty();
-				.row
+				.row.advanced
 					.col-sm-3
 						p Mis indeksil on sõne "mängima"?
 					.col-sm-9
@@ -338,20 +338,14 @@ template(name="muutujad")
 					.col-sm-9
 						pre
 							code a.length(); // 18
-				.row
+				.row.advanced
 					.col-sm-3
 						p Mis täht asub indeksil 0?
 					.col-sm-9
 						pre
 							code a.charAt(0); // 'L'
-				.row
-					.col-sm-3
-						p Kas sõne s ja b on identse sisuga?
-					.col-sm-9
-						pre
-							code a.equals(b);
 
-		h4#muutuja-muu Muu
+		h4.advanced#muutuja-muu Muu
 
 		.panel.panel-info
 			h5#boolean.panel-heading.bold boolean
@@ -457,7 +451,7 @@ template(name="muutujad")
 			p See üks rida on muidugi suhteliselt keeruline, aga andmed on meil vähemalt struktureeritud ja korras.
 
 		.panel.panel-info
-			h5#Massiiv.panel-heading.bold Massiiv
+			h5#massiiv.panel-heading.bold massiiv
 			.panel-body
 				p Hoiab mitmeid väärtusi korraga, aga ainult ühte tüüpi ja kogust muuta ei saa.
 				.text-success + lihtne kasutada
