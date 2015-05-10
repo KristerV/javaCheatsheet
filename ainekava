@@ -9,7 +9,7 @@ Mida valmis teeksid, kui juba oskaksid? Ehk mis on maailmas puudu?
 Kas ainekava hirmutab sind? Mis täpsemalt?
 Kui mitu tundi nädalas oled planeerinud sellele ainele?
 Miks tulid IT Kolledžisse?
-Miks arvad, et Java on skohustuslik aine?
+Miks arvad, et Java on kohustuslik aine?
 Kui oled varem kokku puutunud, siis mitu aastat oled progenud ja mis keeltes?
 
 Loeng
@@ -17,9 +17,11 @@ Loeng
 
 Esimene
 -------
-Miks - progemisest üldse
-Kuidas - ainest ja materjalidest
-Kui hätta jääd.
+FAQ
+- Milleks progemine?
+- Miks Java? Keerukus keskel, hea stabiilsus ja vea kontrollija, riistvara keskel, küps platvorm.
+- https://youtu.be/YMPzDiraNnA learned helplessness ja Learning Proximity
+Kuidas õpime - ainest ja materjalidest.
 Start - klass, meetod, muutuja, if, while selgeks läbi füüsiliste harjutuste.
 Intellij
 

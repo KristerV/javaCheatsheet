@@ -1,15 +1,24 @@
 i200.itcollege.ee
+=================
 
-Käesolevad materjalid
+Color.rgb() Color.RED
+
+Käesolevate materjalide kasutamine
 
 Ainest
 
 Intellij
+- install
+- All vasakul ikoon
+- New program
+- Run program
+- Debug
 
 External resources
 
 How to approach a new program
 - enne probleemi lahendus paberil siis algoritmid koodis
+- algoritmiks tõlkimine
 - viska lego maha
 - top down
 - alusta lõpust
@@ -22,9 +31,15 @@ How to understand existing code
 Hädaabi
 - sulud / treppimine
 - IDE errorid
+    - ClassNotFoundException (vale klassi käivitad)
+    - ArrayIndexOutOfBounds
+    - Number tuleb 8.6535634789E120
+    - JavaFx - importisid vale paketi
 - tuntud konsooli errorid
+- debug
 - küsi foorumist / õppejõult
 
 GIT basics
-- point
-- commands
+- milleks git ja GitHub
+- käsitlemine ehk käsud
+

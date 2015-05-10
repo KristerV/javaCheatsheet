@@ -1,52 +1,10 @@
 puudu
 =====
 
-Kuidas õpetada
---------------
-http://worrydream.com/LearnableProgramming/
-
-Kuidas programmeerida
----------------------
-probleemi lahendamine
-lahenduse tõlkimine algoritmi
-https://youtu.be/YMPzDiraNnA learned helplessness
-
-Veaohtlikud kohad
------------------
-ClassNotFoundException (vale klassi käivitad)
-ArrayIndexOutOfBounds
-Number tuleb 8.6535634789E120
-JavaFx - importisid vale paketi
-
-Knowledge
----------
-Color.rgb() Color.RED
+Backlog
+=======
 kompilaator
 avaldis
-type casting
-giti kasutamine
 muid mõisteid Jaanuse materjalist
-TIME - sleep, event, interval
-Java - graafikul näidata keerukust, stabiilsust, riistvara lähedust, võimalusi
-
-IDE
----
-all vasakul ikoon
-Debugimine
-IDE errorite haldus
-
-
-i200.itcollege.ee
------------------
-TextField
-Button
-SubmitForm
-FileChooser
-
-Konkreetsed programmi näited
-----------------------------
-Form
-JavaFX
-
-
-WHY??
+WHY
+konkreetsed programmi näited
