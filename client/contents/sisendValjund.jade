@@ -967,3 +967,21 @@ template(name="sisendValjund")
 												|         10.0, 20.0
 												| });
 										p Antud näites on 3 otspunkti: [(0.0,0.0), (20.0, 10.0), (10.0, 20.0)]
+		.panel.panel-info.advanced
+			h3.panel-heading#javafx-color Color
+			.panel-body
+				p Color klassi abil saad määrata värvi, millega elementi värvida.
+				p Olemasolevaid värve saad valida kirjutades <code>Color.</code> ja valides paljudest värvidest.
+				pre
+					code
+						| Color.RED;
+						| Color.GREEN;
+						| Color.BLUE;
+						| Color.BLUEVIOLET;
+						| Color.CADETBLUE;
+						| Color.DEEPSKYBLUE;
+				p Kui soovid aga ise värvi koostada RGB formaadis, kasuta seleks <code>Color.rgb()</code> meetodi.
+				pre
+					code
+						| Color.rgb(255,0,0); // punane
+						| Color.rgb(23,235,78); // Rohekas
