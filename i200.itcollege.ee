@@ -7,12 +7,14 @@ Käesolevate materjalide kasutamine
 
 Ainest
 
-Intellij
-- install
-- All vasakul ikoon
-- New program
-- Run program
-- Debug
+DevEnv
+	- install Intellij JDK SDK
+	Intellij
+		- All vasakul ikoon
+		- New program
+		- Run program
+		- Debug
+
 
 External resources
 

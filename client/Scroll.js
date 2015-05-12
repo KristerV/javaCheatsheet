@@ -5,8 +5,10 @@ Scroll = {
 		Scroll.changeUrl(elementId)
 	},
 	scrollTo: function(elementId) {
+		if (!elementId)
+			return false
 		var newTop = $('.layout-right #'+elementId).offset().top
-		$('body').animate({
+		$('body, html').animate({
 			scrollTop: newTop
 		}, 500);
 	},
