@@ -122,7 +122,7 @@ template(name="muutujad")
 		.panel.panel-info
 			h5#double.panel-heading.bold double
 			.panel-body
-				p reaalarvud (komakohaga) (alates 4.9*10^-324 kuni 1.79*10^308)
+				p reaalarvud (komakohaga) (alates -4.9*10^324 kuni 1.79*10^308)
 				.text-danger.advanced Reaalarvudega arvutamine on ebatäpne, vt. <a href="/vaartus-ohukoht2">Ohukoht2</a>
 				br
 				strong Kasutamine
@@ -369,7 +369,7 @@ template(name="muutujad")
 								| true != false;
 								| true == true &amp;&amp; false == false;
 								| true == false || false == false;
-						.text-info <code>&amp;&amp;</code> on nagu "ja", ehk mõlemad tingimused peavad olema tõesed.
+						.text-info <code>&amp;&amp;</code> on loogiline "ja", ehk mõlemad tingimused peavad olema tõesed.
 						.text-info <code>||</code> on nagu "või", ehk üks tingimustest peab olema tõene.
 						.text-danger <code>||</code> ei ole LL, ega ii. <code>||</code> on "pipe" ehk <kbd>AltGr + &lt;</kbd>;
 
