@@ -47,34 +47,27 @@ template(name="intellij")
 				.row.advanced
 					.col-sm-5 <kbd>ctrl + shift + enter</kbd>
 					.col-sm-7 Lõpeta lause ja lisa semikoolon.
-				.row
-					.col-sm-5 <kbd></kbd>
-					.col-sm-7 
-				.row
-					.col-sm-5 <kbd></kbd>
-					.col-sm-7 
 		.panel.panel-info
 			h3.panel-heading#intellij-kiirkasud Kiirkäsud
 			.panel-body
 				p kirjuta käsk ja vajuta enter. Näiteks <kbd>sout + enter</kbd> kirjutab <code>System.out.println()</code>.
 				.row
 					.col-sm-5 <kbd>sout</kbd>
-					.col-sm-7 
+					.col-sm-7
+						pre
+							code System.out.println()
 				.row.advanced
 					.col-sm-5 <kbd>soutv</kbd>
-					.col-sm-7 
+					.col-sm-7
+						pre
+							code System.out.println("a = " + a)
 				.row
 					.col-sm-5 <kbd>psvm</kbd>
-					.col-sm-7 
+					.col-sm-7
+						pre
+							code public static void main()
 				.row.advanced
 					.col-sm-5 <kbd>fori</kbd>
-					.col-sm-7 
-				.row
-					.col-sm-5 <kbd></kbd>
-					.col-sm-7 
-				.row
-					.col-sm-5 <kbd></kbd>
-					.col-sm-7 
-				.row
-					.col-sm-5 <kbd></kbd>
-					.col-sm-7 
+					.col-sm-7
+						pre
+							code for (int i = 0; i &lt; x; i++) {}
