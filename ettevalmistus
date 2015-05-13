@@ -1,20 +1,18 @@
-kava
-====
+ettevalmistus
+=============
 
 must have
 ---------
 X Videod basics
-  i200.itcollege.ee - OOP
-  Videod OOP, JavaFX
+X i200.itcollege.ee
+  uus java graafik based on the website
+X Ainekava - planeerida küsimustikud, loengute ja praktikumide tegevused / lähenemised
+  i200.itcollege.ee viimased abivahendid
 
 nice to have
 ------------
+  Videod OOP, JavaFX
   harjutused praktikumi (git)
 X Foor objekt JavaFXiga
-  Ainekava - planeerida küsimustikud, loengute ja praktikumide tegevused / lähenemised
-
-üli nice to have
-----------------
   BigProject, millele alati toetuda
-  BigProject videos
-
+  BigProject video series
