@@ -1,0 +1,97 @@
+template(name="git")
+	.git
+		.panel
+			h1.panel-heading#git Git
+			.panel-body.visible
+				p Programmeerides võid kergesti hulluks minna ja üks põhilisi päästerõngaid on Git.
+				p Git on versioonihaldussüsteem, mis teeb kolme asja eriti hästi:
+				ul
+					li Hoiab tagavarakoopiaid pilves, juhul kui meie arvutiga peaks midagi juhtuma.
+					li Võimaldab tervel meeskonnal ühe programmiga samaaegselt toimetada
+					li Salvestab programmi staadiumeid, et kriitilise vea korral saab versioone tagasi kerida.
+				p Giti kasutamine on lausa hädavajalik ja olen isiklikult näinud vaid ühte professionaalset arendajat, kes seda ei kasuta (pärast meie kohtumist kasutab). Muidugi on versioonihaldussüsteeme rohkemgi, kuid Git on vaieldamatult üks parimaid.
+				p Gitiga võid hoida oma koodi ükskõik kus - meeskonna liikemte arvutites, oma serveris, mõnes pilveteenuses. Üks populaarsemaid pilveteenuseid avatud lähtekoodiga tarkvaral on <a target="_blank" href="https://github.com/">GitHub.com</a>.
+				p Siin on mõned välised ressursid, mis aitavad teemat mõista:
+				ul
+					li <a target="_blank" href="http://git-scm.com/doc">git-scm.com</a> - sõbralik ja põhjalik ametlik dokumentatsioon.
+					li <a target="_blank" href="http://try.github.io">try.github.io</a> - Interaktiivne õpetus.
+					li <a target="_blank" href="https://www.youtube.com/watch?v=8oRjP8yj2Wo&list=PLg7s6cbtAD165JTRsXh8ofwRw0PqUnkVH">GitHub Youtube</a> - Video õpetus.
+					li <a target="_blank" href="http://rogerdudler.github.io/git-guide/">Roger Dudler</a> - isetehtud õpetus.
+					li <a target="_blank" href="https://guides.github.com/">guides.github.com</a> - GitHubi kasutamisest.
+				.panel.panel-info
+					h3.panel-heading#git-kasklused Käsklused
+					.panel-body
+						p.text-warning Soovitan Gitti kasutada käsurealt, et seda mõista. Kui oled aga Windowsi kasutaja siis võta appi <a href="http://git-scm.com/downloads/guis" target="_blank">mõni tarkvara</a>.
+						hr
+						.row
+							.col-sm-3 Muuda käesolev kaust Giti repositooriumiks
+							.col-sm-9
+								pre
+									code git init
+						hr
+						.row
+							.col-sm-3 Lae alla aadressil olev koodi repositoorium
+							.col-sm-9
+								pre
+									code git clone https://github.com/KristerV/javaHarjutused.git
+						hr
+						.row
+							.col-sm-3 Tõmba alla repositooriumi uuendused
+							.col-sm-9
+								pre
+									code git pull
+						hr
+						.row
+							.col-sm-3 Vaata üldist seisu
+							.col-sm-9
+								pre
+									code git status
+						hr
+						.row
+							.col-sm-3 Vaata mis koodi oled muutnud pärast viimast salvestatud seisu
+							.col-sm-9
+								pre
+									code git diff
+						hr
+						.row
+							.col-sm-3 Valmista üks fail ette salvestamiseks
+							.col-sm-9
+								pre
+									code git add path/to/file.java
+						hr
+						.row
+							.col-sm-3 Valmista kõik failid ette salvestamiseks
+							.col-sm-9
+								pre
+									code git add --all
+						hr
+						.row
+							.col-sm-3 Salvesta ettevalmistatud failid
+							.col-sm-9
+								pre
+									code git commit -m "lühikirjeldus tehtud muudatustest"
+						hr
+						.row
+							.col-sm-3 Lükka repositooriumi uuendused üles
+							.col-sm-9
+								pre
+									code git push
+						hr
+						.row
+							.col-sm-3 Vaata projekti alajugu
+							.col-sm-9
+								pre
+									code git log
+				.panel.panel-info
+					h3.panel-heading#git-ignore .gitignore
+					.panel-body
+						p Kõiki faile ei ole meil vaja Gitti salvestada. Näiteks on Javas kompileeritud .class failid, millest pole hiljem kuigi palju kasu.
+						p .gitignore on fail, millega saad faile ja kaustasid Giti eest ära peita.
+						p Näiteks Java projekti puhul tahad salvestada srv/ kausta, aga mitte out/ ega .idea/ kaustasid (.idea on Intellij konfiguratsioonid, millest sinu meeskonnakaaslastel on igaühel oma). Siis loo uus fail nimega .gitignore oma projekti algsess kausta järgneva sisuga:
+						pre
+							code
+								| out/
+								| *.iml
+								| .idea/
+						p <code>*.iml</code> ütleb veel lisaks, et me ei taha ühtegi faili salvestada, mis lõppeb .iml-iga.
+						p Näitena võib tuua <a href="https://github.com/KristerV/javaHarjutused" target="_blank">javaHarjutused repositooriumi</a>.
