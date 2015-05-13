@@ -16,12 +16,15 @@ DevEnv
 External resources
 
 Hädaabi
-	sulud / treppimine
-	IDE errorid
-	    ClassNotFoundException (vale klassi käivitad)
-	    ArrayIndexOutOfBounds
-	    Number tuleb 8.6535634789E120
-	    JavaFx importisid vale paketi
-	tuntud konsooli errorid
-	debug
-	küsi foorumist / õppejõult
+	sulud / treppimine ehk süntaks
+	IDE vihjed erroritele
+	Kompileerija errorid
+		ClassNotFoundException (vale klassi käivitad)
+		Class xxxx not found in type declaration
+		ArrayIndexOutOfBounds
+		Number tuleb 8.6535634789E120
+		JavaFx importisid vale paketi
+	sout everything
+	debugi protsess läbi
+	küsi foorumist
+	küsi õppejõult
