@@ -19,7 +19,6 @@ Template.body.events({
 	},
 	'click #advancedButton': function(e) {
 		var advancedMode = !JSON.parse(localStorage.getItem('advancedMode'))
-		console.log(advancedMode)
 		Session.set('advancedMode', advancedMode)
 		localStorage.setItem('advancedMode', advancedMode)
 		if (advancedMode) {
@@ -42,7 +41,6 @@ Template.body.rendered = function() {
 
 Meteor.startup(function(){
 	Session.set('advancedMode', JSON.parse(localStorage.getItem('advancedMode')))
-	console.log(JSON.parse(localStorage.getItem('advancedMode')))
 	Meteor.setTimeout(function(){
 		Scroll.scrollUrl()
 	},1000)
