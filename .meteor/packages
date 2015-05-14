@@ -11,5 +11,5 @@ less
 mquandalle:jade
 simple:markdown-templating
 twbs:bootstrap
-fezvrasta:bootstrap-material-design
 percolate:velocityjs
+fezvrasta:bootstrap-material-design
