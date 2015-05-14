@@ -7,7 +7,14 @@ Scroll = {
 	scrollTo: function(elementId) {
 		if (!elementId)
 			return false
-		var newTop = $('.layout-right #'+elementId).offset().top
+		var element = $('.layout-right #'+elementId)
+		if (!element.is(':visible')) {
+			$.notify('Vaatad edasijõudnute materjali.\nKui soovidki kõike materjali näha,\nsiis vasakul oleva sisukorra kõige\nall on nupp - vajuta seda.')
+			element
+				.removeClass('advanced')
+				.parents('.advanced').removeClass('advanced')
+		}
+		var newTop = element.offset().top
 		$('body, html').animate({
 			scrollTop: newTop
 		}, 500);
