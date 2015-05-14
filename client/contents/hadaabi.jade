@@ -13,8 +13,9 @@ template(name="hadaabi")
 				.panel-body
 					p Algajatel juhtub tihti, et Java süntaksit ei järgita. <a href="http://et.wikipedia.org/wiki/S%C3%BCntaks" target="_blank">Süntaks</a> on ka programmeerimises grammatika osa. Need on need reeglid, ilma milleta arvuti lihtsalt ei saa aru millest sa räägid. Kontrolli üle järgnevad korduma kippuvad vead:
 					p Kui sulud on korras vajuta <kbd>ctrl + alt + l</kbd>, et treppimine automaatselt korda seada.
+					hr
 					.row
-						.col-sm-3 Sulul ei ole paarilist
+						.col-sm-3.text-danger Sulul ei ole paarilist
 						.col-sm-9
 							pre
 								code
@@ -26,8 +27,9 @@ template(name="hadaabi")
 									|         }
 									|     
 									| }
+					hr
 					.row
-						.col-sm-3 Kirjaviga muutujas
+						.col-sm-3.text-danger Kirjaviga muutujas
 						.col-sm-9
 							pre
 								code
@@ -40,18 +42,21 @@ template(name="hadaabi")
 									|     }
 									| }
 
+					hr
 					.row
-						.col-sm-3 Sõnel ei ole jutumärke
+						.col-sm-3.text-danger Sõnel ei ole jutumärke
 						.col-sm-9
 							pre
 								code String auto = Ford Mustang;
+					hr
 					.row
-						.col-sm-3 Sõne või tähe ümber on valed sulud
+						.col-sm-3.text-danger Sõne või tähe ümber on valed jutumärgid
 						.col-sm-9
 							pre
 								code "Sõne on topelt jutumärkidega" != 't'
+					hr
 					.row
-						.col-sm-3 Mingi rea lõpust on puudu semikoolon
+						.col-sm-3.text-danger Mingi rea lõpust on puudu semikoolon
 						.col-sm-9
 							pre
 								code
@@ -63,8 +68,9 @@ template(name="hadaabi")
 									|         }
 									|     }
 									| }
+					hr
 					.row
-						.col-sm-3 Kuskil on liigne semikoolon
+						.col-sm-3.text-danger Kuskil on liigne semikoolon
 						.col-sm-9
 							pre
 								code
@@ -76,13 +82,15 @@ template(name="hadaabi")
 									|         }
 									|     }
 									| }
+					hr
 					.row
-						.col-sm-3 Suur-väike täht valesti (Java on tundlik)
+						.col-sm-3.text-danger Suur-väike täht valesti (Java on tundlik)
 						.col-sm-9
 							pre
 								code CamelCase != camelCase != Camelcase;
+					hr
 					.row
-						.col-sm-3 Võrdluses operaatorid sassis
+						.col-sm-3.text-danger Võrdluses operaatorid sassis
 						.col-sm-9 <code>==</code> on võrdlemiseks ja <code>=</code> on uue väärtuse omistamiseks.
 			.panel.panel-info
 				h3.panel-heading#hadaabi-IDE IDE vihjed erroritele
@@ -98,23 +106,21 @@ template(name="hadaabi")
 				h3.panel-heading#hadaabi-errorid Kompileerija errorid
 				.panel-body
 					p Kui oma programmi käima paned ja ta punast teksti konsooli viskab, siis otsi sealt tekstist järgnevaid märksõnu. Need on kõige populaarsemad vead, mis võivad tekkida:
+					hr
 					.row
-						.col-sm-6
-							pre
-								code ClassNotFoundException
+						.col-sm-6.text-danger ClassNotFoundException
 						.col-sm-6 Oled käivitanud vale klassi. Ava õige fail ja vajuta <kbd>ctrl + shift + f10</kbd>. Vt. ka <a href="/intellij-kiirklahvid">kiirklahve</a>
+					hr
 					.row
-						.col-sm-6
-							pre
-								code Class xxxx not found in type declaration
+						.col-sm-6.text-danger Class xxxx not found in type declaration
 						.col-sm-6 Oled unustanud importida mingi klassi, mida kasutad oma programmis.
+					hr
 					.row
-						.col-sm-6
-							pre
-								code ArrayIndexOutOfBounds
+						.col-sm-6.text-danger ArrayIndexOutOfBounds
 						.col-sm-6 Küsid massiivilt positsiooni kohta, mida pole olemas. Pea meeles, et positsioonide loendamine algab nullist. Näiteks massiivis <code>int[] a = {5, 3, 6};</code> ei ole olemas kohta <code>a[3]</code>.
+					hr
 					.row
-						.col-sm-6 Number tuleb vale, näiteks 8.6535634789<strong>E</strong>120
+						.col-sm-6 Number tuleb vale, näiteks <span class="text-danger">8.6535634789<strong><u>E</u></strong>120</span>
 						.col-sm-6 See E on tähtis, see märgistab, et näitab sulle ligikaudset arvu. "E" on kümne kordaja. Antud näites on arvuks 8.6535634789 * 10 ^ 120.
 			h2#hadaabi-kaivitub Programm käivitub
 			p Kui programm käivitub, aga tulemus ei ole see, mida ootasid.
