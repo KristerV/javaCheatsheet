@@ -19,14 +19,14 @@ template(name="hadaabi")
 						.col-sm-9
 							pre
 								code
-									| public class MaastikuArhitekt  {
-									|     public static void main(String[] args) {
+									| public class MaastikuArhitekt {// klass algab
+									|     public void meetod() {     // meetod algab
 									|         int a = 5;
-									|         if (a &lt; 10) {
-									|             System.out.println("Tõene");
-									|         }
-									|     
-									| }
+									|         if (a &lt; 10) {          // if algab
+									|             a++;
+									|         }                      // if lõppeb
+									|                                // meetodil POLE lõppu
+									| }                              // klass lõppeb
 					hr
 					.row
 						.col-sm-3.text-danger Kirjaviga muutujas
@@ -36,8 +36,8 @@ template(name="hadaabi")
 									| public class KosmoseAgentuur  {
 									|     public static void main(String[] args) {
 									|         int aasta = 2030;
-									|         if (aasla &lt; 10) {
-									|             System.out.println("Tõene");
+									|         if (aasla &gt; 2000) { // aasla => aasta
+									|             int milleenium = 2;
 									|         }
 									|     }
 									| }
@@ -47,7 +47,7 @@ template(name="hadaabi")
 						.col-sm-3.text-danger Sõnel ei ole jutumärke
 						.col-sm-9
 							pre
-								code String auto = Ford Mustang;
+								code String auto = Ford Mustang; // õige: "Ford Mustang"
 					hr
 					.row
 						.col-sm-3.text-danger Sõne või tähe ümber on valed jutumärgid
@@ -64,7 +64,7 @@ template(name="hadaabi")
 									|     public static void main(String[] args) {
 									|         int aasta = 2030;
 									|         if (aasla &lt; 10) {
-									|             System.out.println("Tõene")
+									|             System.out.println("Tõene") // puudub ;
 									|         }
 									|     }
 									| }
@@ -77,7 +77,7 @@ template(name="hadaabi")
 									| public class KosmoseAgentuur  {
 									|     public static void main(String[] args) {
 									|         int aasta = 2030;
-									|         if (aasla &lt; 10); {
+									|         if (aasla &lt; 10); { // pärast if ei tohi olla ;
 									|             System.out.println("Tõene");
 									|         }
 									|     }
