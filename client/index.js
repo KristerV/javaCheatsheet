@@ -40,10 +40,10 @@ Template.body.rendered = function() {
 }
 
 Meteor.startup(function(){
-	Session.set('advancedMode', JSON.parse(localStorage.getItem('advancedMode')))
+	Session.set('advancedMode', JSON.parse(localStorage.getItem('advancedMode')));
 	Meteor.setTimeout(function(){
 		Scroll.scrollUrl()
-	},1000)
+	},1000);
 
 	// Google analytics
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
