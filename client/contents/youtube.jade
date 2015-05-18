@@ -1,7 +1,7 @@
 template(name="youtube")
 	a.youtube.thumbnail.menu-invisible(href="https://youtu.be/{{id}}" target="_blank")
-		.youtube-thumb(style="background-image:url('http://img.youtube.com/vi/{{id}}/hqdefault.jpg')")
-			.youtube-logo
-				img(src="/images/muu/youtube.png")
+		.youtube-logo-container
+			img(src="/images/muu/youtube.png")
+		img(src="http://img.youtube.com/vi/{{id}}/hqdefault.jpg")
 		.caption
 			h3 {{title}}
