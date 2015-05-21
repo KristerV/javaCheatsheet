@@ -68,6 +68,7 @@ Kuidas alustada programmi kirjutamist?
 	top-down approach.
 	Alusta lõpust.
 Progemise head tavad.
+	Süntaks
 	Loetavus
 		muutujate nimed
 		treppimine
