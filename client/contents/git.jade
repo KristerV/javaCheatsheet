@@ -10,7 +10,7 @@ template(name="git")
 					li Võimaldab <a href="https://github.com/torvalds/linux/commits/master" target="_blank">tervel meeskonnal</a> ühe programmiga samaaegselt toimetada
 					li Salvestab <a href="https://github.com/KristerV/javaCheatsheet/commit/345f768a29425352e222a0a04d61806a33ad2c56" target="_blank">programmi staadiumeid</a>, et kriitilise vea korral saab versioone tagasi kerida.
 				p Giti kasutamine on lausa hädavajalik ja olen isiklikult näinud vaid ühte professionaalset arendajat, kes seda ei kasuta (pärast meie kohtumist kasutab). Muidugi on versioonihaldussüsteeme rohkemgi, kuid Git on vaieldamatult üks parimaid.
-				p Gitiga võid hoida oma koodi ükskõik kus - meeskonna liikemte arvutites, oma serveris, mõnes pilveteenuses. Üks populaarsemaid pilveteenuseid avatud lähtekoodiga tarkvaral on <a target="_blank" href="https://github.com/">GitHub.com</a>.
+				p Gitiga võid hoida oma koodi ükskõik kus - meeskonna liikmete arvutites, oma serveris, mõnes pilveteenuses. Üks populaarsemaid pilveteenuseid avatud lähtekoodiga tarkvaral on <a target="_blank" href="https://github.com/">GitHub.com</a>.
 				p Siin on mõned välised ressursid, mis aitavad teemat mõista:
 				ul
 					li <a target="_blank" href="http://git-scm.com/doc">git-scm.com</a> - sõbralik ja põhjalik ametlik dokumentatsioon.
@@ -78,7 +78,7 @@ template(name="git")
 									code git push
 						hr
 						.row
-							.col-sm-3 Vaata projekti alajugu
+							.col-sm-3 Vaata projekti ajalugu
 							.col-sm-9
 								pre
 									code git log
@@ -87,7 +87,7 @@ template(name="git")
 					.panel-body
 						p Kõiki faile ei ole meil vaja Gitti salvestada. Näiteks on Javas kompileeritud .class failid, millest pole hiljem kuigi palju kasu.
 						p .gitignore on fail, millega saad faile ja kaustasid Giti eest ära peita.
-						p Näiteks Java projekti puhul tahad salvestada srv/ kausta, aga mitte out/ ega .idea/ kaustasid (.idea on Intellij konfiguratsioonid, millest sinu meeskonnakaaslastel on igaühel oma). Siis loo uus fail nimega .gitignore oma projekti algsess kausta järgneva sisuga:
+						p Näiteks Java projekti puhul tahad salvestada src/ kausta, aga mitte out/ ega .idea/ kaustasid (.idea on Intellij konfiguratsioonid, millest sinu meeskonnakaaslastel on igaühel oma). Siis loo uus fail nimega .gitignore oma projekti algsess kausta järgneva sisuga:
 						pre
 							code
 								| out/

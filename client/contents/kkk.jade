@@ -4,9 +4,24 @@ template(name="kkk")
 		.panel-body
 			h3.menu-invisible Misasi see programmeerimine üldse on?
 
-			p Programmeerimine on programmi kirjutamine. Nojah, see on vist niigi selge. Aga misasi see programm on? Üldiselt on programm nagu üli täpsed juhised, kuidas mingit eesmärki saavutada. Lihtsustatult on programm ka pannkoogiretsept: "Võta jahu, piim, suhkur, sool, muna, õli. Vahusta muna, suhkur ja sool. Lisa piim ja jahu ning sega korralikult ära. Aseta pann pliidile, lülita pliit sisse, vala pannile õli. Kuni taigent jätkub: vala kulbiga taigent pannile; oota veidi; pööra kook ümber; oota veidi; tõsta pannilabidaga kook taldrikule;". Panid tähele kui täpselt ma praadimise osa kirjeldasin? See toidu tegemisel ei ole tarvilik, kuna inimene oskab lihtsamad lüngad täita oma elukogemusega, aga arvutitel ei ole elukogemust. Arvuteid peab väga spetsiifiliselt juhendama, iga liigutus on oluline.
+			p Programmeerimine on programmi kirjutamine. Nojah, see on vist niigi selge. Aga misasi see programm on? Üldiselt on programm nagu ülitäpsed juhised, kuidas mingit eesmärki saavutada. Lihtsustatult on programm ka pannkoogiretsept: 
+			ol
+				li Võta jahu, piim, suhkur, sool, muna, õli. 
+				li Vahusta muna, suhkur ja sool. 
+				li Lisa piim ja jahu ning sega korralikult ära. 
+				li Aseta pann pliidile, 
+				li lülita pliit sisse, 
+				li vala pannile õli. 
+				li Kuni tainast jätkub: 
+				ul
+					li vala kulbiga tainast pannile; 
+					li oota veidi; 
+					li pööra kook ümber; 
+					li oota veidi; 
+					li tõsta pannilabidaga kook taldrikule;".
+			p Panid tähele kui täpselt ma praadimise osa kirjeldasin? See toidu tegemisel ei ole tarvilik, kuna inimene oskab lihtsamad lüngad täita oma elukogemusega, aga arvutitel ei ole elukogemust. Arvuteid peab väga spetsiifiliselt juhendama, iga liigutus on oluline.
 
-			p Arvuti tarkvara kontekstis on tulemuseks mitte pannkook vaid programm, mis toimetab arvutis, internetis või suhtleb kasutajaga. Toome mõned näited. Kõige tuntum programm üldse on tõenäoliselt Windows ise. Muidugi, nii Mac OSX ja iga Linux on samuti programmid. Aga ka Chrome või Firefox on programmid. See wiki, mida praegu loed, on samuti programm. Lühidalt kõik mis ekraanil näed on programmid programmide sees. Kas see on veidi hirmutav? Pole midagi. Meie ei hakka siin operatsioonisüsteemi looma, meie hakkame lihtsaid ja mõnusaid programme kirjutama.
+			p Arvuti tarkvara kontekstis on tulemuseks mitte pannkook, vaid programm, mis toimetab arvutis, internetis või suhtleb kasutajaga. Toome mõned näited. Kõige tuntum programm üldse on tõenäoliselt Windows ise. Muidugi, nii Mac OSX ja iga Linux on samuti programmid. Aga ka Chrome või Firefox on programmid. See wiki, mida praegu loed, on samuti programm. Lühidalt kõik mis ekraanil näed on programmid programmide sees. Kas see on veidi hirmutav? Pole midagi. Meie ei hakka siin operatsioonisüsteemi looma, meie hakkame lihtsaid ja mõnusaid programme kirjutama.
 
 			h3.menu-invisible Mida me siin aines õpime?
 
@@ -20,7 +35,7 @@ template(name="kkk")
 
 			h3.menu-invisible Kas programmeerimine ei olegi keeruline?
 
-			p On küll! Aga mitte sellepärast, mis sa arvad. Programmeerimise põhitõed (need, mida siin aines õpime) on suhteliselt lihtsad, aga need on hoopis teistmoodi, kui oled harjunud mõtlema. Selle jaoks on isegi väljend: "Lähim arengu tsoon" (ingl. zone of proximal development) ja seda kirjeldab järgmine joonis:
+			p On küll! Aga mitte sellepärast, mis sa arvad. Programmeerimise põhitõed (need, mida siin aines õpime) on suhteliselt lihtsad, aga need on hoopis teistmoodi, kui oled harjunud mõtlema. Selle jaoks on isegi väljend: "Lähim arengu tsoon" (ingl. "zone of proximal development") ja seda kirjeldab järgmine joonis:
 
 			img(src="/images/zoneOfProximalDevelopment.svg")
 
@@ -47,7 +62,7 @@ template(name="kkk")
 					| }
 
 
-			p "while" käsku nimetame tsükliks, sest mis iganes on tema <code>{</code> loogeliste sulgude <code>}</code> vahel, ta käitab uuesti ja uuesti, nii kaua kuni tema <code>(</code> tavaliste sulgude <code>)</code> vahel olev tingumus on tõene, ehk programm on tsüklis. While tsükli <code>{</code> sees <code>}</code> on kaks "if" tingimust. See on samuti formaadis <code>käsk (tingimus) {tegevus}</code>, aga siin  ei satu koodijupp mitte tsüklisse, vaid käivitub ainult ühe korra.
+			p "while" käsku nimetame tsükliks, sest mis iganes on tema <code>{</code> loogeliste sulgude <code>}</code> vahel, ta käitab uuesti ja uuesti, nii kaua kuni tema <code>(</code> tavaliste sulgude <code>)</code> vahel olev tingimus on tõene, ehk programm on tsüklis. While tsükli <code>{</code> sees <code>}</code> on kaks "if" tingimust. See on samuti formaadis <code>käsk (tingimus) {tegevus}</code>, aga siin  ei satu koodijupp mitte tsüklisse, vaid käivitub ainult ühe korra.
 
 			p Programm siis esiteks loob uue tegelase nimega "toomast" <code>Character toomast  new Character();</code> ja liigutab teda paremale või vasakule niikaua kuni parem või vasak klaviatuuri klahv on vajutatud. Antud kood on veidi lihtsustatud, aga süntaks (grammatika), ehk sulud, semikoolonid ja muud märgid on õigesti paigas.
 
