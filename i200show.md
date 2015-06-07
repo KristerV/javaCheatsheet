@@ -2,7 +2,9 @@
 
 - Sissejuhatus
   - Miks üldse alustasin
+  - Algsed plaanid
   - Allikad, mida läbisin
+  - Loodud materjalid, ehk ainekava
 - Sisu
   - Mis siis valesti oli (kaugõpe)
   - Lahendused (Kaugõpe)
@@ -21,8 +23,8 @@
 ### Miks on programmeerimise õppimine keeruline?
 
 - Proximal dev zone
+- rigiidne loogika on harjumatu
 - abstraktne, pead masina loogikat peas mudeldama (kuigi iga käsklus teeb midagi konkreetset, näeme meie ainult lõpp tulemust)
-- harjumatult rigiidne loogika
 
 > Programmeerimise maailm on veider ja võõras. Seda ei ole võimalik selgeks teha. See peab lihtsalt klikkima. Ja klikkimist ei saa keegi peale õppija enda esile kutsuda rohke tööga.
 
@@ -56,24 +58,35 @@
 
 ### probleemsed kohad
 
-- Loengud üritasid kõigest korraga rääkida ja ruttasid praktikumidest ette.
-- Õpetus algas mõistest ja läks funktsionaalsuseni edasi
-- Kui miski oluline jäi tunnis arusaamatuks, siis ei aidanud salvestus ega materjalid.
-- kooli mentaliteet, ehk "tahvli pealt õppimine" ei vii kuhugi.
-- Kõik ei õpi ühtemoodi. Mõni tahab kuulda, mõni näha, mõni katsuda.
-- kodus ei tehta tööd
-- ei teki head ülevaadet Javast ega programmeerimisest
-- õige info leidmine on keeruline
-- Kordusid samad algajate vead ja ei osanud abi kuskilt otsida
+- Üldine
+  - ei teki head ülevaadet Javast ega programmeerimisest
+  - Õpetamine lähtub mõistetest
+  - Kui tunnis ei saanud aru jäi tudeng üksinda
+  - Praktika kaitsmised olid kohati nõrgad
+  - Oma tööst ei peeta suurt lugu.
+- Loengud
+  - Loengu teemad ei ühildu praktikumidega
+  - Loengute sisu on liiga mahukas
+- Praktikumis
+  - Kooli mentaliteet tahvlit vahtida ja oodata kuni kõik saab selgeks.
+  - Kõik ei õpi ühtemoodi. Mõni tahab kuulda, mõni näha, mõni katsuda.
+  - Klassis ei suhelda üldse, ei juleta oma tööd näidata.
+- Kodus
+  - kodus ei tehta tööd
+  - õige info leidmine on keeruline
+  - Korduvad algajate vead ja ei leia abi
 
 ### Lahendused
 
+- Loengu sisu vähemaks lõigata.
 - Loengud on samas rütmis praktikumidega
 - Õpetus algab probleemist, järgneb lahendus ja mõisted tulevad sisse kasutamise käigus.
 - Julgustada eksperimenteerimist (projekt, harjutused ja julgustav kommuun)
 - Saata regulaarselt imepisikesi harjutusi, et hammast verel hoida
 
 - Koostada lihtsasti kasutatavad materjalid
+- Paaris programmeerimine
+- Esinemine
 - Algajate videod
 - pakume mitmeid muid allikaid, mille kaugu õppida.
 - Teha kodus progemine lihtsaks (materjal, kommuun, projekt)
@@ -81,15 +94,21 @@
 - Materjalides tuua välja Hädaabi pakett.
 - Materjalid on lingitavad, et tudengid saaksid üksteist toetada.
 - Materjalid avaldavad sulle ainult hädavajaliku - nupust saad advanced
+- Töö tuleb esitada klassi ees.
+- Iseseisva töö soodustamine
 
 ## Ekstra
 
 Test heade progejate välja sõelumiseks
 Tahvellaud.
-Slaidid, mis järgnevad jutule.
 
 ## Veel teha vaja
 
 Harjutusi eesti keeles
-Harjutusi external links panna loogiliselt
+Harjutusi external links panna loogiliselt järjekorda
 Päris elust harjutusi juurde (nagu foor)
+Loengu materjalid
+Videod OOP, JavaFX
+BigProject, millele alati toetuda
+BigProject video series
+KT1, KT2, eksam

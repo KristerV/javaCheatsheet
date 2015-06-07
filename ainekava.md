@@ -87,12 +87,13 @@ Valmistumine eksamiks
 
 ### Praktikum 1 - 4: up to speed with the basics
 
-"Põhilised 5" harjutused
+"Põhilised 5" harjutused (paaris)
 
 ### Praktikum 5 - 12: actual work
 
-- JavaFX harjutused
-- Projekt ja 1:1 mentorlus
+- JavaFX harjutused (paaris)
+- Projekt (paaris)
+- 1:1 mentorlus
 
 ### Praktikum 13 - 16: final
 
