@@ -1,7 +1,13 @@
 template(name="sissejuhatus")
 	.sissejuhatus
 		h1#sissejuhatus Sissejuhatus
-		p Esimese asjana võid videod läbi vaadata. Proovi iga video juures jälgida siin lehel olevat skeemi ja aru saada kuidas erinevad osad seotud on.
+		.panel.panel-info
+			h2.panel-heading#chat Chat
+			.panel-body
+				strong.text-danger Kui proged Javat hängi meie jututoas: <a target="_blank" href="https://gitter.im/KristerV/i200">gitter.im/KristerV/i200</a>.
+				p Seal saad eriti kiiresti oma küsimustele vastused ja vahest saab niisamagi targemaks. Sisse saad logida GitHubi kontoga (kuna igal arendajal see juba on).
+
+		h2#Videod Videod
 		.row
 			.col-sm-4
 				+youtube(id="IpmBjKqFOvk" title="1. Skeemi tutvustus")
@@ -29,3 +35,21 @@ template(name="sissejuhatus")
 				+youtube(id="S4GnFBQD8YU" title="12. Sisend konsoolis")
 			.col-sm-4
 				+youtube(id="a4rRRHDFxY8" title="13. Väljund konsoolis")
+		+kkk
+		.panel.panel-info
+			h2.panel-heading#external-links Väliseid ressursse
+			.panel-body
+				p Igaühel on oma viis õppimiseks, seega siin on hea nimekiri erinevatest online ressurssidest: <a target="_blank" href="http://code.krister.ee/learn-prgramming-sources/">code.krister.ee</a>.
+		
+		.panel.panel-info
+			h2.panel-heading#Progemine-praktikas Progemine praktikas
+			.panel-body
+				p On mõned põhitõed, mida enne päris maailmas tegutsemist tavaliselt ei õpi. Siin on kiire ülevaade.
+				ol
+					li Programmeerimine on katse-eksitus meetodi maailm, ehk seda teevad nii algajad kui ka proffid. Alustada tuleb alati väikestest juppidest ja igal sammul kindlaks teha, et programm teeb seda mida sa temalt ootad.
+					li Google on progeja parim sõber. Internet on suur teadmiste pank ja pole kedagi, kes kõike peast teaks. Kuid tark ei koperi pimesi koodi vaid õpib seda mõistma ja kasutab vaid vajalike osi.
+					li Iga programm võtab kordades rohkem aega kui oskasid arvata. <a target="_blank" href="http://blog.codinghorror.com/defeating-optimism/">Optimism elukutsega kaasnev oht</a>.
+					li Efektiivse programmi loomine algab korralikust eeltööst. Pea ees sisse hüpates saad katsetada ja mängida, aga mitte midagi tõsist teha. Läbi on vaja mõelda nii otstarve, funktsionaalsus, kujundus kui ka programmi enda arhitektuur.
+					li Junior / developer / Senior on kolm tiitlit, mida võid omistada. Junior on muidugi õpilane. Lihtsalt arendaja oled siis, kui saad iseseisvalt hakkama ja senior on alates 7 aastat kogemust ja oskab ka kõige keerulisemaid probleeme lahendada. Kuskil seda kirjas muidugi ei ole ja antud kirjeldus on vaid mulje.
+					li Arvuti ei tee vigu. Inimesed teevad vigu. Inimene oled sina, olen mina ja on kõik need, kes on Java ja kõik muu tarkvara kirjutanud. Aga enne kui teisi süüdistad, tee 100% kindlaks, et viga pole sinu enda koodis.
+					li Tarkvara arendaja on küll ainus meeskonnaliige, kes on hädavajalik, et tarkvara toode valmis saada, aga ta kindlasti pole ainuke oluline. Et tootest asja saaks on vaja disaini, äri, arhitektuuri, kasutajatoe ja muid inimesi.
