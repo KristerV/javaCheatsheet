@@ -1,126 +1,161 @@
-# Kava
+# i200 kaugõppe materjalide ettekanne
 
-- Sissejuhatus
+## Sissejuhatus
   - Miks üldse alustasin
   - Algsed plaanid
   - Allikad, mida läbisin
-  - Avastused (eri vaatepunktid probleemile)
   - Loodud materjalid, ehk ainekava
-- Sisu
-  - Mis siis valesti oli (kaugõpe)
-  - Lahendused (Kaugõpe)
-  - Uurisin kuidas üldse progemist on hea õppida
-  - Lahendused (Progemine)
-  - Kuidas on hea õpetada (tahvel, ei peaks end kordama, oleks kuhugi viidata (seoseid))
-  - Uued probleemid
-  - Hoopis puudu
-  - Tuleviku plaan
-- Kokkuvõte
-  - Materjal on täiega WIP
-  - Tegelt ei õpi kõik kunagi, aga saab paremini ja on ka test!
 
-# i200 kaugõppe materjalide ettekanne
+## Uues eesmärgid
 
-### Miks on programmeerimise õppimine keeruline?
+- Viia tudeng iseseisvuseni, ehk kuni käib "klikk"
+- Õpetada kaugemale kui vaid tsükkel
 
-- Proximal dev zone
-- rigiidne loogika on harjumatu
-- abstraktne, pead masina loogikat peas mudeldama (kuigi iga käsklus teeb midagi konkreetset, näeme meie ainult lõpp tulemust)
+## Miks on programmeerimise õppimine keeruline?
 
-> Programmeerimise maailm on veider ja võõras. Seda ei ole võimalik selgeks teha. See peab lihtsalt klikkima. Ja klikkimist ei saa keegi peale õppija enda esile kutsuda rohke tööga.
+* Proximal dev zone
+  - õppetöö algab võõraste mõistete ja kontseptsioonidega
+    + Rääkida tuttavate sõnadega
+    + Tuua päris maailma tuttavad asjad mängu
+    + Esimesed koodi harjutused igapäeva elust
+  - Tudeng ei saa poindile pihta, seosed tekivad aeglaselt
+    + Alustada tuleb üldisemast ja siis minna täpsemaks
+    + Esimese tunni jooksul põhi 5 selgeks
+    + Kasutada füüsilisi harjutusi
+    + Skeem annab üldpildi
+- Halastamatu arvuti ja tema loogika
+  - Tehakse samu vigu korduvalt
+    + Materjalis vigade KKK
+  - Ei osata viga parandada
+    + IDE juhend igaks olukorraks
+  - Ei saada aru, kuhu mis sümbol panna
+    + Materjalides reeglid paika
+- abstraktne, pead masina loogikat peas mudeldama
+  - Keskendumine õigele lahendustele
+    + Keskendume debugimisele
+  - Tudeng ei saa aru kuidas programmi kirjutamisele läheneda
+    + Koostada samm-sammu haaval järgitav juhend
+  - Igal tudengil on oma viis õppida
+    + Keegi pidevalt seletaks iga võimaliku nurga alt
+  + Harjutamine teeb meistriks
 
-### Algajal on vaja kolme põhiomadust:
+## Algajal on vaja kolme põhiomadust
 
-- uudishimu ala vastu, ehk kuidas arvutid töötavad - naturaalne juurde õppimise vajadus (anname vabaduse eksperimenteerida)
-- järjepidevus, ehk hasart - et takistuste töttu alla ei annaks (eemaldame takistused, et see ei leiaks takistusi)
-- loogilise mõtlemise võime - et arvuti keelt oleks võimalik mõista (seda ei saa õppida, aga saab harjutada - teeme harjutusi)
+* uudishimu, mida ei tohi tappa
+  - Kontrolltööd ja eksam
+    + KT on 0 kaaluga ja eksam väikse kaaluga
+  - Ainult harjutused ja materjal
+    + Projekt
+* järjepidevus, mis ei tohi takerduda
+  - Klassis progedes ei jõua õppejõud kõigini
+    - takerdudes tudengid ei suhtle omavahel
+    + Paaris programmeerimine
+  - Kodus progedes ei ole kiireid vastuseid
+    + Jututuba
+  - Pidevalt on vaja samat infot kätte saada
+    + Materjalid, kus töötab nn. lihasmälu
+* loogilise mõtlemise võime, mida tuleb treenida
+  + Harjutamine
 
 > Kuigi kõik töö on tudengi käes, on ülikoolil siiski oma roll: Võimaldada seline platvorm, kus protsessid liiguvad eriti sujuvalt.
 
-### Programmeerimist on hea õppida kui...
+## Keskkond, kus on hea progemist õppida
 
-- on kindel eesmärk (projekt)
-- on üks koht, kus kõik põhi asjad kirjas (materjal)
-- probleemide esinemisel on keegi, kes aitab kiiresti üle saada. (kommuun)
-- on keegi, kes oskab juba varakult probleeme ette näha ja suunata. (mentor)
+* Erinevad õpmeetodid on kooskõlas
+  - Loengud ruttasid praktikumist ette
+    + Üks õppejõud
+    + Loengus on sissejuhatus uude teemasse ja taustinfo
+    + Praktikumis harjutatakse ja implementeeritakse
+  - Koduse töö olemus segane
+    + Projekt
+    + Projekti nikerdad samm-sammu haaval vastavalt õpitule
+* On kindel eesmärk (siht kuhu püüelda ja kontekst)
+  - jupiti harjutused ja õpetamine
+    + Projekt
+* Julgustatakse eksperimenteerimist
+  - KT, KT, eksam
+    + ei KT, väike eksam
+  - Enda loodud projekt
+  - Kinnitada, et progemine ongi katse-eksitus meetod
+* Kõik vajalik info on ühes kasutajasõbralikus kohas
+  - Õpiku stiilis materjalid
+  + Materjalid
+    + Ülevaade
+    + Lihtne sisukord
+    + Algaja videod
+    + KKK
+    + IDE kasutusjuhend
+    + Alguses ei mattu koguse alla
+    + Lingid on jagatavad
+    + Parimad välislingid
+* Küsimused saavad kiirelt vastuse, ei jääda toppama ühe asja otsa
+  - Foorum on aeglane
+    + Jututuba
+  - Materjalid ei ole otsitavad
+    + Mugav sisukord
+    + Kõik on ühe lehe peal
+* on keegi, kes oskab probleeme ette näha ja suunata
+  + mentor
 
-### Kaugõppe eripära
+## Kaugõppe eripärad
 
-- palju iseseisva õppimise aega
+* Palju iseseisvat aega
+  - Keegi kodus midagi ei tee
+    - kodus on üli keeruline
+      - Ei tea kust alustada
+        + Järgitav juhend, kuidas progemisele läheneda
+      - Ei tea kust mida otsida
+        + Materjalid, mis vastavad paljudele küsimustele
+      - Ei tea Java võimalusi
+        + Materjalides on hea ülevaade
+      - Lihtsate probleemide küüsis
+        + korduma kippuvad vead
+      - Ei saa vastuseid
+        + Jututuba, kus saab kiireid vastuseid
+    - pole aega planeerinud, lihtsalt ei jõua, pole motti, unustab
+      + mikroülesanded regulaarselt emailile
+* Vähe loenguid, vähe praktikume
+  + Kõik tegevus orienteeritud iseseisvalt hakkama saamisele
+  - ei ole aega kõigest rääkida
+    + Javast vähem rääkida
+    + Rohkem metoodikast ja kuidas ise hakkama saada
+    + Kuidas materjale kasutada
+    + Kust juurde otsida
+    + Mis lõpuks selgeks peab saama
+  - pole igaühe probleemide jaoks aega
+    + paaris progemine
+    + jututuba
+* Palju inimesi, Kontakti vähe
+  - Pole alati selge kaugel keegi on
+    + küsitlus
 
-### läks hästi
+## Otsad kokku
 
-- harjutused panid mõtlema
-- projekt andis reaalse programmeerimise kogemuse
-- projekti kaitsmine õpetas programmeerimisest rääkima, läbi mõtlema ja teistele oli ka kasulik
-- Küsimustikud
-- mikroülesanded emailil paar korda nädalas
-
-### probleemsed kohad
-
-- Üldine
-  - ei teki head ülevaadet Javast ega programmeerimisest
-  - Õpetamine lähtub mõistetest
-  - Kui tunnis ei saanud aru jäi tudeng üksinda
-  - Praktika kaitsmised olid kohati nõrgad
-  - Oma tööst ei peeta suurt lugu.
-- Loengud
-  - Loengu teemad ei ühildu praktikumidega
-  - Loengute sisu on liiga mahukas
-- Praktikumis
-  - Kooli mentaliteet tahvlit vahtida ja oodata kuni kõik saab selgeks.
-  - Kõik ei õpi ühtemoodi. Mõni tahab kuulda, mõni näha, mõni katsuda.
-  - Klassis ei suhelda üldse, ei juleta oma tööd näidata.
-- Kodus
-  - kodus ei tehta tööd
-  - õige info leidmine on keeruline
-  - Korduvad algajate vead ja ei leia abi
-
-### Lahendused
-
-- Iseseisvust
-  - projekt
-  - materjalid
-  - kommuun
-
-- Üldine
-  - Julgustada eksperimenteerimist
-- Loeng
-  - Sisu vähendada (niikuinii ei haaku)
-  - Õpetus algab probleemist, järgneb lahendus ja mõisted tulevad sisse kasutamise käigus.
-  - Loengud ja praktikumid on süngis.
-- Kommuun
-  - Klassis paaris progemine
-  - Netis mitteametlik koht
-  - Foorum suuremate asjade jaoks
-- Materjalid
-  - Lihtsasti kasutatav
-  - Ülevaade Javast, koht kus kõike seostada
-  - Lihtsasti jagatavad
-  - Hädaabi pakett
-  - Algaja materjal, et keegi ei jääks algusesse kinni
-  - Alguses ainult algaja materjal
-  - Välised mitmekülgsed allikad
-- Projekt
-  - 70% kogu ainest
-  - Tulemuse esitamine
-- Kodus
-  - mikro ülesanded
-  - materjal aitab
-  - kommuun toetab
+- Metoodikast
+  - Lahenda enne paberil probleem, siis tõlgenda algoritmi
+  - Tulemusest orienteeritud
+  - Proovi käima saada, siis kirjuta uuesti
+  - Top-down approach
+- Hoopis puudu
+  - Puuetega inimestele kättesaadavaks
+  - Päris elust harjutusi juurde (nagu foor)
+  - Harjutusi eesti keeles koguda
+  - Harjutusi external links panna loogiliselt järjekorda
+  - Loengu materjalid
+  - Videod OOP, JavaFX
+  - BigProject, millele alati toetuda
+  - BigProject video series
+  - KT1, KT2, eksam
+- Edasi
+  - Puudused eemaldada
+  - Tudengitega koos täiendada
 
 ## Ekstra
 
-Test heade progejate välja sõelumiseks
+Git.
 Tahvellaud.
 
-## Veel teha vaja
-
-Harjutusi eesti keeles
-Harjutusi external links panna loogiliselt järjekorda
-Päris elust harjutusi juurde (nagu foor)
-Loengu materjalid
-Videod OOP, JavaFX
-BigProject, millele alati toetuda
-BigProject video series
-KT1, KT2, eksam
+## Kokkuvõte
+Pole ammugi valmis - tudengid peale ja täiendama
+Double hump problem
+Test heade progejate välja sõelumiseks
