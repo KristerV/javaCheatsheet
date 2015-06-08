@@ -4,6 +4,7 @@
   - Miks üldse alustasin
   - Algsed plaanid
   - Allikad, mida läbisin
+  - Avastused (eri vaatepunktid probleemile)
   - Loodud materjalid, ehk ainekava
 - Sisu
   - Mis siis valesti oli (kaugõpe)
@@ -39,10 +40,9 @@
 ### Programmeerimist on hea õppida kui...
 
 - on kindel eesmärk (projekt)
-- on üks koht
+- on üks koht, kus kõik põhi asjad kirjas (materjal)
 - probleemide esinemisel on keegi, kes aitab kiiresti üle saada. (kommuun)
 - on keegi, kes oskab juba varakult probleeme ette näha ja suunata. (mentor)
-- ümberringi on toetav seltskond, kellega koostööd teha. (kommuun)
 
 ### Kaugõppe eripära
 
@@ -78,24 +78,36 @@
 
 ### Lahendused
 
-- Loengu sisu vähemaks lõigata.
-- Loengud on samas rütmis praktikumidega
-- Õpetus algab probleemist, järgneb lahendus ja mõisted tulevad sisse kasutamise käigus.
-- Julgustada eksperimenteerimist (projekt, harjutused ja julgustav kommuun)
-- Saata regulaarselt imepisikesi harjutusi, et hammast verel hoida
+- Iseseisvust
+  - projekt
+  - materjalid
+  - kommuun
 
-- Koostada lihtsasti kasutatavad materjalid
-- Paaris programmeerimine
-- Esinemine
-- Algajate videod
-- pakume mitmeid muid allikaid, mille kaugu õppida.
-- Teha kodus progemine lihtsaks (materjal, kommuun, projekt)
-- Java skeem ja i200 leht kogu infoga
-- Materjalides tuua välja Hädaabi pakett.
-- Materjalid on lingitavad, et tudengid saaksid üksteist toetada.
-- Materjalid avaldavad sulle ainult hädavajaliku - nupust saad advanced
-- Töö tuleb esitada klassi ees.
-- Iseseisva töö soodustamine
+- Üldine
+  - Julgustada eksperimenteerimist
+- Loeng
+  - Sisu vähendada (niikuinii ei haaku)
+  - Õpetus algab probleemist, järgneb lahendus ja mõisted tulevad sisse kasutamise käigus.
+  - Loengud ja praktikumid on süngis.
+- Kommuun
+  - Klassis paaris progemine
+  - Netis mitteametlik koht
+  - Foorum suuremate asjade jaoks
+- Materjalid
+  - Lihtsasti kasutatav
+  - Ülevaade Javast, koht kus kõike seostada
+  - Lihtsasti jagatavad
+  - Hädaabi pakett
+  - Algaja materjal, et keegi ei jääks algusesse kinni
+  - Alguses ainult algaja materjal
+  - Välised mitmekülgsed allikad
+- Projekt
+  - 70% kogu ainest
+  - Tulemuse esitamine
+- Kodus
+  - mikro ülesanded
+  - materjal aitab
+  - kommuun toetab
 
 ## Ekstra
 
