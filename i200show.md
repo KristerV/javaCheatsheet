@@ -6,7 +6,7 @@
   - Allikad, mida läbisin
   - Loodud materjalid, ehk ainekava
 
-## Uues eesmärgid
+## Uued eesmärgid
 
 - Viia tudeng iseseisvuseni, ehk kuni käib "klikk"
 - Õpetada kaugemale kui vaid tsükkel
@@ -137,12 +137,14 @@
   - Proovi käima saada, siis kirjuta uuesti
   - Top-down approach
 - Hoopis puudu
+  - Materjalides töö metoodikast
   - Puuetega inimestele kättesaadavaks
   - Päris elust harjutusi juurde (nagu foor)
   - Harjutusi eesti keeles koguda
   - Harjutusi external links panna loogiliselt järjekorda
   - Loengu materjalid
   - Videod OOP, JavaFX
+  - Videod kõigest :)
   - BigProject, millele alati toetuda
   - BigProject video series
   - KT1, KT2, eksam
