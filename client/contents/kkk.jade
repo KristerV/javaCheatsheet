@@ -51,12 +51,12 @@ template(name="kkk")
 
 			pre
 				code
-					| Character toomas  new Character()
+					| Character toomas = new Character()
 					| while (keyboard.isPressed()) {
-					|     if (keyboard.key  'left')
+					|     if (keyboard.key == 'left')
 					|         toomas.liiguSammVasakule();
 					|     }
-					|     if (keyboard.key  'right')
+					|     if (keyboard.key == 'right')
 					|         toomas.liiguSammParemale();
 					|     }
 					| }

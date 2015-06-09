@@ -1,7 +1,16 @@
+
+Lahti teha
+- code.krister.ee allikad
+- slides.com
+- i200
+- foor
+- paber
+
 # i200 kaugõppe materjalide ettekanne
 
 ## Sissejuhatus
-  - Miks üldse alustasin
+  - Kuidas siia sain
+  - Miks tahan parendada ainet
   - Algsed plaanid
   - Allikad, mida läbisin
   - Loodud materjalid, ehk ainekava
@@ -15,26 +24,33 @@
 
 * Proximal dev zone
   - õppetöö algab võõraste mõistete ja kontseptsioonidega
+    + Alustada tuleb praktilisest probleemist, mõisted tulevad ise.
     + Rääkida tuttavate sõnadega
     + Tuua päris maailma tuttavad asjad mängu
     + Esimesed koodi harjutused igapäeva elust
   - Tudeng ei saa poindile pihta, seosed tekivad aeglaselt
+    + Skeem annab üldpildi
     + Alustada tuleb üldisemast ja siis minna täpsemaks
     + Esimese tunni jooksul põhi 5 selgeks
     + Kasutada füüsilisi harjutusi
-    + Skeem annab üldpildi
-- Halastamatu arvuti ja tema loogika
+* Halastamatu arvuti ja tema loogika
   - Tehakse samu vigu korduvalt
     + Materjalis vigade KKK
   - Ei osata viga parandada
     + IDE juhend igaks olukorraks
   - Ei saada aru, kuhu mis sümbol panna
+    + mõtet pole vaja otsida
     + Materjalides reeglid paika
-- abstraktne, pead masina loogikat peas mudeldama
+* abstraktne, pead masina loogikat peas mudeldama
   - Keskendumine õigele lahendustele
     + Keskendume debugimisele
   - Tudeng ei saa aru kuidas programmi kirjutamisele läheneda
     + Koostada samm-sammu haaval järgitav juhend
+    + Metoodikatest
+      - Lahenda enne paberil probleem, siis tõlgenda algoritmi
+      - Tulemusest orienteeritud
+      - Proovi käima saada, siis kirjuta uuesti
+      - Top-down approach
   - Igal tudengil on oma viis õppida
     + Keegi pidevalt seletaks iga võimaliku nurga alt
   + Harjutamine teeb meistriks
@@ -42,14 +58,18 @@
 ## Algajal on vaja kolme põhiomadust
 
 * uudishimu, mida ei tohi tappa
+  - igavad harjutused
+    + JavaFX kohe kätte
+  - Ainult harjutused ja materjal
+    + Projekt kohe kätte ja ongi põhi osa hindest.
   - Kontrolltööd ja eksam
     + KT on 0 kaaluga ja eksam väikse kaaluga
-  - Ainult harjutused ja materjal
-    + Projekt
-* järjepidevus, mis ei tohi takerduda
+* järjepidevus, probleemide taha ei tohi takerduda
   - Klassis progedes ei jõua õppejõud kõigini
     - takerdudes tudengid ei suhtle omavahel
     + Paaris programmeerimine
+      + vahetame paare
+      + TTÜs tehakse juba
   - Kodus progedes ei ole kiireid vastuseid
     + Jututuba
   - Pidevalt on vaja samat infot kätte saada
@@ -73,9 +93,9 @@
   - jupiti harjutused ja õpetamine
     + Projekt
 * Julgustatakse eksperimenteerimist
+  - Enda loodud projekt
   - KT, KT, eksam
     + ei KT, väike eksam
-  - Enda loodud projekt
   - Kinnitada, et progemine ongi katse-eksitus meetod
 * Kõik vajalik info on ühes kasutajasõbralikus kohas
   - Õpiku stiilis materjalid
@@ -85,9 +105,10 @@
     + Algaja videod
     + KKK
     + IDE kasutusjuhend
+    + Parimad välislingid
     + Alguses ei mattu koguse alla
     + Lingid on jagatavad
-    + Parimad välislingid
+    + ctrl+f
 * Küsimused saavad kiirelt vastuse, ei jääda toppama ühe asja otsa
   - Foorum on aeglane
     + Jututuba
@@ -100,7 +121,7 @@
 ## Kaugõppe eripärad
 
 * Palju iseseisvat aega
-  - Keegi kodus midagi ei tee
+  - Keegi kodus midagi ei tee, pikad pausid panevad unustama
     - kodus on üli keeruline
       - Ei tea kust alustada
         + Järgitav juhend, kuidas progemisele läheneda
@@ -114,6 +135,9 @@
         + Jututuba, kus saab kiireid vastuseid
     - pole aega planeerinud, lihtsalt ei jõua, pole motti, unustab
       + mikroülesanded regulaarselt emailile
+        + 1 minut, ei pea IDEtki lahti tegema
+        + hammas verel
+        + saavutamise tunne
 * Vähe loenguid, vähe praktikume
   + Kõik tegevus orienteeritud iseseisvalt hakkama saamisele
   - ei ole aega kõigest rääkida
@@ -122,20 +146,16 @@
     + Kuidas materjale kasutada
     + Kust juurde otsida
     + Mis lõpuks selgeks peab saama
+* Palju inimesi, Kontakti vähe
   - pole igaühe probleemide jaoks aega
     + paaris progemine
     + jututuba
-* Palju inimesi, Kontakti vähe
   - Pole alati selge kaugel keegi on
     + küsitlus
 
 ## Otsad kokku
 
-- Metoodikast
-  - Lahenda enne paberil probleem, siis tõlgenda algoritmi
-  - Tulemusest orienteeritud
-  - Proovi käima saada, siis kirjuta uuesti
-  - Top-down approach
+
 - Hoopis puudu
   - Materjalides töö metoodikast
   - Puuetega inimestele kättesaadavaks
