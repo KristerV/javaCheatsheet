@@ -21,7 +21,7 @@ template(name="git")
 				.panel.panel-info
 					h3.panel-heading#git-kasklused Käsklused
 					.panel-body
-						p.text-warning Soovitan Gitti kasutada käsurealt, et seda mõista. On olemas ka <a href="http://git-scm.com/downloads/guis" target="_blank">kasutajaliidesega tarkvara</a>, kuid algajale võib see eriti keeruliseks osutuda.
+						p.text-warning Soovitan Gitti kasutada käsurealt, et seda mõista. On olemas ka <a href="https://desktop.github.com/" target="_blank">kasutajaliidesega tarkvara</a>, kuid algajale võib see eriti keeruliseks osutuda.
 						hr
 						.row
 							.col-sm-3 Muuda käesolev kaust Giti repositooriumiks
@@ -82,6 +82,12 @@ template(name="git")
 							.col-sm-9
 								pre
 									code git log
+						hr
+						.row
+							.col-sm-3 Tühista salvestamata muudatused
+							.col-sm-9
+								pre
+									code git checkout .
 				.panel.panel-info
 					h3.panel-heading#git-ignore .gitignore
 					.panel-body
