@@ -5,7 +5,6 @@
 ### Küsimustik 1
 
 - Mis on sinu arvates programmeerimine?
-- Mille jaoks progemine on?
 - Mida valmis teeksid, kui juba oskaksid? Ehk mis on maailmas puudu?
 - Kas ainekava hirmutab sind? Mis täpsemalt?
 - Kui mitu tundi nädalas oled planeerinud sellele ainele?
@@ -21,20 +20,14 @@
   - Seletan ja kirjutan Java koodis oma andmed.
   - Olen hiljuti iseõppinud (protsess on värske) võtan õpetamist kirglikult (uuendan käigu pealt).
   - Võtame üksteist kui kolleege, kutsuge mind nimepidi.
-- Oleme siin, et õppida progema, esiteks siis common misconceptions progemisest:
-  - Milleks progemine?
-  - Mulle ei meeldi matemaatika.
-  - Java imeb. (Java vs. teised keeled: keerukus, stabiilsus, debuging, riistvara lähedus, küpsus)
-  - See aine ei peaks adminnidele kohustuslik olema.
-  - Progejaks saavad vaid geeniused ja nohikud (zone of proximal development, learned helplessness ja high-level language).
-  - Programmeerimiseks peab olema annet.
-  - Käin loengutes ja praktikumides, siis olen tubli ja saan hakkama.
-  - Olen progeja, sest oskan koodi lugeda.
-  - Miks arvuti ise enda koodi ei kirjuta? (sest on vaja loovust, progemine on teadus + kunst, AI ja turing test)
 - Kuidas siin õpime
+  - Java
   - Ainest
     - Mitu tundi kestab
-    - Loeng vs praktikum (paaris?) vs iseseisev
+    - Loeng vs praktikum (paaris) vs iseseisev 80%!
+      - Loengus üldinfo
+      - praktikumides harjutused ja projekti abi
+      - kodus on põhi töö projektiga, kasutades materjale ja googlit.
     - Hindamine
   - Projektist
     - Alusta kohe
@@ -42,10 +35,13 @@
     - Jupp jupi haaval
     - Alusta otsast
     - Las idee muutub
+  - Eksamist
+    - veel selgumisel
   - Materjalidest
-    - Vaata koguaeg
+    - Vaata koguaeg, hoia ülevaadet
     - Peast ei pea teadma
     - Googelda
+  - Gitter
 - Start
   - muutuja peaks õppejõu sissejuhatusest juba selge olema
   - if, while selgeks läbi füüsiliste harjutuste.
