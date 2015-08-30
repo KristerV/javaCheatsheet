@@ -21,7 +21,7 @@
   - Olen hiljuti iseõppinud (protsess on värske) võtan õpetamist kirglikult (uuendan käigu pealt).
   - Võtame üksteist kui kolleege, kutsuge mind nimepidi.
 - Kuidas siin õpime
-  - Java
+  - Java - ilma praktikata on teooria null
   - Ainest
     - Mitu tundi kestab
     - Loeng vs praktikum (paaris) vs iseseisev 80%!
@@ -42,11 +42,15 @@
     - Peast ei pea teadma
     - Googelda
   - Gitter
-- Start
-  - muutuja peaks õppejõu sissejuhatusest juba selge olema
-  - if, while selgeks läbi füüsiliste harjutuste.
-  - klass, meetod selgeks läbi demo.
-  - süntaks
+- Progemine
+  - Miks vajalik? Infotöötlus ja meelelahutus - ja kunst!
+  - Kuidas käib? Googeldades! Stackoverflow ja JDocs
+  - Algoritmid ja seosed (reaalse näite põhjal, kas mäng ise või arved või rong)
+    - muutuja peaks õppejõu sissejuhatusest juba selge olema
+    - if, while selgeks läbi füüsiliste harjutuste.
+    - klass, meetod selgeks läbi demo.
+    - süntaks
+  - Raske sest pole harjunud, tuleb palju katsetada. Loogikat ei saa õppida.
 - Intellij
 
 ### Loeng 2
