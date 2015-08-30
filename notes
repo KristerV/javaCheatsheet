@@ -24,3 +24,20 @@ Java reeglid ehk süntaks
 	meetodil on alati sulu paar taga
 	kui meetodi välja kutsudes paned kaasa andmeid, siis nad peavad olema õiges järjekorras.
 	sulgude tüüpe ei tohi sassi ajada
+
+git checkout
+git reset (nullida kogu projekt ära)
+
+Projekti hindamine
+Pilt klikitav, et läheks suureks.
+Litsents
+IntellijSiimuga
+Selgeks teha igas paneelis, et saab infot juurde
+http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/#grabbag
+
+AUTOMÄNG
+joonistaAuto()
+üles  -> kiirust ++
+alla  -> kiirust --
+vasak -> suund --
+parem -> suund ++
