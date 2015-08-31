@@ -22,6 +22,7 @@
   - Võtame üksteist kui kolleege, kutsuge mind nimepidi.
 - Kuidas siin õpime
   - Java - ilma praktikata on teooria null
+  - Mina ei saa muud teha kui inspireerida teid tegutsema.
   - Ainest
     - Mitu tundi kestab
     - Loeng vs praktikum (paaris) vs iseseisev 80%!
