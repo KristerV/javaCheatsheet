@@ -21,7 +21,7 @@
   - Olen hiljuti iseõppinud (protsess on värske) võtan õpetamist kirglikult (uuendan käigu pealt).
   - Võtame üksteist kui kolleege, kutsuge mind nimepidi.
 - Kuidas siin õpime
-  - Java - ilma praktikata on teooria null
+  - Java - ilma praktikata on teooria null - practice first, then theory
   - Mina ei saa muud teha kui inspireerida teid tegutsema.
   - Ainest
     - Mitu tundi kestab
