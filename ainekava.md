@@ -18,41 +18,52 @@
 
 - Minust
   - Seletan ja kirjutan Java koodis oma andmed.
-  - Olen hiljuti iseõppinud (protsess on värske) võtan õpetamist kirglikult (uuendan käigu pealt).
+  - Iseõppinud
   - Võtame üksteist kui kolleege, kutsuge mind nimepidi.
-- Kuidas siin õpime
-  - Java - ilma praktikata on teooria null - practice first, then theory
-  - Mina ei saa muud teha kui inspireerida teid tegutsema.
+- Aineprogramm
+  - Õppimise põhitõed
+    - Eesmärk: iseseisvus, objektorienteeritus
+    - Praktika esiteks
+    - Mina aitan kaasa, aga ei sunni.
+    - Omavaheline koostöö on soositud, plagiaati ei tolereeri
   - Ainest
-    - Mitu tundi kestab
-    - Loeng vs praktikum (paaris) vs iseseisev 80%!
-      - Loengus üldinfo
-      - praktikumides harjutused ja projekti abi
-      - kodus on põhi töö projektiga, kasutades materjale ja googlit.
+    - Kestvus ja jaotus (loeng-info, prak/kodus-projekt/harjutused)
     - Hindamine
-  - Projektist
-    - Alusta kohe
-    - Küsi küsimusi
-    - Jupp jupi haaval
-    - Alusta otsast
-    - Las idee muutub
-  - Eksamist
-    - veel selgumisel
-  - Materjalidest
-    - Vaata koguaeg, hoia ülevaadet
-    - Peast ei pea teadma
-    - Googelda
-  - Gitter
+      - Projektist 60%
+        - Alusta juba täna
+        - Küsi küsimusi - julged saavad jaole
+        - Jupp jupi haaval, alusta idee kõige lihtsamast variandist
+        - Las idee muutub
+      - Eksamist 40%
+        - teooria
+        - praktiline (KT õpetab moodlet kasutama)
+      - Lisa 10%
+        - kontrolltööd
+        - aktiivsus
+        - mis iganes ma käigu pealt välja mõtlen
+  - Töövahendid
+    - Intellij
+    - git - GitHub
+    - Materjalid
+      - skeem (jälgi alati)
+      - Sissejuhatus
+      - hädaabi
+      - API (peast ei pea teadma, IDE aitab ka)
+      (uus värk, tagasiside on oodatud)
+    - Google
 - Progemine
-  - Miks vajalik? Infotöötlus ja meelelahutus - ja kunst!
-  - Kuidas käib? Googeldades! Stackoverflow ja JDocs
-  - Algoritmid ja seosed (reaalse näite põhjal, kas mäng ise või arved või rong)
-    - muutuja peaks õppejõu sissejuhatusest juba selge olema
-    - if, while selgeks läbi füüsiliste harjutuste.
-    - klass, meetod selgeks läbi demo.
+  - Miks vajalik? Automatiseerida, efektiivsemaks muuta, lõbutseda.
+  - Algoritmid ja seosed
+    - muutuja
+    - if, while (füüsiliste harjutuste).
+    - klass, meetod selgeks läbi joonise.
     - süntaks
   - Raske sest pole harjunud, tuleb palju katsetada. Loogikat ei saa õppida.
-- Intellij
+- Kodune töö
+  - codeacademy Python
+  - CodingBat
+  - Projekt
+- eksperimneteerige!
 
 ### Loeng 2
 
