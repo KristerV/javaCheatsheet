@@ -5,11 +5,11 @@
 ### Küsimustik 1
 
 - Mis on sinu arvates programmeerimine?
-- Mida valmis teeksid, kui juba oskaksid? Ehk mis on maailmas puudu?
-- Kas ainekava hirmutab sind? Mis täpsemalt?
+- Too mõned näide programmidest, mida kasutad.
+- Miks soovid programmeerida (kui üldse soovid, ole aus)?
+- Mis programmi valmis teeksid, kui juba oskaksid? Ehk mis on maailmas puudu?
 - Kui mitu tundi nädalas oled planeerinud sellele ainele?
 - Miks tulid IT Kolledžisse?
-- Miks arvad, et Java on kohustuslik aine?
 - Kui oled varem kokku puutunud, siis mitu aastat oled progenud ja mis keeltes?
 
 ## Loengud
@@ -69,6 +69,7 @@
 
 - Taustast
   - Progemise ajalugu.
+  - binary
   - JVM ja kompileerimine.
   - Server, DB ja kasutajaliides.
 - Kuidas alustada programmi kirjutamist?

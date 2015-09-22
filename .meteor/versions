@@ -17,6 +17,7 @@ html-tools@1.0.4
 htmljs@1.0.4
 http@1.1.0
 id-map@1.0.3
+inno:zoom@0.0.1
 insecure@1.0.3
 jquery@1.11.3_2
 json@1.0.3
@@ -34,6 +35,8 @@ mquandalle:jade@0.4.3
 mquandalle:jade-compiler@0.4.3
 observe-sequence@1.0.6
 ordered-dict@1.0.3
+ostrio:jsextensions@0.0.4
+ostrio:templatehelpers@0.3.1
 percolate:velocityjs@1.2.1_1
 random@1.0.3
 reactive-dict@1.1.0

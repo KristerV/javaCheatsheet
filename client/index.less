@@ -24,6 +24,9 @@ html, body {
 	* {
 		line-height: 1.7em;
 	}
+	.only-right {
+		display: none;
+	}
 
 	& > *:not(img) {
 		border-left: 6px solid transparent !important;
@@ -50,17 +53,17 @@ html, body {
 	*:not([id]) {
 		color: red !important;
 	}
-	p, 
-	hr, 
+	p,
+	hr,
 	ol,
 	ul,
-	pre, 
-	strong, 
-	img:not(.visible), 
+	pre,
+	strong,
+	img:not(.visible),
 	.menu-invisible,
-	.row:not(.visible), 
-	.panel-body:not(.visible), 
-	.panel-footer, 
+	.row:not(.visible),
+	.panel-body:not(.visible),
+	.panel-footer,
 	{
 		display: none;
 	}
@@ -122,6 +125,9 @@ html, body {
 	margin-left: 250px;
 	h5.panel-heading, h6.panel-heading {
 		font-size: 1.5em;
+	}
+	.only-left {
+		display: none;
 	}
 }
 

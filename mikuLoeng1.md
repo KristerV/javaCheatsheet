@@ -1,22 +1,4 @@
-based on my experience so questioning is great
-programming is fun, but not at the beginning :)
 
-any kind of experience?
-what is an alorithm?
-kes põhimõtteliselt ei tõstagi kunagi kätt?
-
-not expected to have any experience.
-programming == swimming (teooria != praktika)
-complexity increases exponentially (maybe you didn't really understand the simple things?)
-be active: ask, code - kes küsib see saab, käe hoidmist ei tule - partnerlus tuleb.
-try to understand, ära õpi pähe!
-programming != math
-
-tundide jaotus ja mitu EAP'd
-
-hindamine
-
-study materials
 
 LECTURE 1
 =========
