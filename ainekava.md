@@ -100,7 +100,8 @@ Valmistumine eksamiks
 
 ### Praktikum 1 - 4: up to speed with the basics
 
-"Põhilised 5" harjutused (paaris)
+- "Põhilised 5" harjutused (paaris)
+- 50% 1 ülesanne, 50% projektiga tegelemine
 
 ### Praktikum 5 - 12: actual work
 
