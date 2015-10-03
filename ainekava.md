@@ -1,6 +1,6 @@
 # Ainekava
 
-## Küsimustikud
+## Emailid
 
 ### Küsimustik 1
 
@@ -11,6 +11,8 @@
 - Kui mitu tundi nädalas oled planeerinud sellele ainele?
 - Miks tulid IT Kolledžisse?
 - Kui oled varem kokku puutunud, siis mitu aastat oled progenud ja mis keeltes?
+
+### Email 1
 
 ## Loengud
 

@@ -20,10 +20,10 @@
   - meetodide nimetused
   - kommenteeritud
 - Loogiline ja taaskasutatav ülesehitus
-  - kasutab meetode piisavalt
-  - kasutab klasse piisavalt
-  - kasutab objekt-orienteeritust.
-  - kasutatakse otstarbekalt tsükleid ja meetode
+  - kasutab meetode kus vaja
+  - kasutab klasse kus vaja
+  - kasutab objekt-orienteeritust
+  - kasutatakse otstarbekalt tsükleid
   - kasutatakse andmestruktuure ja käideldakse neid otstarbekalt
 - Kood on kompaktne (lisapunktid, kui on näha erilist läbimõeldust)
   - keerulised tsüklid
