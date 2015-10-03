@@ -10,12 +10,10 @@ Kodus oli meil teha 3 asja: projekti plaan, codecademy püütoni kursus ja i200 
 
 HARJUTUS
 
-Sisuliselt peaksid oskama juba algelise java programmi käima panna ja println() käsuga tulemust näha. Näiteks arvutusi teha ja tulemus välja printida. Proovi teha näiteks palga kalkulaator. Kus int bruto = 2000 ja int neto = tulemus.
+Sisuliselt peaksid oskama juba algelise java programmi käima panna ja println() käsuga tulemust näha. Näiteks arvutusi teha ja tulemus välja printida. Proovi teha näiteks palga kalkulaator. Kus int bruto = 2000 ja printida on vaja neto.
 
 PROJEKT
 
-Kordaksin üle, et idee võib olla ükskõik mis. Piiranguid ei ole. Kui arvad, et su idee on äkki liiga lihtne, siis tõenäoliselt ongi. Kui arvad, et on liiga raske, siis see on täiesti okei. Lihtsalt pea meeles, et lahenda see programm esiteks ära kõige lihtsamal viisil mis oskad ette kujutada. Ilma kasutaja liideseta, ilma keerulise funktsioonideta.
-
-Lubasin saata ka hindamise kriteeriumi ja siin see on:
+Kirjutasin i200 lehele ka projekti kohta ja hindamise kriteerium on samuti lisatud, loe kindlasti see läbi: http://i200.itcollege.ee/projekt
 
 Krister
