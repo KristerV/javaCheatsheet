@@ -69,11 +69,15 @@
 
 ### Loeng 2
 
+masin kood vs ... ?
+imperatiivne, deklaratiivne, funktsionaalne jne..
+õppejõud ei pane sind jooksma, õppejõud tasandab takistused, et sa saaksid kiiremini minema.
+
 - Taustast
   - Progemise ajalugu.
   - binary
   - JVM ja kompileerimine.
-  - Server, DB ja kasutajaliides.
+  - Server, DB ja kasutajaliides. "front", "back", "db"
 - Kuidas alustada programmi kirjutamist?
   - Enne paberil probleem, siis algoritmid.
   - Viska lego maha.
