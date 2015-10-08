@@ -69,30 +69,39 @@
 
 ### Loeng 2
 
+puuk, TDD, Agile
+loeng panna i200sse les
+https://youtu.be/1sWCBgGALXE why binary?
+https://youtu.be/VBDoT8o4q00 how binary works
+
 masin kood vs ... ?
 imperatiivne, deklaratiivne, funktsionaalne jne..
-õppejõud ei pane sind jooksma, õppejõud tasandab takistused, et sa saaksid kiiremini minema.
 
-- Taustast
-  - Progemise ajalugu.
+- Progemise ajalugu.
+    - puuk
+- Low level
   - binary
   - JVM ja kompileerimine.
   - Server, DB ja kasutajaliides. "front", "back", "db"
+- Progemise head tavad.
+  - Süntaks
+  - Loetavus
+    - muutujate nimed pikalt välja
+    - kood inglise keeles
+    - treppimine
+    - kood grpeerida
+  - Struktuur
+    - OOP
+    - Testid
 - Kuidas alustada programmi kirjutamist?
   - Enne paberil probleem, siis algoritmid.
   - Viska lego maha.
   - top-down approach.
   - Alusta lõpust.
-- Progemise head tavad.
-  - Süntaks
-  - Loetavus
-    - muutujate nimed
-    - treppimine
-    - kood grpeerida
-  - Struktuur
-    - OOP
-- JavaFX
-  - Õpime kuni basic on valmis
+- Arendamise viisid
+  - Agile vs. waterfall
+  - TDD
+- javafx
 
 ### Loeng 3
 
