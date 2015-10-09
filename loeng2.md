@@ -33,8 +33,9 @@ Kuidas üldse progeda.
     Kõik on katse-eksitus meetodil
     alguses proovi lihtsalt käima saada, ükskõik kuidas. Siis kui saad aru kuidas saaks paremini - refractor.
     kolmandal korral on su programm juba päris hea.
-Arendamise viisid
-    TDD
-    Agile vs. Waterfall
-OOP
-JavaFX
+    Waterfall vs. Agile
+projekti hindamise skeemist
+    git
+    kommenteerimine
+    OOP
+    JavaFX
