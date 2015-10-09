@@ -4,7 +4,7 @@ Java reeglid, ehk süntaks.
     igal sulul on paariline
     if () {} ei saa muud moodi kirjutada
     Kirjaviga annab errori
-    punkt on nagu pöördumine.
+    punkt on nagu pöördumine. ---
     klassi kirjutatakse teatud moodi
     meetodi kirjutatakse teatud moodi
     muutujal peab olema tüüp
