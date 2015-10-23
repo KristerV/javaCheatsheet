@@ -46,7 +46,7 @@ Template.body.rendered = function() {
         a.appendChild(r);
     })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
 
-	Match.setTimeout(function(){
+	Meteor.setTimeout(function(){
 		Prism.highlightAll()
 	}, 1000);
 
