@@ -799,6 +799,14 @@ template(name="sisendValjund")
 										| rec.setHeight(50);
 						hr
 						.row
+							.col-sm-3 Reageeri hiire klikile
+							.col-sm-9
+								pre
+									code rectangle.setOnMouseClicked(event -&gt; {
+										|     System.out.println("Klikk töötab");
+										| });
+						hr
+						.row
 							.col-sm-3 Värvi joon või servad.
 								img(src="/images/javafx/Shapes/rec-demo2.png")
 							.col-sm-9
