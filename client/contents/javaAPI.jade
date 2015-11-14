@@ -289,6 +289,99 @@ template(name="javaAPI")
 								| 	line = br.readLine();
 								| }
 								| br.close();
+				.panel.panel-info
+					h3.panel-heading#api-file-JSONreader JSONi lugemine
+					.panel-body
+						p JSON on mõnus üldlevinud failiformaat, mida on lihtne mõista ja kasutada. Pärit on ta JavaScript maailmast, aga Javas on selle kasutamine ka täiesti mõistlik juhul, kui on tarvis programmis mingeid andmeid sisse tuua.
+						p Teeme siis näite läbi. Alustame sellest, et meil on fail dpd.json:
+						pre
+							code
+								| [
+								|     {
+								|         "kg": 0.5,
+								|         "estonia": {
+								|             "zone1": 4.27,
+								|             "zone2": 4.79
+								|         },
+								|         "latvia": {
+								|             "zone1": 9.28,
+								|             "zone2": 9.95
+								|         }
+								|     },
+								|     {
+								|         "kg": 3,
+								|         "estonia": {
+								|             "zone1": 4.64,
+								|             "zone2": 5.16
+								|         },
+								|         "latvia": {
+								|             "zone1": 10.62,
+								|             "zone2": 11.00
+								|         }
+								|     },
+								|     {
+								|         "kg": 5,
+								|         "estonia": {
+								|             "zone1": 5.16,
+								|             "zone2": 5.99
+								|         },
+								|         "latvia": {
+								|             "zone1": 12.79,
+								|             "zone2": 13.62
+								|         }
+								|     }
+								| ]
+						p See fail sisaldab endast kolme andmekogu: 0.5, 3 ja 5 kg saadetise andmed - need kolm andmekogu on [Listi] sees. Iga sellise {Mapi} sisus on veel eesti ja läti kohta kaks tsooni oma hindadega. Kuidas me nüüd selle Javas kasutatavaks teeme?
+						pre
+							code
+								| 
+								| public class importJSON {
+								| 
+								|     // Esiteks lae alla Gson.jar ja pane projekti kausta kuskile,
+								|     // Soovitatavalt /lib kausta.
+								|     // Siis pead projektile ütlema, et lisaks plugina projekti
+								|     // ehk Intellij's: File-&gt;ProjectStructure-&gt;Libraries
+								|     // Nüüd saa Gsoni kasutada ja importida
+								|     public static void main(String[] args) throws FileNotFoundException, 
+								|         NoSuchFieldException, IllegalAccessException {
+								| 
+								|         // Avame faili
+								|         FileReader reader = new FileReader("dpd.json");
+								| 
+								|         // Impordime faili Javasse
+								|         Gson gson = new Gson();
+								|         KaaluObjekt[] andmed = gson.fromJson(reader, KaaluObjekt[].class);
+								|         // KaaluObjekt klassi defineerisin allpool
+								| 
+								|         // Testime. Näiteks kui kallis on tsoon 2, läti, 5kg?
+								|         double hind = 0;
+								|         for (int i = 0; i &lt; andmed.length; i++) {
+								|             if (andmed[i].kg == 5) {
+								|                 hind = andmed[i].latvia.zone2;
+								|             }
+								|         }
+								|         System.out.println(hind);
+								|     }
+								| }
+								| 
+								| // Need kaks klassi määravad ära mis muutujaid salvestada.
+								| // Selle struktuur vastab 1:1 JSONi sisuga.
+								| // ehk KaaluObjekt[] on KaaluObjekt'ide massiiv.
+								| // KaaluObjektil on muutujad kg, estonia, latvia.
+								| // estonia ja latvia on omakorda Tsoon objektid.
+								| // Tsoon objekti sees on kaks muutujat: zone1 ja zone2.
+								| class KaaluObjekt
+								| {
+								|     double kg;
+								|     Tsoonid estonia;
+								|     Tsoonid latvia;
+								| }
+								| 
+								| class Tsoonid
+								| {
+								|     double zone1;
+								|     double zone2;
+								| }
 		.panel
 			h2.panel-heading#api-scanner Scanner
 			.panel-body.visible
