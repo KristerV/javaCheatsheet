@@ -349,8 +349,8 @@ template(name="javaAPI")
 								|         FileReader reader = new FileReader("dpd.json");
 								| 
 								|         // Impordime faili Javasse
-								|         Gson gson = new Gson();
-								|         KaaluObjekt[] andmed = gson.fromJson(reader, KaaluObjekt[].class);
+								|         Gson g = new Gson();
+								|         KaaluObjekt[] andmed = g.fromJson(reader, KaaluObjekt[].class);
 								|         // KaaluObjekt klassi defineerisin allpool
 								| 
 								|         // Testime. Näiteks kui kallis on tsoon 2, läti, 5kg?
