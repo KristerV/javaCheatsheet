@@ -388,11 +388,11 @@ template(name="javaAPI")
 								| for (int i = 0; i &lt; andmed.length; i++) {
 								|     if (andmed[i].kg == 5) {
 								|         // Võtame Listi seest välja riigi andmed
-								|         Field riigiAndmed = andmed[i].getClass().getField(riik);
+								|         Object riigiAndmed = andmed[i].getClass().getDeclaredField(riik).get(andmed[i]);
 								|         // Võtame riigi andmete seest välja tsoonid
-								|         Field tsooniAndmed = riigiAndmed.getClass().getField(tsoon);
-								|         // Ja konverteerime "Field" tüüpi muutuja "double" tüübiks
-								|         hind = (double) tsooniAndmed.get(andmed[i]);
+								|         Object tsooniAndmed = riigiAndmed.getClass().getDeclaredField(tsoon).get(riigiAndmed);
+								|         // Ja konverteerime "Object" tüüpi muutuja "double" tüübiks
+								|         hind = (double) tsooniAndmed;
 								|     }
 								| }
 		.panel
