@@ -357,12 +357,17 @@ template(name="sisendValjund")
 									.col-sm-3 Lisa vaba ruumi horisontaalselt 5 pikslit
 									.col-sm-9
 										pre
-											code flow.setHgap(5);
+											code tile.setHgap(5);
 								.row
 									.col-sm-3 Lisa vaba ruumi vertikaalselt 5 pikslit
 									.col-sm-9
 										pre
-											code flow.setVgap(5);
+											code tile.setVgap(5);
+								.row
+									.col-sm-3 Määra eelistatud tulpade arvuks 3
+									.col-sm-9
+										pre
+											code tile.setPrefColumns(2);
 								p.text-warning Ka <a target="_blank" href="/javafx-layout-Pane">Pane</a> meetodid on siin kasutatavad.
 						.panel.panel-info
 							h5.panel-heading#javafx-layout-AnchorPane AnchorPane
