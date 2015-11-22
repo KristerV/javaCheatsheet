@@ -11,6 +11,9 @@
     - Puudu Andmebaasid
     - Puudu reaalse ülesanded
     * case-by-case näited on kasulikumad kui üldine seletamine. Näiteks kommenteeritud kood.
+    * Kohutav, et ei tudengid, ega ka Mikk ei saa täiendada mugavalt.
+        * Puhtasse markdowni tuleb viia asi.
+        * Algselt võimaldas Jade paneele luua, aga selgus et need on täiesti mõttetud. Plain text FTW.
 * Chat
     * Töötas arutelude ja elu jaoks väga hästi.
     * Aga praktilistele küsimustele oli raske vastata.
