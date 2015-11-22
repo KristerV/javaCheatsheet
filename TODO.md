@@ -1,5 +1,5 @@
 # PROMISED
-Andmebaasi selge ja kommenteeritud versioon ja SQLi
+Andmebaasi selge ja kommenteeritud versioon ja i200sse (javah korrastada)
 extends seletus
 rektorile ülevaade.
 
