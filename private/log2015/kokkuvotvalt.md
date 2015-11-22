@@ -10,6 +10,7 @@
     - Puudu OOP
     - Puudu Andmebaasid
     - Puudu reaalse ülesanded
+    * case-by-case näited on kasulikumad kui üldine seletamine. Näiteks kommenteeritud kood.
 * Chat
     * Töötas arutelude ja elu jaoks väga hästi.
     * Aga praktilistele küsimustele oli raske vastata.
