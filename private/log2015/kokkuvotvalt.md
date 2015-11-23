@@ -19,7 +19,6 @@
     * Aga praktilistele küsimustele oli raske vastata.
     * Struktuuri puudumisel oli algajatel proffi müra sisse raske tulla.
     * Chat võimaldas kahe klassi peale praktikumis lihtsamini koostööd teha.
-* Chat töötas hästi arutelu ja muidu olemise jaoks. Aga hea Foorum oleks struktuuri jaoks ikkagi vajalik..
 * Iganädalased kontroll punktid peaksid siiski olema - keegi muidu mitte midagi kahjuks ei tee.
 * KKK võiks nii lihtne olla, et tunni alguses saab tahvlil meelde tuletada.
     1. Ära enne jätka kui ühtegi punast ei ole terve projekti ulatuses.

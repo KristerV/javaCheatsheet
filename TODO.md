@@ -1,11 +1,15 @@
 # PROMISED
-Andmebaasi selge ja kommenteeritud versioon ja i200sse (javah korrastada)
-extends seletus
-rektorile ülevaade.
+* extends seletus
 
 # NEXT
-4 praktikum läbi mõelda
+* 4 praktikum läbi mõelda
 
 # SOON
-projekti vastamine läbi mõelda
-eksami valmistamine
+* projekti vastamine läbi mõelda
+    * hindamise skeem raudseks
+    * tudengi hääletamine
+    * vastamiläbiviimine)
+* eksami valmistamine
+    * Kuidas nad ülesanded kätte saavad
+    * Kuidas testitud saavad
+    * Kas saavad ikka kohe automaattesti tulemused?
