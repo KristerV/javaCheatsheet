@@ -7,9 +7,11 @@
 * Projektis on tõenöoliselt andmebaasi ka vaja.
 * i200 kiidetakse, videosid kiidetakse.
     - Puudu JavaFX
-    - Puudu OOP
+    - Puudu OOP (progedes pead arvestama, et mitte midagi ei jää meelde.)
     - Puudu Andmebaasid
     - Puudu reaalse ülesanded
+    - Testid võiksid ka olla. Mikul õhtuõppes oli olemas.
+    - JavaDoc genereerimine võiks ka olla. Mikul õhtuõppes oli olemas.
     * case-by-case näited on kasulikumad kui üldine seletamine. Näiteks kommenteeritud kood.
     * Kohutav, et ei tudengid, ega ka Mikk ei saa täiendada mugavalt.
         * Puhtasse markdowni tuleb viia asi.
