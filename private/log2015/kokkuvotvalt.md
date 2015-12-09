@@ -3,6 +3,8 @@
     * Kui repo muutub tekivad probleemid.
     * On juba tavaline näha praktikumi lõpus committereid.
     * Mitte üks tudeng ei avaldanud soovi privaatse repo järgi.
+    * Põhitõed
+        * Commiti siis kui korraks kõik töötab, siis ei saa kunagi hullemaks minna.
 * Kolm esimest praktikumi on basics-javafx-oop päris okei. JavaFX on ok väga varakult õpetada.
 * Projektis on tõenöoliselt andmebaasi ka vaja.
 * i200 kiidetakse, videosid kiidetakse.

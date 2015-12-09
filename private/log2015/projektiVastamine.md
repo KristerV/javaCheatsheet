@@ -5,3 +5,10 @@
     * näita tulemust
     * punktid tudengitelt
     * punktid linnukestega
+
+
+* anti-tutorial detection
+* Kui tehakse midagi vapsee üle võlli
+
+
+* Anonüümne chat võimaldab plagiaati ja vigu leida
