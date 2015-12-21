@@ -28,7 +28,3 @@ Kui midagi veel lisada, siis näiteks seda:
 Igatahes väga võimas leht on see! Aitäh!
 
 Ja eelmise praktikumi kommenteeritud kood on ka väga kasulik. :)
-
-
-Tervisi,
-Rutt Lindström
