@@ -7,7 +7,7 @@ Template.eksam.helpers({
         return Session.get("myGitLink")
     },
     exams: function() {
-        return ExamCollection.find({}, {sort: {createdAt: 1}})
+        return ExamCollection.find({type: {$ne: "status"}}, {sort: {createdAt: 1}})
     },
     createdAt: function() {
         return moment(this.createdAt).format("HH:mm D.MM.YYYY")
