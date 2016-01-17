@@ -10,14 +10,15 @@ template(name="eksam")
                 li Kõik ülesanded peavad olema lahendatud kasutades päris programmeerimise võtteid ja mitte lihtsalt näiliselt lahendades vastust kirjutades.
             if examOpen 
                 h2 Eksam on <span class="text-success">avatud</span>
-                form(name="exam-form")
-                    .form-group
-                        p Sisesta oma nimi
-                        input.form-control#studentName(type="text")
-                    button.btn.btn-primary(type="submit") Telli uus giti link
                 if gitlink
                     p Siin on sinu giti link. Salvesta kuskile ära, et kaotsi ei läheks.
                     p.bold {{gitlink}}
+                else
+                    form(name="exam-form")
+                        .form-group
+                            p Sisesta oma nimi
+                            input.form-control#studentName(type="text")
+                        button.btn.btn-primary(type="submit") Telli giti link
             else
                 h2 Eksam on <span class="text-danger">suletud</span>
             if currentUser
