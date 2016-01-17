@@ -1,6 +1,8 @@
 Scroll = {
 	click: function(e) {
+		console.log("START");
 		var elementId = $(e.currentTarget).attr('id')
+		console.log("elementId", elementId);
 		Scroll.scrollTo(elementId)
 		Scroll.changeUrl(elementId)
 	},

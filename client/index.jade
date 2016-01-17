@@ -1,11 +1,2 @@
 head
 	title i200
-body
-	.layout.layout-left(class="{{#if advancedMode}}advancedMode{{/if}}")
-		+contents
-		if advancedButton
-			.btn.btn-danger.btn-block#advancedButton Tagasi õndsusesse.
-		else
-			.btn.btn-success.btn-block#advancedButton Näita tervet materjali.
-	.layout.layout-right.language-java(class="{{#if advancedMode}}advancedMode{{/if}}")
-		+contents
