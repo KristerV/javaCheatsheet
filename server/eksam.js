@@ -1,8 +1,8 @@
 
 Meteor.startup(function(){
-    fs = Meteor.npmRequire('fs')
+    fs = Meteor.npmRequire('fs.extra')
     path = Meteor.npmRequire('path')
-    wrench = Meteor.npmRequire('wrench')
+    // wrench = Meteor.npmRequire('wrench')
     // fiber = Meteor.npmRequire('fibers')
 });
 
@@ -36,7 +36,7 @@ Meteor.methods({
         var fromPath = srcpath + randomRepo
         var toPath = examPath + "tudeng/" + hash + ".git"
         try {
-            wrench.copyDirSyncRecursive(fromPath, toPath);
+            fs.copyRecursive(fromPath, toPath);
         } catch (e) {
             console.error(e);
             throw new Meteor.Error("Copy error")
