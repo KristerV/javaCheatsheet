@@ -1,4 +1,8 @@
 Meteor.startup(function(){
+	
+	var path = FlowRouter.current().route.path
+	if (path !== '*' && path !== '/') return false // not on main site
+
 	Session.set('advancedMode', JSON.parse(localStorage.getItem('advancedMode')));
 	Meteor.setTimeout(function(){
 		Scroll.scrollUrl()
@@ -12,7 +16,6 @@ Meteor.startup(function(){
 
 	ga('create', 'UA-52715750-5', 'auto');
 	ga('send', 'pageview');
-
 })
 
 $.notify.defaults({

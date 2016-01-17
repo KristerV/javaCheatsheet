@@ -1,0 +1,39 @@
+template(name="eksam")
+    div
+        +loginButtons
+        .eksam.center-block.max500
+            h2 Eksami reeglid
+            ol
+                li Tohid kasutada internetti k.a. Google.
+                li Ei tohi kellegagi suhelda ei netis ega mujal v.a. õppejõuga.
+                li Üleüldised sohi tegemise reeglid kehtivad (nt. naabrilt maha kirjutamine).
+                li Kõik ülesanded peavad olema lahendatud kasutades päris programmeerimise võtteid ja mitte lihtsalt näiliselt lahendades vastust kirjutades.
+            if examOpen 
+                h2 Eksam on <span class="text-success">avatud</span>
+                form(name="exam-form")
+                    .form-group
+                        p Sisesta oma nimi
+                        input.form-control#studentName(type="text")
+                    button.btn.btn-primary(type="submit") Telli uus giti link
+                if gitlink
+                    p Siin on sinu giti link. Salvesta kuskile ära, et kaotsi ei läheks.
+                    p.bold {{gitlink}}
+            else
+                h2 Eksam on <span class="text-danger">suletud</span>
+            if currentUser
+                h2 Admin Menüü
+                button.btn.btn-primary#toggleExam toggle open / close
+                table.table.table-hover
+                    thead
+                        td Hash
+                        td Nimi
+                        td Start
+                        td Punkte
+                    tbody
+                        each exams
+                            tr
+                                td {{_id}}
+                                td {{studentName}}
+                                td
+                                    input.form-control.points(id="{{_id}}" value="{{points}}" style="width: 30px") 
+                                td {{createdAt}}

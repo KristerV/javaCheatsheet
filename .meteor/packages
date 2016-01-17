@@ -4,8 +4,6 @@
 # 'meteor add' and 'meteor remove' will edit this file for you,
 # but you can also edit it by hand.
 
-autopublish
-insecure
 less
 mquandalle:jade
 simple:markdown-templating
@@ -31,3 +29,11 @@ random
 ejson
 spacebars
 check
+accounts-password
+accounts-base
+ian:accounts-ui-bootstrap-3
+meteorhacks:npm
+
+
+npm-container
+momentjs:moment
