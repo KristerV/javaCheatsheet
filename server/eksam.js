@@ -18,7 +18,7 @@ Meteor.methods({
     getGitLink: function(studentName) {
         check(studentName, String)
         if (!studentName) throw new Meteor.Error("Need student name")
-        var examPath = "/home/krister/code/eksam/"
+        var examPath = "/srv/eksam/"
         // Insert new document
         var hash = ExamCollection.insert({
             studentName: studentName,
