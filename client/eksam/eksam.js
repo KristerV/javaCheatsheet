@@ -29,6 +29,11 @@ Template.eksam.events({
     'click #toggleExam': function(e) {
         Meteor.call('toggleExam')
     },
+    'click #emptyExam': function(e) {
+        var c = confirm("for sure for sure? No data is backed up or anything..")
+        if (c)
+            Meteor.call('emptyAllExamsPermanently')
+    },
     'blur input.points': function(e) {
         var id = e.target.id
         var value = e.target.value
