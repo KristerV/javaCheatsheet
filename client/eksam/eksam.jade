@@ -4,10 +4,13 @@ template(name="eksam")
         .eksam.center-block.max500
             h2 Eksami reeglid
             ol
+                li Eksam toimub <b>klassi arvutis</b>.
                 li Tohid kasutada internetti k.a. Google.
-                li Ei tohi kellegagi suhelda ei netis ega mujal v.a. õppejõuga.
+                li <b>Ei tohi kellegagi suhelda</b> ei netis ega mujal v.a. õppejõuga.
                 li Üleüldised sohi tegemise reeglid kehtivad (nt. naabrilt maha kirjutamine).
-                li Kõik ülesanded peavad olema lahendatud kasutades päris programmeerimise võtteid ja mitte lihtsalt näiliselt lahendades vastust kirjutades.
+                li Kõik ülesanded peavad olema lahendatud kasutades <b>päris programmeerimise võtteid</b> ja mitte lihtsalt näiliselt lahendades vastust kirjutades.
+                li Kui oled valmis <b>lae lahendused üles samasse reposse kust nad said</b>. Kui laed GitHubi või mujale avalikku kohta on tegu plagiaadi kaasa aitamises. Lahendusi võid jagada märtsis, kui kõik eksamid on ära olnud.
+                li Aega on 3 tundi.
             if examOpen 
                 h2 Eksam on <span class="text-success">avatud</span>
                 if gitlink
@@ -16,7 +19,7 @@ template(name="eksam")
                 else
                     form(name="exam-form")
                         .form-group
-                            p Sisesta oma nimi
+                            p Sisesta oma <b>päris</b> nimi
                             input.form-control#studentName(type="text")
                         button.btn.btn-primary(type="submit") Telli giti link
             else

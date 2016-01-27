@@ -6,7 +6,16 @@
     * Põhitõed
         * Commiti siis kui korraks kõik töötab, siis ei saa kunagi hullemaks minna.
 * Kolm esimest praktikumi on basics-javafx-oop päris okei. JavaFX on ok väga varakult õpetada.
-* Projektis on tõenöoliselt andmebaasi ka vaja.
+* Projektid
+    * Projektis on tõenöoliselt andmebaasi ka vaja.
+    * 108'st vastas reaalselt 62
+    * 8 * 1.5h (7min näkku kokku) oli vägagi piisavalt
+    * FOORUM
+        * Emailis lahendada on kräpp
+        * Keegi teine ei saa abi
+        * Keegi teine ei saa abistada
+        * Formatting ei ole ilmselge (discourse rokib)
+        * Äkki saab isegi lisapunktidega siduda
 * i200 kiidetakse, videosid kiidetakse.
     - Puudu JavaFX
     - Puudu OOP (progedes pead arvestama, et mitte midagi ei jää meelde.)
