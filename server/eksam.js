@@ -21,21 +21,29 @@ Meteor.methods({
         check(studentName, String)
         if (!studentName) throw new Meteor.Error("Need student name")
         var examPath = "/srv/eksam/"
-        // Insert new document
+        console.log("Insert new document");
         var hash = ExamCollection.insert({
             studentName: studentName,
             createdAt: new Date(),
         })
 
-        // Go to raw repo
+        console.log("Go to raw repo");
         var rawPath = examPath + "toores/"
         var ls = fs.readdirSync(rawPath).filter(function(file) {
             return fs.statSync(path.join(rawPath, file)).isDirectory();
         });
         var secretRawRepo = path.join(rawPath, ls[0]) // the repo with all variants of exam exercises
-        var srcPath = path.join(secretRawRepo, "src")
 
-        // Delete all but one file in each exercise type
+        console.log("Copy repo temporarily");
+        var tempRepo = path.join(rawPath, hash)
+        try {
+            wrench.copyDirSyncRecursive(secretRawRepo, tempRepo);
+        } catch (e) {
+            throw new Meteor.Error("chmod error", e)
+        }
+
+        console.log("Delete all but one file in each exercise type");
+        var srcPath = path.join(tempRepo, "src")
         var allTypes = fs.readdirSync(srcPath).filter(function(file){
             var isDir = fs.statSync(path.join(srcPath, file)).isDirectory()
             var isVisible = file.charAt(0) !== '.'
@@ -50,9 +58,9 @@ Meteor.methods({
             })
         })
 
-        // Create bare repo with random hash for student to clone
+        console.log("Create bare repo with random hash for student to clone");
         var studentsReposPath = path.join(examPath, 'tudeng')
-        var cloneCmd = "cd " + studentsReposPath + " && git clone --bare " + secretRawRepo + " " + hash + ".git"
+        var cloneCmd = "cd " + studentsReposPath + " && git clone --bare " + tempRepo + " " + hash + ".git"
         exec(cloneCmd, function(error, stdout, stderr){
             if (error) {
                 console.log("================== EXEC ERROR START ==================");
@@ -65,15 +73,19 @@ Meteor.methods({
             }
         })
 
+        console.log("Remove temp repo");
+        fs.unlink(tempRepo)
+
         // Fix permissions
         // try {
         // var targetPath = path.join(studentsReposPath, hash+".git")
+        //     wrench.copyDirSyncRecursive(fromPath, toPath);
         //     wrench.chmodSyncRecursive(targetPath, 0775);
         // } catch (e) {
         //     throw new Meteor.Error("chmod error", e)
         // }
 
-        // Give student the git repo link
+        console.log("Give student the git repo link");
         return {gitlink: "git@i200.itcollege.ee:tudeng/" + hash + ".git"}
     },
     updatePoints: function(id, value) {
