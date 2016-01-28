@@ -5,6 +5,7 @@ Meteor.startup(function(){
     wrench = Meteor.npmRequire('wrench')
     exec = Meteor.npmRequire('child_process').exec
     sys = Meteor.npmRequire('sys')
+    rimraf = Meteor.npmRequire('rimraf')
     // fiber = Meteor.npmRequire('fibers')
 });
 
@@ -74,7 +75,7 @@ Meteor.methods({
         })
 
         console.log("Remove temp repo");
-        fs.unlink(tempRepo)
+        rimraf(tempRepo)
 
         // Fix permissions
         // try {
