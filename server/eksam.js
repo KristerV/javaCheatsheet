@@ -58,19 +58,31 @@ Meteor.methods({
                 fs.unlink(path.join(fullPath, file))
             })
         })
+        var commitCmd = "cd "+tempRepo+" && git add --all && git commit -m 'ready to go'"
+        exec(commitCmd, function(error, stdout, stderr){
+            if (error) {
+                console.log("================== COMMIT ERROR START ==================");
+                console.log("HASH", hash);
+                console.log("COMMAND", cloneCmd);
+                console.log("ERROR",error);
+                console.log("STDOUT",stdout);
+                console.log("STDERR",stderr);
+                console.log("=================== COMMIT ERROR END ===================");
+            }
+        })
 
         console.log("Create bare repo with random hash for student to clone");
         var studentsReposPath = path.join(examPath, 'tudeng')
         var cloneCmd = "cd " + studentsReposPath + " && git clone --bare " + tempRepo + " " + hash + ".git"
         exec(cloneCmd, function(error, stdout, stderr){
             if (error) {
-                console.log("================== EXEC ERROR START ==================");
+                console.log("================== CLONE ERROR START ==================");
                 console.log("HASH", hash);
                 console.log("COMMAND", cloneCmd);
                 console.log("ERROR",error);
                 console.log("STDOUT",stdout);
                 console.log("STDERR",stderr);
-                console.log("=================== EXEC ERROR END ===================");
+                console.log("=================== CLONE ERROR END ===================");
             }
         })
 
@@ -78,13 +90,12 @@ Meteor.methods({
         rimraf(tempRepo)
 
         // Fix permissions
-        // try {
-        // var targetPath = path.join(studentsReposPath, hash+".git")
-        //     wrench.copyDirSyncRecursive(fromPath, toPath);
-        //     wrench.chmodSyncRecursive(targetPath, 0775);
-        // } catch (e) {
-        //     throw new Meteor.Error("chmod error", e)
-        // }
+        try {
+            var targetPath = path.join(studentsReposPath, hash+".git")
+            wrench.chmodSyncRecursive(targetPath, 0777);
+        } catch (e) {
+            throw new Meteor.Error("chmod error", e)
+        }
 
         console.log("Give student the git repo link");
         return {gitlink: "git@i200.itcollege.ee:tudeng/" + hash + ".git"}
