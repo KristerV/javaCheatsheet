@@ -3,7 +3,7 @@ Meteor.startup(function(){
     fs = Meteor.npmRequire('fs')
     path = Meteor.npmRequire('path')
     wrench = Meteor.npmRequire('wrench')
-    exec = Meteor.npmRequire('child_process').exec
+    exec = Meteor.npmRequire('child_process').execSync
     sys = Meteor.npmRequire('sys')
     rimraf = Meteor.npmRequire('rimraf')
     // fiber = Meteor.npmRequire('fibers')
