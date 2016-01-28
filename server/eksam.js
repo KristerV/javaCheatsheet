@@ -36,7 +36,8 @@ Meteor.methods({
         var secretRawRepo = path.join(rawPath, ls[0]) // the repo with all variants of exam exercises
 
         console.log("Copy repo temporarily");
-        var tempRepo = path.join(rawPath, hash)
+        var temp = 'temp'
+        var tempRepo = path.join(rawPath, temp, hash)
         try {
             wrench.copyDirSyncRecursive(secretRawRepo, tempRepo);
         } catch (e) {
@@ -85,9 +86,6 @@ Meteor.methods({
                 console.log("=================== CLONE ERROR END ===================");
             }
         })
-
-        console.log("Remove temp repo");
-        rimraf(tempRepo)
 
         // Fix permissions
         try {
