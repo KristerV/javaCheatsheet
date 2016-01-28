@@ -37,7 +37,9 @@ Meteor.methods({
 
         // Delete all but one file in each exercise type
         var allTypes = fs.readdirSync(srcPath).filter(function(file){
-            return fs.statSync(path.join(srcPath, file)).isDirectory();
+            var isDir = fs.statSync(path.join(srcPath, file)).isDirectory()
+            var isVisible = file.charAt(0) !== '.'
+            return isDir && isVisible
         })
         allTypes.forEach(function(dir){
             var fullPath = path.join(srcPath, dir)
