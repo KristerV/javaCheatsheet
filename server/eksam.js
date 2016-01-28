@@ -63,6 +63,9 @@ Meteor.methods({
         exec("whoami", function(error, stdout, stderr){
             console.log("WHOAMI?", stdout);
         })
+        exec("git config --list", function(error, stdout, stderr){
+            console.log("git config --list?", stdout);
+        })
         exec(commitCmd, function(error, stdout, stderr){
             if (error) {
                 console.log("================== COMMIT ERROR START ==================");
