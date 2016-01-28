@@ -58,7 +58,7 @@ Meteor.methods({
                 fs.unlink(path.join(fullPath, file))
             })
         })
-        var commitCmd = "cd "+tempRepo+" && git add --all && git commit -m 'ready to go'"
+        var commitCmd = "cd "+tempRepo+" && git add --all && git commit -m \"ready to go\""
         exec(commitCmd, function(error, stdout, stderr){
             if (error) {
                 console.log("================== COMMIT ERROR START ==================");
