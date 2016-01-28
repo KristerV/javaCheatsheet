@@ -3,7 +3,7 @@ Meteor.startup(function(){
     fs = Meteor.npmRequire('fs')
     path = Meteor.npmRequire('path')
     wrench = Meteor.npmRequire('wrench')
-    exec = Meteor.npmRequire('child_process').execSync
+    exec = Meteor.npmRequire('child_process').exec
     sys = Meteor.npmRequire('sys')
     rimraf = Meteor.npmRequire('rimraf')
     // fiber = Meteor.npmRequire('fibers')
@@ -60,6 +60,9 @@ Meteor.methods({
             })
         })
         var commitCmd = "cd "+tempRepo+" && git add --all && git commit -m \"ready to go\""
+        exec("whoami", function(error, stdout, stderr){
+            console.log("WHOAMI?", stdout);
+        })
         exec(commitCmd, function(error, stdout, stderr){
             if (error) {
                 console.log("================== COMMIT ERROR START ==================");
