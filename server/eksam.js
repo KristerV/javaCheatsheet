@@ -53,6 +53,10 @@ Meteor.methods({
         check(this.userId, String);
         ExamCollection.update(id, {$set: {points: value}})
     },
+    updateDate: function(id, value) {
+        check(this.userId, String);
+        ExamCollection.update(id, {$set: {date: value}})
+    },
     emptyAllExamsPermanently: function() {
         check(this.userId, String);
         ExamCollection.remove({})

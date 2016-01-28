@@ -12,6 +12,7 @@ template(name="eksam")
                 li Kõik ülesanded peavad olema lahendatud kasutades päris programmeerimise võtteid ja mitte lihtsalt näiliselt lahendades vastust kirjutades.
                 li Kui oled valmis lae lahendused üles samasse reposse kust nad said. Kui laed GitHubi või mujale avalikku kohta on tegu plagiaadi kaasa aitamises. Lahendusi võid jagada märtsis, kui kõik eksamid on ära olnud.
                 li Aega on 3 tundi.
+                li Kui koodi üles laadimine gitiga ei õnnestu siis saada failid kokku pakitult (zip/rar/tar) mulle meilile: krister.viirsaar@itcollege.ee. Aga copy-paste koodi ma vastu ei võta.
             if examOpen 
                 h2 Eksam on <span class="text-success">avatud</span>
                 if gitlink
@@ -33,12 +34,15 @@ template(name="eksam")
                         td Hash
                         td Nimi
                         td Start
+                        td Kuupä.
                         td Punkte
                     tbody
                         each exams
                             tr
                                 td {{_id}}
                                 td {{studentName}}
+                                td
+                                    input.form-control.date(id="{{_id}}" value="{{date}}" style="width: 30px") 
                                 td
                                     input.form-control.points(id="{{_id}}" value="{{points}}" style="width: 30px") 
                                 td {{createdAt}}

@@ -38,5 +38,10 @@ Template.eksam.events({
         var id = e.target.id
         var value = e.target.value
         Meteor.call("updatePoints", id, value)
-    }
+    },
+    'blur input.date': function(e) {
+        var id = e.target.id
+        var value = e.target.value
+        Meteor.call("updateDate", id, value)
+    },
 })
