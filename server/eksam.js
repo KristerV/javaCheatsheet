@@ -62,7 +62,8 @@ Meteor.methods({
 
 
         var studentsReposPath = path.join(examPath, 'tudeng')
-        var masterGitCmd = ""
+        // Set HOME manually
+        var masterGitCmd = "env HOME=\"/home/meteoruser/\" &&"
         // Git credintials
         masterGitCmd += " git config --global user.email \"exam@itcollege.ee\" &&"
         masterGitCmd += " git config --global user.name \"Exam Master\" &&"
