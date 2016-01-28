@@ -62,15 +62,10 @@ Meteor.methods({
 
 
         var studentsReposPath = path.join(examPath, 'tudeng')
-        // Set HOME manually
-        var masterGitCmd = "env HOME=\"/home/meteoruser/\" &&"
-        // Git credintials
-        masterGitCmd += " git config --global user.email \"exam@itcollege.ee\" &&"
-        masterGitCmd += " git config --global user.name \"Exam Master\" &&"
-        masterGitCmd += " git config --list &&"
+        var masterGitCmd = ""
 
         // commit changes
-        masterGitCmd += " cd "+tempRepo+" && git add --all && git commit -m \"ready to go\" &&"
+        masterGitCmd += " cd "+tempRepo+" && git add --all && git commit --author=\"Name <email>\" -m \"ready to go\" &&"
 
         // Clone bare repo
         masterGitCmd += " cd " + studentsReposPath + " && git clone --bare " + tempRepo + " " + hash + ".git"
