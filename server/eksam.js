@@ -72,14 +72,14 @@ Meteor.methods({
         masterGitCmd += " cd "+tempRepo+" && git add --all && git commit -m \"ready to go\" &&"
 
         // Clone bare repo
-        masterGitCmd += " cd " + studentsReposPath + " && git clone --bare " + tempRepo + " " + hash + ".git &&"
+        masterGitCmd += " cd " + studentsReposPath + " && git clone --bare " + tempRepo + " " + hash + ".git"
 
         exec(masterGitCmd, function(error, stdout, stderr){
             console.log("STDOUT",stdout);
             if (error) {
                 console.log("================== CLONE ERROR START ==================");
                 console.log("HASH", hash);
-                console.log("COMMAND", cloneCmd);
+                console.log("COMMAND", masterGitCmd);
                 console.log("ERROR",error);
                 console.log("STDERR",stderr);
                 console.log("=================== CLONE ERROR END ===================");
