@@ -5,8 +5,6 @@ Meteor.startup(function(){
     wrench = Meteor.npmRequire('wrench')
     exec = Meteor.npmRequire('child_process').exec
     sys = Meteor.npmRequire('sys')
-    rimraf = Meteor.npmRequire('rimraf')
-    git = Meteor.npmRequire('gift')
     execSync = Meteor.npmRequire('execSync')
     // fiber = Meteor.npmRequire('fibers')
 });
