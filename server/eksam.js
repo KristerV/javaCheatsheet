@@ -22,38 +22,43 @@ Meteor.methods({
         check(studentName, String)
         if (!studentName) throw new Meteor.Error("Need student name")
         var examPath = "/srv/eksam/"
-        console.log("Insert new document");
+
         var hash = ExamCollection.insert({
             studentName: studentName,
             createdAt: new Date(),
         })
         console.log("HASH",hash);
 
-        console.log("Go to raw repo");
+        // Get raw repo path
         var rawPath = examPath + "toores/"
+        console.log("rawPath", rawPath);
         var ls = fs.readdirSync(rawPath).filter(function(file) {
             return fs.statSync(path.join(rawPath, file)).isDirectory();
         });
         var secretRawRepo = path.join(rawPath, ls[0]) // the repo with all variants of exam exercises
 
-        console.log("Copy repo temporarily");
+        // Copy repo to temp
         var temp = 'temp'
         var tempRepo = path.join(rawPath, temp, hash)
+        console.log("tempRepo", tempRepo);
         try {
             wrench.copyDirSyncRecursive(secretRawRepo, tempRepo);
         } catch (e) {
             throw new Meteor.Error("chmod error", e)
         }
 
-        console.log("Delete all but one file in each exercise type");
+        // Delete all but one file in each exercise type
         var srcPath = path.join(tempRepo, "src")
+        console.log("srcPath", srcPath);
         var allTypes = fs.readdirSync(srcPath).filter(function(file){
             var isDir = fs.statSync(path.join(srcPath, file)).isDirectory()
             var isVisible = file.charAt(0) !== '.'
             return isDir && isVisible
         })
+        console.log("allTypes", allTypes);
         allTypes.forEach(function(dir){
             var fullPath = path.join(srcPath, dir)
+            console.log("fullPath", fullPath);
             var files = fs.readdirSync(fullPath)
             var rand = Math.floor(Math.random() * files.length)
             console.log("RANDOM", rand);
@@ -66,7 +71,7 @@ Meteor.methods({
 
         // Reinit git
         var initCmd = "cd "+tempRepo+" && rm -rf .git && git init && git add --all"
-        console.log("EXEC INIT: "+initCmd);
+        console.log("initCmd", initCmd);
         var result = execSync.exec(initCmd)
         console.log("EXEC INIT DONE");
         console.log(result.code);
