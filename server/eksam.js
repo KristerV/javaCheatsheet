@@ -74,7 +74,11 @@ Meteor.methods({
 
         // Add and commit changes
         console.log("COMMIT");
-        git(tempRepo).commit("repo ready to go")
+        git(tempRepo).commit("repo ready to go", function(a, b, c){
+            console.log("======== COMMIT DONE =======");
+            console.log(a, b, c);
+            console.log("=======================");
+        })
 
         var studentsReposPath = path.join(examPath, 'tudeng')
         var masterGitCmd = ""
