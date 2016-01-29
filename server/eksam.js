@@ -74,22 +74,11 @@ Meteor.methods({
 
         // Add and commit changes
         console.log("COMMIT");
-        repo = git(tempRepo)
-        repo.identify("Exam Manager this@guy.ee", function(err){
-            console.log("DONE ID: ",err);
-        })
-        console.log(repo.identity(function(a, b, c){
-            console.log(a, b, c);
-        }));
-        repo.commit("Ready to go", function(a, b, c){
-            console.log("COMMIT DONE");
-            console.log(a, b, c);
-        })
-        // git(tempRepo).commit("repo ready to go", function(a, b, c){
-        //     console.log("======== COMMIT DONE =======");
-        //     console.log(a, b, c);
-        //     console.log("=======================");
-        // })
+        var commitCmd = 'cd '+tempRepo+' && git commit -m "commit this shit already"'
+        result = execSync.exec(commitCmd)
+        console.log(result.code);
+        console.log(result.stdout);
+        console.log(result.stderr);
 
         var studentsReposPath = path.join(examPath, 'tudeng')
         var masterGitCmd = ""
