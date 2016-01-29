@@ -2,5 +2,6 @@
   "wrench": "1.5.8",
   "rimraf": "2.5.1",
   "simple-git": "1.21.0",
+  "gift": "0.7.0",
   "execSync": "1.0.2"
 }

@@ -6,7 +6,7 @@ Meteor.startup(function(){
     exec = Meteor.npmRequire('child_process').exec
     sys = Meteor.npmRequire('sys')
     rimraf = Meteor.npmRequire('rimraf')
-    git = Meteor.npmRequire('simple-git')
+    git = Meteor.npmRequire('gift')
     execSync = Meteor.npmRequire('execSync')
     // fiber = Meteor.npmRequire('fibers')
 });
@@ -74,11 +74,19 @@ Meteor.methods({
 
         // Add and commit changes
         console.log("COMMIT");
-        git(tempRepo).commit("repo ready to go", function(a, b, c){
-            console.log("======== COMMIT DONE =======");
+        repo = git(tempRepo)
+        console.log(repo.identity(function(a, b, c){
             console.log(a, b, c);
-            console.log("=======================");
+        }));
+        repo.commit("Ready to go", function(a, b, c){
+            console.log("COMMIT DONE");
+            console.log(a, b, c);
         })
+        // git(tempRepo).commit("repo ready to go", function(a, b, c){
+        //     console.log("======== COMMIT DONE =======");
+        //     console.log(a, b, c);
+        //     console.log("=======================");
+        // })
 
         var studentsReposPath = path.join(examPath, 'tudeng')
         var masterGitCmd = ""

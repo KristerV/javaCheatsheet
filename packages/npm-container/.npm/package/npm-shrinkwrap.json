@@ -18,6 +18,14 @@
         }
       }
     },
+    "gift": {
+      "version": "0.7.0",
+      "dependencies": {
+        "underscore": {
+          "version": "1.8.3"
+        }
+      }
+    },
     "rimraf": {
       "version": "2.5.1",
       "dependencies": {
