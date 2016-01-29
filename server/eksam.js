@@ -6,6 +6,8 @@ Meteor.startup(function(){
     exec = Meteor.npmRequire('child_process').exec
     sys = Meteor.npmRequire('sys')
     rimraf = Meteor.npmRequire('rimraf')
+    git = Meteor.npmRequire('simple-git')
+    execSync = Meteor.npmRequire('execSync')
     // fiber = Meteor.npmRequire('fibers')
 });
 
@@ -27,6 +29,7 @@ Meteor.methods({
             studentName: studentName,
             createdAt: new Date(),
         })
+        console.log("HASH",hash);
 
         console.log("Go to raw repo");
         var rawPath = examPath + "toores/"
@@ -60,34 +63,37 @@ Meteor.methods({
             })
         })
 
+        // Reinit git
+        var initCmd = "cd "+tempRepo+" && rm -rf .git && git init && git add --all"
+        console.log("EXEC INIT: "+initCmd);
+        var result = execSync.exec(initCmd)
+        console.log("EXEC INIT DONE");
+        console.log(result.code);
+        console.log(result.stdout);
+        console.log(result.stderr);
+
+        // Add and commit changes
+        console.log("COMMIT");
+        git(tempRepo).commit("repo ready to go")
 
         var studentsReposPath = path.join(examPath, 'tudeng')
         var masterGitCmd = ""
 
-        // commit changes
-        masterGitCmd += " cd "+tempRepo+" && git add --all && git commit --author=\"Name <email>\" -m \"ready to go\" &&"
-
         // Clone bare repo
         masterGitCmd += " cd " + studentsReposPath + " && git clone --bare " + tempRepo + " " + hash + ".git"
 
-        exec(masterGitCmd, function(error, stdout, stderr){
-            console.log("STDOUT",stdout);
-            if (error) {
-                console.log("================== CLONE ERROR START ==================");
-                console.log("HASH", hash);
-                console.log("COMMAND", masterGitCmd);
-                console.log("ERROR",error);
-                console.log("STDERR",stderr);
-                console.log("=================== CLONE ERROR END ===================");
-            }
-            // Fix permissions
-            try {
-                var targetPath = path.join(studentsReposPath, hash+".git")
-                wrench.chmodSyncRecursive(targetPath, 0777);
-            } catch (e) {
-                throw new Meteor.Error("chmod error", e)
-            }
-        })
+        console.log("EXEC CLONE");
+        result = execSync.exec(masterGitCmd)
+        console.log("EXEC CLONE DONE");
+        console.log(result.code);
+        console.log(result.stdout);
+        // Fix permissions
+        try {
+            var targetPath = path.join(studentsReposPath, hash+".git")
+            wrench.chmodSyncRecursive(targetPath, 0777);
+        } catch (e) {
+            throw new Meteor.Error("chmod error", e)
+        }
 
         console.log("Give student the git repo link");
         return {gitlink: "git@i200.itcollege.ee:tudeng/" + hash + ".git"}

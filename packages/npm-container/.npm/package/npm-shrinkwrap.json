@@ -1,5 +1,23 @@
 {
   "dependencies": {
+    "execSync": {
+      "version": "1.0.2",
+      "dependencies": {
+        "temp": {
+          "version": "0.5.1",
+          "dependencies": {
+            "rimraf": {
+              "version": "2.1.4",
+              "dependencies": {
+                "graceful-fs": {
+                  "version": "1.2.3"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "rimraf": {
       "version": "2.5.1",
       "dependencies": {
@@ -47,6 +65,9 @@
           }
         }
       }
+    },
+    "simple-git": {
+      "version": "1.21.0"
     },
     "wrench": {
       "version": "1.5.8"
