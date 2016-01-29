@@ -27,6 +27,14 @@
     * Kohutav, et ei tudengid, ega ka Mikk ei saa täiendada mugavalt.
         * Puhtasse markdowni tuleb viia asi.
         * Algselt võimaldas Jade paneele luua, aga selgus et need on täiesti mõttetud. Plain text FTW.
+    * Uusi mõtteid
+        * Markdown, et kõik saaksid muuta
+        * Sisu ja leht eraldi hoida (et uue arendamine ei oleks probleem)
+        * http://dynalon.github.io/mdwiki/#!index.md
+        * Kommentaarium igale lehele
+        * Progress tracking tudengile
+        * Teema juures on video, mitte ei ole kõik videod alguses.
+        * Iga teema sisu peaks olema täielik. Ehk kõik mis Line pistmist on seal olemas.
 * Chat
     * Töötas arutelude ja elu jaoks väga hästi.
     * Aga praktilistele küsimustele oli raske vastata.
