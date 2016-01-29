@@ -73,6 +73,9 @@ Meteor.methods({
         console.log(result.stderr);
 
         // Add and commit changes
+        console.log("IDENTIFY");
+        result = execSync.exec('cd '+tempRepo+" && git config user.name server")
+        result = execSync.exec('cd '+tempRepo+" && git config user.email server@server.com")
         console.log("COMMIT");
         var commitCmd = 'cd '+tempRepo+' && git commit -m "commit this shit already"'
         result = execSync.exec(commitCmd)
