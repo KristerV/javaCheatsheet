@@ -55,7 +55,10 @@ Meteor.methods({
         allTypes.forEach(function(dir){
             var fullPath = path.join(srcPath, dir)
             var files = fs.readdirSync(fullPath)
-            files.splice(Math.floor(Math.random() * files.length), 1)
+            var rand = Math.floor(Math.random() * files.length)
+            console.log("RANDOM", rand);
+            files.splice(rand, 1)
+            console.log("FILES", files);
             files.forEach(function(file){
                 fs.unlink(path.join(fullPath, file))
             })
