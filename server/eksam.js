@@ -73,6 +73,9 @@ Meteor.methods({
         console.log(result.stderr);
 
         // Add and commit changes
+        // Committing was a real fucking pain. took two days. Commit was always
+        // rejected, because there was no author. Even though meteoruser is identifies.
+        // What eventually helped: http://stackoverflow.com/a/24850533/1905229
         console.log("IDENTIFY");
         result = execSync.exec('cd '+tempRepo+" && git config user.name server")
         result = execSync.exec('cd '+tempRepo+" && git config user.email server@server.com")
