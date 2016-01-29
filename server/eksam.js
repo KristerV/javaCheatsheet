@@ -75,7 +75,7 @@ Meteor.methods({
         // Add and commit changes
         console.log("COMMIT");
         repo = git(tempRepo)
-        repo.indentify("Exam Manager <this@guy.ee>", function(err){
+        repo.identify("Exam Manager this@guy.ee", function(err){
             console.log("DONE ID: ",err);
         })
         console.log(repo.identity(function(a, b, c){
