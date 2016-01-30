@@ -49,3 +49,10 @@
     * Tekivad seosed, kuna tegevus on tuttav.
     * Näevad ühte asja mitme nurga alt.
     * Oskavad isegi aimata järgmist sammu.
+* IDE
+    * Eclipse plussid
+        * Kui üks fail erroris siis teised töötavad
+        * faili formattimine lihtsam
+    * Intellij plussid
+        * multicursor
+        * Lihtsam UI (vaid natuke)
