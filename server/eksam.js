@@ -29,17 +29,16 @@ Meteor.methods({
         })
         console.log("HASH",hash);
 
-        // Get raw repo path
+        // Get random raw repo path
         var rawPath = examPath + "toores/"
         console.log("rawPath", rawPath);
         var ls = fs.readdirSync(rawPath).filter(function(file) {
             return fs.statSync(path.join(rawPath, file)).isDirectory();
         });
-        var secretRawRepo = path.join(rawPath, ls[0]) // the repo with all variants of exam exercises
+        var secretRawRepo = path.join(rawPath, ls[Math.floor(Math.random()*ls.length)])
 
         // Copy repo to temp
-        var temp = 'temp'
-        var tempRepo = path.join(rawPath, temp, hash)
+        var tempRepo = path.join(examPath, 'temp', hash)
         console.log("tempRepo", tempRepo);
         try {
             wrench.copyDirSyncRecursive(secretRawRepo, tempRepo);
@@ -86,7 +85,7 @@ Meteor.methods({
         result = execSync.exec('cd '+tempRepo+" && git config user.name server")
         result = execSync.exec('cd '+tempRepo+" && git config user.email server@server.com")
         console.log("COMMIT");
-        var commitCmd = 'cd '+tempRepo+' && git commit -m "commit this shit already"'
+        var commitCmd = 'cd '+tempRepo+' && git commit -m "see repo on spetsiaalselt sulle valmistatud :)"'
         result = execSync.exec(commitCmd)
         console.log(result.code);
         console.log(result.stdout);
