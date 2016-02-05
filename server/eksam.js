@@ -29,12 +29,14 @@ Meteor.methods({
         })
         console.log("HASH",hash);
 
-        // Get random raw repo path
+        // Get repos
         var rawPath = examPath + "toores/"
         console.log("rawPath", rawPath);
         var ls = fs.readdirSync(rawPath).filter(function(file) {
             return fs.statSync(path.join(rawPath, file)).isDirectory();
         });
+        var themes = ['Algoritm', 'OOP', 'JavaFX', 'Maatriks']
+        for
         var secretRawRepo = path.join(rawPath, ls[Math.floor(Math.random()*ls.length)])
 
         // Copy repo to temp

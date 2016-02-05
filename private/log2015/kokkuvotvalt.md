@@ -1,3 +1,5 @@
+* Progeja efektiivsusest
+    * Tee pause. Jaluta. Maga, pane eksamil ekraan kinni.
 * Git
     * Gitiga saadakse hakkama küll.
     * Kui repo muutub tekivad probleemid.
