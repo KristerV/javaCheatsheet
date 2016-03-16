@@ -36,7 +36,6 @@ Meteor.methods({
             return fs.statSync(path.join(rawPath, file)).isDirectory();
         });
         var themes = ['Algoritm', 'OOP', 'JavaFX', 'Maatriks']
-        for
         var secretRawRepo = path.join(rawPath, ls[Math.floor(Math.random()*ls.length)])
 
         // Copy repo to temp
