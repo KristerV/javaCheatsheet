@@ -1,3 +1,5 @@
+* sout everything (esimene asi mida õpetada)
+* command lines demoda progemist
 * Progeja efektiivsusest
     * Tee pause. Jaluta. Maga, pane eksamil ekraan kinni.
 * Git
