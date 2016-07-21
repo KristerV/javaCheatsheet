@@ -7,3 +7,5 @@ https://www.youtube.com/watch?v=mvK0UzFNw1Q
   * i200 markdowni ja +punkte sisu tootmise eest ("edit in GitHub" nurgas), gh-pages (PR ja instant update)
   * kodutööde regulaarse esitamise süsteem
   * foorum.koodikool.ee
+
+* http://docs.python-guide.org/en/latest/intro/learning/#beginner
