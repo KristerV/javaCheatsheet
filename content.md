@@ -1,4 +1,4 @@
-![skeem](/images/java.svg)
+![skeem](images/java.svg)
 
 # Sissejuhatus
 
@@ -10,107 +10,81 @@ Seal saad eriti kiiresti oma küsimustele vastused ja vahest saab niisamagi targ
 
 ## Videod
 
-![](/images/muu/youtube.png)
+#### 1\. Skeemi tutvustus
 
 ![](http://img.youtube.com/vi/IpmBjKqFOvk/hqdefault.jpg)
 
-#### 1\. Skeemi tutvustus
-
 https://youtu.be/IpmBjKqFOvk?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn
-
-![](/images/muu/youtube.png)
-
-![](http://img.youtube.com/vi/iU-RUnORPt8/hqdefault.jpg)
 
 #### 2\. Java ja arenduskeskkonna (IDE) install
 
+![](http://img.youtube.com/vi/iU-RUnORPt8/hqdefault.jpg)
+
 https://youtu.be/iU-RUnORPt8?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn
-
-![](/images/muu/youtube.png)
-
-![](http://img.youtube.com/vi/bs5U5kCb1I4/hqdefault.jpg)
 
 #### 3\. IDE esimene käivitus
 
+![](http://img.youtube.com/vi/bs5U5kCb1I4/hqdefault.jpg)
+
 https://youtu.be/bs5U5kCb1I4?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn
-
-![](/images/muu/youtube.png)
-
-![](http://img.youtube.com/vi/MbPskoIo09k/hqdefault.jpg)
 
 #### 4\. IDE sissejuhatus
 
+![](http://img.youtube.com/vi/MbPskoIo09k/hqdefault.jpg)
+
 https://youtu.be/MbPskoIo09k?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn
-
-![](/images/muu/youtube.png)
-
-![](http://img.youtube.com/vi/2Ju3yuBtop4/hqdefault.jpg)
 
 #### 5\. IDE debugimise võimalus
 
+![](http://img.youtube.com/vi/2Ju3yuBtop4/hqdefault.jpg)
+
 https://youtu.be/2Ju3yuBtop4?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn
-
-![](/images/muu/youtube.png)
-
-![](http://img.youtube.com/vi/R4egQl-7gwk/hqdefault.jpg)
 
 #### 6\. main() meetod ja println()
 
+![](http://img.youtube.com/vi/R4egQl-7gwk/hqdefault.jpg)
+
 https://youtu.be/R4egQl-7gwk?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn
-
-![](/images/muu/youtube.png)
-
-![](http://img.youtube.com/vi/-AUEcJ_JWdg/hqdefault.jpg)
 
 #### 7\. muutuja - väärtused
 
+![](http://img.youtube.com/vi/-AUEcJ_JWdg/hqdefault.jpg)
+
 https://youtu.be/-AUEcJ_JWdg?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn
-
-![](/images/muu/youtube.png)
-
-![](http://img.youtube.com/vi/_lLjBvB-viE/hqdefault.jpg)
 
 #### 8\. muutuja - kogumikud
 
+![](http://img.youtube.com/vi/_lLjBvB-viE/hqdefault.jpg)
+
 https://youtu.be/_lLjBvB-viE?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn
-
-![](/images/muu/youtube.png)
-
-![](http://img.youtube.com/vi/_nPa2mWt4HI/hqdefault.jpg)
 
 #### 9\. if(), ehk valik
 
+![](http://img.youtube.com/vi/_nPa2mWt4HI/hqdefault.jpg)
+
 https://youtu.be/_nPa2mWt4HI?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn
-
-![](/images/muu/youtube.png)
-
-![](http://img.youtube.com/vi/36FTynZdNmk/hqdefault.jpg)
 
 #### 10\. while(), ehk tsükkel
 
+![](http://img.youtube.com/vi/36FTynZdNmk/hqdefault.jpg)
+
 https://youtu.be/36FTynZdNmk?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn
-
-![](/images/muu/youtube.png)
-
-![](http://img.youtube.com/vi/OnP7LQynSp8/hqdefault.jpg)
 
 #### 11\. Java API
 
+![](http://img.youtube.com/vi/OnP7LQynSp8/hqdefault.jpg)
+
 https://youtu.be/OnP7LQynSp8?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn
-
-![](/images/muu/youtube.png)
-
-![](http://img.youtube.com/vi/S4GnFBQD8YU/hqdefault.jpg)
 
 #### 12\. Sisend konsoolis
 
+![](http://img.youtube.com/vi/S4GnFBQD8YU/hqdefault.jpg)
+
 https://youtu.be/S4GnFBQD8YU?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn
 
-![](/images/muu/youtube.png)
+#### 13\. Väljund konsoolis
 
 ![](http://img.youtube.com/vi/a4rRRHDFxY8/hqdefault.jpg)
-
-#### 13\. Väljund konsoolis
 
 https://youtu.be/a4rRRHDFxY8?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn
 
@@ -150,7 +124,7 @@ Tihti arvatakse, et kui koolis läks matemaatika kehvasti, siis ei saa ka progra
 
 On küll! Aga mitte sellepärast, mis sa arvad. Programmeerimise põhitõed (need, mida siin aines õpime) on suhteliselt lihtsad, aga need on hoopis teistmoodi, kui oled harjunud mõtlema. Selle jaoks on isegi väljend: "Lähim arengu tsoon" (ingl. "zone of proximal development") ja seda kirjeldab järgmine joonis:
 
-![](/images/zoneOfProximalDevelopment.svg)
+![](images/zoneOfProximalDevelopment.svg)
 
 Nimelt programmeerimine on sinu võimaliku arengu tsoonist päris kaugel. See on sisuliselt nagu prantsuse keele õppimine, kui pole seda veel kuulnudki. Nüüd, kui me seda probleemi endale teadvustame, on minul, kui õppejõul, ja sinul, kui tudengil, lihtsam programmeerimise kontseptsioonidega tegeleda. Mina pean olema eriti hoolas, et oskaksin siduda uued teemad kuidagi tava eluga (näiteks pannkoogiretsepti analoogia) ja sina, tudeng, pead olema eriti hoolas, et sa harjutad, otsid lisa informatsiooni kust vähegi saad ja loed-loed-loed, kirjutad-kirjutad-kirjutad koodi!
 
@@ -497,56 +471,45 @@ Siin on mõned välised ressursid, mis aitavad teemat mõista:
 
 Soovitan Gitti kasutada käsurealt, et seda mõista. On olemas ka [kasutajaliidesega tarkvara](https://desktop.github.com/), kuid algajale võib see eriti keeruliseks osutuda.
 
-
 Muuda käesolev kaust Giti repositooriumiks
 
     git init
-
 
 Lae alla aadressil olev koodi repositoorium
 
     git clone https://github.com/KristerV/javaHarjutused.git
 
-
 Tõmba alla repositooriumi uuendused
 
     git pull
-
 
 Vaata üldist seisu
 
     git status
 
-
 Vaata mis koodi oled muutnud pärast viimast salvestatud seisu
 
     git diff
-
 
 Valmista üks fail ette salvestamiseks
 
     git add path/to/file.java
 
-
 Valmista kõik failid ette salvestamiseks
 
     git add --all
-
 
 Salvesta ettevalmistatud failid
 
     git commit -m "lühikirjeldus tehtud muudatustest"
 
-
 Lükka repositooriumi uuendused üles
 
     git push
 
-
 Vaata projekti ajalugu
 
     git log
-
 
 Tühista salvestamata muudatused
 
@@ -584,7 +547,6 @@ Algajatel juhtub tihti, et Java süntaksit ei järgita. [Süntaks](http://et.wik
 
 Kui sulud on korras vajuta `ctrl + alt + l`, et treppimine automaatselt korda seada.
 
-
 Sulul ei ole paarilist
 
     public class MaastikuArhitekt {// klass algab
@@ -595,7 +557,6 @@ Sulul ei ole paarilist
             }                      // if lõppeb
                                    // meetodil POLE lõppu
     }                              // klass lõppeb
-
 
 Kirjaviga muutujas
 
@@ -608,16 +569,13 @@ Kirjaviga muutujas
         }
     }
 
-
 Sõnel ei ole jutumärke
 
     String auto = Ford Mustang; // õige: "Ford Mustang"
 
-
 Sõne või tähe ümber on valed jutumärgid
 
     "Sõne on topelt jutumärkidega" != 't'
-
 
 Mõne rea lõpust on puudu semikoolon
 
@@ -630,7 +588,6 @@ Mõne rea lõpust on puudu semikoolon
         }
     }
 
-
 Kuskil on liigne semikoolon
 
     public class KosmoseAgentuur  {
@@ -642,11 +599,9 @@ Kuskil on liigne semikoolon
         }
     }
 
-
 Suur-väike täht valesti (Java on tundlik)
 
     CamelCase != camelCase != Camelcase;
-
 
 Võrdluses operaatorid sassis
 
@@ -670,21 +625,17 @@ Muidugi peaksid ikka umbes teadma mida need lahendused teevad, vahel võib kood 
 
 Kui oma programmi käima paned ja ta punast teksti konsooli viskab, siis otsi sealt tekstist järgnevaid märksõnu. Need on kõige populaarsemad vead, mis võivad tekkida:
 
-
 ClassNotFoundException
 
 Oled käivitanud vale klassi. Ava õige fail ja vajuta `ctrl + shift + f10`. Vt. ka [kiirklahve](/intellij-kiirklahvid)
-
 
 Class xxxx not found in type declaration
 
 Oled unustanud importida mingi klassi, mida kasutad oma programmis.
 
-
 ArrayIndexOutOfBounds
 
 Küsid massiivilt positsiooni kohta, mida pole olemas. Pea meeles, et positsioonide loendamine algab nullist. Näiteks massiivis `int[] a = {5, 3, 6};` ei ole olemas kohta `a[3]`.
-
 
 Number tuleb vale, näiteks 8.6535634789**E**120
 
@@ -1382,7 +1333,6 @@ Point
 
 Teha programmis lihtsaid valikuid (==, !=, <=, >=, string.equals())
 
-
 Süntaks
 
     if (tingimus) {
@@ -1390,7 +1340,6 @@ Süntaks
     } else {
         alternatiivne tegevus
     }
-
 
 Näite ülesanne
 
@@ -1411,7 +1360,6 @@ Point
 
 Teha paljude variantidega, aga lihtsama tingimusega (ainult ==), valikuid.
 
-
 Süntaks
 
     switch (muutuja) {
@@ -1426,7 +1374,6 @@ Süntaks
             tegevus4;
             break;
     }
-
 
 Näite ülesanne
 
@@ -1454,7 +1401,6 @@ Point
 
 Try-catch on nagu if-else, ainult, et on mõeldud veaohtlike koodijuppidele.
 
-
 Näite ülesanne
 
 Loe kõvakettalt fail üles, kui millegipärast toiming ebaõnnestub, anna sellest teada.
@@ -1479,7 +1425,6 @@ Point
 
 Korrata koodi kuni tingimus on tõene
 
-
 Ül1: prindi numbrite jada 1-10
 
     int count = 0;
@@ -1487,7 +1432,6 @@ Korrata koodi kuni tingimus on tõene
         System.out.println(count + 1);
         count = count + 1;
     }
-
 
 Ül2: Prindi välja väärtused massiivist
 
@@ -1509,7 +1453,6 @@ Point
 
 Identne while tsükliga, aga käiatakse vähemalt ühe korra, sest tingimuse kontrollimine toimub lõpus.
 
-
 Ül1: prindi numbrite jada 1-10
 
     int count = 0;
@@ -1517,7 +1460,6 @@ Identne while tsükliga, aga käiatakse vähemalt ühe korra, sest tingimuse kon
         System.out.println(count + 1);
         count = count + 1;
     } while (count < 10);
-
 
 Ül2: Prindi välja väärtused massiivist
 
@@ -1539,13 +1481,11 @@ Point
 
 Korrata koodi x arv kordi
 
-
 Ül1: prindi numbrite jada 1-10
 
     for (int i = 0; i < 10; i++) {
         System.out.println(i + 1);
     }
-
 
 Ül2: Prindi välja väärtused massiivist
 
@@ -1564,7 +1504,6 @@ Korrata koodi x arv kordi
 Point
 
 Käia tsükliga läbi mõni andmete kogum (nt. massiiv)
-
 
 Ül2: Prindi välja väärtused massiivist
 
@@ -1722,21 +1661,17 @@ Astendab esimese arvu teisega.
 
 Genereerib suvalise numbri vahemikus 0-0.999999999.
 
-
 Genereeri arv nullist 0.99999ni
 
     Math.random()
-
 
 Genereeri kas null või üks.
 
     (int) (Math.random() * 2)
 
-
 Genereeri täisarv arv nullist 99ni
 
     (int) (Math.random() * 100)
-
 
 Genereeri reaalarv 30st 40ni.
 
@@ -2144,7 +2079,7 @@ Lihtne näide ühest JavaFX programmist on järgmine.
 
 See programm joonistab lihtsalt ühe ringi.
 
-![](/images/javafx/ring.png)
+![](images/javafx/ring.png)
 
 ### Application
 
@@ -2181,7 +2116,7 @@ Stage on programmi aken. Sisu tuleb ise panna, aga mõned kasulikud meetodid tal
         }
     }
 
-![](/images/javafx/stage.png)
+![](images/javafx/stage.png)
 
 Loo uus
 
@@ -2239,7 +2174,7 @@ Impordi alati **javafx paketist!** Swing ja AWT on hiljuti aegunud tehnoloogiad.
 
 ##### Pane
 
-![](/images/javafx/Pane.svg)
+![](images/javafx/Pane.svg)
 
 Kõige lihtsam (ja paindumatum) piksli põhine kujundus. Kõik ülejäänud paneelid pärinevad (extends) siit, st. kõik siinsed meetodid on olemas ka teistel paneelidel.
 
@@ -2279,7 +2214,7 @@ Määra eelistatud suuruseks 100x100 pikslit
 
 ##### BorderPane
 
-![](/images/javafx/BorderPane.svg)
+![](images/javafx/BorderPane.svg)
 
 Tüüpiline veebikujundus, kus on päis ja jalus, vasak ja parem menüü ning sisu keskel.
 
@@ -2311,7 +2246,7 @@ Ka [Pane](/javafx-layout-Pane) meetodid on siin kasutatavad.
 
 ##### StackPane
 
-![](/images/javafx/StackPane.svg)
+![](images/javafx/StackPane.svg)
 
 Kui on vaja elemente üksteise peale sobitada. Elemendid satuvad vaikimisi StackPane keskele.
 
@@ -2331,7 +2266,7 @@ Ka [Pane](/javafx-layout-Pane) meetodid on siin kasutatavad.
 
 ##### GridPane
 
-![](/images/javafx/GridPane.svg)
+![](images/javafx/GridPane.svg)
 
 Asetab elemendid ruudustiku järgi tabelisse.
 
@@ -2351,7 +2286,7 @@ Ka [Pane](/javafx-layout-Pane) meetodid on siin kasutatavad.
 
 ##### VBox
 
-![](/images/javafx/VBox.svg)
+![](images/javafx/VBox.svg)
 
 Paigutab elemendid üksteise alla.
 
@@ -2367,7 +2302,7 @@ Ka [Pane](/javafx-layout-Pane) meetodid on siin kasutatavad.
 
 ##### Hbox
 
-![](/images/javafx/HBox.svg)
+![](images/javafx/HBox.svg)
 
 Paigutab elemendid vasakult paremale ja ei katke.
 
@@ -2383,7 +2318,7 @@ Ka [Pane](/javafx-layout-Pane) meetodid on siin kasutatavad.
 
 ##### FlowPane
 
-![](/images/javafx/FlowPane.svg)
+![](images/javafx/FlowPane.svg)
 
 Paigutab elemendid vasakult paremale, katkeb järgmisele reale kui sisu enam ära ei mahu.
 
@@ -2403,7 +2338,7 @@ Ka [Pane](/javafx-layout-Pane) meetodid on siin kasutatavad.
 
 ##### TilePane
 
-![](/images/javafx/TilePane.svg)
+![](images/javafx/TilePane.svg)
 
 Nagu FlowPane, ainult et elemendid saavad kõik identse suuruse.
 
@@ -2427,7 +2362,7 @@ Ka [Pane](/javafx-layout-Pane) meetodid on siin kasutatavad.
 
 ##### AnchorPane
 
-![](/images/javafx/AnchorPane.svg)
+![](images/javafx/AnchorPane.svg)
 
 Elemente on võimalik ankurdada servadesse ja nurkadesse.
 
@@ -2454,11 +2389,9 @@ Kindlasti impordi ainult javafx pakettidest!!
 
 Proovime läbi kuidas ühte lihtsat kasutajaliidese tüüp elementi kasutada.
 
-
 Loo uus
 
     Label l = new Label();
-
 
 Paneme uue elemendi Layout Pane sisse.
 
@@ -2467,7 +2400,6 @@ Paneme uue elemendi Layout Pane sisse.
 
 Vt. ka [kuidas JavaFX töötab koos Stage ja Scenega](/javafx).
 
-
 Liiguta Label 50 pikslit paremale ja 100 pikslit alla.
 
     l.setTranslateX(50);
@@ -2475,12 +2407,10 @@ Liiguta Label 50 pikslit paremale ja 100 pikslit alla.
 
 Kuigi sa saad muuta elemendi asukohta layouti sees, määrab ümbritsev layout ikkagi olulise osa. Seega, kui su element ei käitu päris nii nagu soovid, proovi mõnda muud [layouti](/javafx-Layout).
 
-
 Vähenda laiust 50% ja kahekordista kõrgus
 
     l.setScaleX(0.5);
     l.setScaleY(2);
-
 
 Pööra 30 kraadi.
 
@@ -2490,12 +2420,11 @@ Kõikidest võimalustest räägib täpsemalt [Oracle UI Controls](https://docs.o
 
 ##### Label
 
-![](/images/javafx/UI/Label.png)
+![](images/javafx/UI/Label.png)
 
 Label, ehk silt, on lihtne tekst, mida tüüpiliselt lisatakse mingi interaktiivse elemendi selgitamiseks.
 
 Vt. ka [Kasutajaliidese üldine kasutamine](/javafx-Kasutajaliides).
-
 
 Määra tekst, ehk Label sisu.
 
@@ -2503,27 +2432,23 @@ Määra tekst, ehk Label sisu.
 
 ##### TextField
 
-![](/images/javafx/UI/TextField.png)
+![](images/javafx/UI/TextField.png)
 
 Teksti kirjutamiseks, et kasutajalt infot pärida.
 
 Vt. ka [Kasutajaliidese üldine kasutamine](/javafx-Kasutajaliides).
 
-
 Lisa välja taustale ajutine tekst
 
     a.setPromptText("Ajutine tekst");
-
 
 Salvesta kasutaja sisestatud tekst muutujasse
 
     String b = a.getText();
 
-
 Tühjenda teksti väli
 
     a.clear()
-
 
 Kui soovid iga muutuse peale reageerida
 
@@ -2531,7 +2456,6 @@ Kui soovid iga muutuse peale reageerida
         System.out.println("Uus väärtus: " + uusVaartus);
         // Tegevus siia
     });
-
 
 Kui soovid `enter` vajutamisele reageerida
 
@@ -2541,22 +2465,19 @@ Kui soovid `enter` vajutamisele reageerida
 
 ##### PasswordField
 
-![](/images/javafx/UI/PasswordField.png)
+![](images/javafx/UI/PasswordField.png)
 
 Täpselt nagu TextField, ainult, et kirjutatud tähtede asemel näidatakse tärne.
 
 Vt. ka [Kasutajaliidese üldine kasutamine](/javafx-Kasutajaliides).
 
-
 Lisa välja taustale ajutine tekst
 
     a.setPromptText("Ajutine tekst");
 
-
 Salvesta kasutaja sisestatud tekst muutujasse
 
     String b = a.getText();
-
 
 Tühjenda parooli väli
 
@@ -2564,17 +2485,15 @@ Tühjenda parooli väli
 
 ##### Button
 
-![](/images/javafx/UI/Button.png)
+![](images/javafx/UI/Button.png)
 
 Kõige lihtsam nupp. Mis juhtub nupu vajutusel saad ise määrata.
 
 Vt. ka [Kasutajaliidese üldine kasutamine](/javafx-Kasutajaliides).
 
-
 Määra nupu tekst
 
     btn.setText("Vajuta siia!");
-
 
 Määra mis juhtub kui nuppu vajutatakse
 
@@ -2586,17 +2505,15 @@ Määra mis juhtub kui nuppu vajutatakse
 
 ##### ToggleButton
 
-![](/images/javafx/UI/ToggleButton.png)
+![](images/javafx/UI/ToggleButton.png)
 
 Eriline nupp, mis jääb sisse. Kasutatakse selleks, et näiteks mõne programmi settingutes lasta valida jah/ei stiilis või lausa mitme valiku vahel korraga.
 
 Vt. ka [Kasutajaliidese üldine kasutamine](/javafx-Kasutajaliides).
 
-
 Kui gruppi ei kasuta on üks nupp sisse/välja lülitatav.
 
     ToggleButton nupp = new ToggleButton("üksik toggle");
-
 
 Toggle nupud grupeeritakse kasutades [ToggleGroup](/javafx-ToggleGroup) objekti. Ühes objektis saab vaid üks nupp olla korraga sisse vajutatud.
 
@@ -2612,12 +2529,11 @@ Toggle nupud grupeeritakse kasutades [ToggleGroup](/javafx-ToggleGroup) objekti.
 
 ##### RadioButton
 
-![](/images/javafx/UI/RadioButton.png)
+![](images/javafx/UI/RadioButton.png)
 
 Radio on veebist vähe tuttavam versioon ToggleButton'ist. Eesmärk on sama: anda kasutajale valida üks mitme seast.
 
 Vt. ka [Kasutajaliidese üldine kasutamine](/javafx-Kasutajaliides).
-
 
 RadioNupud grupeeritakse [ToggleGroup](/javafx-ToggleGroup) objekti abil, et vaid üks neist saaks olla valitud korraga.
 
@@ -2635,19 +2551,17 @@ RadioNupud grupeeritakse [ToggleGroup](/javafx-ToggleGroup) objekti abil, et vai
 
 [RadioButton](/javafx-RadioButton) ja [ToggleButton](/javafx-ToggleButton) tarbeks.
 
-
 Küsi ToggleGroup käest, millised nupud on sisse vajutatud
 
     g.getSelectedToggle();
 
 ##### CheckBox
 
-![](/images/javafx/UI/CheckBox.png)
+![](images/javafx/UI/CheckBox.png)
 
 Kasutajale jah/ei stiilis küsimuste esitamiseks.
 
 Vt. ka [Kasutajaliidese üldine kasutamine](/javafx-Kasutajaliides).
-
 
 Loo 3 CheckBoxi
 
@@ -2656,16 +2570,13 @@ Loo 3 CheckBoxi
     CheckBox e3 = new CheckBox("Nupp 3");
     vbox.getChildren().addAll(e1, e2, e3);
 
-
 Määra tekstiline sisu.
 
     cd.setText("Nupp 1");
 
-
 Määra, kas CheckBox on sisse vajutatud.
 
     cb.setSelected(true);
-
 
 Küsi, kas Checkbox on sisse vajutatud.
 
@@ -2673,12 +2584,11 @@ Küsi, kas Checkbox on sisse vajutatud.
 
 ##### ChoiceBox
 
-![](/images/javafx/UI/ChoiceBox.png)
+![](images/javafx/UI/ChoiceBox.png)
 
 Seletav tekst
 
 Vt. ka [Kasutajaliidese üldine kasutamine](/javafx-Kasutajaliides).
-
 
 Loo ChoiceBox kolme variandiga
 
@@ -2703,52 +2613,43 @@ Reageeri valiku muutmisele.
 
 ##### Slider
 
-![](/images/javafx/UI/Slider.png)
+![](images/javafx/UI/Slider.png)
 
 Väärtuse valimiseks mingist vahemikust.
 
 Vt. ka [Kasutajaliidese üldine kasutamine](/javafx-Kasutajaliides).
 
-
 Määra miinimum väärtus
 
     slider.setMin(0);
-
 
 Määra maksimaalne väärtus
 
     slider.setMax(100);
 
-
 Määra algne väärtus
 
     slider.setValue(40);
-
 
 Kas numbrid on näha?
 
     slider.setShowTickLabels(true);
 
-
 Kas kriipsud on näha?
 
     slider.setShowTickMarks(true);
-
 
 Kui tihedalt suured kriipsud esinevad.
 
     slider.setMajorTickUnit(50);
 
-
 Mitu väikest kriipsu on iga suure vahel?
 
     slider.setMinorTickCount(5);
 
-
 Muuda orientatsioon vertikaalseks.
 
     slider.setOrientation(Orientation.VERTICAL);
-
 
 Reageeri Slideri muutumise peale
 
@@ -2761,7 +2662,6 @@ Reageeri Slideri muutumise peale
 Kasutab kasutaja operatsioonisüsteemi failihaldurit, et leida kasutaja soovitud fail.
 
 Vt. ka terviklikumat näidet [Oracle lehel](http://docs.oracle.com/javafx/2/ui_controls/file-chooser.htm).
-
 
 Ava failihaldur ja salvesta fail muutujasse file.
 
@@ -2784,13 +2684,11 @@ Soovitatav on konteineriks kasutada Pane layouti, seal ei ole automaatset joondu
 
 On mõned põhitõed, mis **kehtivad peaaegu kõikide kujundite puhul**:
 
-
-Loo uus ![](/images/javafx/Shapes/rec-demo1.png)
+Loo uus ![](images/javafx/Shapes/rec-demo1.png)
 
     Rectangle rectangle = new Rectangle(20, 20, 70, 50);
 
-
-Loo uus eraldi käskudena ![](/images/javafx/Shapes/rec-demo1.png)
+Loo uus eraldi käskudena ![](images/javafx/Shapes/rec-demo1.png)
 
     Rectangle rec = new Rectangle();
     rec.setX(20);
@@ -2798,46 +2696,39 @@ Loo uus eraldi käskudena ![](/images/javafx/Shapes/rec-demo1.png)
     rec.setWidth(70);
     rec.setHeight(50);
 
-
 Reageeri hiire klikile
 
     rectangle.setOnMouseClicked(event -> {
         System.out.println("Klikk töötab");
     });
 
-
-Värvi joon või servad. ![](/images/javafx/Shapes/rec-demo2.png)
+Värvi joon või servad. ![](images/javafx/Shapes/rec-demo2.png)
 
     rectangle.setStroke(Color.RED);
 
-
-Määra joone paksuseks 10 pikslit. ![](/images/javafx/Shapes/rec-demo3.png)
+Määra joone paksuseks 10 pikslit. ![](images/javafx/Shapes/rec-demo3.png)
 
     rectangle.setStrokeWidth(10);
 
-
-Värvi sisu. ![](/images/javafx/Shapes/rec-demo4.png)
+Värvi sisu. ![](images/javafx/Shapes/rec-demo4.png)
 
     rectangle.setFill(Color.BLUE);
 
-
-Pööra 45 kraadi. ![](/images/javafx/Shapes/rec-demo5.png)
+Pööra 45 kraadi. ![](images/javafx/Shapes/rec-demo5.png)
 
     rec.setRotate(45);
 
 ##### Line
 
-![](/images/javafx/Shapes/Line.png)
+![](images/javafx/Shapes/Line.png)
 
 Joonista joon. Määrama peab kust->kuhu kordinaadid, ehk new Line(kustX, kustY, kuhuX, kuhuY).
 
 Vt. ka [Joonistamise põhitõed](/javafx-joonistamine).
 
-
 Algab kordinaatidelt 0, 0 ja lõppeb 100, 100
 
     Line line = new Line(0, 0, 100, 100);
-
 
 Sama asi eraldi käskudena
 
@@ -2849,17 +2740,15 @@ Sama asi eraldi käskudena
 
 ##### Rectangle
 
-![](/images/javafx/Shapes/Rectangle.png)
+![](images/javafx/Shapes/Rectangle.png)
 
 Ristkülik. Määrata tuleb alguskordinaadid ja laius/kõrgus, ehk new Rectangle(algX, algY, laius, kõrgus).
 
 Vt. ka [Joonistamise põhitõed](/javafx-joonistamine).
 
-
 Loo uus algusega 20x20 ja suuruses 80x120
 
     Rectangle a = new Rectangle(20,20,80,40);
-
 
 Sama asi eraldi käskudena
 
@@ -2871,22 +2760,19 @@ Sama asi eraldi käskudena
 
 ##### Circle
 
-![](/images/javafx/Shapes/Circle.png)
+![](images/javafx/Shapes/Circle.png)
 
 Ring.
 
 Vt. ka [Joonistamise põhitõed](/javafx-joonistamine).
 
-
 Loo uus
 
     Circle a = new Circle(30);
 
-
 Muuda raadiust
 
     a.setRadius(30);
-
 
 Muuda asukohta keskpunkti järgi
 
@@ -2895,23 +2781,20 @@ Muuda asukohta keskpunkti järgi
 
 ##### Ellipse
 
-![](/images/javafx/Shapes/Ellipse.png)
+![](images/javafx/Shapes/Ellipse.png)
 
 Ellipse on nagu ring, ainult kahe raadiusega - horisontaalne ja vertikaalne.
 
 Vt. ka [Joonistamise põhitõed](/javafx-joonistamine).
 
-
 Loo uus
 
     Ellipse a = new Ellipse(30, 40);
-
 
 Muuda raadiust
 
     a.setRadiusX(30);
     a.setRadiusY(40);
-
 
 Muuda asukohta keskpunkti järgi
 
@@ -2920,17 +2803,15 @@ Muuda asukohta keskpunkti järgi
 
 ##### Polygon
 
-![](/images/javafx/Shapes/Polygon.png)
+![](images/javafx/Shapes/Polygon.png)
 
 Polygon on vaba kujundi joonistaja. Muidu võid ka joonega oma kujundid teha, aga Polygoni saab seest ära värvida.
 
 Vt. ka [Joonistamise põhitõed](/javafx-joonistamine).
 
-
 Loo uus
 
     Polygon a = new Polygon();
-
 
 Määra ära otspunktide kordinaadid.
 
