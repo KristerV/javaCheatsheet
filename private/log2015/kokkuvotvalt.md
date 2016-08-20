@@ -1,3 +1,6 @@
+* sout everything (esimene asi mida õpetada)
+* command lines demoda progemist
+* Ikkagi rõhuda, et progemine on ennekõike infotöötlus, ehk int ja String
 * Progeja efektiivsusest
     * Tee pause. Jaluta. Maga, pane eksamil ekraan kinni.
 * Git
