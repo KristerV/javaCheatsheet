@@ -1,6 +1,7 @@
-```Java
-    System.out.println();
-```
+::: toc
+@[toc]( )
+:::
+
 
 ![skeem](images/java.svg)
 

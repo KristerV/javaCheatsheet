@@ -2,9 +2,12 @@
     <title>i200 Progemise algkursus</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/monokai-sublime.min.css">
+    <link rel="stylesheet" href="index.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/languages/java.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/7.0.1/markdown-it.min.js"></script>
+    <script src="scripts/lib/markdown-it-container.js"></script>
+    <script src="scripts/lib/markdown-it-toc.js"></script>
 </head>
 <body>
     <script>
@@ -12,12 +15,15 @@
             var md = window.markdownit({
                 breaks: true,
                 linkify: true,
-            });
+            })
+            .use(TOCCC)
+            .use(window.markdownitContainer, "toc");
             var result = md.render(content);
             $('body').append(result);
 
             // Highlight code - heavy calculation
             setTimeout(hljs.initHighlighting, 1);
+
         }
 
         // Get markdown file
