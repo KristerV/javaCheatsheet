@@ -1,14 +1,16 @@
 .toc {
 	position: fixed;
-	width: 300px;
-	margin-left: -300px;
+	width: 30%;
+	left: 0;
+	top: 0;
 	overflow: auto;
 	height: 100%;
 }
 
 body {
-	margin-left: 300px;
+	margin-left: calc(30%);
 	max-width: 900px;
+	width: 70%;
 }
 
 img {
