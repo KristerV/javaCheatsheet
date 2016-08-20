@@ -1,3 +1,7 @@
+```Java
+    System.out.println();
+```
+
 ![skeem](images/java.svg)
 
 # Sissejuhatus
