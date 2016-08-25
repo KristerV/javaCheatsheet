@@ -234,23 +234,23 @@ On mõned põhitõed, mida enne päris maailmas tegutsemist tavaliselt ei õpi. 
 
 Projekt on kõige tähtsam asi selle aine juures. Projekt on see, millega peaksid koguaeg tegelema, nii kodus kui tööl (okei, tööl keskendu töö peale). Miks me seda teeme? Sest enda idee kallal nokitsemine on kõige efektiivsem viis programmeerimine ära õppida.
 
-## Idee
+### Idee
 
 Et ikka põnev oleks saad päris oma programmi kirjutada. Ära idee leidmise pärast liialt vaeva näe. Kui endal pähe ei tule siis leia mõni olemasolev programm ja matki see järgi. Võib teha ka mängu.
 
-## Keerukus
+### Keerukus
 
 Point on ennast proovile panna. Siis on huvitav ja siis õpib. Ma ei mõtle, et peaksid nüüd päeva pealt proffiks hakkama, aga võta ikka mõnuga. Siin tuleb täheldada seda, et kui teed lihtsa idee ära, siis seda saab alati keerulisemaks täiendada - lihtne on hea. Ühtlasi peaks keerulisele programmile lähenema tema kõige lihtsamast küljest ja siis vaikselt täiendama - keeruline on ka hea. Lühidalt võta mingi idee ja hakka pihta!
 
-## Maht
+### Maht
 
 Projekti mahtu on väga raske hinnata. Asi on selles, et kui algaja kirjutab 1000 rida koodi probleemi lahendamiseks, siis edasijõudnud teeb sama asja 100 reaga ära. See ei ole kirjand ja koodi koguse järgi projekti kvaliteeti hinnata ei saa. Küll aga annab hindamise kriteerium sulle aimu, milliseid tehnilisi lahendusi tähele pannakse hindamisel.
 
-## Aga ma ei oska ju progeda!
+### Aga ma ei oska ju progeda!
 
 Kõik on hästi. Kui sa kujundad oma programmi paberil ära, mõtled läbi mis funktsionaalsus sinna tuleb on juba esimene samm olemas. Nüüd. Kui sul on i200 videod vaadatud, äkki isegi codecademy.com mõni Pythoni kursus tehtud, siis peaksid oskama Javas kõige lihtsamaid manöövreid teha: arvutada, kasutajalt sisendit küsida, tulemus välja printida. Kas sinu (ükskõik kui keerulist) programmi annab konsoolis ära teha mingil elementaarsel tasemel? Ehk tee kõige lihtsam variant kohe ära. Kui midagi juurde õpid saad täiendada ja kindlasti ära karda nullist uuesti kirjutamist, see arendambi tegelikult kõige rohkem.
 
-## Vastamine
+### Vastamine
 
 Nagu iga õige projekt (näiteks lõputöö) tuleb projekt kaitsta kõigi ees. Kusjuures, teised ruumis olevad tudengid saavad ka hinnet mõjutada - hindamise kriteeriumis seda kirjas pole, aga õppejõud kindlasti arvestab üldsuse seisukohta. Vastamise päevaks on kõikide tudengite kood auditooriumi arvutis olemas (git) keerulisema setupi korral võid oma arvutiga vastama tulla. Asi võiks välja näha umbes selliselt:
 
@@ -266,13 +266,13 @@ Nagu iga õige projekt (näiteks lõputöö) tuleb projekt kaitsta kõigi ees. K
     *   Õppejõud määrab lõpliku hinde vastavalt hindamise kriteeriumile.
     *   Auditooriumis olevatel tudengitel on võimalik nutihääletuse abil tugevasti mõjutada hinnet.
 
-## Hindamise kriteerium
+### Hindamise kriteerium
 
 Nonii. "Ükskõik kui keeruline või lihtne" on tore, aga mille eest reaalselt hinde saab? Siin on siis täpne hindamise kriteerium. **Punases** on kõige tähtsamad punktid, **Boldis** tähtis ja ülejäänud tavatekstis.
 
 **NB!** Giti kasutamine on hädavajalik, et oma tööd üldse esitada saaks (ja et kood töötaks kooli arvutis). Aga objekt-orienteerituse ja GUI kasutamine tegelikult hädavajalik ei ole, see on pigem nagu pidepunkt, millega kontrollida, kas programm on optimaalselt üles ehitatud ja piisavalt keeruline, et head hinnet saada.
 
-## Kood
+### Kood
 
 *   **Kood on gitis**, õppejõud saab ligi.
 *   Projekti kirjeldus failis README.md (.md on [markdown](http://eherrera.net/markdowntutorial))
@@ -297,7 +297,7 @@ Nonii. "Ükskõik kui keeruline või lihtne" on tore, aga mille eest reaalselt h
     *   rekursioon
     *   eriti hea klasside/meetodide taaskasutatavus
 
-## Tulemus
+### Tulemus
 
 *   funktsionaalsus
     *   **programm täidab oma eesmärki**, ehk suudab ettenähtud protsessi lõpuni viia
@@ -312,20 +312,45 @@ Nonii. "Ükskõik kui keeruline või lihtne" on tore, aga mille eest reaalselt h
     *   Dumbuserile
     *   Algaja-häkkerile
 
-## Lisapunkte
+### Lisapunkte
 
 *   **Tudeng on läinud aine raamistikust edasi**, ehk oskab rohkem kui on aines õpetatud.
 *   Tudeng on reaalselt **gitti kasutanud** (committide periood on loogiline)
 *   Kasutatud on **lisa raamistikke**, näiteks SQL andmebaas.
 *   Kui tudeng tööga päris valmis ei saanud, kas ta vähemalt teab mida järgmiseks peaks tegema?
 
-## Plagiaadikontroll
+### Plagiaadikontroll
 
 (Rakendada ainult kui väga vaja, eksam on lõplik filter)
 
 *   Oskab selgitada suvalist kohta koodis.
 *   Oskab programmi käiku muuta, kui õppejõud seda palub.
 *   Oskab käigu pealt tsükleid valmistada.
+
+## Eksam
+
+### Reeglid
+
+- Eksam toimub klassi arvutis.
+- Arvesse läheb ainult esimene giti link - valida ei saa.
+- Ei tohi kellegagi suhelda ei netis ega mujal v.a. õppejõuga.
+- Hilinejaid sisse ei lubata
+- Telefoni ei näpi. Nimelt on kooli arvuti ainuke ekraan sinu elus.
+- Tohid kasutada internetti k.a. Google.
+- Üleüldised sohi tegemise reeglid kehtivad (nt. naabrilt maha kirjutamine).
+- Kõik ülesanded peavad olema lahendatud kasutades päris programmeerimise võtteid ja mitte lihtsalt näiliselt lahendades vastust kirjutades.
+- Aega on 3 tundi.
+- Kui oled valmis lae lahendused üles samasse reposse kust nad said. Kui laed GitHubi või mujale avalikku kohta on tegu plagiaadi kaasa aitamises. Lahendusi võid jagada märtsis, kui kõik eksamid on ära olnud.
+- Kui koodi üles laadimine gitiga ei õnnestu siis saada failid kokku pakitult (zip/rar/tar) mulle meilile: krister.viirsaar@itcollege.ee. Aga copy-paste koodi ma vastu ei võta.
+- Õppejõud ei kontrolli, kas su töö läks gitti üles. Seda saad ise teha.
+- Küsimusi võib küsida, aga kui peaksid ise teadma siis ei aita.
+
+### Soovitusi
+
+- Tule klassi palju varem ja kinnita, et Intellij on seadistatud.
+- Kui ülesanne on üle jõu siis lihtsusta enda jaoks, aga ära jäta programmi katki.
+- Ära copy-paste! Ülesanded on piisavalt lihtsad, et ajavõitu ei ole. Aga kui sa ei tea täpselt mis teed siis nüüd kaotad aega.
+- Ära kiirusta, mõtle läbi. Alati on lihtsam ja kergem lahendus olemas.
 
 # Arenduskeskkond
 
