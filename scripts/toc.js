@@ -19,7 +19,7 @@ $(document).scroll(_.throttle(function() {
 	}
 
 
-}, 50));
+}, 200));
 
 var refreshTOC = function() {
 	// Collapse menu
