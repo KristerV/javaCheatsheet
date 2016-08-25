@@ -16,3 +16,32 @@ ul {
 img[src$=".svg"] {
 	min-width: 150px;
 }
+
+.ribbon {
+	position: fixed;
+	right: -5px; top: -5px;
+	z-index: 1;
+	overflow: hidden;
+	width: 150px; height: 150px;
+	text-align: right;
+}
+.ribbon span {
+	font-weight: bold;
+	color: #FFF;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 40px;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	width: 200px;
+	display: block;
+	background: #79A70A;
+	background: linear-gradient(#05EFF7 0%, #087F8F 100%);
+	box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+	position: absolute;
+	top: 40px; right: -42px;
+}
+.ribbon a {
+	color: white;
+	text-decoration: none;
+}
