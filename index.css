@@ -2,6 +2,7 @@ body {
 	margin-left: calc(30%);
 	max-width: 900px;
 	width: 70%;
+	font-family: Verdana, Arial;
 }
 
 img {

@@ -12,6 +12,7 @@ $(document).scroll(_.throttle(function() {
 		var top = $(headers[i]).position().top
 		if (top > winTop - 25 && top < winTop + (winHeight / 4)) { // 25 is because of elem margin
 			var topic = $(headers[i]).children("a").attr("id")
+			topic = topic || ''
 			history.pushState(null, null, '#'+topic)
 			refreshTOC()
 			break
