@@ -1,0 +1,20 @@
+.toc {
+	position: fixed;
+	width: 30%;
+	left: 0;
+	top: 0;
+	overflow: auto;
+	height: 100%;
+}
+
+.toc > ul ul {
+	display: none;
+}
+
+.toc ul.active {
+	display: block;
+}
+
+.toc a.active {
+	font-weight: bold;
+}
