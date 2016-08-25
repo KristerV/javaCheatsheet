@@ -2846,7 +2846,7 @@ Muuda asukohta keskpunkti järgi
 
 Polygon on vaba kujundi joonistaja. Muidu võid ka joonega oma kujundid teha, aga Polygoni saab seest ära värvida.
 
-Vt. ka [Joonistamise põhitõed](/javafx-joonistamine).
+Vt. ka [Joonistamise põhitõed](#javafx-joonistamine).
 
 Loo uus
 

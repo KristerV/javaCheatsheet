@@ -1,6 +1,8 @@
 # Must have
 
 - [x] Markdown i200
+- [ ] Fix i200 internal links with custome ID's
+- [ ] Parem koodi koloriit
 - [ ] Foorum
 - [ ] Video lindistamise ja töötluse keskus
 - [ ] Esimese nädala sisu
@@ -14,6 +16,17 @@
 
 - [ ] Eksami nõuded üle vaadata
 - [ ] Õpetöö põhimõtted i200 üles.
+- [ ] Peamenüü ümber teha
+
+# Peamenüü
+
+Aine info
+Harjutused
+Hädaabi
+Progemise põhitõed
+Java API
+Git
+IDE
 
 # 2015 kokkvõte
 
