@@ -2713,11 +2713,13 @@ Soovitatav on konteineriks kasutada Pane layouti, seal ei ole automaatset joondu
 
 On mõned põhitõed, mis **kehtivad peaaegu kõikide kujundite puhul**:
 
-Loo uus ![](images/javafx/Shapes/rec-demo1.png)
+Loo uus
 
     Rectangle rectangle = new Rectangle(20, 20, 70, 50);
 
-Loo uus eraldi käskudena ![](images/javafx/Shapes/rec-demo1.png)
+![](images/javafx/Shapes/rec-demo1.png)
+
+Loo uus eraldi käskudena
 
     Rectangle rec = new Rectangle();
     rec.setX(20);
@@ -2731,21 +2733,29 @@ Reageeri hiire klikile
         System.out.println("Klikk töötab");
     });
 
-Värvi joon või servad. ![](images/javafx/Shapes/rec-demo2.png)
+Värvi joon või servad.
 
     rectangle.setStroke(Color.RED);
 
-Määra joone paksuseks 10 pikslit. ![](images/javafx/Shapes/rec-demo3.png)
+![](images/javafx/Shapes/rec-demo2.png)
+
+Määra joone paksuseks 10 pikslit.
 
     rectangle.setStrokeWidth(10);
 
-Värvi sisu. ![](images/javafx/Shapes/rec-demo4.png)
+![](images/javafx/Shapes/rec-demo3.png)
+
+Värvi sisu.
 
     rectangle.setFill(Color.BLUE);
 
-Pööra 45 kraadi. ![](images/javafx/Shapes/rec-demo5.png)
+![](images/javafx/Shapes/rec-demo4.png)
+
+Pööra 45 kraadi.
 
     rec.setRotate(45);
+
+![](images/javafx/Shapes/rec-demo5.png)
 
 ##### Line
 
