@@ -106,12 +106,11 @@ Programmeerimine on programmi kirjutamine. Nojah, see on vist niigi selge. Aga m
 5.  lülita pliit sisse,
 6.  vala pannile õli.
 7.  Kuni tainast jätkub:
-
-*   vala kulbiga tainast pannile;
-*   oota veidi;
-*   pööra kook ümber;
-*   oota veidi;
-*   tõsta pannilabidaga kook taldrikule;".
+    *   vala kulbiga tainast pannile;
+    *   oota veidi;
+    *   pööra kook ümber;
+    *   oota veidi;
+    *   tõsta pannilabidaga kook taldrikule;".
 
 Panid tähele kui täpselt ma praadimise osa kirjeldasin? See toidu tegemisel ei ole tarvilik, kuna inimene oskab lihtsamad lüngad täita oma elukogemusega, aga arvutitel ei ole elukogemust. Arvuteid peab väga spetsiifiliselt juhendama, iga liigutus on oluline.
 
