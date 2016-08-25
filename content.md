@@ -17,81 +17,81 @@ Seal saad eriti kiiresti oma küsimustele vastused ja vahest saab niisamagi targ
 
 #### 1\. Skeemi tutvustus
 
-![](http://img.youtube.com/vi/IpmBjKqFOvk/hqdefault.jpg)
+[comment]: # (http://img.youtube.com/vi/IpmBjKqFOvk/hqdefault.jpg)
 
-https://youtu.be/IpmBjKqFOvk?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn
+@[youtube](https://youtu.be/IpmBjKqFOvk?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
 
 #### 2\. Java ja arenduskeskkonna (IDE) install
 
-![](http://img.youtube.com/vi/iU-RUnORPt8/hqdefault.jpg)
+[comment]: # (http://img.youtube.com/vi/iU-RUnORPt8/hqdefault.jpg)
 
-https://youtu.be/iU-RUnORPt8?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn
+@[youtube](https://youtu.be/iU-RUnORPt8?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
 
 #### 3\. IDE esimene käivitus
 
-![](http://img.youtube.com/vi/bs5U5kCb1I4/hqdefault.jpg)
+[comment]: # (http://img.youtube.com/vi/bs5U5kCb1I4/hqdefault.jpg)
 
-https://youtu.be/bs5U5kCb1I4?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn
+@[youtube](https://youtu.be/bs5U5kCb1I4?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
 
 #### 4\. IDE sissejuhatus
 
-![](http://img.youtube.com/vi/MbPskoIo09k/hqdefault.jpg)
+[comment]: # (http://img.youtube.com/vi/MbPskoIo09k/hqdefault.jpg)
 
-https://youtu.be/MbPskoIo09k?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn
+@[youtube](https://youtu.be/MbPskoIo09k?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
 
 #### 5\. IDE debugimise võimalus
 
-![](http://img.youtube.com/vi/2Ju3yuBtop4/hqdefault.jpg)
+[comment]: # (http://img.youtube.com/vi/2Ju3yuBtop4/hqdefault.jpg)
 
-https://youtu.be/2Ju3yuBtop4?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn
+@[youtube](https://youtu.be/2Ju3yuBtop4?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
 
 #### 6\. main() meetod ja println()
 
-![](http://img.youtube.com/vi/R4egQl-7gwk/hqdefault.jpg)
+[comment]: # (http://img.youtube.com/vi/R4egQl-7gwk/hqdefault.jpg)
 
-https://youtu.be/R4egQl-7gwk?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn
+@[youtube](https://youtu.be/R4egQl-7gwk?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
 
 #### 7\. muutuja - väärtused
 
-![](http://img.youtube.com/vi/-AUEcJ_JWdg/hqdefault.jpg)
+[comment]: # (http://img.youtube.com/vi/-AUEcJ_JWdg/hqdefault.jpg)
 
-https://youtu.be/-AUEcJ_JWdg?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn
+@[youtube](https://youtu.be/-AUEcJ_JWdg?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
 
 #### 8\. muutuja - kogumikud
 
-![](http://img.youtube.com/vi/_lLjBvB-viE/hqdefault.jpg)
+[comment]: # (http://img.youtube.com/vi/_lLjBvB-viE/hqdefault.jpg)
 
-https://youtu.be/_lLjBvB-viE?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn
+@[youtube](https://youtu.be/_lLjBvB-viE?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
 
 #### 9\. if(), ehk valik
 
-![](http://img.youtube.com/vi/_nPa2mWt4HI/hqdefault.jpg)
+[comment]: # (http://img.youtube.com/vi/_nPa2mWt4HI/hqdefault.jpg)
 
-https://youtu.be/_nPa2mWt4HI?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn
+@[youtube](https://youtu.be/_nPa2mWt4HI?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
 
 #### 10\. while(), ehk tsükkel
 
-![](http://img.youtube.com/vi/36FTynZdNmk/hqdefault.jpg)
+[comment]: # (http://img.youtube.com/vi/36FTynZdNmk/hqdefault.jpg)
 
-https://youtu.be/36FTynZdNmk?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn
+@[youtube](https://youtu.be/36FTynZdNmk?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
 
 #### 11\. Java API
 
-![](http://img.youtube.com/vi/OnP7LQynSp8/hqdefault.jpg)
+[comment]: # (http://img.youtube.com/vi/OnP7LQynSp8/hqdefault.jpg)
 
-https://youtu.be/OnP7LQynSp8?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn
+@[youtube](https://youtu.be/OnP7LQynSp8?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
 
 #### 12\. Sisend konsoolis
 
-![](http://img.youtube.com/vi/S4GnFBQD8YU/hqdefault.jpg)
+[comment]: # (http://img.youtube.com/vi/S4GnFBQD8YU/hqdefault.jpg)
 
-https://youtu.be/S4GnFBQD8YU?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn
+@[youtube](https://youtu.be/S4GnFBQD8YU?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
 
 #### 13\. Väljund konsoolis
 
-![](http://img.youtube.com/vi/a4rRRHDFxY8/hqdefault.jpg)
+[comment]: # (http://img.youtube.com/vi/a4rRRHDFxY8/hqdefault.jpg)
 
-https://youtu.be/a4rRRHDFxY8?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn
+@[youtube](https://youtu.be/a4rRRHDFxY8?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
 
 ## KKK
 

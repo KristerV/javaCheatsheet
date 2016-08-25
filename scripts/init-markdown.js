@@ -6,6 +6,7 @@ function insertMarkdownToDocument(content) {
 		linkify: true,
 	})
 		.use(TOCCC)
+		.use(MarkdownItVideo, {})
 		.use(window.markdownitContainer, "toc");
 	var result = md.render(content);
 	$('body').append(result);
