@@ -1,11 +1,5 @@
 # i200 kaugõppe materjalide ettekanne
 
-## Sissejuhatus
-  - Miks üldse alustasin
-  - Algsed plaanid
-  - Allikad, mida läbisin
-  - Loodud materjalid, ehk ainekava
-
 ## Uues eesmärgid
 
 - Viia tudeng iseseisvuseni, ehk kuni käib "klikk"

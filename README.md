@@ -1,6 +1,4 @@
-# IT Kolledži I200 materjalid
-
-Teretulemast
+# IT Kolledži I200 aine materjalid
 
 http://i200.itcollege.ee
 

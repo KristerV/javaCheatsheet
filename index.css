@@ -1,0 +1,18 @@
+body {
+	margin-left: calc(30%);
+	max-width: 900px;
+	width: 70%;
+	font-family: Verdana, Arial;
+}
+
+img {
+	max-width: 100%;
+}
+
+ul {
+	padding-left: 1em;
+}
+
+img[src$=".svg"] {
+	min-width: 150px;
+}
