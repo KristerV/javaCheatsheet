@@ -5,7 +5,8 @@ function insertMarkdownToDocument(content) {
 		breaks: true,
 		linkify: true,
 	})
-		.use(TOCCC)
+		.use(markdownItTOC)
+		.use(window.markdownItAttrs)
 		.use(MarkdownItVideo, {})
 		.use(window.markdownitContainer, "toc");
 	var result = md.render(content);
@@ -18,7 +19,8 @@ function insertMarkdownToDocument(content) {
 		hljs.initHighlighting()
 
 		// Scroll to position
-		window.scrollTo(0, $(document.location.hash).offset().top)
+		if (document.location.hash.length)
+			window.scrollTo(0, $(document.location.hash).offset().top)
 		refreshTOC()
 	}, 0);
 

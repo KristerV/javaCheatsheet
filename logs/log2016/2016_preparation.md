@@ -2,11 +2,8 @@
 
 - [x] Markdown i200
 - [ ] Fix i200 internal links with custome ID's
-- [ ] Parem koodi koloriit
 - [ ] Foorum
 - [ ] Video lindistamise ja töötluse keskus
-- [ ] Esimese nädala sisu
-- [ ] Kogu aine ajakava
 
 # Vajab otsusi
 
@@ -14,9 +11,14 @@
 
 # Nice to have
 
+- [ ] Esimese nädala sisu
+- [ ] Kogu aine ajakava
 - [ ] Eksami nõuded üle vaadata
 - [ ] Õpetöö põhimõtted i200 üles.
 - [ ] Peamenüü ümber teha
+- [ ] Youtube pildiga asendada
+- [ ] target=_blank
+- [ ] Parem koodi koloriit
 
 # Peamenüü
 

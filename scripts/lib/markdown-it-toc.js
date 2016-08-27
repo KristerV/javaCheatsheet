@@ -2,7 +2,7 @@
 
 'use strict';
 
-var TOCCC = function(md) {
+var markdownItTOC = function(md) {
 
 	var TOC_REGEXP = /^@\[toc\](?:\((?:\s+)?([^\)]+)(?:\s+)?\)?)?(?:\s+?)?$/im;
 	var TOC_DEFAULT = 'Table of Contents';
