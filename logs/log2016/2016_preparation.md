@@ -1,34 +1,37 @@
-# Must have
+# Must-have Features
 
 - [x] Markdown i200
-- [ ] Fix i200 internal links with custome ID's
 - [ ] Foorum
 - [ ] Video lindistamise ja töötluse keskus
 
-# Vajab otsusi
+# Must have fixes
 
-- [ ] Kas hakkame punktitama: foorum, kodused ül, projekti staadiumid, doc commit
+- [ ] Fix i200 internal links with custome ID's
 
-# Nice to have
+# Must have aineprogramm
 
 - [ ] Esimese nädala sisu
 - [ ] Kogu aine ajakava
+- [ ] Peamenüü ümber teha
+    - Aine info
+    - Harjutused
+    - Hädaabi
+    - Progemise põhitõed
+    - Java API
+    - Git
+    - IDE
+
+# Nice to have else
+
 - [ ] Eksami nõuded üle vaadata
 - [ ] Õpetöö põhimõtted i200 üles.
-- [ ] Peamenüü ümber teha
 - [ ] Youtube pildiga asendada
 - [ ] target=_blank
 - [ ] Parem koodi koloriit
 
-# Peamenüü
+# Vajab otsusi
 
-Aine info
-Harjutused
-Hädaabi
-Progemise põhitõed
-Java API
-Git
-IDE
+- [ ] Kas hakkame punktitama: foorum, kodused ül, projekti staadiumid, doc commit
 
 # 2015 kokkvõte
 

@@ -2705,7 +2705,7 @@ Määra failihalduri akna pealkiri.
 
 Vt. [Oracle Charts](https://docs.oracle.com/javase/8/javafx/user-interface-tutorial/charts.htm)
 
-#### Joonistamine{#javafx-joonistamine}
+#### Joonistamine {#javafx-joonistamine}
 
 Joonistada saab joonte, ringide või mistahes muude kujunditega. Polygon näiteks ongi vabalt vormitav kujund.
 
