@@ -3,6 +3,7 @@
 - [x] Markdown i200
 - [ ] Foorum
 - [ ] Video lindistamise ja töötluse keskus
+- [ ] Esimese nädala töö
 
 # Must have fixes
 
@@ -10,7 +11,6 @@
 
 # Must have aineprogramm
 
-- [ ] Esimese nädala sisu
 - [ ] Kogu aine ajakava
 - [ ] Peamenüü ümber teha
     - Aine info
@@ -28,6 +28,7 @@
 - [ ] Youtube pildiga asendada
 - [ ] target=_blank
 - [ ] Parem koodi koloriit
+- [ ] How to contribute
 
 # Vajab otsusi
 
