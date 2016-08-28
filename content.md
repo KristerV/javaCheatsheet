@@ -5,7 +5,7 @@
 
 ![skeem](images/java.svg)
 
-# Sissejuhatus
+# Aineprogramm
 
 ## Chat
 
@@ -13,85 +13,136 @@
 
 Seal saad eriti kiiresti oma küsimustele vastused ja vahest saab niisamagi targemaks. Sisse saad logida GitHubi kontoga (kuna igal arendajal see juba on).
 
-## Videod
+## Hindamine
 
-#### 1. Skeemi tutvustus
+- 60 punkti tuleb projekti eest
+- 40 punkti eksami eest
+- 10 lisapunkti saab õppejõu suva järgi.
+- Kui eksamit ei läbi on kogu sooritus 0, sest ilmselt sa ei kirjutanud oma projekti ise.
 
-[comment]: # (http://img.youtube.com/vi/IpmBjKqFOvk/hqdefault.jpg)
+## Projekt
 
-[youtube](https://youtu.be/IpmBjKqFOvk?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
+Projekt on kõige tähtsam asi selle aine juures. Projekt on see, millega peaksid koguaeg tegelema, nii kodus kui tööl (okei, tööl keskendu töö peale). Miks me seda teeme? Sest enda idee kallal nokitsemine on kõige efektiivsem viis programmeerimine ära õppida.
 
-#### 2. Java ja arenduskeskkonna (IDE) install
+### Idee
 
-[comment]: # (http://img.youtube.com/vi/iU-RUnORPt8/hqdefault.jpg)
+Et ikka põnev oleks saad päris oma programmi kirjutada. Ära idee leidmise pärast liialt vaeva näe. Kui endal pähe ei tule siis leia mõni olemasolev programm ja matki see järgi. Võib teha ka mängu.
 
-[youtube](https://youtu.be/iU-RUnORPt8?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
+### Eeldatav tulemus
 
-#### 3. IDE esimene käivitus
+#### Point
 
-[comment]: # (http://img.youtube.com/vi/bs5U5kCb1I4/hqdefault.jpg)
+*   funktsionaalsus
+    *   **programm täidab oma eesmärki**, ehk suudab ettenähtud protsessi lõpuni viia
+*   kasutatavus
+    *   **GUI olemasolu** (v.a. juhul kui sellest pole üldse kasu)
+    *   **bugid ei takista protsessi**
+    *   kasutajaliides on läbi mõeldud
+    *   kasutaja ei pea üleliigseid klikke tegema
+    *   kasutajal on lihtne mõista, kuidas programmi kasutada.
+*   **Programm on vastupidav**
+    *   Tavakasutajale
+    *   Dumbuserile
+    *   Algaja-häkkerile
 
-[youtube](https://youtu.be/bs5U5kCb1I4?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
+#### Keerukus
 
-#### 4. IDE sissejuhatus
+Point on ennast proovile panna. Siis on huvitav ja siis õpib. Ma ei mõtle, et peaksid nüüd päeva pealt proffiks hakkama, aga võta ikka mõnuga. Siin tuleb täheldada seda, et kui teed lihtsa idee ära, siis seda saab alati keerulisemaks täiendada - lihtne on hea. Ühtlasi peaks keerulisele programmile lähenema tema kõige lihtsamast küljest ja siis vaikselt täiendama - keeruline on ka hea. Lühidalt - võta mingi idee ja hakka pihta!
 
-[comment]: # (http://img.youtube.com/vi/MbPskoIo09k/hqdefault.jpg)
+#### Maht
 
-[youtube](https://youtu.be/MbPskoIo09k?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
+Projekti mahtu on väga raske hinnata. Asi on selles, et kui algaja kirjutab 1000 rida koodi probleemi lahendamiseks, siis edasijõudnud teeb sama asja 100 reaga ära. See ei ole kirjand ja koodi koguse järgi projekti kvaliteeti hinnata ei saa. Küll aga annab hindamise kriteerium sulle aimu, milliseid tehnilisi lahendusi tähele pannakse hindamisel.
 
-#### 5. IDE debugimise võimalus
+### Aga ma ei oska ju progeda!
 
-[comment]: # (http://img.youtube.com/vi/2Ju3yuBtop4/hqdefault.jpg)
+Kõik on hästi. Kui sa kujundad oma programmi paberil ära, mõtled läbi mis funktsionaalsus sinna tuleb on juba esimene samm olemas. Nüüd. Kui sul on i200 videod vaadatud, äkki isegi codecademy.com mõni Pythoni kursus tehtud, siis peaksid oskama Javas kõige lihtsamaid manöövreid teha: arvutada, kasutajalt sisendit küsida, tulemus välja printida. Kas sinu (ükskõik kui keerulist) programmi annab konsoolis ära teha mingil elementaarsel tasemel? Ehk tee kõige lihtsam variant kohe ära. Kui midagi juurde õpid saad täiendada ja kindlasti ära karda nullist uuesti kirjutamist, see arendambi tegelikult kõige rohkem.
 
-[youtube](https://youtu.be/2Ju3yuBtop4?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
+### Vastamine
 
-#### 6. main() meetod ja println()
+Nagu iga õige projekt (näiteks lõputöö) tuleb projekt kaitsta kõigi ees. Kusjuures, teised ruumis olevad tudengid saavad ka hinnet mõjutada - hindamise kriteeriumis seda kirjas pole, aga õppejõud kindlasti arvestab üldsuse seisukohta. Vastamise päevaks on kõikide tudengite kood auditooriumi arvutis olemas (git) keerulisema setupi korral võid oma arvutiga vastama tulla. Asi võiks välja näha umbes selliselt:
 
-[comment]: # (http://img.youtube.com/vi/R4egQl-7gwk/hqdefault.jpg)
+*   Sisse andmine
+    *   Töö peab olema mõnes giti repositooriumis, kust õppejõud saab ligipääsu.
+*   Projekti vastamisel on tudeng klassi ees.
+    *   Esitab tulemuse (mitte koodi) [2min]
+    *   Selgitab üht probleemilahendust koodis, mille üle ta on eriti uhke [2min]
+    *   Õppejõu tagasiside [1min]
+    *   Auditooriumi hääletus [tagasiside ajal]
+*   Hindamine
+    *   Hindamine toimub kohapeal.
+    *   Õppejõud määrab lõpliku hinde vastavalt hindamise kriteeriumile.
+    *   Auditooriumis olevatel tudengitel on võimalik nutihääletuse abil tugevasti mõjutada hinnet.
 
-[youtube](https://youtu.be/R4egQl-7gwk?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
+### Hindamine
 
-#### 7. muutuja - väärtused
+Nonii. "Ükskõik kui keeruline või lihtne" on tore, aga mille eest reaalselt hinde saab? Siin on siis täpne hindamise kriteerium. **Punases** on kõige tähtsamad punktid, **Boldis** tähtis ja ülejäänud tavatekstis.
 
-[comment]: # (http://img.youtube.com/vi/-AUEcJ_JWdg/hqdefault.jpg)
+**NB!** Giti kasutamine on hädavajalik, et oma tööd üldse esitada saaks (ja et kood töötaks kooli arvutis). Aga objekt-orienteerituse ja GUI kasutamine tegelikult hädavajalik ei ole, see on pigem nagu pidepunkt, millega kontrollida, kas programm on optimaalselt üles ehitatud ja piisavalt keeruline, et head hinnet saada.
 
-[youtube](https://youtu.be/-AUEcJ_JWdg?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
+### Kood
 
-#### 8. muutuja - kogumikud
+*   **Kood on gitis**, õppejõud saab ligi.
+*   Projekti kirjeldus failis README.md (.md on [markdown](http://eherrera.net/markdowntutorial))
+    *   **Nimi**
+    *   Projekti kirjeldus
+    *   Kasutusjuhend
+    *   Muud märkmed
+*   **Võõras kood on allikale viidatud**
+*   Lihtne lugeda
+    *   **treppimine** on paigas
+    *   **muutuja nimetused** kirjeldavad protsessi olemust
+    *   **meetodide nimetused** kirjeldavad selgelt meetodi toimingut
+    *   selguse tagamiseks on koodi **kommenteeritud**
+*   Loogiline ja taaskasutatav ülesehitus
+    *   **kasutab meetode** kus vaja
+    *   **kasutab klasse** kus vaja
+    *   **kasutab objekt-orienteeritust**
+    *   kasutatakse **otstarbekalt tsükleid**
+    *   kasutatakse andmestruktuure ja käideldakse neid otstarbekalt
+*   Kood on kompaktne (lisapunktid, kui on näha erilist läbimõeldust)
+    *   keerulised tsüklid
+    *   rekursioon
+    *   eriti hea klasside/meetodide taaskasutatavus
 
-[comment]: # (http://img.youtube.com/vi/_lLjBvB-viE/hqdefault.jpg)
+### Lisapunkte
 
-[youtube](https://youtu.be/_lLjBvB-viE?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
+*   **Tudeng on läinud aine raamistikust edasi**, ehk oskab rohkem kui on aines õpetatud.
+*   Tudeng on reaalselt **gitti kasutanud** (committide periood on loogiline)
+*   Kasutatud on **lisa raamistikke**, näiteks SQL andmebaas.
+*   Kui tudeng tööga päris valmis ei saanud, kas ta vähemalt teab mida järgmiseks peaks tegema?
 
-#### 9. if(), ehk valik
+### Plagiaadikontroll
 
-[comment]: # (http://img.youtube.com/vi/_nPa2mWt4HI/hqdefault.jpg)
+(Rakendada ainult kui väga vaja, eksam on lõplik filter)
 
-[youtube](https://youtu.be/_nPa2mWt4HI?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
+*   Oskab selgitada suvalist kohta koodis.
+*   Oskab programmi käiku muuta, kui õppejõud seda palub.
+*   Oskab käigu pealt tsükleid valmistada.
 
-#### 10. while(), ehk tsükkel
+## Eksam
 
-[comment]: # (http://img.youtube.com/vi/36FTynZdNmk/hqdefault.jpg)
+### Reeglid
 
-[youtube](https://youtu.be/36FTynZdNmk?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
+- Eksam toimub klassi arvutis.
+- Arvesse läheb ainult esimene giti link - valida ei saa.
+- Ei tohi kellegagi suhelda ei netis ega mujal v.a. õppejõuga.
+- Hilinejaid sisse ei lubata
+- Telefoni ei näpi. Nimelt on kooli arvuti ainuke ekraan sinu elus.
+- Tohid kasutada internetti k.a. Google.
+- Üleüldised sohi tegemise reeglid kehtivad (nt. naabrilt maha kirjutamine).
+- Kõik ülesanded peavad olema lahendatud kasutades päris programmeerimise võtteid ja mitte lihtsalt näiliselt lahendades vastust kirjutades.
+- Aega on 3 tundi.
+- Kui oled valmis lae lahendused üles samasse reposse kust nad said. Kui laed GitHubi või mujale avalikku kohta on tegu plagiaadi kaasa aitamises. Lahendusi võid jagada märtsis, kui kõik eksamid on ära olnud.
+- Kui koodi üles laadimine gitiga ei õnnestu siis saada failid kokku pakitult (zip/rar/tar) mulle meilile: krister.viirsaar@itcollege.ee. Aga copy-paste koodi ma vastu ei võta.
+- Õppejõud ei kontrolli, kas su töö läks gitti üles. Seda saad ise teha.
+- Küsimusi võib küsida, aga kui peaksid ise teadma siis ei aita.
 
-#### 11. Java API
+### Soovitusi
 
-[comment]: # (http://img.youtube.com/vi/OnP7LQynSp8/hqdefault.jpg)
-
-[youtube](https://youtu.be/OnP7LQynSp8?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
-
-#### 12. Sisend konsoolis
-
-[comment]: # (http://img.youtube.com/vi/S4GnFBQD8YU/hqdefault.jpg)
-
-[youtube](https://youtu.be/S4GnFBQD8YU?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
-
-#### 13. Väljund konsoolis
-
-[comment]: # (http://img.youtube.com/vi/a4rRRHDFxY8/hqdefault.jpg)
-
-[youtube](https://youtu.be/a4rRRHDFxY8?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
+- Tule klassi palju varem ja kinnita, et Intellij on seadistatud.
+- Kui ülesanne on üle jõu siis lihtsusta enda jaoks, aga ära jäta programmi katki.
+- Ära copy-paste! Ülesanded on piisavalt lihtsad, et ajavõitu ei ole. Aga kui sa ei tea täpselt mis teed siis nüüd kaotad aega.
+- Ära kiirusta, mõtle läbi. Alati on lihtsam ja kergem lahendus olemas.
 
 ## KKK
 
@@ -229,163 +280,125 @@ On mõned põhitõed, mida enne päris maailmas tegutsemist tavaliselt ei õpi. 
 8.  Arvuti ei tee vigu. Inimesed teevad vigu. Inimene oled sina, olen mina ja on kõik need, kes on Java ja kõik muu tarkvara kirjutanud. Aga enne kui teisi süüdistad, tee 100% kindlaks, et viga pole sinu enda koodis.
 9.  Tarkvara arendaja on küll ainus meeskonnaliige, kes on hädavajalik, et tarkvara toode valmis saada, aga ta kindlasti pole ainuke oluline. Et tootest asja saaks on vaja disaini, äri, arhitektuuri, kasutajatoe ja muid inimesi.
 
-## Projekt
+# Peatükid
 
-Projekt on kõige tähtsam asi selle aine juures. Projekt on see, millega peaksid koguaeg tegelema, nii kodus kui tööl (okei, tööl keskendu töö peale). Miks me seda teeme? Sest enda idee kallal nokitsemine on kõige efektiivsem viis programmeerimine ära õppida.
+## Videod
 
-### Idee
+#### 1. Skeemi tutvustus
 
-Et ikka põnev oleks saad päris oma programmi kirjutada. Ära idee leidmise pärast liialt vaeva näe. Kui endal pähe ei tule siis leia mõni olemasolev programm ja matki see järgi. Võib teha ka mängu.
+[comment]: # (http://img.youtube.com/vi/IpmBjKqFOvk/hqdefault.jpg)
 
-### Keerukus
+[youtube](https://youtu.be/IpmBjKqFOvk?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
 
-Point on ennast proovile panna. Siis on huvitav ja siis õpib. Ma ei mõtle, et peaksid nüüd päeva pealt proffiks hakkama, aga võta ikka mõnuga. Siin tuleb täheldada seda, et kui teed lihtsa idee ära, siis seda saab alati keerulisemaks täiendada - lihtne on hea. Ühtlasi peaks keerulisele programmile lähenema tema kõige lihtsamast küljest ja siis vaikselt täiendama - keeruline on ka hea. Lühidalt võta mingi idee ja hakka pihta!
+#### 2. Java ja arenduskeskkonna (IDE) install
 
-### Maht
+[comment]: # (http://img.youtube.com/vi/iU-RUnORPt8/hqdefault.jpg)
 
-Projekti mahtu on väga raske hinnata. Asi on selles, et kui algaja kirjutab 1000 rida koodi probleemi lahendamiseks, siis edasijõudnud teeb sama asja 100 reaga ära. See ei ole kirjand ja koodi koguse järgi projekti kvaliteeti hinnata ei saa. Küll aga annab hindamise kriteerium sulle aimu, milliseid tehnilisi lahendusi tähele pannakse hindamisel.
+[youtube](https://youtu.be/iU-RUnORPt8?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
 
-### Aga ma ei oska ju progeda!
+#### 3. IDE esimene käivitus
 
-Kõik on hästi. Kui sa kujundad oma programmi paberil ära, mõtled läbi mis funktsionaalsus sinna tuleb on juba esimene samm olemas. Nüüd. Kui sul on i200 videod vaadatud, äkki isegi codecademy.com mõni Pythoni kursus tehtud, siis peaksid oskama Javas kõige lihtsamaid manöövreid teha: arvutada, kasutajalt sisendit küsida, tulemus välja printida. Kas sinu (ükskõik kui keerulist) programmi annab konsoolis ära teha mingil elementaarsel tasemel? Ehk tee kõige lihtsam variant kohe ära. Kui midagi juurde õpid saad täiendada ja kindlasti ära karda nullist uuesti kirjutamist, see arendambi tegelikult kõige rohkem.
+[comment]: # (http://img.youtube.com/vi/bs5U5kCb1I4/hqdefault.jpg)
 
-### Vastamine
+[youtube](https://youtu.be/bs5U5kCb1I4?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
 
-Nagu iga õige projekt (näiteks lõputöö) tuleb projekt kaitsta kõigi ees. Kusjuures, teised ruumis olevad tudengid saavad ka hinnet mõjutada - hindamise kriteeriumis seda kirjas pole, aga õppejõud kindlasti arvestab üldsuse seisukohta. Vastamise päevaks on kõikide tudengite kood auditooriumi arvutis olemas (git) keerulisema setupi korral võid oma arvutiga vastama tulla. Asi võiks välja näha umbes selliselt:
+#### 4. IDE sissejuhatus
 
-*   Sisse andmine
-    *   Töö peab olema mõnes giti repositooriumis, kust õppejõud saab ligipääsu.
-*   Projekti vastamisel on tudeng klassi ees.
-    *   Esitab tulemuse (mitte koodi) [2min]
-    *   Selgitab üht probleemilahendust koodis, mille üle ta on eriti uhke [2min]
-    *   Õppejõu tagasiside [1min]
-    *   Auditooriumi hääletus [tagasiside ajal]
-*   Hindamine
-    *   Hindamine toimub kohapeal.
-    *   Õppejõud määrab lõpliku hinde vastavalt hindamise kriteeriumile.
-    *   Auditooriumis olevatel tudengitel on võimalik nutihääletuse abil tugevasti mõjutada hinnet.
+[comment]: # (http://img.youtube.com/vi/MbPskoIo09k/hqdefault.jpg)
 
-### Hindamise kriteerium
+[youtube](https://youtu.be/MbPskoIo09k?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
 
-Nonii. "Ükskõik kui keeruline või lihtne" on tore, aga mille eest reaalselt hinde saab? Siin on siis täpne hindamise kriteerium. **Punases** on kõige tähtsamad punktid, **Boldis** tähtis ja ülejäänud tavatekstis.
+#### 5. IDE debugimise võimalus
 
-**NB!** Giti kasutamine on hädavajalik, et oma tööd üldse esitada saaks (ja et kood töötaks kooli arvutis). Aga objekt-orienteerituse ja GUI kasutamine tegelikult hädavajalik ei ole, see on pigem nagu pidepunkt, millega kontrollida, kas programm on optimaalselt üles ehitatud ja piisavalt keeruline, et head hinnet saada.
+[comment]: # (http://img.youtube.com/vi/2Ju3yuBtop4/hqdefault.jpg)
 
-### Kood
+[youtube](https://youtu.be/2Ju3yuBtop4?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
 
-*   **Kood on gitis**, õppejõud saab ligi.
-*   Projekti kirjeldus failis README.md (.md on [markdown](http://eherrera.net/markdowntutorial))
-    *   **Nimi**
-    *   Projekti kirjeldus
-    *   Kasutusjuhend
-    *   Muud märkmed
-*   **Võõras kood on allikale viidatud**
-*   Lihtne lugeda
-    *   **treppimine** on paigas
-    *   **muutuja nimetused** kirjeldavad protsessi olemust
-    *   **meetodide nimetused** kirjeldavad selgelt meetodi toimingut
-    *   selguse tagamiseks on koodi **kommenteeritud**
-*   Loogiline ja taaskasutatav ülesehitus
-    *   **kasutab meetode** kus vaja
-    *   **kasutab klasse** kus vaja
-    *   **kasutab objekt-orienteeritust**
-    *   kasutatakse **otstarbekalt tsükleid**
-    *   kasutatakse andmestruktuure ja käideldakse neid otstarbekalt
-*   Kood on kompaktne (lisapunktid, kui on näha erilist läbimõeldust)
-    *   keerulised tsüklid
-    *   rekursioon
-    *   eriti hea klasside/meetodide taaskasutatavus
+#### 6. main() meetod ja println()
 
-### Tulemus
+[comment]: # (http://img.youtube.com/vi/R4egQl-7gwk/hqdefault.jpg)
 
-*   funktsionaalsus
-    *   **programm täidab oma eesmärki**, ehk suudab ettenähtud protsessi lõpuni viia
-*   kasutatavus
-    *   **GUI olemasolu** (v.a. juhul kui sellest pole üldse kasu)
-    *   **bugid ei takista protsessi**
-    *   kasutajaliides on läbi mõeldud
-    *   kasutaja ei pea üleliigseid klikke tegema
-    *   kasutajal on lihtne mõista, kuidas programmi kasutada.
-*   **Programm on vastupidav**
-    *   Tavakasutajale
-    *   Dumbuserile
-    *   Algaja-häkkerile
+[youtube](https://youtu.be/R4egQl-7gwk?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
 
-### Lisapunkte
+#### 7. muutuja - väärtused
 
-*   **Tudeng on läinud aine raamistikust edasi**, ehk oskab rohkem kui on aines õpetatud.
-*   Tudeng on reaalselt **gitti kasutanud** (committide periood on loogiline)
-*   Kasutatud on **lisa raamistikke**, näiteks SQL andmebaas.
-*   Kui tudeng tööga päris valmis ei saanud, kas ta vähemalt teab mida järgmiseks peaks tegema?
+[comment]: # (http://img.youtube.com/vi/-AUEcJ_JWdg/hqdefault.jpg)
 
-### Plagiaadikontroll
+[youtube](https://youtu.be/-AUEcJ_JWdg?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
 
-(Rakendada ainult kui väga vaja, eksam on lõplik filter)
+#### 8. muutuja - kogumikud
 
-*   Oskab selgitada suvalist kohta koodis.
-*   Oskab programmi käiku muuta, kui õppejõud seda palub.
-*   Oskab käigu pealt tsükleid valmistada.
+[comment]: # (http://img.youtube.com/vi/_lLjBvB-viE/hqdefault.jpg)
 
-## Eksam
+[youtube](https://youtu.be/_lLjBvB-viE?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
 
-### Reeglid
+#### 9. if(), ehk valik
 
-- Eksam toimub klassi arvutis.
-- Arvesse läheb ainult esimene giti link - valida ei saa.
-- Ei tohi kellegagi suhelda ei netis ega mujal v.a. õppejõuga.
-- Hilinejaid sisse ei lubata
-- Telefoni ei näpi. Nimelt on kooli arvuti ainuke ekraan sinu elus.
-- Tohid kasutada internetti k.a. Google.
-- Üleüldised sohi tegemise reeglid kehtivad (nt. naabrilt maha kirjutamine).
-- Kõik ülesanded peavad olema lahendatud kasutades päris programmeerimise võtteid ja mitte lihtsalt näiliselt lahendades vastust kirjutades.
-- Aega on 3 tundi.
-- Kui oled valmis lae lahendused üles samasse reposse kust nad said. Kui laed GitHubi või mujale avalikku kohta on tegu plagiaadi kaasa aitamises. Lahendusi võid jagada märtsis, kui kõik eksamid on ära olnud.
-- Kui koodi üles laadimine gitiga ei õnnestu siis saada failid kokku pakitult (zip/rar/tar) mulle meilile: krister.viirsaar@itcollege.ee. Aga copy-paste koodi ma vastu ei võta.
-- Õppejõud ei kontrolli, kas su töö läks gitti üles. Seda saad ise teha.
-- Küsimusi võib küsida, aga kui peaksid ise teadma siis ei aita.
+[comment]: # (http://img.youtube.com/vi/_nPa2mWt4HI/hqdefault.jpg)
 
-### Soovitusi
+[youtube](https://youtu.be/_nPa2mWt4HI?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
 
-- Tule klassi palju varem ja kinnita, et Intellij on seadistatud.
-- Kui ülesanne on üle jõu siis lihtsusta enda jaoks, aga ära jäta programmi katki.
-- Ära copy-paste! Ülesanded on piisavalt lihtsad, et ajavõitu ei ole. Aga kui sa ei tea täpselt mis teed siis nüüd kaotad aega.
-- Ära kiirusta, mõtle läbi. Alati on lihtsam ja kergem lahendus olemas.
+#### 10. while(), ehk tsükkel
 
-# Arenduskeskkond
+[comment]: # (http://img.youtube.com/vi/36FTynZdNmk/hqdefault.jpg)
 
-### Java 8
+[youtube](https://youtu.be/36FTynZdNmk?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
+
+#### 11. Java API
+
+[comment]: # (http://img.youtube.com/vi/OnP7LQynSp8/hqdefault.jpg)
+
+[youtube](https://youtu.be/OnP7LQynSp8?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
+
+#### 12. Sisend konsoolis
+
+[comment]: # (http://img.youtube.com/vi/S4GnFBQD8YU/hqdefault.jpg)
+
+[youtube](https://youtu.be/S4GnFBQD8YU?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
+
+#### 13. Väljund konsoolis
+
+[comment]: # (http://img.youtube.com/vi/a4rRRHDFxY8/hqdefault.jpg)
+
+[youtube](https://youtu.be/a4rRRHDFxY8?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
+
+# Tööriistad
+
+## Arenduskeskkond
+
+#### Java 8
 
 Java 8 saad alla laadida ja installida [siit](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).
 
 On soovitatav kasutada ametliku Oracle JDK (üleval olev link) ja mitte OpenJDK, sest JavaFX ei ole OpenJDK's koheselt sees ja selle lisamine võib olla päris problemaatiline.
 
-### Intellij
+#### Intellij
 
 Intellij saad alla laadida ja installida [siit](https://www.jetbrains.com/idea/download/).
 
-#### Kasutamine
+##### Kasutamine
 
 Ennekõike on Intellij lihtne tekstiredaktor. Tal on palju kiirteesid (allpool räägime veel) ja muid võimalusi. Räägime kõige tähtsamast.
 
-#### Esimene käivitus
+##### Esimene käivitus
 
 Esmane käivitus võib olla vähe keeruline - järgime [piltidega õpetust siin](https://www.jetbrains.com/idea/help/creating-and-running-your-first-java-application.html).
 
-#### Jooksuta programm
+##### Jooksuta programm
 
 Programmi käivitamiseks on lihtne otsetee `ctrl + shift + f10`. Kui oled juba ühe korra käivitanud oma programmi, piisab ka lühemast `ctrl + f10` otseteest. Vt. ka [kiirklahve](/intellij-kiirklahvid)
 
-#### Debug
+##### Debug
 
 Kui soovid näha kuidas täpselt su programm jookseb - rida rea haaval - siis Debug funktsioon on selle jaoks. Hoiatan, et erinevalt programmi tavapärane käivitamine võib see väga kaua aega võtta. Uuri lähemalt [Debug videos](/Videod).
 
-#### Failide vaade
+##### Failide vaade
 
 Kui sul on failide vaade kadunud, leiad selle üles all-paremal olevast ikoonist.
 
 ![](images/muu/IDEfailivaade.png)
 
-#### Kiirklahvid
+##### Kiirklahvid
 
 Jumala kiirklahv on ctrl + shift + a, see on kõikide käskluste otsing.
 
@@ -445,7 +458,7 @@ Loe kursori all oleva elemendi JavaDocsi.
 
 Lõpeta lause ja lisa semikoolon.
 
-#### Kiirkäsud
+##### Kiirkäsud
 
 kirjuta käsk ja vajuta enter. Näiteks `sout + enter` kirjutab `System.out.println()`.
 
@@ -465,15 +478,15 @@ kirjuta käsk ja vajuta enter. Näiteks `sout + enter` kirjutab `System.out.prin
 
     for (int i = 0; i < x; i++) {}
 
-#### Probleemid
+##### Probleemid
 
-#### Täpitähed
+##### Täpitähed
 
 Kui täpitähed ei ilmu JavaFXis või konsoolis, siis on lahendus lihtne:
 
 File -> Settings -> Editor -> File Encodings -> IDE ja Project Encoding peavad olema UTF-8 mõlemad.
 
-# Git
+## Git
 
 Programmeerides võid kergesti hulluks minna ja üks põhilisi päästerõngaid on Git.
 
@@ -496,7 +509,7 @@ Siin on mõned välised ressursid, mis aitavad teemat mõista:
 *   [guides.github.com](https://guides.github.com/) - GitHubi kasutamisest.
 *   [Atlassian](https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-config) - Git, Tudeng soovitas.
 
-### Käsklused
+#### Käsklused
 
 Soovitan Gitti kasutada käsurealt, et seda mõista. On olemas ka [kasutajaliidesega tarkvara](https://desktop.github.com/), kuid algajale võib see eriti keeruliseks osutuda.
 
@@ -544,7 +557,7 @@ Tühista salvestamata muudatused
 
     git checkout .
 
-### .gitignore
+#### .gitignore
 
 Kõiki faile ei ole meil vaja Gitti salvestada. Näiteks on Javas kompileeritud .class failid, millest pole hiljem kuigi palju kasu.
 
@@ -560,160 +573,7 @@ Näiteks Java projekti puhul tahad salvestada src/ kausta, aga mitte out/ ega .i
 
 Näitena võib tuua [javaHarjutused repositooriumi](https://github.com/KristerV/javaHarjutused).
 
-# Hädaabi
-
-Kui oled kinni jäänud, võta siit järjest nõuanded läbi.
-
-## Programm ei käivitu
-
-### Undo
-
-Esimene asi mis tee on vajuta `ctrl + z`, et oma käike tagasi võtta. Pole mõtet juurde kirjutada koodi kui olemasolev ei tööta. Kui lähed undoga liiale, saad `ctrl + shift + z` vajutusega ajaloos edasi minna.
-
-### Kontrolli süntaksit
-
-Algajatel juhtub tihti, et Java süntaksit ei järgita. [Süntaks](http://et.wikipedia.org/wiki/S%C3%BCntaks) on ka programmeerimises grammatika osa. Need on need reeglid, ilma milleta arvuti lihtsalt ei saa aru millest sa räägid. Kontrolli üle järgnevad korduma kippuvad vead:
-
-Kui sulud on korras vajuta `ctrl + alt + l`, et treppimine automaatselt korda seada.
-
-Sulul ei ole paarilist
-
-    public class MaastikuArhitekt {// klass algab
-        public void meetod() {     // meetod algab
-            int a = 5;
-            if (a < 10) {          // if algab
-                a++;
-            }                      // if lõppeb
-                                   // meetodil POLE lõppu
-    }                              // klass lõppeb
-
-Kirjaviga muutujas
-
-    public class KosmoseAgentuur  {
-        public static void main(String[] args) {
-            int aasta = 2030;
-            if (aasla > 2000) { // aasla => aasta
-                int millennium = 2;
-            }
-        }
-    }
-
-Sõnel ei ole jutumärke
-
-    String auto = Ford Mustang; // õige: "Ford Mustang"
-
-Sõne või tähe ümber on valed jutumärgid
-
-    "Sõne on topelt jutumärkidega" != 't'
-
-Mõne rea lõpust on puudu semikoolon
-
-    public class KosmoseAgentuur  {
-        public static void main(String[] args) {
-            int aasta = 2030;
-            if (aasta < 10) {
-                System.out.println("Tõene") // puudub ;
-            }
-        }
-    }
-
-Kuskil on liigne semikoolon
-
-    public class KosmoseAgentuur  {
-        public static void main(String[] args) {
-            int aasta = 2030;
-            if (aasta < 10); { // pärast if ei tohi olla ;
-                System.out.println("Tõene");
-            }
-        }
-    }
-
-Suur-väike täht valesti (Java on tundlik)
-
-    CamelCase != camelCase != Camelcase;
-
-Võrdluses operaatorid sassis
-
-`==` on võrdlemiseks ja `=` on uue väärtuse omistamiseks.
-
-### IDE vihjed erroritele
-
-Tihti annab IDE (Intellij) sulle teada, kus viga on.
-
-![](images/muu/IDEvihjed.png)
-
-Sul tuleb vaid punaseid märguandeid otsida ja hiirega peale minna (mitte vajutada), et lugeda kasulikku vihjet.
-
-Vahel oskab IDE sulle vea isegi ära parandada. Näiteks kui oled unustanud midagi importida siis kliki punasele joonele ja kas `alt + enter` vajutades või punasele pirnile klikkides saad kasutada võimalike lahendusi.
-
-![](images/muu/IDEaitab.png)
-
-Muidugi peaksid ikka umbes teadma mida need lahendused teevad, vahel võib kood hullemaks ka minna.
-
-### Kompileerija errorid
-
-Kui oma programmi käima paned ja ta punast teksti konsooli viskab, siis otsi sealt tekstist järgnevaid märksõnu. Need on kõige populaarsemad vead, mis võivad tekkida:
-
-ClassNotFoundException
-
-Oled käivitanud vale klassi. Ava õige fail ja vajuta `ctrl + shift + f10`. Vt. ka [kiirklahve](/intellij-kiirklahvid)
-
-Class xxxx not found in type declaration
-
-Oled unustanud importida mingi klassi, mida kasutad oma programmis.
-
-ArrayIndexOutOfBounds
-
-Küsid massiivilt positsiooni kohta, mida pole olemas. Pea meeles, et positsioonide loendamine algab nullist. Näiteks massiivis `int[] a = {5, 3, 6};` ei ole olemas kohta `a[3]`.
-
-Number tuleb vale, näiteks 8.6535634789**E**120
-
-See E on tähtis, see märgistab, et näitab sulle ligikaudset arvu. "E" on kümne kordaja. Antud näites on arvuks 8.6535634789 * 10 ^ 120.
-
-## Programm käivitub
-
-Kui programm käivitub, aga tulemus ei ole see, mida ootasid.
-
-### Prindi kõike
-
-Eesmärgiks on saada teada täpselt **mis tulemuse iga koodirida annab**.
-
-Kui enne oli kood:
-
-    int a = 5;
-    if (a < 5) {
-        a++;
-    }
-
-Siis nüüd on kõik võimalikud pesad välja prinditud:
-
-    int a = 5;
-    System.out.println("a = " + a);
-    if (a < 5) {
-        System.out.println("a = " + a);
-        a++;
-    }
-    System.out.println("a = " + a);
-
-Antud näide on veidi ekstreemne (esimene print on üleliigne) aga vahel tuleb vea leidmiseks olla ekstreemne.
-
-### Debug
-
-Debug on lahe funktsioon, kus näed rida rea haaval kuidas programm jookseb. Vaata täpsemalt [Debuggimine](/intellij-Debug).
-
-### Googelda
-
-Google on meie parim sõber, Googelda nii kuis jaksad. Tihtipeale satud lehele nimega StackOverflow ja see on teine parim abimees.
-
-### Küsi foorumist
-
-Foorum on parem kui õppejõult küsimine, sest praktikas saad sealt omale vastuse kiiremini. Ja tänu sinu küsimusele saavad ka teised targemaks.
-
-### Küsi õppejõult
-
-Viimase variandina küsi õppejõu käes abi. See ei ole sellepärast, et õppejõud ei soovi sulle oma aega pühendada, vaid lihtsalt sellepärast, et vea otsimine on iga progeja igapäevane töö ja ka seda peab iseseisvalt teha oskama. Selge on ka see, et algajale on kõige vaimu tapvam olukord lihtsalt segaduses olemine, seega võta julgelt ühendust, selleks me siin oleme.
-
-# Muutujad
+## Muutujad
 
 ![](images/muutujad/kast.svg)
 
@@ -727,23 +587,11 @@ Kui sooviksin selle lapse nime salvestada, kasutaksin tüüpi String, ehk sõne:
 
     String nimi = "Mikk";
 
-### Primitiivid ja Objektid
-
-Kui võtame suvalise hunniku Java andmetüüpe [int, double, String, ArrayList], siis näeme, et osad on suure algustähtedega, osad on väiksega. See ei ole programmeerija suva järgi vaid tuleneb selle tüübi võimalustest. Näiteks int tüüpi muutuja on lihtsalt täisarv ja temaga ei saagi peale arvutamise midagi teha. String on aga sõne ja temaga saab igast pulli teha:
-
-    String nimi = "Krister";          // Teen uue muutuja
-    nimi = nimi.replace('r', 'l');    // muudan kõik 'r' tähed 'l' tähtedeks
-    System.out.println(nimi);         // Nimi on nüüd "Klistel" - hahaha!
-
-.replace() on meetod. Ja meetodid saavad ainult objektidel olla. Seega suure algustähega tüübid on objektid ja väikesega on primitiivid. Primitiivil ei ole meetode ja objektidel on.
-
-## Andmetüübid
-
-Andmetüüpe on kahte sorti. Sa kas tahad väärtust salvestada või tahad ühte muutujasse mitut väärtust korraga salvestada. Seega nad jagunevadki "väärtus" ja "kogum väärtusi" sortideks.
-
 ### Väärtus
 
-#### Ohukoht1
+#### NB! Arvude piirangud
+
+**Esimene oluline ohukoht**
 
 Igal arvu andmetüübil on oma miinimum ja maksimum võimalik arv, mida andmetüüp suudab hoida. Kui üritad maksimumi ületada, jätkab loendur teisest otsast. Näiteks `int` andmetüübi maksimum on 2147483647:
 
@@ -751,13 +599,11 @@ Igal arvu andmetüübil on oma miinimum ja maksimum võimalik arv, mida andmetü
     int b = a + 1;
     System.out.println("b = " + b); // b = -2147483648
 
-#### Ohukoht2
+**Teine oluline ohukoht**
 
 Võtame lihtsa tehte: `2.0 - 1.1 = 0.9`. Ainult, et tegelikult tuleb Javas vastuseks 0.899999999999998. Kohati uskumatu, et selline viga on sees, aga see polegi üldse nii ebatavaline. Seda esineb ka teistes riistvaralähedastest keeltes. Lahenduseks on kas kasutada int tüüpi muutujaid (näiteks 23.34€ on 2334) või BigDecimal klassi arvutusteks.
 
-#### Arvud
-
-##### byte
+#### byte
 
 väikesed arvud (alates -128 kuni 127)
 
@@ -780,7 +626,7 @@ Muuda tüüpi
 
     double c = a;
 
-##### int
+#### int
 
 täisarvud (alates -2'147'483'648 kuni 2'147'483'647)
 
@@ -815,7 +661,7 @@ Muuda tüüpi
 
     double c = a;
 
-##### double
+#### double
 
 reaalarvud (komakohaga) (alates -4.9*10^324 kuni 1.79*10^308)
 
@@ -850,7 +696,7 @@ Muuda tüüpi
 
 typecast `(int)` ei ümarda arve vaid raiub julmalt koma maha. `double 8.76` on `int 8`. Ümardamiseks kasuta `Math.round()`.
 
-##### BigDecimal
+#### BigDecimal
 
 kõik arvud (arvu suurust limiteerib vaid arvuti mälu)
 
@@ -893,9 +739,7 @@ Muuda tüüpi
     int c = a.intValue();
     double d = a.doubleValue();
 
-#### Sõned
-
-##### char
+#### char
 
 üksik täht
 
@@ -916,7 +760,7 @@ Võrdlemine
     'a' <= 'b';
     'a' >= 'b';
 
-##### String
+#### String
 
 Sõne, ehk jutumärkide vahele saab panna kõiki sümboleid
 
@@ -986,9 +830,7 @@ Mis täht asub indeksil 0?
 
     a.charAt(0); // 'L'
 
-#### Muu
-
-##### boolean
+#### boolean
 
 tõene või väär, ehk `true` või `false`.
 
@@ -1011,7 +853,7 @@ Võrdlemine
 
 `||` ei ole LL, ega ii. `||` on "pipe" ehk `AltGr + <`;
 
-##### Objekt
+#### Objekt
 
 keerulisemad objektid.
 
@@ -1344,15 +1186,25 @@ Andmebaas on andmete hoidmise viis sarnaselt massiiv, ArrayList või HashMap. Va
 
 Näidis kood koos seletustega on siin: [Andmebaasi näidisprogramm](https://github.com/KristerV/javaHarjutused/tree/lahendused/src/teema3/SQL_Login)
 
-# Juhtimisstruktuurid
+### Primitiivid ja Objektid
+
+Kui võtame suvalise hunniku Java andmetüüpe [int, double, String, ArrayList], siis näeme, et osad on suure algustähtedega, osad on väiksega. See ei ole programmeerija suva järgi vaid tuleneb selle tüübi võimalustest. Näiteks int tüüpi muutuja on lihtsalt täisarv ja temaga ei saagi peale arvutamise midagi teha. String on aga sõne ja temaga saab igast pulli teha:
+
+    String nimi = "Krister";          // Teen uue muutuja
+    nimi = nimi.replace('r', 'l');    // muudan kõik 'r' tähed 'l' tähtedeks
+    System.out.println(nimi);         // Nimi on nüüd "Klistel" - hahaha!
+
+.replace() on meetod. Ja meetodid saavad ainult objektidel olla. Seega suure algustähega tüübid on objektid ja väikesega on primitiivid. Primitiivil ei ole meetode ja objektidel on.
+
+## Juhtimine
 
 Juhtimisstruktuurid on programmeerija põhilised tööriistad, nagu ehitajal on haamer ja kruvikeeraja. Siin käsitleme kahte liiki: "kui" ja "kuni", ehk "kui" tingimus on täidetud käitu sedasi ja "kuni" tingimus on täidetud käitu sedasi. Muud neil vahet polegi, kui ühed juhivad programmi kulgemist vaid ühe korra ja teised panevad ühe koodi jupi tsükliliselt kordama.
 
 "Kui" tüüpi **valikud** on `if`, `switch` ja `try-catch`. "Kuni" tüüpi **tsüklid** on `while`, `for`, `for each` ja `do..while`.
 
-## Valikud
+### Valikud
 
-### if
+#### if
 
 if on nagu raudtee hargnemine. Üks tee läheb Tartu poole, teine Viljandi. if lausega saab rongi (ehk programmi) vastavalt sihtpunktile juhatada õigele teele.
 
@@ -1383,7 +1235,7 @@ Lahendus koodis
         System.out.println("tudeng ei saanud ainest läbi");
     }
 
-### switch
+#### switch
 
 Point
 
@@ -1424,7 +1276,7 @@ Lahendus koodis
             break;
     }
 
-### try-catch
+#### try-catch
 
 Point
 
@@ -1444,11 +1296,11 @@ Lahendus koodis
         e.printStackTrace(); // prindib detailse errori
     }
 
-## Tsüklid
+### Tsüklid
 
 Kui programmil on vaja nüüd mitte lihtsalt hargneda (otsus langetada) vaid ühte koodijuppi käiata kümneid või isegi tuhandeid kordi, siis on tsüklid selle jaoks. While tsükkel on selles mõttes universaalne, et sellega saab kõike teha, mida teistegagi. Teiste tsüklite mõte on lihtsustada kindlaid igapäevaseid toiminguid. Näiteks kui sul on vaja just numbritega mängida, siis saad for tsükliga kiiremini asja tehtud. Kui soovid massiivi väärtustega tegeleda, on 'for each' ideaalne.
 
-### while
+#### while
 
 Point
 
@@ -1476,7 +1328,7 @@ Korrata koodi kuni tingimus on tõene
         count = count + 1;
     }
 
-### do..while
+#### do..while
 
 Point
 
@@ -1504,7 +1356,7 @@ Identne while tsükliga, aga käiatakse vähemalt ühe korra, sest tingimuse kon
         count = count + 1;
     } while (count < m.length);
 
-### for
+#### for
 
 Point
 
@@ -1528,7 +1380,7 @@ Korrata koodi x arv kordi
         System.out.println(m[i]);
     }
 
-### for each
+#### for each
 
 Point
 
@@ -1546,7 +1398,7 @@ Käia tsükliga läbi mõni andmete kogum (nt. massiiv)
         System.out.println(s);
     }
 
-# Java API
+## Java API
 
 [API](http://en.wikipedia.org/wiki/Application_programming_interface) on programmeerimises nagu veduril on kangid ja seierid. API ei ole mitte kasutajaliides, vaid programmiliides. Java API on sisuliselt valmis kirjutatud abilised. Näiteks, kui sul on vaja panna number 5 astmesse 7, siis käsitsi arvutamise asemel kasuta Math klassi meetodi pow():
 
@@ -1554,17 +1406,17 @@ Käia tsükliga läbi mõni andmete kogum (nt. massiiv)
 
 Matemaatika on muidugi kõige lihtsam näide. Java API kaudu saab ka ligi kasutaja klaviatuurile, konsooli printimisele, faili toimingutele ja muudele vahenditele, mida muidu peaks ise välja mõtlema.
 
-## System
+### System
 
-### System.in
+#### System.in
 
 vt. [kuidas kasutatakse Scanner objekti](/api-scanner)
 
-### System.out
+#### System.out
 
 System.out võimaldab meil infot kasutajale näidata. Kõige tavalisem käsk on `System.out.println("Tere")` ja see näitab kasutajale konsoolis teksti "Tere".
 
-#### System.out.print()
+##### System.out.print()
 
 print() kirjutab konsooli kõik väärtused järjest.
 
@@ -1581,7 +1433,7 @@ Tulemus:
 
     Minu nimi on Miku ja olen 5 aastat vana.
 
-#### System.out.println()
+##### System.out.println()
 
 Lühend 'ln' tähendab 'line' meetodist println(). See trükib konsooli oma kirje ja alustab uue reaga.
 
@@ -1600,7 +1452,7 @@ Tulemus:
      ja 
     olen 5 aastat vana.
 
-#### System.out.printf()
+##### System.out.printf()
 
 Lühend 'f' tähendab 'format' meetodis printf(). See meetod on eriti paindlik ja annab kujundamiseks erilisi võimalusi. Eriti mugav on seda kasutada, kui esineb palju muutujaid.
 
@@ -1654,39 +1506,39 @@ Uus rida
     // uus
     // maailm!
 
-## Math
+### Math
 
 Math klass lihtsustab teatud matemaatilisi toiminguid.
 
-### Math.abs()
+#### Math.abs()
 
 Tagastab arvu absoluutväärtuse.
 
     Math.abs(5);  // 5
     Math.abs(-5); // 5
 
-### Math.min()
+#### Math.min()
 
 Valib kahest arvust väiksema.
 
     Math.min(1, 5);  // 1
     Math.min(89, 6); // 6
 
-### Math.max()
+#### Math.max()
 
 Valib kahest arvust suurema.
 
     Math.max(1, 5);  // 5
     Math.max(89, 6); // 89
 
-### Math.pow()
+#### Math.pow()
 
 Astendab esimese arvu teisega.
 
     Math.pow(2, 5); // 32.0
     Math.pow(4, 8); // 65536.0
 
-### Math.random()
+#### Math.random()
 
 Genereerib suvalise numbri vahemikus 0-0.999999999.
 
@@ -1706,53 +1558,53 @@ Genereeri reaalarv 30st 40ni.
 
     30 + Math.random() * 10
 
-### Math.round()
+#### Math.round()
 
 Ümardaja
 
     Math.round(45.5876); // 46
 
-## Integer
+### Integer
 
-### Integer.MIN_VALUE
+#### Integer.MIN_VALUE
 
 Integer või int kõige väiksem võimalik värtus. Vaata ka [Ohukoht1](/vaartus-ohukoht1)
 
     Integer.MIN_VALUE; // -2147483648
 
-### Integer.MAX_VALUE
+#### Integer.MAX_VALUE
 
 Integer või int kõige suurem võimalik värtus. Vaata ka [Ohukoht1](/vaartus-ohukoht1)
 
     Integer.MAX_VALUE; // 2147483647
 
-### Integer.parseInt(String)
+#### Integer.parseInt(String)
 
 Kui sul on arv sõne kujul "25", siis parseInt muudab selle int'iks.
 
     int a = Integer.parseInt("25");
 
-## Double
+### Double
 
-### Double.MIN_VALUE
+#### Double.MIN_VALUE
 
 Double või double kõige väiksem võimalik värtus. Vaata ka [Ohukoht1](/vaartus-ohukoht1)
 
     Double.MIN_VALUE; // -2147483648
 
-### Double.MAX_VALUE
+#### Double.MAX_VALUE
 
 Double või double kõige suurem võimalik värtus. Vaata ka [Ohukoht1](/vaartus-ohukoht1)
 
     Double.MAX_VALUE; // 2147483647
 
-### Double.parseDouble(String)
+#### Double.parseDouble(String)
 
 Kui sul on arv sõne kujul "33.333", siis parseDouble muudab selle double'iks.
 
     double a = Double.parseInt("33.333");
 
-## File
+### File
 
 Failide manipuleerimiseks on Javas palju viise. File, FileReaderi ja FileWriteri kasutamine on aga üks puisemaid ja lihtsasti arusaadavaid.
 
@@ -1762,7 +1614,7 @@ Failide manipuleerimiseks on Javas palju viise. File, FileReaderi ja FileWriteri
 
 **FileWriter** on selleks, et faili sisu muuta.
 
-### File
+#### File
 
 Kasutamine
 
@@ -1786,7 +1638,7 @@ Kas fail eksisteerib kettal?
 
     f.exists();
 
-### Faili kirjutamine
+#### Faili kirjutamine
 
     File f = new File("tekst.txt");
     FileWriter writer = new FileWriter(f);
@@ -1795,7 +1647,7 @@ Kas fail eksisteerib kettal?
     writer.write("Rida kolm\n");
     writer.close();
 
-### Faili lugemine
+#### Faili lugemine
 
     File f = new File("tekst.txt");
     BufferedReader br = new BufferedReader(new FileReader(f));
@@ -1806,7 +1658,7 @@ Kas fail eksisteerib kettal?
     }
     br.close();
 
-### JSONi lugemine
+#### JSONi lugemine
 
 JSON on mõnus üldlevinud failiformaat, mida on lihtne mõista ja kasutada. Pärit on ta JavaScript maailmast, aga Javas on selle kasutamine ka täiesti mõistlik juhul, kui on tarvis programmis mingeid andmeid sisse tuua.
 
@@ -1911,7 +1763,7 @@ Kui sul on nüüd vaja väärtused kätte saada hoopis muutujate kaudu, siis tul
         }
     }
 
-## Scanner
+### Scanner
 
 Scanneriga saame kasutajalt sisendit. Konsooli põhises programmis on ennekõike klaviatuuri sisestusi vaja kätte saada.
 
@@ -1934,25 +1786,25 @@ Tulemus
     35
     Sinu nimi on Peeter ja vanus 35
 
-### .next()
+#### .next()
 
 Loeb kasutaja sisestust kuni järgmise tühikuni, annab tagasi Stringi.
 
-### .nextLine()
+#### .nextLine()
 
 Loeb kasutaja sisestust kuni rea lõpuni, annab tagasi Stringi.
 
-### .nextInt()
+#### .nextInt()
 
 Võtab kasutajalt täisarvu. Kui kasutaja sisestab täisarvu asemel midagi muud, tuleb error.
 
-### .nextDouble()
+#### .nextDouble()
 
 Võtab kasutajalt reaalarvu. Kui kasutaja sisestab reaalarvu asemel midagi muud, tuleb error.
 
-## Thread
+### Thread
 
-### Thread.sleep(msec)
+#### Thread.sleep(msec)
 
 Paneb programmi ajutiselt pausile. See on kõige lihtsam viis aega simuleerida, kuid ta ei ole väga täpne ega paindlik. Vt. [Timer](/api-timer).
 
@@ -1964,7 +1816,7 @@ Näiteks
 
 võtab aega 3 sekundit, sest vahepeal on nii pikk paus.
 
-## Timer
+### Timer
 
 Timer töötab nagu oleme spordis harjunud. Selle ülesandeks on käivitada mingi toiming mingi kindla aja pärast või siis tsükliliselt käivitada ühte toimingut iga kindla aja tagant.
 
@@ -1989,7 +1841,7 @@ Prindib välja
 
 Pane tähele, et "Koodi lõpp" jõudis konsooli 4 sekundit varem, kui "TIMER", kuigi koodis on "TIMER" eespool.
 
-### .schedule()
+#### .schedule()
 
 Käivita toiming nelja sekundi pärast ühe korra
 
@@ -2009,22 +1861,22 @@ Käivita toiming iga sekund, kuid alusta alles viiendal sekundil
         }
     }, 5000, 1000);
 
-### .scheduleAtFixedRate()
+#### .scheduleAtFixedRate()
 
 Vt. [.schedule()](/api-timer-schedule). Ainuke vahe on see, et fixed rate käivitub ajaliselt väga täpselt. Näiteks kui meil on vaja, et toimingud käivituksid iga 5 sekundi tagant, aga arvuti on jäänud aeglaseks, siis .scheduleAtFixedRate() käivitab koodi kellaajalise täpsusega, .schedule() aga ei arvesta mitte aega vaid millal viimane tsükkel lõppes.
 
-## Arrays
+### Arrays
 
 Arrays klass on massiividega manipuleerimiseks. Kuna massiiv (näiteks in[]) on primitiiv, siis tal ei ole enda meetode. Nagu ArrayListil on täitsa enda .equals() olemas, siis massiivi puhul võtamegi abiks Arrays klassi sama toimingu jaoks.
 
-### Arrays.sort()
+#### Arrays.sort()
 
 Sorteeri massiivi väärtused tähestikulises järjekorras.
 
     String[] a = {"ccc", "aaa", "bbb"};
     Arrays.sort(a);
 
-### Arrays.equals()
+#### Arrays.equals()
 
 Võrdle, kas kaks massiivi on samasugused. Kusjuures, massiivis olevad elemendid peavad olema samas järjekorras, et neid massiive samasugusteks nimetada.
 
@@ -2032,49 +1884,23 @@ Võrdle, kas kaks massiivi on samasugused. Kusjuures, massiivis olevad elemendid
     String[] b = {"ccc", "aaa", "bbb"};
     System.out.println(Arrays.equals(a, b));
 
-### Arrays.toString()
+#### Arrays.toString()
 
 Kui massiiv lihtsalt niisama välja printida, tuleb konsooli mingi imelik kood. See kood on pistmist sellega, kuidas arvutis mälu töötab. Meie aga tahame näha massiivi sisu ja seega kasutame .toString() meetodi.
 
     Arrays.toString(a)
 
-## Collections
+### Collections
 
 Nagu massiividel on Arrays abiks, on ArrayListil, HashMapil ja muudel Collectionitel ka oma abistav klass.
 
-### Collections.sort()
+#### Collections.sort()
 
 Kuigi ArrayListil on oma .equals() meetod, siis tema .sort() meetod ei tööta päris nii nagu võiks arvata. Collections.sort() aitab meil sorteerida sisalduvad elemendid tähestikulises järjekorras.
 
     Collections.sort(a);
 
-# Sisend Väljund
-
-**Sisendiks** saavad olla kõik vahendid, millega kasutaja arvutit mõjutab - klaviatuur, hiir, veebikaamera, puutetundlik ekraan. Meie tegeleme neist vaid klaviatuuriga (konsoolis) ja hiirega (kasutajaliideses).
-
-**Väljundiks** on kõik viisid, kuidas kasutajale midagi ütelda või näidata. Meie puhul siis viisid, kuidas ekraanile midagi kuvada.
-
-**Konsoolis** saad klaviatuuri sisestusi kuulata [Scanneriga](/api-scanner) ja tagasisidet anda [print](/api-system-out) käsuga.
-
-**Kasutajaliideses** on nupud, teksti väljad ja muud vahendid.
-
-Tegelikult võib sisendiks ja väljundiks olla ka arvuti **failisüsteem**, internet või muu kommunikatsioonivahend, neist käsitleme failihaldust.
-
-## Konsool
-
-### Sisend
-
-Vt. [Scanner](/api-scanner)
-
-### Väljund
-
-Vt. [System.out.print()](/api-system-out)
-
-## File
-
-Vt. [Java API - File](/api-file)
-
-## JavaFX
+### JavaFX
 
 JavaFX on paindlik kasutajaliidese ja graafika kuvaja, samas on ta _mõistlikult_ lihtne kasutada. Kui konsool su vajadusi enam ei rahulda, võta JavaFX ette.
 
@@ -2110,7 +1936,7 @@ See programm joonistab lihtsalt ühe ringi.
 
 ![](images/javafx/ring.png)
 
-### Application
+#### Application
 
 Esimene asi mis tuleb mõista on, et JavaFX ei ole su programmis enne, kui sa oma põhilist klassi laiendanud (`extends`) klassiga `Application`.
 
@@ -2131,7 +1957,7 @@ Teine tähtis asi on see, et Application klassi laiendades ei alusta sa oma prog
 
 Kui JavaFX ülesehitust teatriga võrrelda, siis **Stage** on lava ja **Scene** on stseen. Lavakujunduseks on **Layout**, ehk kuidas esemed paigutuvad stseenis, ja esemed, ehk **Node**, ise.
 
-### Stage
+#### Stage
 
 Stage on programmi aken. Sisu tuleb ise panna, aga mõned kasulikud meetodid tal siiski on.
 
@@ -2171,7 +1997,7 @@ Peida aken
 
     stage.hide();
 
-### Scene
+#### Scene
 
 Scene on stseen, ehk nagu tühi konteiner, kus saab action toimuma hakata. Selline vahelüli on vajalik selleks, et saaks ühe käsuga kogu akna sisu ära vahetada. Näiteks kui avaneb programmi aken login vaatesse, siis edukalt sisse logides vahetad login vaate välja programmi vastu.
 
@@ -2191,7 +2017,7 @@ Muuda tausta värvi hex koodiga.
 
     scene.setFill(Paint.valueOf("#ff0000"));
 
-### Layout
+#### Layout
 
 Layout on lavakujunduses asjade paigutus. Võimalusi on palju. Et kujundused igal ekraanil töötaksid tuleb nad ehitada üles paindlikult, kombineerides erinevaid paneele.
 
@@ -2403,10 +2229,6 @@ Ankurda element alla paremasse nurka
 
     anchor.setBottomAnchor(element, 0.0);
     anchor.setRightAnchor(element, 0.0);
-
-### Node
-
-Node on nähtavad asjad, näiteks ring, tekst või nupp.
 
 #### Kasutajaliides
 
@@ -2862,7 +2684,7 @@ Määra ära otspunktide kordinaadid.
 
 Antud näites on 3 otspunkti: [(0.0,0.0), (20.0, 10.0), (10.0, 20.0)]
 
-### Color
+#### Color
 
 Color klassi abil saad määrata värvi, millega elementi värvida.
 
@@ -2880,3 +2702,155 @@ Kui soovid aga ise värvi koostada RGB formaadis, kasuta seleks `Color.rgb()` me
     Color.rgb(255,0,0); // punane
     Color.rgb(23,235,78); // Rohekas
 
+# Hädaabi
+
+Kui oled kinni jäänud, võta siit järjest nõuanded läbi.
+
+## Programm ei käivitu
+
+### Undo
+
+Esimene asi mis tee on vajuta `ctrl + z`, et oma käike tagasi võtta. Pole mõtet juurde kirjutada koodi kui olemasolev ei tööta. Kui lähed undoga liiale, saad `ctrl + shift + z` vajutusega ajaloos edasi minna.
+
+### Kontrolli süntaksit
+
+Algajatel juhtub tihti, et Java süntaksit ei järgita. [Süntaks](http://et.wikipedia.org/wiki/S%C3%BCntaks) on ka programmeerimises grammatika osa. Need on need reeglid, ilma milleta arvuti lihtsalt ei saa aru millest sa räägid. Kontrolli üle järgnevad korduma kippuvad vead:
+
+Kui sulud on korras vajuta `ctrl + alt + l`, et treppimine automaatselt korda seada.
+
+Sulul ei ole paarilist
+
+    public class MaastikuArhitekt {// klass algab
+        public void meetod() {     // meetod algab
+            int a = 5;
+            if (a < 10) {          // if algab
+                a++;
+            }                      // if lõppeb
+                                   // meetodil POLE lõppu
+    }                              // klass lõppeb
+
+Kirjaviga muutujas
+
+    public class KosmoseAgentuur  {
+        public static void main(String[] args) {
+            int aasta = 2030;
+            if (aasla > 2000) { // aasla => aasta
+                int millennium = 2;
+            }
+        }
+    }
+
+Sõnel ei ole jutumärke
+
+    String auto = Ford Mustang; // õige: "Ford Mustang"
+
+Sõne või tähe ümber on valed jutumärgid
+
+    "Sõne on topelt jutumärkidega" != 't'
+
+Mõne rea lõpust on puudu semikoolon
+
+    public class KosmoseAgentuur  {
+        public static void main(String[] args) {
+            int aasta = 2030;
+            if (aasta < 10) {
+                System.out.println("Tõene") // puudub ;
+            }
+        }
+    }
+
+Kuskil on liigne semikoolon
+
+    public class KosmoseAgentuur  {
+        public static void main(String[] args) {
+            int aasta = 2030;
+            if (aasta < 10); { // pärast if ei tohi olla ;
+                System.out.println("Tõene");
+            }
+        }
+    }
+
+Suur-väike täht valesti (Java on tundlik)
+
+    CamelCase != camelCase != Camelcase;
+
+Võrdluses operaatorid sassis
+
+`==` on võrdlemiseks ja `=` on uue väärtuse omistamiseks.
+
+### IDE vihjed erroritele
+
+Tihti annab IDE (Intellij) sulle teada, kus viga on.
+
+![](images/muu/IDEvihjed.png)
+
+Sul tuleb vaid punaseid märguandeid otsida ja hiirega peale minna (mitte vajutada), et lugeda kasulikku vihjet.
+
+Vahel oskab IDE sulle vea isegi ära parandada. Näiteks kui oled unustanud midagi importida siis kliki punasele joonele ja kas `alt + enter` vajutades või punasele pirnile klikkides saad kasutada võimalike lahendusi.
+
+![](images/muu/IDEaitab.png)
+
+Muidugi peaksid ikka umbes teadma mida need lahendused teevad, vahel võib kood hullemaks ka minna.
+
+### Kompileerija errorid
+
+Kui oma programmi käima paned ja ta punast teksti konsooli viskab, siis otsi sealt tekstist järgnevaid märksõnu. Need on kõige populaarsemad vead, mis võivad tekkida:
+
+ClassNotFoundException
+
+Oled käivitanud vale klassi. Ava õige fail ja vajuta `ctrl + shift + f10`. Vt. ka [kiirklahve](/intellij-kiirklahvid)
+
+Class xxxx not found in type declaration
+
+Oled unustanud importida mingi klassi, mida kasutad oma programmis.
+
+ArrayIndexOutOfBounds
+
+Küsid massiivilt positsiooni kohta, mida pole olemas. Pea meeles, et positsioonide loendamine algab nullist. Näiteks massiivis `int[] a = {5, 3, 6};` ei ole olemas kohta `a[3]`.
+
+Number tuleb vale, näiteks 8.6535634789**E**120
+
+See E on tähtis, see märgistab, et näitab sulle ligikaudset arvu. "E" on kümne kordaja. Antud näites on arvuks 8.6535634789 * 10 ^ 120.
+
+## Programm käivitub
+
+Kui programm käivitub, aga tulemus ei ole see, mida ootasid.
+
+### Prindi kõike
+
+Eesmärgiks on saada teada täpselt **mis tulemuse iga koodirida annab**.
+
+Kui enne oli kood:
+
+    int a = 5;
+    if (a < 5) {
+        a++;
+    }
+
+Siis nüüd on kõik võimalikud pesad välja prinditud:
+
+    int a = 5;
+    System.out.println("a = " + a);
+    if (a < 5) {
+        System.out.println("a = " + a);
+        a++;
+    }
+    System.out.println("a = " + a);
+
+Antud näide on veidi ekstreemne (esimene print on üleliigne) aga vahel tuleb vea leidmiseks olla ekstreemne.
+
+### Debug
+
+Debug on lahe funktsioon, kus näed rida rea haaval kuidas programm jookseb. Vaata täpsemalt [Debuggimine](/intellij-Debug).
+
+### Googelda
+
+Google on meie parim sõber, Googelda nii kuis jaksad. Tihtipeale satud lehele nimega StackOverflow ja see on teine parim abimees.
+
+### Küsi foorumist
+
+Foorum on parem kui õppejõult küsimine, sest praktikas saad sealt omale vastuse kiiremini. Ja tänu sinu küsimusele saavad ka teised targemaks.
+
+### Küsi õppejõult
+
+Viimase variandina küsi õppejõu käes abi. See ei ole sellepärast, et õppejõud ei soovi sulle oma aega pühendada, vaid lihtsalt sellepärast, et vea otsimine on iga progeja igapäevane töö ja ka seda peab iseseisvalt teha oskama. Selge on ka see, et algajale on kõige vaimu tapvam olukord lihtsalt segaduses olemine, seega võta julgelt ühendust, selleks me siin oleme.
