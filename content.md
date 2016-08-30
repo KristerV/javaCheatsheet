@@ -250,6 +250,7 @@ Paljud materjalid on hoopis Pythoni kesksed. See on väga hea. Python on hea alg
 
 ### Interaktiivne
 
+*   [TurtleAcademy](https://turtleacademy.com/learn.php) õpetab lihtsaid asju eriti loomulikul moel.
 *   [Hour of Code](http://hourofcode.com/)
 *   [CodeCademy](http://www.codecademy.com/tracks/python)
 *   [CodeCombat](https://codecombat.com/)
