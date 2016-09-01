@@ -9,7 +9,7 @@ Tere,
 
 Kui soovid programmeerijaks õppida, oled õiges kohas. Käesolevad materjalid on loodud IT Kolledži tarbeks, aga siht on võimaldada igaühel programmeerimist õppida *põhjalkult*. Materjalid pole veel valmis, aga võid juba proovida kuidas hammas peale hakkab ja tagasiside kirjuta foorumisse.
 
-Meie ühine vestlus platvorm küsimuste ja muu teemakohase loba jaoks on [foorum.koodikool.ee](http://foorum.koodikool.ee).
+Meie ühine vestlus platvorm küsimuste ja muu teemakohase loba jaoks on [kommuun.koodikool.ee](http://kommuun.koodikool.ee).
 
 Krister
 
