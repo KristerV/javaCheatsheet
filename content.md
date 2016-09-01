@@ -15,12 +15,6 @@ Krister
 
 # Aineprogramm
 
-## Chat
-
-**Kui proged Javat hängi meie jututoas: [gitter.im/KristerV/i200](https://gitter.im/KristerV/i200).**
-
-Seal saad eriti kiiresti oma küsimustele vastused ja vahest saab niisamagi targemaks. Sisse saad logida GitHubi kontoga (kuna igal arendajal see juba on).
-
 ## Hindamine
 
 - 60 punkti tuleb projekti eest
@@ -661,10 +655,10 @@ Võrdlemine
 
     a == b;
     a != b;
-    a < b; 
-    a <= b; 
-    a > b; 
-    a >= b; 
+    a < b;
+    a <= b;
+    a > b;
+    a >= b;
 
 Muuda tüüpi
 
@@ -694,10 +688,10 @@ Võrdlemine
 
     a == b;
     a != b;
-    a < b; 
-    a <= b; 
-    a > b; 
-    a >= b; 
+    a < b;
+    a <= b;
+    a > b;
+    a >= b;
 
 Muuda tüüpi
 
@@ -1105,9 +1099,9 @@ Ettevalmistus:
 Tulemus:
 
     {
-        Peeter = 35, 
-        Mikk = 3, 
-        Janika = 15, 
+        Peeter = 35,
+        Mikk = 3,
+        Janika = 15,
         Mari = 38
     }
 
@@ -1458,7 +1452,7 @@ Näide:
 Tulemus:
 
     Minu nimi on Miku
-     ja 
+     ja
     olen 5 aastat vana.
 
 ##### System.out.printf()
@@ -1718,7 +1712,7 @@ See fail sisaldab endast kolme andmekogu: 0.5, 3 ja 5 kg saadetise andmed - need
         // Siis pead projektile ütlema, et lisaks plugina projekti
         // ehk Intellij's: File->ProjectStructure->Libraries
         // Nüüd saa Gsoni kasutada ja importida
-        public static void main(String[] args) throws FileNotFoundException, 
+        public static void main(String[] args) throws FileNotFoundException,
             NoSuchFieldException, IllegalAccessException {
 
             // Avame faili

@@ -4,6 +4,7 @@
 - [ ] Foorum
 - [ ] Video lindistamise ja töötluse keskus
 - [ ] Esimese nädala töö
+- [ ] Näidisprogrammid eelnevatest projektidest
 
 # Must have fixes
 
@@ -26,9 +27,11 @@
 - [ ] Eksami nõuded üle vaadata
 - [ ] Õpetöö põhimõtted i200 üles.
 - [ ] Youtube pildiga asendada
-- [ ] target=_blank
+- [ ] target=blank
 - [ ] Parem koodi koloriit
-- [ ] How to contribute
+- [ ] How to contribute (edit, commit, PR)
+- [ ] https://thenewboston.com/
+- [ ] Hädaabi üle teha, järjestus vale
 
 # Vajab otsusi
 
