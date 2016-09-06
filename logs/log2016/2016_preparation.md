@@ -1,29 +1,17 @@
-# Must-have Features
+# Must-have
 
+- [ ] Esimene küsitlus välja saata
+- [ ] Esimese kahe nädala töö
+    - [ ] Aineprogramm üldiselt
+    - [ ] Esimesed slaidid ümber teha (näidis projektid)
+    - [ ] Video lindistamise ja töötluse keskus
 - [x] Markdown i200
-- [ ] Foorum
-- [ ] Video lindistamise ja töötluse keskus
-- [ ] Esimese nädala töö
-- [ ] Näidisprogrammid eelnevatest projektidest
+- [x] Foorum
+- [x] Peamenüü ümber teha
 
-# Must have fixes
+# Nice to have
 
-- [ ] Fix i200 internal links with custome ID's
-
-# Must have aineprogramm
-
-- [ ] Kogu aine ajakava
-- [ ] Peamenüü ümber teha
-    - Aine info
-    - Harjutused
-    - Hädaabi
-    - Progemise põhitõed
-    - Java API
-    - Git
-    - IDE
-
-# Nice to have else
-
+- [ ] Fix i200 internal links with custom ID's
 - [ ] Eksami nõuded üle vaadata
 - [ ] Õpetöö põhimõtted i200 üles.
 - [ ] Youtube pildiga asendada
@@ -39,6 +27,8 @@
 
 # 2015 kokkvõte
 
+## Puuduvad teemad
+
 - log/loeng2 on puuduv video
 - Foor on hea algus
 - Laevade pommitamine kui seeria (.md'd on heaks abiks)
@@ -53,7 +43,6 @@
 - Kuidas googeldada
 - Eraldi Giti sektsioon i200'sse. Läbustamist demostreerida.
 - Klassi ja meetodi erinevus, meetodi point üldse. top-down aitas.
-- Lippude ülesanne oli hea.
 - Kuidas exe välja võluda
 - vaata sega.md lingid üle
 - tegemata 2015.md
@@ -62,29 +51,13 @@
     * Commiti siis kui korraks kõik töötab, siis ei saa kunagi hullemaks minna.
 - Testid
 - http://dynalon.github.io/mdwiki/#!index.md
-- inline commenting?
-- Iganädalased kontrollpunktid? oeh.
-
-
-## Iga sessioon rääkida
-
-1. Chatlink
-1. Proge on intellijs valmis.
-1. Kood ei pruugi pathi tõttu töötada
-1. Aega on 4min + küs
-1. Millest rääkida (käivita, koodist kaks pointi, küsimused)
-1. Vaatleja saab koodi kätte
-1. Alguses ongi proffimad. Punktiskaala on algajatest lähtuv
-1. Hinde üle vaidlemine on hea mõte
-1. ütle oma nimi ja kasutajanimi githubis
 
 ## Meelespea
 
 - Punktide andmist teata ette. ei tea kas parem, aga proovimiseks.
-- KÕIK õpetused ja asjad võiksid lõppkokkuvõttes i200's olla. et aastatega tuleks järjepidevus.
+- i200 on single source of truth.
 - Kommenteeritud koodi näited on üli head.
 - Proffid võiks saada projektijuhtideks ja materjali täiendajateks.
-- Kui JavaFX aitab müüista, siis jar/exe aitab innustada.
 - Misasi on spagettkood.
 - Projektile litsents
 - inspiratsiooni video https://www.youtube.com/watch?v=xfBWk4nw440
