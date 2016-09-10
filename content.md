@@ -15,6 +15,19 @@ Krister
 
 # Aineprogramm
 
+## Ajagraafik
+
+25 september - Sissejuhatav loeng
+8 oktoober - Praktikum
+29-30 oktoober - Praktikum
+20 november - Praktikum
+11 detsember - Praktikum
+7-8 jaanuar - **Projekti vastamine**
+27-28 jaanuar - Kordamine
+29 jaanuar - **Eksam**
+
+Umbes kuu aega pärast eksamit tuleb ainus kordussooritus.
+
 ## Hindamine
 
 - 60 punkti tuleb projekti eest

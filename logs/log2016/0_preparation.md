@@ -1,13 +1,13 @@
 # Must-have
 
-- [ ] Esimene küsitlus välja saata
-- [ ] Esimese kahe nädala töö
-    - [ ] Aineprogramm üldiselt
-    - [ ] Esimesed slaidid ümber teha (näidis projektid)
-    - [ ] Video lindistamise ja töötluse keskus
 - [x] Markdown i200
 - [x] Foorum
 - [x] Peamenüü ümber teha
+- [ ] Video lindistamise ja töötluse keskus
+- [ ] Aineprogramm üldiselt
+- [ ] Esimesed slaidid ümber teha (näidis projektid)
+- [ ] Esimene küsitlus välja saata
+- [ ] Esimese kahe nädala töö
 
 # Nice to have
 
