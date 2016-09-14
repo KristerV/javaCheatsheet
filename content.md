@@ -7,7 +7,7 @@
 
 Tere,
 
-Kui soovid programmeerijaks õppida, oled õiges kohas. Käesolevad materjalid on loodud IT Kolledži tarbeks, aga siht on võimaldada igaühel programmeerimist õppida *põhjalkult*. Materjalid pole veel valmis, aga võid juba proovida kuidas hammas peale hakkab ja tagasiside kirjuta foorumisse.
+Kui soovid programmeerijaks õppida, oled õiges kohas. Käesolevad materjalid on loodud IT Kolledži tarbeks, aga siht on võimaldada igaühel programmeerimist õppida *põhjalikult*. Materjalid pole veel valmis, aga võid juba proovida kuidas hammas peale hakkab ja tagasiside kirjuta foorumisse.
 
 Meie ühine vestlus platvorm küsimuste ja muu teemakohase loba jaoks on [kommuun.koodikool.ee](http://kommuun.koodikool.ee).
 
@@ -56,13 +56,12 @@ Et ikka põnev oleks saad päris oma programmi kirjutada. Ära idee leidmise pä
     *   kasutaja ei pea üleliigseid klikke tegema
     *   kasutajal on lihtne mõista, kuidas programmi kasutada.
 *   **Programm on vastupidav**
-    *   Tavakasutajale
     *   Dumbuserile
     *   Algaja-häkkerile
 
 #### Keerukus
 
-Point on ennast proovile panna. Siis on huvitav ja siis õpib. Ma ei mõtle, et peaksid nüüd päeva pealt proffiks hakkama, aga võta ikka mõnuga. Siin tuleb täheldada seda, et kui teed lihtsa idee ära, siis seda saab alati keerulisemaks täiendada - lihtne on hea. Ühtlasi peaks keerulisele programmile lähenema tema kõige lihtsamast küljest ja siis vaikselt täiendama - keeruline on ka hea. Lühidalt - võta mingi idee ja hakka pihta!
+Point on ennast proovile panna. Siis on huvitav ja siis õpib. Ma ei mõtle, et peaksid nüüd päeva pealt profiks hakkama, aga võta ikka mõnuga. Siin tuleb täheldada seda, et kui teed lihtsa idee ära, siis seda saab alati keerulisemaks täiendada - lihtne on hea. Ühtlasi peaks keerulisele programmile lähenema tema kõige lihtsamast küljest ja siis vaikselt täiendama - keeruline on ka hea. Lühidalt - võta mingi idee ja hakka pihta!
 
 #### Maht
 
@@ -70,7 +69,7 @@ Projekti mahtu on väga raske hinnata. Asi on selles, et kui algaja kirjutab 100
 
 ### Aga ma ei oska ju progeda!
 
-Kõik on hästi. Kui sa kujundad oma programmi paberil ära, mõtled läbi mis funktsionaalsus sinna tuleb on juba esimene samm olemas. Nüüd. Kui sul on i200 videod vaadatud, äkki isegi codecademy.com mõni Pythoni kursus tehtud, siis peaksid oskama Javas kõige lihtsamaid manöövreid teha: arvutada, kasutajalt sisendit küsida, tulemus välja printida. Kas sinu (ükskõik kui keerulist) programmi annab konsoolis ära teha mingil elementaarsel tasemel? Ehk tee kõige lihtsam variant kohe ära. Kui midagi juurde õpid saad täiendada ja kindlasti ära karda nullist uuesti kirjutamist, see arendambi tegelikult kõige rohkem.
+Kõik on hästi. Kui sa kujundad oma programmi paberil ära, mõtled läbi mis funktsionaalsus sinna tuleb on juba esimene samm olemas. Nüüd. Kui sul on i200 videod vaadatud, äkki isegi codecademy.com mõni Pythoni kursus tehtud, siis peaksid oskama Javas kõige lihtsamaid manöövreid teha: arvutada, kasutajalt sisendit küsida, tulemus välja printida. Kas sinu (ükskõik kui keerulist) programmi annab konsoolis ära teha mingil elementaarsel tasemel? Ehk tee kõige lihtsam variant kohe ära. Kui midagi juurde õpid saad täiendada ja kindlasti ära karda nullist uuesti kirjutamist, see arendabki tegelikult kõige rohkem.
 
 ### Vastamine
 
@@ -106,10 +105,10 @@ Nonii. "Ükskõik kui keeruline või lihtne" on tore, aga mille eest reaalselt h
 *   Lihtne lugeda
     *   **treppimine** on paigas
     *   **muutuja nimetused** kirjeldavad protsessi olemust
-    *   **meetodide nimetused** kirjeldavad selgelt meetodi toimingut
+    *   **meetodite nimetused** kirjeldavad selgelt meetodi toimingut
     *   selguse tagamiseks on koodi **kommenteeritud**
 *   Loogiline ja taaskasutatav ülesehitus
-    *   **kasutab meetode** kus vaja
+    *   **kasutab meetoode** kus vaja
     *   **kasutab klasse** kus vaja
     *   **kasutab objekt-orienteeritust**
     *   kasutatakse **otstarbekalt tsükleid**
@@ -117,7 +116,7 @@ Nonii. "Ükskõik kui keeruline või lihtne" on tore, aga mille eest reaalselt h
 *   Kood on kompaktne (lisapunktid, kui on näha erilist läbimõeldust)
     *   keerulised tsüklid
     *   rekursioon
-    *   eriti hea klasside/meetodide taaskasutatavus
+    *   eriti hea klasside/meetodite taaskasutatavus
 
 ### Lisapunkte
 
@@ -186,7 +185,7 @@ Arvuti tarkvara kontekstis on tulemuseks mitte pannkook, vaid programm, mis toim
 
 Programmeerimise alustalasid. Tehniliselt on kõik kirjas ka joonisel, mille leiad pealehelt, aga lisaks ka seda metoodikat, kuidas programmeerimisele läheneda. Kuna projektil on päris suur rõhk, võiks õppeprotsessi lõpuks sul midagi lahedat ka valmis olla.
 
-### Kas programmeerimine on nagu üli keeruline matemaatika?
+### Kas programmeerimine on nagu ülikeeruline matemaatika?
 
 Tihti arvatakse, et kui koolis läks matemaatika kehvasti, siis ei saa ka programmeerimisega hakkama, kuid need ei ole nii väga seotud teemad. On inimesi, kes saavad Matemaatilise analüüsi aines väga hästi hakkama, aga mitte programmeerimisest ja on neid, kel on täpselt vastupidi. Muidugi üldine trend on, et mõlemast ainest saadakse edukalt läbi.
 
@@ -886,7 +885,7 @@ Näiteks, kui tegin ise klassi Hobune:
         }
     }
 
-siis nüüd saan oma main meetodi sees luua "Hobune" klassist uue objekti ja kasutada tema `public` meetode.
+siis nüüd saan oma main meetodi sees luua "Hobune" klassist uue objekti ja kasutada tema `public` meetoode.
 
     public class MinuProgramm {
         public static void main(String[] args) {
@@ -1210,7 +1209,7 @@ Kui võtame suvalise hunniku Java andmetüüpe [int, double, String, ArrayList],
     nimi = nimi.replace('r', 'l');    // muudan kõik 'r' tähed 'l' tähtedeks
     System.out.println(nimi);         // Nimi on nüüd "Klistel" - hahaha!
 
-.replace() on meetod. Ja meetodid saavad ainult objektidel olla. Seega suure algustähega tüübid on objektid ja väikesega on primitiivid. Primitiivil ei ole meetode ja objektidel on.
+.replace() on meetod. Ja meetodid saavad ainult objektidel olla. Seega suure algustähega tüübid on objektid ja väikesega on primitiivid. Primitiivil ei ole meetoode ja objektidel on.
 
 ## Juhtimine
 
@@ -1883,7 +1882,7 @@ Vt. [.schedule()](/api-timer-schedule). Ainuke vahe on see, et fixed rate käivi
 
 ### Arrays
 
-Arrays klass on massiividega manipuleerimiseks. Kuna massiiv (näiteks in[]) on primitiiv, siis tal ei ole enda meetode. Nagu ArrayListil on täitsa enda .equals() olemas, siis massiivi puhul võtamegi abiks Arrays klassi sama toimingu jaoks.
+Arrays klass on massiividega manipuleerimiseks. Kuna massiiv (näiteks in[]) on primitiiv, siis tal ei ole enda meetoode. Nagu ArrayListil on täitsa enda .equals() olemas, siis massiivi puhul võtamegi abiks Arrays klassi sama toimingu jaoks.
 
 #### Arrays.sort()
 
@@ -2547,7 +2546,7 @@ Vt. [Oracle Charts](https://docs.oracle.com/javase/8/javafx/user-interface-tutor
 
 Joonistada saab joonte, ringide või mistahes muude kujunditega. Polygon näiteks ongi vabalt vormitav kujund.
 
-Soovitatav on konteineriks kasutada Pane layouti, seal ei ole automaatset joondumist ja saab rahulikult x, y kordinaatidega kujundeid moodustada.
+Soovitatav on konteineriks kasutada Pane layouti, seal ei ole automaatset joondumist ja saab rahulikult x, y koordinaatidega kujundeid moodustada.
 
 On mõned põhitõed, mis **kehtivad peaaegu kõikide kujundite puhul**:
 
@@ -2603,7 +2602,7 @@ Joonista joon. Määrama peab kust->kuhu kordinaadid, ehk new Line(kustX, kustY,
 
 Vt. ka [Joonistamise põhitõed](/javafx-joonistamine).
 
-Algab kordinaatidelt 0, 0 ja lõppeb 100, 100
+Algab koordinaatidelt 0, 0 ja lõppeb 100, 100
 
     Line line = new Line(0, 0, 100, 100);
 
@@ -2713,7 +2712,7 @@ Olemasolevaid värve saad valida kirjutades `Color.` ja valides paljudest värvi
     Color.CADETBLUE;
     Color.DEEPSKYBLUE;
 
-Kui soovid aga ise värvi koostada RGB formaadis, kasuta seleks `Color.rgb()` meetodi.
+Kui soovid aga ise värvi koostada RGB formaadis, kasuta selleks `Color.rgb()` meetodi.
 
     Color.rgb(255,0,0); // punane
     Color.rgb(23,235,78); // Rohekas
@@ -2750,7 +2749,7 @@ Kirjaviga muutujas
     public class KosmoseAgentuur  {
         public static void main(String[] args) {
             int aasta = 2030;
-            if (aasla > 2000) { // aasla => aasta
+            if (aasta > 2000) { // aasla => aasta
                 int millennium = 2;
             }
         }
