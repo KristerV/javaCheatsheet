@@ -261,6 +261,7 @@ Paljud materjalid on hoopis Pythoni kesksed. See on väga hea. Python on hea alg
 *   [CodeCademy](http://www.codecademy.com/tracks/python)
 *   [CodeCombat](https://codecombat.com/)
 *   [Programming Basics](http://www.programmingbasics.org/en/)
+*	[CodingGame](https://www.codingame.com)
 
 ### Tekstipõhine
 
@@ -297,85 +298,7 @@ On mõned põhitõed, mida enne päris maailmas tegutsemist tavaliselt ei õpi. 
 
 # Peatükid
 
-## Videod
-
-#### 1. Skeemi tutvustus
-
-[comment]: # (http://img.youtube.com/vi/IpmBjKqFOvk/hqdefault.jpg)
-
-[youtube](https://youtu.be/IpmBjKqFOvk?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
-
-#### 2. Java ja arenduskeskkonna (IDE) install
-
-[comment]: # (http://img.youtube.com/vi/iU-RUnORPt8/hqdefault.jpg)
-
-[youtube](https://youtu.be/iU-RUnORPt8?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
-
-#### 3. IDE esimene käivitus
-
-[comment]: # (http://img.youtube.com/vi/bs5U5kCb1I4/hqdefault.jpg)
-
-[youtube](https://youtu.be/bs5U5kCb1I4?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
-
-#### 4. IDE sissejuhatus
-
-[comment]: # (http://img.youtube.com/vi/MbPskoIo09k/hqdefault.jpg)
-
-[youtube](https://youtu.be/MbPskoIo09k?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
-
-#### 5. IDE debugimise võimalus
-
-[comment]: # (http://img.youtube.com/vi/2Ju3yuBtop4/hqdefault.jpg)
-
-[youtube](https://youtu.be/2Ju3yuBtop4?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
-
-#### 6. main() meetod ja println()
-
-[comment]: # (http://img.youtube.com/vi/R4egQl-7gwk/hqdefault.jpg)
-
-[youtube](https://youtu.be/R4egQl-7gwk?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
-
-#### 7. muutuja - väärtused
-
-[comment]: # (http://img.youtube.com/vi/-AUEcJ_JWdg/hqdefault.jpg)
-
-[youtube](https://youtu.be/-AUEcJ_JWdg?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
-
-#### 8. muutuja - kogumikud
-
-[comment]: # (http://img.youtube.com/vi/_lLjBvB-viE/hqdefault.jpg)
-
-[youtube](https://youtu.be/_lLjBvB-viE?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
-
-#### 9. if(), ehk valik
-
-[comment]: # (http://img.youtube.com/vi/_nPa2mWt4HI/hqdefault.jpg)
-
-[youtube](https://youtu.be/_nPa2mWt4HI?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
-
-#### 10. while(), ehk tsükkel
-
-[comment]: # (http://img.youtube.com/vi/36FTynZdNmk/hqdefault.jpg)
-
-[youtube](https://youtu.be/36FTynZdNmk?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
-
-#### 11. Java API
-
-[comment]: # (http://img.youtube.com/vi/OnP7LQynSp8/hqdefault.jpg)
-
-[youtube](https://youtu.be/OnP7LQynSp8?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
-
-#### 12. Sisend konsoolis
-
-[comment]: # (http://img.youtube.com/vi/S4GnFBQD8YU/hqdefault.jpg)
-
-[youtube](https://youtu.be/S4GnFBQD8YU?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
-
-#### 13. Väljund konsoolis
-
-[comment]: # (http://img.youtube.com/vi/a4rRRHDFxY8/hqdefault.jpg)
-
-[youtube](https://youtu.be/a4rRRHDFxY8?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
+Aine peatükid avalduvad http://kommuun.koodikool.ee foorumis.
 
 # Tööriistad
 

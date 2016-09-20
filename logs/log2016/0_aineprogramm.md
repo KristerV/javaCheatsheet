@@ -14,16 +14,14 @@ Pehmed väärtused, ehk progemise põhimõtted
 	Top down meetod
 	Katseta
 	How to Google
+	Pead puhkama vahepeal
+	rubber ducky method
 
 Aineprogrammi peatükid
 	Start
 		Sissejuhatus
 		Installing IDE, Java8
 		Hello World, main meetod
-	Git
-		miks?
-		hello world
-		pull, push, checkout
 	Muutujad
 		int, double, String, char
 		Massiiv-ArrayList [HashMap, Maatriks]
@@ -47,6 +45,10 @@ Aineprogrammi peatükid
 		reageeri
 		layout
 		kasutajaliides
+	Git
+		miks?
+		hello world
+		pull, push, checkout
 	Andmebaas
 		hello world
 		SQL
