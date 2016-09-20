@@ -32,6 +32,7 @@ Pehmed väärtused, ehk progemise põhimõtted
 		Agiilne arendus vs. waterfall
 		Disain ja kliendist lähtuv arendus
 		Loe blogisid, keep yourself up-to-date
+		Alati uuri uusi tehnoloogiaid, aga tea miks vanad püsima on jäänud.
 		Kood ilma gitita on nagu koer ilma rihmata.
 		Open source'i tähtsus
 		Palk
