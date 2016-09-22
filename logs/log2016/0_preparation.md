@@ -3,11 +3,12 @@
 - [x] Markdown i200
 - [x] Foorum
 - [x] Peamenüü ümber teha
-- [ ] Video lindistamise ja töötluse keskus
-- [ ] Aineprogramm üldiselt
+- [x] Aineprogramm üldiselt
+- [ ] krister.ee uuendada
+- [ ] Projekti näited välja kookida
 - [ ] Esimesed slaidid ümber teha (näidis projektid)
-- [ ] Esimene küsitlus välja saata
-- [ ] Esimese kahe nädala töö
+- [ ] Esimese nädala töö
+- [ ] Video lindistamise ja töötluse keskus
 
 # Nice to have
 

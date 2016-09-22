@@ -197,10 +197,6 @@ On küll! Aga mitte sellepärast, mis sa arvad. Programmeerimise põhitõed (nee
 
 Nimelt programmeerimine on sinu võimaliku arengu tsoonist päris kaugel. See on sisuliselt nagu prantsuse keele õppimine, kui pole seda veel kuulnudki. Nüüd, kui me seda probleemi endale teadvustame, on minul, kui õppejõul, ja sinul, kui tudengil, lihtsam programmeerimise kontseptsioonidega tegeleda. Mina pean olema eriti hoolas, et oskaksin siduda uued teemad kuidagi tava eluga (näiteks pannkoogiretsepti analoogia) ja sina, tudeng, pead olema eriti hoolas, et sa harjutad, otsid lisa informatsiooni kust vähegi saad ja loed-loed-loed, kirjutad-kirjutad-kirjutad koodi!
 
-### Nii palju on ju vaja teada, kuidas ma näiteks klaviatuuril kirjutatu omale programmi saan?
-
-Vastus on väga lihtne: kasuta õiget käsku! Õnneks ei pea meie riistvara ja tarkvara vahelist suhtlemist programmeerima, see on meie eest juba tehtud. Javas kutsud välja Scanner objekti ja küsid temalt mida kasutaja on kirjutanud. Samamoodi kui tahad kasutajale ekraanile midagi kuvada on selleks ka vaid üks käsk. Suurem osa tööst on meile juba ette ära tehtud, meie peame vaid klotsid kokku panema. See on nagu Lego, mille igal klotsil on oma tegevus.
-
 ### Programmeerimine on ju arvuti keel, miks siis arvuti ise ei kirjuta oma programme?
 
 Tegelikult on programmeerimise keeled kirjutatud just inimesele, et meie arvutist midagi aru saaksime. Arvuti peab ekstra vaeva nägema, et meie keelt endale mõistetavaks tõlkida. Lihtsustatult öeldes on see inglise keel. Näiteks on siin koodi jupp ühest mängust, mis sa arvad, et see programm teeb?
