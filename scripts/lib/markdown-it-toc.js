@@ -7,6 +7,8 @@ var markdownItTOC = function(md) {
 	var TOC_REGEXP = /^@\[toc\](?:\((?:\s+)?([^\)]+)(?:\s+)?\)?)?(?:\s+?)?$/im;
 	var TOC_DEFAULT = 'Table of Contents';
 	var gstate;
+	var tocHeadings = {};
+	var bodyHeadings = {};
 
 	function toc(state, silent) {
 		while (state.src.indexOf('\n') >= 0 && state.src.indexOf('\n') < state.src.indexOf('@[toc]')) {
@@ -70,7 +72,14 @@ var markdownItTOC = function(md) {
 		var level = tokens[index].tag;
 		var label = tokens[index + 1];
 		if (label.type === 'inline') {
-			var anchor = makeSafe(label.content) + '_' + label.map[0];
+			var appendix = '';
+			if (isNaN(Number(tocHeadings[label.content]))) {
+				tocHeadings[label.content] = 0;
+			} else {
+				tocHeadings[label.content]++;
+				appendix = '_' + tocHeadings[label.content];
+			}
+			var anchor = makeSafe(label.content) + appendix;
 			return '<' + level + '><a id="' + anchor + '"></a>';
 		} else {
 			return '</h1>';
@@ -98,9 +107,16 @@ var markdownItTOC = function(md) {
 			var token = gtokens[i];
 			var heading = gtokens[i - 1];
 			if (heading.type === 'inline') {
+				var appendix = '';
+				if (isNaN(Number(bodyHeadings[heading.content]))) {
+					bodyHeadings[heading.content] = 0;
+				} else {
+					bodyHeadings[heading.content]++;
+					appendix = '_' + bodyHeadings[heading.content];
+				}
 				headings.push({
 					level: +token.tag.substr(1, 1),
-					anchor: makeSafe(heading.content) + '_' + heading.map[0],
+					anchor: makeSafe(heading.content) + appendix,
 					content: heading.content
 				});
 			}
