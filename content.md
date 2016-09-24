@@ -18,7 +18,9 @@ Krister
 ## Ajagraafik
 
 25 september - Sissejuhatav loeng
+7 oktoober - **1. projekti vaheetapp**
 8 oktoober - Praktikum
+28 oktoober - **2. projekti vaheetapp**
 29-30 oktoober - Praktikum
 20 november - Praktikum
 11 detsember - Praktikum
@@ -26,38 +28,30 @@ Krister
 27-28 jaanuar - Kordamine
 29 jaanuar - **Eksam**
 
-Umbes kuu aega pärast eksamit tuleb ainus kordussooritus.
+Umbes kuu aega pärast eksamit tuleb üks ja ainus kordussooritus.
 
 ## Hindamine
 
 - 60 punkti tuleb projekti eest
+    - 5p esimesest vaheetapist
+    - 10p teisest vaheetapist
+    - 45p kaitsmisest
 - 40 punkti eksami eest
-- 10 lisapunkti saab õppejõu suva järgi.
-- Kui eksamit ei läbi on kogu sooritus 0, sest ilmselt sa ei kirjutanud oma projekti ise.
+    - Lävend 50%
+    - Kui < 50%, siis on kogu aine 0
+- 10 lisapunkti
+    - 1p kommuunis küsimuse küsimise eest
+    - 1-10p käesoleva lehe täiendmaine
 
 ## Projekt
 
-Projekt on kõige tähtsam asi selle aine juures. Projekt on see, millega peaksid koguaeg tegelema, nii kodus kui tööl (okei, tööl keskendu töö peale). Miks me seda teeme? Sest enda idee kallal nokitsemine on kõige efektiivsem viis programmeerimine ära õppida.
+Projekt on kõige tähtsam asi selle aine juures. Projekt on see, millega peaksid koguaeg tegelema. See annab reaalse kogemuse reaalsete probleemidega ja on ühtlasi ka kõige huvitavam viis asi selgeks saada.
 
 ### Idee
 
 Et ikka põnev oleks saad päris oma programmi kirjutada. Ära idee leidmise pärast liialt vaeva näe. Kui endal pähe ei tule siis leia mõni olemasolev programm ja matki see järgi. Võib teha ka mängu.
 
 ### Eeldatav tulemus
-
-#### Point
-
-*   funktsionaalsus
-    *   **programm täidab oma eesmärki**, ehk suudab ettenähtud protsessi lõpuni viia
-*   kasutatavus
-    *   **GUI olemasolu** (v.a. juhul kui sellest pole üldse kasu)
-    *   **bugid ei takista protsessi**
-    *   kasutajaliides on läbi mõeldud
-    *   kasutaja ei pea üleliigseid klikke tegema
-    *   kasutajal on lihtne mõista, kuidas programmi kasutada.
-*   **Programm on vastupidav**
-    *   Dumbuserile
-    *   Algaja-häkkerile
 
 #### Keerukus
 
@@ -69,61 +63,48 @@ Projekti mahtu on väga raske hinnata. Asi on selles, et kui algaja kirjutab 100
 
 ### Aga ma ei oska ju progeda!
 
-Kõik on hästi. Kui sa kujundad oma programmi paberil ära, mõtled läbi mis funktsionaalsus sinna tuleb on juba esimene samm olemas. Nüüd. Kui sul on i200 videod vaadatud, äkki isegi codecademy.com mõni Pythoni kursus tehtud, siis peaksid oskama Javas kõige lihtsamaid manöövreid teha: arvutada, kasutajalt sisendit küsida, tulemus välja printida. Kas sinu (ükskõik kui keerulist) programmi annab konsoolis ära teha mingil elementaarsel tasemel? Ehk tee kõige lihtsam variant kohe ära. Kui midagi juurde õpid saad täiendada ja kindlasti ära karda nullist uuesti kirjutamist, see arendabki tegelikult kõige rohkem.
+Kõik on hästi. Kui sa kujundad oma programmi paberil ära, mõtled läbi mis funktsionaalsus sinna tuleb on juba esimene samm tehtud. Nüüd. Kui sul on i200 videod vaadatud, äkki isegi codecademy.com mõni Pythoni kursus tehtud, siis peaksid oskama Javas kõige lihtsamaid manöövreid teha: arvutada, kasutajalt sisendit küsida, tulemus välja printida. Kas sinu (ükskõik kui keerulist) programmi annab konsoolis ära teha mingil elementaarsel tasemel? Ehk tee kõige lihtsam variant kohe ära. Kui midagi juurde õpid saad täiendada ja kindlasti ära karda nullist uuesti kirjutamist, see arendabki tegelikult kõige rohkem.
 
 ### Vastamine
 
-Nagu iga õige projekt (näiteks lõputöö) tuleb projekt kaitsta kõigi ees. Kusjuures, teised ruumis olevad tudengid saavad ka hinnet mõjutada - hindamise kriteeriumis seda kirjas pole, aga õppejõud kindlasti arvestab üldsuse seisukohta. Vastamise päevaks on kõikide tudengite kood auditooriumi arvutis olemas (git) keerulisema setupi korral võid oma arvutiga vastama tulla. Asi võiks välja näha umbes selliselt:
+Nagu iga õige projekt (näiteks lõputöö) tuleb projekt kaitsta kõigi ees. Esitamisel võid kasutada kooli arvutit, aga enda masinast on ikka kõige kindlam. 
 
-*   Sisse andmine
-    *   Töö peab olema mõnes giti repositooriumis, kust õppejõud saab ligipääsu.
-*   Projekti vastamisel on tudeng klassi ees.
-    *   Esitab tulemuse (mitte koodi) [2min]
-    *   Selgitab üht probleemilahendust koodis, mille üle ta on eriti uhke [2min]
-    *   Õppejõu tagasiside [1min]
-    *   Auditooriumi hääletus [tagasiside ajal]
-*   Hindamine
-    *   Hindamine toimub kohapeal.
-    *   Õppejõud määrab lõpliku hinde vastavalt hindamise kriteeriumile.
-    *   Auditooriumis olevatel tudengitel on võimalik nutihääletuse abil tugevasti mõjutada hinnet.
+Esinemine näeb välja midagi sellist:
+
+* Jaga oma giti repo publikuga
+* Pane programm käima [2min]
+* Selgita ühte koodijuppi, mille üle oled eriti uhke [2min]
+* Publiku küsimused ja õppejõu tagasiside koos hindega [2min]
 
 ### Hindamine
 
-Nonii. "Ükskõik kui keeruline või lihtne" on tore, aga mille eest reaalselt hinde saab? Siin on siis täpne hindamise kriteerium. **Punases** on kõige tähtsamad punktid, **Boldis** tähtis ja ülejäänud tavatekstis.
-
-**NB!** Giti kasutamine on hädavajalik, et oma tööd üldse esitada saaks (ja et kood töötaks kooli arvutis). Aga objekt-orienteerituse ja GUI kasutamine tegelikult hädavajalik ei ole, see on pigem nagu pidepunkt, millega kontrollida, kas programm on optimaalselt üles ehitatud ja piisavalt keeruline, et head hinnet saada.
+Nonii. "Ükskõik kui keeruline või lihtne" on tore, aga mille eest reaalselt hinde saab? Siin on siis täpne hindamise kriteerium. **Boldis** punktid on hädavajalikud ja ilma nendeta hinnet ei saa.
 
 ### Kood
 
 *   **Kood on gitis**, õppejõud saab ligi.
+*   **Võõras kood on allikale viidatud**
 *   Projekti kirjeldus failis README.md (.md on [markdown](http://eherrera.net/markdowntutorial))
-    *   **Nimi**
+    *   Nimi
     *   Projekti kirjeldus
     *   Kasutusjuhend
-    *   Muud märkmed
-*   **Võõras kood on allikale viidatud**
+    *   Litsents
 *   Lihtne lugeda
-    *   **treppimine** on paigas
-    *   **muutuja nimetused** kirjeldavad protsessi olemust
-    *   **meetodite nimetused** kirjeldavad selgelt meetodi toimingut
-    *   selguse tagamiseks on koodi **kommenteeritud**
-*   Loogiline ja taaskasutatav ülesehitus
-    *   **kasutab meetoode** kus vaja
-    *   **kasutab klasse** kus vaja
-    *   **kasutab objekt-orienteeritust**
-    *   kasutatakse **otstarbekalt tsükleid**
-    *   kasutatakse andmestruktuure ja käideldakse neid otstarbekalt
+    *   kood ei ole spagetistunud
+    *   muutujate, meetodite jm. nimetused on mõistetavad
+    *   selguse tagamiseks on koodi kommenteeritud
+*   Optimaalne ja taaskasutatav ülesehitus
+    *   kasutab objekt-orienteeritust
+    *   kood on pikkuse poolest optimaalne
 *   Kood on kompaktne (lisapunktid, kui on näha erilist läbimõeldust)
     *   keerulised tsüklid
     *   rekursioon
     *   eriti hea klasside/meetodite taaskasutatavus
-
-### Lisapunkte
-
-*   **Tudeng on läinud aine raamistikust edasi**, ehk oskab rohkem kui on aines õpetatud.
-*   Tudeng on reaalselt **gitti kasutanud** (committide periood on loogiline)
-*   Kasutatud on **lisa raamistikke**, näiteks SQL andmebaas.
-*   Kui tudeng tööga päris valmis ei saanud, kas ta vähemalt teab mida järgmiseks peaks tegema?
+* Lisapunkte
+    *   Tudeng on läinud aine raamistikust edasi, ehk oskab rohkem kui on aines õpetatud.
+    *   Tudeng on reaalselt gitti kasutanud (committide periood on loogiline)
+    *   Kasutatud on lisa raamistikke, näiteks SQL andmebaas.
+    *   Kui tudeng tööga päris valmis ei saanud, kas ta vähemalt teab mida järgmiseks peaks tegema?
 
 ### Plagiaadikontroll
 
@@ -137,19 +118,19 @@ Nonii. "Ükskõik kui keeruline või lihtne" on tore, aga mille eest reaalselt h
 
 ### Reeglid
 
+- Hilinejaid sisse ei lubata.
 - Eksam toimub klassi arvutis.
-- Arvesse läheb ainult esimene giti link - valida ei saa.
-- Ei tohi kellegagi suhelda ei netis ega mujal v.a. õppejõuga.
-- Hilinejaid sisse ei lubata
 - Telefoni ei näpi. Nimelt on kooli arvuti ainuke ekraan sinu elus.
+- Ei tohi kellegagi suhelda ei netis ega mujal v.a. õppejõuga.
+- Arvesse läheb ainult esimene giti link - valida ei saa.
 - Tohid kasutada internetti k.a. Google.
 - Üleüldised sohi tegemise reeglid kehtivad (nt. naabrilt maha kirjutamine).
-- Kõik ülesanded peavad olema lahendatud kasutades päris programmeerimise võtteid ja mitte lihtsalt näiliselt lahendades vastust kirjutades.
+- Kõik ülesanded peavad olema lahendatud kasutades päris programmeerimise võtteid ja mitte lihtsalt näilisi lahendusi kirjutades.
 - Aega on 3 tundi.
 - Kui oled valmis lae lahendused üles samasse reposse kust nad said. Kui laed GitHubi või mujale avalikku kohta on tegu plagiaadi kaasa aitamises. Lahendusi võid jagada märtsis, kui kõik eksamid on ära olnud.
-- Kui koodi üles laadimine gitiga ei õnnestu siis saada failid kokku pakitult (zip/rar/tar) mulle meilile: krister.viirsaar@itcollege.ee. Aga copy-paste koodi ma vastu ei võta.
+- Kui koodi pushimine gitiga ei õnnestu siis saada failid kokku pakitult (zip/rar/tar) mulle meilile: krister.viirsaar@itcollege.ee. Kaasneb 5p penalt. Copy-paste koodi ma vastu ei võta.
 - Õppejõud ei kontrolli, kas su töö läks gitti üles. Seda saad ise teha.
-- Küsimusi võib küsida, aga kui peaksid ise teadma siis ei aita.
+- Küsimusi võib küsida, aga tõenäoliselt oled ise midagi valesti teinud :)
 
 ### Soovitusi
 
@@ -157,81 +138,7 @@ Nonii. "Ükskõik kui keeruline või lihtne" on tore, aga mille eest reaalselt h
 - Kui ülesanne on üle jõu siis lihtsusta enda jaoks, aga ära jäta programmi katki.
 - Ära copy-paste! Ülesanded on piisavalt lihtsad, et ajavõitu ei ole. Aga kui sa ei tea täpselt mis teed siis nüüd kaotad aega.
 - Ära kiirusta, mõtle läbi. Alati on lihtsam ja kergem lahendus olemas.
-
-## KKK
-
-### Mis asi see programmeerimine üldse on?
-
-Programmeerimine on programmi kirjutamine. Nojah, see on vist niigi selge. Aga mis asi see programm on? Üldiselt on programm nagu ülitäpsed juhised, kuidas mingit eesmärki saavutada. Lihtsustatult on programm ka pannkoogiretsept:
-
-1.  Võta jahu, piim, suhkur, sool, muna, õli.
-2.  Vahusta muna, suhkur ja sool.
-3.  Lisa piim ja jahu ning sega korralikult ära.
-4.  Aseta pann pliidile,
-5.  lülita pliit sisse,
-6.  vala pannile õli.
-7.  Kuni tainast jätkub:
-    *   vala kulbiga tainast pannile;
-    *   oota veidi;
-    *   pööra kook ümber;
-    *   oota veidi;
-    *   tõsta pannilabidaga kook taldrikule;".
-
-Panid tähele kui täpselt ma praadimise osa kirjeldasin? See toidu tegemisel ei ole tarvilik, kuna inimene oskab lihtsamad lüngad täita oma elukogemusega, aga arvutitel ei ole elukogemust. Arvuteid peab väga spetsiifiliselt juhendama, iga liigutus on oluline.
-
-Arvuti tarkvara kontekstis on tulemuseks mitte pannkook, vaid programm, mis toimetab arvutis, internetis või suhtleb kasutajaga. Toome mõned näited. Kõige tuntum programm üldse on tõenäoliselt Windows ise. Muidugi, nii Mac OSX ja iga Linux on samuti programmid. Aga ka Chrome või Firefox on programmid. See wiki, mida praegu loed, on samuti programm. Lühidalt kõik mis ekraanil näed on programmid programmide sees. Kas see on veidi hirmutav? Pole midagi. Meie ei hakka siin operatsioonisüsteemi looma, meie hakkame lihtsaid ja mõnusaid programme kirjutama.
-
-### Mida me siin aines õpime?
-
-Programmeerimise alustalasid. Tehniliselt on kõik kirjas ka joonisel, mille leiad pealehelt, aga lisaks ka seda metoodikat, kuidas programmeerimisele läheneda. Kuna projektil on päris suur rõhk, võiks õppeprotsessi lõpuks sul midagi lahedat ka valmis olla.
-
-### Kas programmeerimine on nagu ülikeeruline matemaatika?
-
-Tihti arvatakse, et kui koolis läks matemaatika kehvasti, siis ei saa ka programmeerimisega hakkama, kuid need ei ole nii väga seotud teemad. On inimesi, kes saavad Matemaatilise analüüsi aines väga hästi hakkama, aga mitte programmeerimisest ja on neid, kel on täpselt vastupidi. Muidugi üldine trend on, et mõlemast ainest saadakse edukalt läbi.
-
-### Kas programmeerimine ei olegi keeruline?
-
-On küll! Aga mitte sellepärast, mis sa arvad. Programmeerimise põhitõed (need, mida siin aines õpime) on suhteliselt lihtsad, aga need on hoopis teistmoodi, kui oled harjunud mõtlema. Selle jaoks on isegi väljend: "Lähim arengu tsoon" (ingl. "zone of proximal development") ja seda kirjeldab järgmine joonis:
-
-![](images/zoneOfProximalDevelopment.svg)
-
-Nimelt programmeerimine on sinu võimaliku arengu tsoonist päris kaugel. See on sisuliselt nagu prantsuse keele õppimine, kui pole seda veel kuulnudki. Nüüd, kui me seda probleemi endale teadvustame, on minul, kui õppejõul, ja sinul, kui tudengil, lihtsam programmeerimise kontseptsioonidega tegeleda. Mina pean olema eriti hoolas, et oskaksin siduda uued teemad kuidagi tava eluga (näiteks pannkoogiretsepti analoogia) ja sina, tudeng, pead olema eriti hoolas, et sa harjutad, otsid lisa informatsiooni kust vähegi saad ja loed-loed-loed, kirjutad-kirjutad-kirjutad koodi!
-
-### Programmeerimine on ju arvuti keel, miks siis arvuti ise ei kirjuta oma programme?
-
-Tegelikult on programmeerimise keeled kirjutatud just inimesele, et meie arvutist midagi aru saaksime. Arvuti peab ekstra vaeva nägema, et meie keelt endale mõistetavaks tõlkida. Lihtsustatult öeldes on see inglise keel. Näiteks on siin koodi jupp ühest mängust, mis sa arvad, et see programm teeb?
-
-    Character toomas = new Character()
-    while (keyboard.isPressed()) {
-        if (keyboard.key == 'left')
-            toomas.liiguSammVasakule();
-        }
-        if (keyboard.key == 'right')
-            toomas.liiguSammParemale();
-        }
-    }
-
-"while" käsku nimetame tsükliks, sest mis iganes on tema `{` loogeliste sulgude `}` vahel, ta käitab uuesti ja uuesti, nii kaua kuni tema `(` tavaliste sulgude `)` vahel olev tingimus on tõene, ehk programm on tsüklis. While tsükli `{` sees `}` on kaks "if" tingimust. See on samuti formaadis `käsk (tingimus) {tegevus}`, aga siin ei satu koodijupp mitte tsüklisse, vaid käivitub ainult ühe korra.
-
-Programm siis esiteks loob uue tegelase nimega "toomast" `Character toomast = new Character();` ja liigutab teda paremale või vasakule niikaua kuni parem või vasak klaviatuuri klahv on vajutatud. Antud kood on veidi lihtsustatud, aga süntaks (grammatika), ehk sulud, semikoolonid ja muud märgid on õigesti paigas.
-
-Kui see programm tööle panna tõlgib arvuti selle esiteks endale masinkeelde ja siis alles oskab ta seda käivitada.
-
-### Käin küll loengutes ja teen praktikumides kaasa, aga ikka ei haaku mitte midagi..
-
-Programmeerimist ei ole võimalik õpetada nii, et asi lihtsalt saab selgeks. Erinevalt matemaatikast (ja suurem osa kooli ainetest) ei ole võimalik programmeerimist pähe õppida. Programmeerimist tuleb mõista. Kui piisavalt eesmärgi nimel tegutseda jõuab teema ka lõpuks kohale. Tarkvara arendus ongi selline ala, kus tuleb esiteks palju pimeduses kompida, kuni lõpuks "klikib". Aga rõhutan, et "klikkimine" ei toimu puhtalt õppejõudu kuulates. "Klikkimine" toimub ainult juhul, kui mõtled ise endale ülesandeid juurde, uurid ja katsetad omast vabast ajast. Muide, kui sul lõpuks toimub see ära "klikkimine" anna mulle, õppejõule, teada, mis täpsemalt aitas, et saaks veelgi paremini teisi aidata. Inimesi on meil palju ja igaühel on kuskil temale paras õppimise meetod.
-
-### Programmeerimiseks peab olema annet.
-
-Tõsi. Ei vaidle vastu. Tõenäoline on, et kõik ei hakkagi tarkvara arendamist oskama. Aga veel tõenäolisem on see, et kui sa investeerid siia korralikult aega ja vaeva saad sa asjale ikkagi pihta. Pealegi, on tuntud tõde (vähemalt inglise keeles), et oskus võidab talendi.
-
-### Lugedes saan koodist aru, aga minul ei tööta
-
-See on tuntud fenomen. Koodi lugemine tihtipeale ongi arusaadav ja lihtne. Kui aga ise kirjutamiseks läheb ei saa mitte midagi aru. Programm ei käivitu, tulevad ainult errorid, ei saa aru ka mis viga. Eks ta ole samuti ka kirjandi kirjutamisega. Üht head kirjandit lugedes saad selgelt aru millest ta räägib ja lugemine on mõnus. Aga püüa ise sellist kirjandit kirjutada ja saad teada, et seal on palju rohkem teadust, kui oskasid arvata.
-
-### Mis on parim viis selle probleemi lahendamiseks?
-
-Ma ütleks, et programmeerimine on kunst, sest ühel probleemil on sama palju lahendusi, kui on lahendajaid ekraani ees. Tõenäoliselt on võimalik mistahes programmi paremini kirjutada. Alates Google otsingumootorist kuni meie ÕISini.
+- Kui googeldad, siis ära otsi lahendusi ülesandele vaid vastuseid oma küsimustele!
 
 ## Väliseid ressursse
 
@@ -304,7 +211,7 @@ Aine peatükid avalduvad http://kommuun.koodikool.ee foorumis.
 
 Java 8 saad alla laadida ja installida [siit](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).
 
-On soovitatav kasutada ametliku Oracle JDK (üleval olev link) ja mitte OpenJDK, sest JavaFX ei ole OpenJDK's koheselt sees ja selle lisamine võib olla päris problemaatiline.
+On soovitatav kasutada **ametlikku Oracle JDK** (üleval olev link) ja mitte OpenJDK, sest JavaFX ei ole OpenJDK's koheselt sees ja selle lisamine võib olla päris problemaatiline.
 
 #### Intellij
 
