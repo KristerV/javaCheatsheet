@@ -41,7 +41,7 @@ Umbes kuu aega pärast eksamit tuleb üks ja ainus kordussooritus.
     - Kui < 50%, siis on kogu aine 0
 - 10 lisapunkti
     - 1p kommuunis küsimuse küsimise eest
-    - 1-10p käesoleva lehe täiendmaine
+    - 1-10p käesoleva lehe täiendamine
 
 ## Projekt
 
@@ -231,7 +231,7 @@ Esmane käivitus võib olla vähe keeruline - järgime [piltidega õpetust siin]
 
 ##### Jooksuta programm
 
-Programmi käivitamiseks on lihtne otsetee `ctrl + shift + f10`. Kui oled juba ühe korra käivitanud oma programmi, piisab ka lühemast `ctrl + f10` otseteest. Vt. ka [kiirklahve](/intellij-kiirklahvid)
+Programmi käivitamiseks on lihtne otsetee `ctrl + shift + f10`. Kui oled juba ühe korra käivitanud oma programmi, piisab ka lühemast `ctrl + f10` otseteest. Vt. ka [kiirklahve](/#Kiirklahvid)
 
 ##### Debug
 
@@ -510,7 +510,7 @@ Muuda tüüpi
 
 reaalarvud (komakohaga) (alates -4.9*10^324 kuni 1.79*10^308)
 
-Reaalarvudega arvutamine on ebatäpne, vt. [Ohukoht2](/vaartus-ohukoht2)
+Reaalarvudega arvutamine on ebatäpne, vt. [Ohukoht2](/#NB_Arvude_piirangud)
 
 **Kasutamine**
 
@@ -1053,7 +1053,7 @@ Juhtimisstruktuurid on programmeerija põhilised tööriistad, nagu ehitajal on 
 
 if on nagu raudtee hargnemine. Üks tee läheb Tartu poole, teine Viljandi. if lausega saab rongi (ehk programmi) vastavalt sihtpunktile juhatada õigele teele.
 
-Vt. ka [kuidas booleane võrrelda](/boolean)
+Vt. ka [kuidas booleane võrrelda](/#boolean)
 
 Point
 
@@ -1255,7 +1255,7 @@ Matemaatika on muidugi kõige lihtsam näide. Java API kaudu saab ka ligi kasuta
 
 #### System.in
 
-vt. [kuidas kasutatakse Scanner objekti](/api-scanner)
+vt. [kuidas kasutatakse Scanner objekti](/#Scanner)
 
 #### System.out
 
@@ -1413,13 +1413,13 @@ Genereeri reaalarv 30st 40ni.
 
 #### Integer.MIN_VALUE
 
-Integer või int kõige väiksem võimalik värtus. Vaata ka [Ohukoht1](/vaartus-ohukoht1)
+Integer või int kõige väiksem võimalik värtus. Vaata ka [Ohukoht1](/#NB_Arvude_piirangud)
 
     Integer.MIN_VALUE; // -2147483648
 
 #### Integer.MAX_VALUE
 
-Integer või int kõige suurem võimalik värtus. Vaata ka [Ohukoht1](/vaartus-ohukoht1)
+Integer või int kõige suurem võimalik värtus. Vaata ka [Ohukoht1](/#NB_Arvude_piirangud)
 
     Integer.MAX_VALUE; // 2147483647
 
@@ -1433,13 +1433,13 @@ Kui sul on arv sõne kujul "25", siis parseInt muudab selle int'iks.
 
 #### Double.MIN_VALUE
 
-Double või double kõige väiksem võimalik värtus. Vaata ka [Ohukoht1](/vaartus-ohukoht1)
+Double või double kõige väiksem võimalik värtus. Vaata ka [Ohukoht1](/#NB_Arvude_piirangud)
 
     Double.MIN_VALUE; // -2147483648
 
 #### Double.MAX_VALUE
 
-Double või double kõige suurem võimalik värtus. Vaata ka [Ohukoht1](/vaartus-ohukoht1)
+Double või double kõige suurem võimalik värtus. Vaata ka [Ohukoht1](/#NB_Arvude_piirangud)
 
     Double.MAX_VALUE; // 2147483647
 
@@ -1651,7 +1651,7 @@ Võtab kasutajalt reaalarvu. Kui kasutaja sisestab reaalarvu asemel midagi muud,
 
 #### Thread.sleep(msec)
 
-Paneb programmi ajutiselt pausile. See on kõige lihtsam viis aega simuleerida, kuid ta ei ole väga täpne ega paindlik. Vt. [Timer](/api-timer).
+Paneb programmi ajutiselt pausile. See on kõige lihtsam viis aega simuleerida, kuid ta ei ole väga täpne ega paindlik. Vt. [Timer](/#Timer).
 
 Näiteks
 
@@ -1708,7 +1708,7 @@ Käivita toiming iga sekund, kuid alusta alles viiendal sekundil
 
 #### .scheduleAtFixedRate()
 
-Vt. [.schedule()](/api-timer-schedule). Ainuke vahe on see, et fixed rate käivitub ajaliselt väga täpselt. Näiteks kui meil on vaja, et toimingud käivituksid iga 5 sekundi tagant, aga arvuti on jäänud aeglaseks, siis .scheduleAtFixedRate() käivitab koodi kellaajalise täpsusega, .schedule() aga ei arvesta mitte aega vaid millal viimane tsükkel lõppes.
+Vt. [.schedule()](/#schedule). Ainuke vahe on see, et fixed rate käivitub ajaliselt väga täpselt. Näiteks kui meil on vaja, et toimingud käivituksid iga 5 sekundi tagant, aga arvuti on jäänud aeglaseks, siis .scheduleAtFixedRate() käivitab koodi kellaajalise täpsusega, .schedule() aga ei arvesta mitte aega vaid millal viimane tsükkel lõppes.
 
 ### Arrays
 
@@ -1942,7 +1942,7 @@ Lisa sisu keskmise kasti sisse
 
     border.setCenter(sisu);
 
-Ka [Pane](/javafx-layout-Pane) meetodid on siin kasutatavad.
+Ka [Pane](/#Pane) meetodid on siin kasutatavad.
 
 ##### StackPane
 
@@ -1962,7 +1962,7 @@ Liiguta element alla keskele
 
     stack.setAlignment(element, Pos.BOTTOM_CENTER);
 
-Ka [Pane](/javafx-layout-Pane) meetodid on siin kasutatavad.
+Ka [Pane](/#Pane) meetodid on siin kasutatavad.
 
 ##### GridPane
 
@@ -1982,7 +1982,7 @@ Näita ruudustiku jooni
 
     grid.setGridLinesVisible(true);
 
-Ka [Pane](/javafx-layout-Pane) meetodid on siin kasutatavad.
+Ka [Pane](/#Pane) meetodid on siin kasutatavad.
 
 ##### VBox
 
@@ -1998,7 +1998,7 @@ Lisa 2 pikslit vahet igale elemendile
 
     vbox.setSpacing(2);
 
-Ka [Pane](/javafx-layout-Pane) meetodid on siin kasutatavad.
+Ka [Pane](/#Pane) meetodid on siin kasutatavad.
 
 ##### Hbox
 
@@ -2014,7 +2014,7 @@ Lisa 2 pikslit vahet igale elemendile
 
     hbox.setSpacing(2);
 
-Ka [Pane](/javafx-layout-Pane) meetodid on siin kasutatavad.
+Ka [Pane](/#Pane) meetodid on siin kasutatavad.
 
 ##### FlowPane
 
@@ -2034,7 +2034,7 @@ Lisa vaba ruumi vertikaalselt 5 pikslit
 
     flow.setVgap(5);
 
-Ka [Pane](/javafx-layout-Pane) meetodid on siin kasutatavad.
+Ka [Pane](/#Pane) meetodid on siin kasutatavad.
 
 ##### TilePane
 
@@ -2058,7 +2058,7 @@ Määra eelistatud tulpade arvuks 3
 
     tile.setPrefColumns(2);
 
-Ka [Pane](/javafx-layout-Pane) meetodid on siin kasutatavad.
+Ka [Pane](/#Pane) meetodid on siin kasutatavad.
 
 ##### AnchorPane
 
@@ -2094,14 +2094,14 @@ Paneme uue elemendi Layout Pane sisse.
     Pane pane = new Pane();
     pane.getChildren().add(l);
 
-Vt. ka [kuidas JavaFX töötab koos Stage ja Scenega](/javafx).
+Vt. ka [kuidas JavaFX töötab koos Stage ja Scenega](/#JavaFX).
 
 Liiguta Label 50 pikslit paremale ja 100 pikslit alla.
 
     l.setTranslateX(50);
     l.setTranslateY(100);
 
-Kuigi sa saad muuta elemendi asukohta layouti sees, määrab ümbritsev layout ikkagi olulise osa. Seega, kui su element ei käitu päris nii nagu soovid, proovi mõnda muud [layouti](/javafx-Layout).
+Kuigi sa saad muuta elemendi asukohta layouti sees, määrab ümbritsev layout ikkagi olulise osa. Seega, kui su element ei käitu päris nii nagu soovid, proovi mõnda muud [layouti](/#Layout).
 
 Vähenda laiust 50% ja kahekordista kõrgus
 
@@ -2120,7 +2120,7 @@ Kõikidest võimalustest räägib täpsemalt [Oracle UI Controls](https://docs.o
 
 Label, ehk silt, on lihtne tekst, mida tüüpiliselt lisatakse mingi interaktiivse elemendi selgitamiseks.
 
-Vt. ka [Kasutajaliidese üldine kasutamine](/javafx-Kasutajaliides).
+Vt. ka [Kasutajaliidese üldine kasutamine](/#Kasutajaliides).
 
 Määra tekst, ehk Label sisu.
 
@@ -2132,7 +2132,7 @@ Määra tekst, ehk Label sisu.
 
 Teksti kirjutamiseks, et kasutajalt infot pärida.
 
-Vt. ka [Kasutajaliidese üldine kasutamine](/javafx-Kasutajaliides).
+Vt. ka [Kasutajaliidese üldine kasutamine](/#Kasutajaliides).
 
 Lisa välja taustale ajutine tekst
 
@@ -2165,7 +2165,7 @@ Kui soovid `enter` vajutamisele reageerida
 
 Täpselt nagu TextField, ainult, et kirjutatud tähtede asemel näidatakse tärne.
 
-Vt. ka [Kasutajaliidese üldine kasutamine](/javafx-Kasutajaliides).
+Vt. ka [Kasutajaliidese üldine kasutamine](/#Kasutajaliides).
 
 Lisa välja taustale ajutine tekst
 
@@ -2185,7 +2185,7 @@ Tühjenda parooli väli
 
 Kõige lihtsam nupp. Mis juhtub nupu vajutusel saad ise määrata.
 
-Vt. ka [Kasutajaliidese üldine kasutamine](/javafx-Kasutajaliides).
+Vt. ka [Kasutajaliidese üldine kasutamine](/#Kasutajaliides).
 
 Määra nupu tekst
 
@@ -2205,13 +2205,13 @@ Määra mis juhtub kui nuppu vajutatakse
 
 Eriline nupp, mis jääb sisse. Kasutatakse selleks, et näiteks mõne programmi settingutes lasta valida jah/ei stiilis või lausa mitme valiku vahel korraga.
 
-Vt. ka [Kasutajaliidese üldine kasutamine](/javafx-Kasutajaliides).
+Vt. ka [Kasutajaliidese üldine kasutamine](/#Kasutajaliides).
 
 Kui gruppi ei kasuta on üks nupp sisse/välja lülitatav.
 
     ToggleButton nupp = new ToggleButton("üksik toggle");
 
-Toggle nupud grupeeritakse kasutades [ToggleGroup](/javafx-ToggleGroup) objekti. Ühes objektis saab vaid üks nupp olla korraga sisse vajutatud.
+Toggle nupud grupeeritakse kasutades [ToggleGroup](/#ToggleGroup) objekti. Ühes objektis saab vaid üks nupp olla korraga sisse vajutatud.
 
     ToggleGroup g = new ToggleGroup();
     ToggleButton e1 = new ToggleButton("Nupp 1");
@@ -2229,9 +2229,9 @@ Toggle nupud grupeeritakse kasutades [ToggleGroup](/javafx-ToggleGroup) objekti.
 
 Radio on veebist vähe tuttavam versioon ToggleButton'ist. Eesmärk on sama: anda kasutajale valida üks mitme seast.
 
-Vt. ka [Kasutajaliidese üldine kasutamine](/javafx-Kasutajaliides).
+Vt. ka [Kasutajaliidese üldine kasutamine](/#Kasutajaliides).
 
-RadioNupud grupeeritakse [ToggleGroup](/javafx-ToggleGroup) objekti abil, et vaid üks neist saaks olla valitud korraga.
+RadioNupud grupeeritakse [ToggleGroup](/#ToggleGroup) objekti abil, et vaid üks neist saaks olla valitud korraga.
 
     ToggleGroup g = new ToggleGroup();
     RadioButton e1 = new RadioButton("Nupp 1");
@@ -2245,7 +2245,7 @@ RadioNupud grupeeritakse [ToggleGroup](/javafx-ToggleGroup) objekti abil, et vai
 
 ##### ToggleGroup
 
-[RadioButton](/javafx-RadioButton) ja [ToggleButton](/javafx-ToggleButton) tarbeks.
+[RadioButton](/#RadioButton) ja [ToggleButton](/#ToggleButton) tarbeks.
 
 Küsi ToggleGroup käest, millised nupud on sisse vajutatud
 
@@ -2257,7 +2257,7 @@ Küsi ToggleGroup käest, millised nupud on sisse vajutatud
 
 Kasutajale jah/ei stiilis küsimuste esitamiseks.
 
-Vt. ka [Kasutajaliidese üldine kasutamine](/javafx-Kasutajaliides).
+Vt. ka [Kasutajaliidese üldine kasutamine](/#Kasutajaliides).
 
 Loo 3 CheckBoxi
 
@@ -2284,7 +2284,7 @@ Küsi, kas Checkbox on sisse vajutatud.
 
 Seletav tekst
 
-Vt. ka [Kasutajaliidese üldine kasutamine](/javafx-Kasutajaliides).
+Vt. ka [Kasutajaliidese üldine kasutamine](/#Kasutajaliides).
 
 Loo ChoiceBox kolme variandiga
 
@@ -2313,7 +2313,7 @@ Reageeri valiku muutmisele.
 
 Väärtuse valimiseks mingist vahemikust.
 
-Vt. ka [Kasutajaliidese üldine kasutamine](/javafx-Kasutajaliides).
+Vt. ka [Kasutajaliidese üldine kasutamine](/#Kasutajaliides).
 
 Määra miinimum väärtus
 
@@ -2372,7 +2372,7 @@ Määra failihalduri akna pealkiri.
 
 Vt. [Oracle Charts](https://docs.oracle.com/javase/8/javafx/user-interface-tutorial/charts.htm)
 
-#### Joonistamine {#javafx-joonistamine}
+#### Joonistamine
 
 Joonistada saab joonte, ringide või mistahes muude kujunditega. Polygon näiteks ongi vabalt vormitav kujund.
 
@@ -2430,7 +2430,7 @@ Pööra 45 kraadi.
 
 Joonista joon. Määrama peab kust->kuhu kordinaadid, ehk new Line(kustX, kustY, kuhuX, kuhuY).
 
-Vt. ka [Joonistamise põhitõed](/javafx-joonistamine).
+Vt. ka [Joonistamise põhitõed](/#Joonistamine).
 
 Algab koordinaatidelt 0, 0 ja lõppeb 100, 100
 
@@ -2448,9 +2448,9 @@ Sama asi eraldi käskudena
 
 ![](images/javafx/Shapes/Rectangle.png)
 
-Ristkülik. Määrata tuleb alguskordinaadid ja laius/kõrgus, ehk new Rectangle(algX, algY, laius, kõrgus).
+Ristkülik. Määrata tuleb alguskoordinaadid ja laius/kõrgus, ehk new Rectangle(algX, algY, laius, kõrgus).
 
-Vt. ka [Joonistamise põhitõed](/javafx-joonistamine).
+Vt. ka [Joonistamise põhitõed](/#Joonistamine).
 
 Loo uus algusega 20x20 ja suuruses 80x120
 
@@ -2470,7 +2470,7 @@ Sama asi eraldi käskudena
 
 Ring.
 
-Vt. ka [Joonistamise põhitõed](/javafx-joonistamine).
+Vt. ka [Joonistamise põhitõed](/#Joonistamine).
 
 Loo uus
 
@@ -2491,7 +2491,7 @@ Muuda asukohta keskpunkti järgi
 
 Ellipse on nagu ring, ainult kahe raadiusega - horisontaalne ja vertikaalne.
 
-Vt. ka [Joonistamise põhitõed](/javafx-joonistamine).
+Vt. ka [Joonistamise põhitõed](/#Joonistamine).
 
 Loo uus
 
@@ -2513,13 +2513,13 @@ Muuda asukohta keskpunkti järgi
 
 Polygon on vaba kujundi joonistaja. Muidu võid ka joonega oma kujundid teha, aga Polygoni saab seest ära värvida.
 
-Vt. ka [Joonistamise põhitõed](#javafx-joonistamine).
+Vt. ka [Joonistamise põhitõed](/#Joonistamine).
 
 Loo uus
 
     Polygon a = new Polygon();
 
-Määra ära otspunktide kordinaadid.
+Määra ära otspunktide koordinaadid.
 
     a.getPoints().addAll(new Double[]{
             0.0, 0.0,
@@ -2643,7 +2643,7 @@ Kui oma programmi käima paned ja ta punast teksti konsooli viskab, siis otsi se
 
 ClassNotFoundException
 
-Oled käivitanud vale klassi. Ava õige fail ja vajuta `ctrl + shift + f10`. Vt. ka [kiirklahve](/intellij-kiirklahvid)
+Oled käivitanud vale klassi. Ava õige fail ja vajuta `ctrl + shift + f10`. Vt. ka [kiirklahve](/#Kiirklahvid)
 
 Class xxxx not found in type declaration
 
@@ -2686,7 +2686,7 @@ Antud näide on veidi ekstreemne (esimene print on üleliigne) aga vahel tuleb v
 
 ### Debug
 
-Debug on lahe funktsioon, kus näed rida rea haaval kuidas programm jookseb. Vaata täpsemalt [Debuggimine](/intellij-Debug).
+Debug on lahe funktsioon, kus näed rida rea haaval kuidas programm jookseb. Vaata täpsemalt [Debuggimine](/#Debug).
 
 ### Googelda
 
@@ -2698,4 +2698,4 @@ Foorum on parem kui õppejõult küsimine, sest praktikas saad sealt omale vastu
 
 ### Küsi õppejõult
 
-Viimase variandina küsi õppejõu käes abi. See ei ole sellepärast, et õppejõud ei soovi sulle oma aega pühendada, vaid lihtsalt sellepärast, et vea otsimine on iga progeja igapäevane töö ja ka seda peab iseseisvalt teha oskama. Selge on ka see, et algajale on kõige vaimu tapvam olukord lihtsalt segaduses olemine, seega võta julgelt ühendust, selleks me siin oleme.
+Viimase variandina küsi õppejõu käest abi. See ei ole sellepärast, et õppejõud ei soovi sulle oma aega pühendada, vaid lihtsalt sellepärast, et vea otsimine on iga progeja igapäevane töö ja ka seda peab iseseisvalt teha oskama. Selge on ka see, et algajale on kõige vaimu tapvam olukord lihtsalt segaduses olemine, seega võta julgelt ühendust, selleks me siin oleme.
