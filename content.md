@@ -227,7 +227,7 @@ Ennekõike on Intellij lihtne tekstiredaktor. Tal on palju kiirteesid (allpool r
 
 ##### Esimene käivitus
 
-Esmane käivitus võib olla vähe keeruline - järgime [piltidega õpetust siin](https://www.jetbrains.com/idea/help/creating-and-running-your-first-java-application.html).
+Esmane käivitus võib olla vähe keeruline - järgime [piltidega õpetust siin](https://www.jetbrains.com/help/idea/2016.2/tutorial-creating-running-and-packaging-your-first-java-application.html).
 
 ##### Jooksuta programm
 
