@@ -7,9 +7,9 @@
 
 Tere,
 
-Kui soovid programmeerijaks õppida, oled õiges kohas. Käesolevad materjalid on loodud IT Kolledži tarbeks, aga siht on võimaldada igaühel programmeerimist õppida *põhjalikult*. Materjalid pole veel valmis, aga võid juba proovida kuidas hammas peale hakkab ja tagasiside kirjuta foorumisse.
+Kui soovid programmeerijaks õppida, oled õiges kohas. Käesolevad materjalid on loodud IT Kolledži tarbeks, aga siht on võimaldada igaühel programmeerimist õppida *põhjalikult*. Materjalid pole veel valmis, aga võid juba proovida, kuidas hammas peale hakkab ja tagasiside kirjuta foorumisse.
 
-Meie ühine vestlus platvorm küsimuste ja muu teemakohase loba jaoks on [kommuun.koodikool.ee](http://kommuun.koodikool.ee).
+Meie ühine vestlusplatvorm küsimuste ja muu teemakohase loba jaoks on [kommuun.koodikool.ee](http://kommuun.koodikool.ee).
 
 Krister
 
@@ -49,7 +49,7 @@ Projekt on kõige tähtsam asi selle aine juures. Projekt on see, millega peaksi
 
 ### Idee
 
-Et ikka põnev oleks saad päris oma programmi kirjutada. Ära idee leidmise pärast liialt vaeva näe. Kui endal pähe ei tule siis leia mõni olemasolev programm ja matki see järgi. Võib teha ka mängu.
+Et ikka põnev oleks, saad päris oma programmi kirjutada. Ära idee leidmise pärast liialt vaeva näe. Kui endal pähe ei tule, siis leia mõni olemasolev programm ja matki see järgi. Võib teha ka mängu.
 
 ### Eeldatav tulemus
 
@@ -63,7 +63,7 @@ Projekti mahtu on väga raske hinnata. Asi on selles, et kui algaja kirjutab 100
 
 ### Aga ma ei oska ju progeda!
 
-Kõik on hästi. Kui sa kujundad oma programmi paberil ära, mõtled läbi mis funktsionaalsus sinna tuleb on juba esimene samm tehtud. Nüüd. Kui sul on i200 videod vaadatud, äkki isegi codecademy.com mõni Pythoni kursus tehtud, siis peaksid oskama Javas kõige lihtsamaid manöövreid teha: arvutada, kasutajalt sisendit küsida, tulemus välja printida. Kas sinu (ükskõik kui keerulist) programmi annab konsoolis ära teha mingil elementaarsel tasemel? Ehk tee kõige lihtsam variant kohe ära. Kui midagi juurde õpid saad täiendada ja kindlasti ära karda nullist uuesti kirjutamist, see arendabki tegelikult kõige rohkem.
+Kõik on hästi. Kui sa kujundad oma programmi paberil ära, mõtled läbi, mis funktsionaalsus sinna tuleb, on juba esimene samm tehtud. Nüüd. Kui sul on i200 videod vaadatud, äkki isegi codecademy.com mõni Pythoni kursus tehtud, siis peaksid oskama Javas kõige lihtsamaid manöövreid teha: arvutada, kasutajalt sisendit küsida, tulemus välja printida. Kas sinu (ükskõik kui keerulist) programmi annab konsoolis ära teha mingil elementaarsel tasemel? Ehk tee kõige lihtsam variant kohe ära. Kui midagi juurde õpid, saad täiendada ja kindlasti ära karda nullist uuesti kirjutamist, see arendabki tegelikult kõige rohkem.
 
 ### Vastamine
 
