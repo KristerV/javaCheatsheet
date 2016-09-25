@@ -221,13 +221,14 @@ On soovitatav kasutada **ametlikku Oracle JDK** (üleval olev link) ja mitte Ope
 
 Intellij saad alla laadida ja installida [siit](https://www.jetbrains.com/idea/download/).
 
+
 ##### Kasutamine
 
 Ennekõike on Intellij lihtne tekstiredaktor. Tal on palju kiirteesid (allpool räägime veel) ja muid võimalusi. Räägime kõige tähtsamast.
 
 ##### Esimene käivitus
 
-Esmane käivitus võib olla vähe keeruline - järgime [piltidega õpetust siin](https://www.jetbrains.com/idea/help/creating-and-running-your-first-java-application.html).
+Esmane käivitus võib olla vähe keeruline - järgime [piltidega õpetust siin](https://www.jetbrains.com/help/idea/2016.2/tutorial-creating-running-and-packaging-your-first-java-application.html).
 
 ##### Jooksuta programm
 
