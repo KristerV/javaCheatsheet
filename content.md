@@ -84,6 +84,10 @@ Nonii. "Ükskõik kui keeruline või lihtne" on tore, aga mille eest reaalselt h
 
 *   **Kood on gitis**, õppejõud saab ligi.
 *   **Võõras kood on allikale viidatud**
+*   Programmi sisu
+    *   **Programm käivitub**
+    *   Kasutajaliidese olemasolu
+    *   Puugid ei takista protsessi
 *   Projekti kirjeldus failis README.md (.md on [markdown](http://eherrera.net/markdowntutorial))
     *   Nimi
     *   Projekti kirjeldus
@@ -95,7 +99,7 @@ Nonii. "Ükskõik kui keeruline või lihtne" on tore, aga mille eest reaalselt h
     *   selguse tagamiseks on koodi kommenteeritud
 *   Optimaalne ja taaskasutatav ülesehitus
     *   kasutab objekt-orienteeritust
-    *   kood on pikkuse poolest optimaalne
+    *   koodis ei ole ülearu kordusi
 *   Kood on kompaktne (lisapunktid, kui on näha erilist läbimõeldust)
     *   keerulised tsüklid
     *   rekursioon
