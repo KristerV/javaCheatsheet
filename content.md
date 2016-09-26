@@ -51,6 +51,10 @@ Projekt on kõige tähtsam asi selle aine juures. Projekt on see, millega peaksi
 
 Et ikka põnev oleks, saad päris oma programmi kirjutada. Ära idee leidmise pärast liialt vaeva näe. Kui endal pähe ei tule, siis leia mõni olemasolev programm ja matki see järgi. Võib teha ka mängu.
 
+### Näited
+
+Lae alla aasta [2015 tudengite mõned tööd](http://enos.itcollege.ee/~kviirsaa/projekti_naiteid_2015.zip). Käivita Linuxis või Macis käsuga `java -jar failinimi.jar`. Windowsis [ma ei tea](http://lmgtfy.com/?q=run+jar+windows) :) (jaga paremat linki kui leiad)
+
 ### Eeldatav tulemus
 
 #### Keerukus
