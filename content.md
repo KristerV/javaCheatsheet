@@ -53,7 +53,7 @@ Et ikka põnev oleks, saad päris oma programmi kirjutada. Ära idee leidmise p�
 
 ### Näited
 
-Lae alla aasta [2015 tudengite mõned tööd](http://enos.itcollege.ee/~kviirsaa/projekti_naiteid_2015.zip). Käivita Linuxis või Macis käsuga `java -jar failinimi.jar`. Windowsis [ma ei tea](http://lmgtfy.com/?q=run+jar+windows) :) (jaga paremat linki kui leiad)
+Lae alla aasta [2015 tudengite mõned tööd](http://enos.itcollege.ee/~kviirsaa/projekti_naiteid_2015.zip). Käivita Linuxis, Windowsis või Macis käsuga `java -jar failinimi.jar`.
 
 ### Eeldatav tulemus
 
