@@ -28,7 +28,7 @@ Krister
 27-28 jaanuar - Kordamine
 29 jaanuar - **Eksam**
 
-Umbes kuu aega pärast eksamit tuleb üks ja ainus kordussooritus.
+Kordussooritusi on kaks. Kolmandat kindlasti ei tule.
 
 ## Hindamine
 
