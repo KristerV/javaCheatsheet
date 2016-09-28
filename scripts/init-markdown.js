@@ -22,7 +22,7 @@ function insertMarkdownToDocument(content) {
 		if (document.location.hash.length)
 			window.scrollTo(0, $(document.location.hash).offset().top)
 		refreshTOC()
-	}, 0);
+	}, 300);
 
 }
 
