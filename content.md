@@ -378,7 +378,7 @@ Vaata üldist seisu
 
     git status
 
-Vaata mis koodi oled muutnud pärast viimast salvestatud seisu
+Vaata, mis koodi oled muutnud pärast viimast salvestatud seisu
 
     git diff
 
@@ -412,7 +412,7 @@ Kõiki faile ei ole meil vaja Gitti salvestada. Näiteks on Javas kompileeritud 
 
 .gitignore on fail, millega saad faile ja kaustasid Giti eest ära peita.
 
-Näiteks Java projekti puhul tahad salvestada src/ kausta, aga mitte out/ ega .idea/ kaustasid (.idea on Intellij konfiguratsioonid, millest sinu meeskonnakaaslastel on igaühel oma). Siis loo uus fail nimega .gitignore oma projekti algsess kausta järgneva sisuga:
+Näiteks Java projekti puhul tahad salvestada src/ kausta, aga mitte out/ ega .idea/ kaustasid (.idea on Intellij konfiguratsioonid, millest sinu meeskonnakaaslastel on igaühel oma). Siis loo uus fail nimega .gitignore oma projekti algsesse kausta järgneva sisuga:
 
     out/
     *.iml
@@ -426,7 +426,7 @@ Näitena võib tuua [javaHarjutused repositooriumi](https://github.com/KristerV/
 
 ![](images/muutujad/kast.svg)
 
-Muutuja on sisuliselt nagu kast, kuhu saad ühe asja sisse panna. Sa pead ütlema kuidas kasti nimetada ja mis tüüpi asju sa sinna sisse tahad panna.
+Muutuja on sisuliselt nagu kast, kuhu saad ühe asja sisse panna. Sa pead ütlema, kuidas kasti nimetada ja mis tüüpi asju sa sinna sisse tahad panna.
 
 Näiteks kui soovime lapse vanust salvestada, siis sobib selleks int (integer, ehk täisarv) tüüp ja "mikuVanus" nimetus, siis Javas kirjutame seda järgnevalt:
 
