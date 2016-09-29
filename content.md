@@ -30,6 +30,8 @@ Krister
 
 Kordussooritusi on kaks. Kolmandat kindlasti ei tule.
 
+Praktikum ei olegi tegelt üldse praktikum. See on hoopis konsultatsioon. Tule oma arvutiga või kasuta kooli oma, aga lõpuks teeme tööd su enda projekti kallal.
+
 ## Hindamine
 
 - 60 punkti tuleb projekti eest
@@ -50,6 +52,10 @@ Projekt on kõige tähtsam asi selle aine juures. Projekt on see, millega peaksi
 ### Idee
 
 Et ikka põnev oleks, saad päris oma programmi kirjutada. Ära idee leidmise pärast liialt vaeva näe. Kui endal pähe ei tule, siis leia mõni olemasolev programm ja matki see järgi. Võib teha ka mängu.
+
+### Idee kinnitamine
+
+Sellist ametlikku asja, nagu "kinnitamine", meil ei ole. Kui postitad foorumisse oma idee on see vaid tagasiside saamiseks. Sealjuures ei pea liialt vaevama end idee välja mõtlemisega. Kui kursuse keskel avastad, et teeks hoopis midagi muud, siis palun väga - tee. Siiani kulutatud aeg kindlasti ei ole maha visatud.
 
 ### Näited
 
