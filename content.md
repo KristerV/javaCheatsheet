@@ -2573,7 +2573,7 @@ Seda saab parandada:
 2. Win7/8/10 korral Start nupp - parem hiire klikk *My Computer* (Või *This PC*)
 3. Properties - Advanced System Settings
 4. Advanced tabs - Environment Variables
-5. Otsi üles *PATH* ja Win7 puhul lisage ;C:\WINDOWS\system32\dns\bin; PATH muutuja lõppu. Win10 puhul *New* ning kleebi Java SDK asukoht.
+5. Otsi üles *PATH* ja Win7 puhul lisage *;C:\Program Files\Java\jdk1.8.0_101\bin*; PATH muutuja lõppu. Win10 puhul *New* ning kleebi Java SDK asukoht.
 6. Sulge OK abil ning katseta terminalis *javac -version*.
 
 ## Programm ei käivitu
