@@ -209,7 +209,7 @@ On mõned põhitõed, mida enne päris maailmas tegutsemist tavaliselt ei õpi. 
 4.  Google on progeja parim sõber. Internet on suur teadmiste pank ja pole kedagi, kes kõike peast teaks. Kuid tark ei kopeeri pimesi koodi vaid õpib seda mõistma ja kasutab vaid vajalike osi.
 5.  Iga programm võtab kordades rohkem aega kui oskasid arvata. [Optimism on elukutsega kaasnev oht](http://blog.codinghorror.com/defeating-optimism/).
 6.  Efektiivse programmi loomine algab korralikust eeltööst. Pea ees sisse hüpates saad katsetada ja mängida, aga mitte midagi tõsist teha. Läbi on vaja mõelda nii otstarve, funktsionaalsus, kujundus kui ka programmi enda arhitektuur.
-7.  Juunior / arendaja / Senior on kolm tiitlit, mida võid omistada. Juunior on muidugi õpilane. "Arendaja" oled siis, kui saad iseseisvalt hakkama ja seneioril on kuskil 7 aastat kogemust ja oskab ka kõige keerulisemaid probleeme lahendada. Kuskil seda kirjas muidugi ei ole ja antud kirjeldus on vaid mulje.
+7.  Juunior / arendaja / Senior on kolm tiitlit, mida võid omistada. Juunior on muidugi õpilane. "Arendaja" oled siis, kui saad iseseisvalt hakkama ja senioril on kuskil 7 aastat kogemust ja oskab ka kõige keerulisemaid probleeme lahendada. Kuskil seda kirjas muidugi ei ole ja antud kirjeldus on vaid mulje.
 8.  Arvuti ei tee vigu. Inimesed teevad vigu. Inimene oled sina, olen mina ja on kõik need, kes on Java ja kõik muu tarkvara kirjutanud. Aga enne kui teisi süüdistad, tee 100% kindlaks, et viga pole sinu enda koodis.
 9.  Tarkvara arendaja on küll ainus meeskonnaliige, kes on hädavajalik, et tarkvara toode valmis saada, aga ta kindlasti pole ainuke oluline. Et tootest asja saaks on vaja disaini, äri, arhitektuuri, kasutajatoe ja muid inimesi.
 
@@ -245,7 +245,7 @@ Programmi käivitamiseks on lihtne otsetee `ctrl + shift + f10`. Kui oled juba �
 
 ##### Debug
 
-Kui soovid näha kuidas täpselt su programm jookseb - rida rea haaval - siis Debug funktsioon on selle jaoks. Hoiatan, et erinevalt programmi tavapärane käivitamine võib see väga kaua aega võtta. Uuri lähemalt [Debug videos](/Videod).
+Kui soovid näha kuidas täpselt su programm jookseb - rida rea haaval - siis Debug funktsioon on selle jaoks. Hoiatan, et erinevalt programmi tavapärasest käivitamisest võib see väga kaua aega võtta. Uuri lähemalt [Debug videos](/Videod).
 
 ##### Failide vaade
 
