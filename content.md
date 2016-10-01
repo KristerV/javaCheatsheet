@@ -2561,6 +2561,21 @@ Kui soovid aga ise värvi koostada RGB formaadis, kasuta selleks `Color.rgb()` m
 
 Kui oled kinni jäänud, võta siit järjest nõuanded läbi.
 
+## Windows ei leia ülesse *javac* ning programm ei kompileeru käsurealt.
+
+Tõrge näeb välja selline:
+> 'javac' is not recognized as an internal or external command,
+> operable program or batch file.
+
+Windows süsteemidel otsitakse käsurealt programme käivitades programmi konkreetsest kaustast kus sa hetkel viibid või kaustadest, mis on lisatud *PATH* muutujasse. *javac* ei lisandu automaatselt kahjuks sinu *PATH* reale.
+Seda saab parandada:
+1. Otsi ülesse kaust, kuhu installisid Java SDK. Leia üles */bin* kaust. Näiteks *C:\Program Files\Java\jdk1.8.0_101\bin*
+2. Win7/8/10 korral Start nupp - parem hiire klikk *My Computer* (Või *This PC*)
+3. Properties - Advanced System Settings
+4. Advanced tabs - Environment Variables
+5. Otsi üles *PATH* ja Win7 puhul lisage *;C:\Program Files\Java\jdk1.8.0_101\bin*; PATH muutuja lõppu. Win10 puhul *New* ning kleebi Java SDK asukoht.
+6. Sulge OK abil ning katseta terminalis *javac -version*.
+
 ## Programm ei käivitu
 
 ### Undo
