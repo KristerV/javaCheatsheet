@@ -1878,7 +1878,7 @@ Muuda tausta värvi hex koodiga.
 
 Layout on lavakujunduses asjade paigutus. Võimalusi on palju. Et kujundused igal ekraanil töötaksid tuleb nad ehitada üles paindlikult, kombineerides erinevaid paneele.
 
-Layout ise ei ole objekt, mida saab luua, Layout kujuneb läbi paneelida.
+Layout ise ei ole objekt, mida saab luua, Layout kujuneb läbi paneelide.
 
 Täpsemalt saab infot [Oracle dokumentatsioonist](https://docs.oracle.com/javafx/2/layout/builtin_layouts.htm#CHDGHCDG)
 
