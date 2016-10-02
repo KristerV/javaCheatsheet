@@ -73,7 +73,7 @@ Projekti mahtu on väga raske hinnata. Asi on selles, et kui algaja kirjutab 100
 
 ### Aga ma ei oska ju progeda!
 
-Kõik on hästi. Kui sa kujundad oma programmi paberil ära, mõtled läbi, mis funktsionaalsus sinna tuleb, on juba esimene samm tehtud. Nüüd. Kui sul on i200 videod vaadatud, äkki isegi codecademy.com mõni Pythoni kursus tehtud, siis peaksid oskama Javas kõige lihtsamaid manöövreid teha: arvutada, kasutajalt sisendit küsida, tulemus välja printida. Kas sinu (ükskõik kui keerulist) programmi annab konsoolis ära teha mingil elementaarsel tasemel? Ehk tee kõige lihtsam variant kohe ära. Kui midagi juurde õpid, saad täiendada ja kindlasti ära karda nullist uuesti kirjutamist, see arendabki tegelikult kõige rohkem.
+Kõik on hästi. Kui sa kujundad oma programmi paberil ära, mõtled läbi, mis funktsionaalsus sinna tuleb, on juba esimene samm tehtud. Nüüd. Kui sul on [i200 videod](https://www.youtube.com/playlist?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn) vaadatud, äkki isegi codecademy.com mõni Pythoni kursus tehtud, siis peaksid oskama Javas kõige lihtsamaid manöövreid teha: arvutada, kasutajalt sisendit küsida, tulemus välja printida. Kas sinu (ükskõik kui keerulist) programmi annab konsoolis ära teha mingil elementaarsel tasemel? Ehk tee kõige lihtsam variant kohe ära. Kui midagi juurde õpid, saad täiendada ja kindlasti ära karda nullist uuesti kirjutamist, see arendabki tegelikult kõige rohkem.
 
 ### Vastamine
 
@@ -162,6 +162,7 @@ Paljud materjalid on hoopis Pythoni kesksed. See on väga hea. Python on hea alg
 
 ### Videod
 
+*   [i200 õppevideod](https://www.youtube.com/playlist?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
 *   [Bucky Roberts](https://www.youtube.com/watch?v=Hl-zzrqQoSE&list=PLFE2CE09D83EE3E28) Üks tudengi lemmik
 *   [Udemy](https://www.udemy.com/java-tutorial/) väga hea kursus
 *   [Stanford](http://web.stanford.edu/class/cs106a/)i ülipopulaarne kursus
@@ -186,6 +187,7 @@ Paljud materjalid on hoopis Pythoni kesksed. See on väga hea. Python on hea alg
 *   [JavaNotes](http://math.hws.edu/javanotes/)
 *   [MetsHein (eesti keeles)](http://metshein.com/)
 *   [Tartu Ülikooli "Programmeerimisest maalähedaselt"](https://courses.cs.ut.ee/2015/progmaa/spring)
+*   [Tartu Ülikooli "Programmeerimise alused"](https://courses.cs.ut.ee/2016/eprogalused/spring)
 *   [The 5 basic concepts of any programming language](https://howtoprogramwithjava.com/programming-101-the-5-basic-concepts-of-any-programming-language/)
 *   [Learn without stress](http://www.makeuseof.com/tag/learn-programming-without-stress/)
 *   [TutorialsPoint](http://www.tutorialspoint.com/java/)
