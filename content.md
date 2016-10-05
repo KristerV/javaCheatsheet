@@ -42,7 +42,7 @@ Praktikum ei olegi tegelt üldse praktikum. See on hoopis konsultatsioon. Tule o
     - Lävend 50%
     - Kui < 50%, siis on kogu aine 0
 - 10 lisapunkti
-    - 1p kommuunis küsimuse küsimise eest
+    - 1p kommuunis topicu avamise eest
     - 1-10p käesoleva lehe täiendamine
 
 ## Projekt
