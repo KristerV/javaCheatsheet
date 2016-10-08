@@ -4,27 +4,27 @@
 - [x] Foorum
 - [x] Peamenüü ümber teha
 - [x] Aineprogramm üldiselt
-- [ ] krister.ee uuendada
-- [ ] Projekti näited välja kookida
-- [ ] Esimesed slaidid ümber teha (näidis projektid)
-- [ ] Esimese nädala töö
-- [ ] Video lindistamise ja töötluse keskus
+- [x] krister.ee uuendada
+- [x] Projekti näited välja kookida
+- [x] Esimesed slaidid ümber teha (näidis projektid)
+- [x] Esimese nädala töö
+- [x] Video lindistamise ja töötluse keskus
 
 # Nice to have
 
-- [ ] Fix i200 internal links with custom ID's
-- [ ] Eksami nõuded üle vaadata
+- [x] Fix i200 internal links with custom ID's
+- [x] Eksami nõuded üle vaadata
 - [ ] Õpetöö põhimõtted i200 üles.
-- [ ] Youtube pildiga asendada
+- [x] Youtube pildiga asendada
 - [ ] target=blank
 - [ ] Parem koodi koloriit
-- [ ] How to contribute (edit, commit, PR)
+- [x] How to contribute (edit, commit, PR)
 - [ ] https://thenewboston.com/
 - [ ] Hädaabi üle teha, järjestus vale
 
 # Vajab otsusi
 
-- [ ] Kas hakkame punktitama: foorum, kodused ül, projekti staadiumid, doc commit
+- [x] Kas hakkame punktitama: foorum, kodused ül, projekti staadiumid, doc commit
 
 # 2015 kokkvõte
 
