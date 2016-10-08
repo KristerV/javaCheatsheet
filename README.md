@@ -2,7 +2,7 @@
 
 ### Materjalide täiendamine
 
-[![tutorial](http://img.youtube.com/vi/2mJ6tTt-JzA/0.jpg)](https://youtu.be/2mJ6tTt-JzA)
+[![tutorial](http://img.youtube.com/vi/2cLhpHSln5A/0.jpg)](https://youtu.be/2cLhpHSln5A)
 
 Tulemus asub siin: [i200.itcollege.ee](http://i200.itcollege.ee)
 
