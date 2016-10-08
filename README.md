@@ -1,10 +1,8 @@
 # IT Kolledži I200 aine materjalid
 
-### Materjalide täiendamine
+Content.md fail hoiab enda kõike seda tarkust, mis avaldub [i200.itcollege.ee](http://i200.itcollege.ee) lehel.
 
-[![tutorial](http://img.youtube.com/vi/2cLhpHSln5A/0.jpg)](https://youtu.be/2cLhpHSln5A)
-
-Tulemus asub siin: [i200.itcollege.ee](http://i200.itcollege.ee)
+### [Materjalide täiendamise õpetusvideo](https://youtu.be/2cLhpHSln5A)
 
 ### Litsents
 
