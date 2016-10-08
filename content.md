@@ -1860,7 +1860,7 @@ Scene on stseen, ehk nagu tühi konteiner, kus saab action toimuma hakata. Selli
 
 Loo uus stseen
 
-    stack = new StackPane();
+    StackPane stack = new StackPane();
     Scene scene = new Scene(stack);
 
 Stseeni ilma layoutita teha ei saa, sellepärast on StackPane Scene() sulgude vahel.
