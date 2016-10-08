@@ -219,6 +219,9 @@ On mõned põhitõed, mida enne päris maailmas tegutsemist tavaliselt ei õpi. 
 
 Aine peatükid avalduvad http://kommuun.koodikool.ee foorumis.
 
+- [Weekly 1](http://kommuun.koodikool.ee/t/week-1-introduction)
+- [Weekly 2](http://kommuun.koodikool.ee/t/weekly-2)
+
 # Tööriistad
 
 ## Arenduskeskkond
