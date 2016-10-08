@@ -115,7 +115,7 @@ Nonii. "Ükskõik kui keeruline või lihtne" on tore, aga mille eest reaalselt h
     *   rekursioon
     *   eriti hea klasside/meetodite taaskasutatavus
 * Lisapunkte
-    *   Tudeng on läinud aine raamistikust edasi, ehk oskab rohkem kui on aines õpetatud.
+    *   Tudeng on läinud aine raamistikust edasi ehk oskab rohkem kui on aines õpetatud.
     *   Tudeng on reaalselt gitti kasutanud (committide periood on loogiline)
     *   Kasutatud on lisa raamistikke, näiteks SQL andmebaas.
     *   Kui tudeng tööga päris valmis ei saanud, kas ta vähemalt teab mida järgmiseks peaks tegema?
@@ -141,8 +141,8 @@ Nonii. "Ükskõik kui keeruline või lihtne" on tore, aga mille eest reaalselt h
 - Üleüldised sohi tegemise reeglid kehtivad (nt. naabrilt maha kirjutamine).
 - Kõik ülesanded peavad olema lahendatud kasutades päris programmeerimise võtteid ja mitte lihtsalt näilisi lahendusi kirjutades.
 - Aega on 3 tundi.
-- Kui oled valmis lae lahendused üles samasse reposse kust nad said. Kui laed GitHubi või mujale avalikku kohta on tegu plagiaadi kaasa aitamises. Lahendusi võid jagada märtsis, kui kõik eksamid on ära olnud.
-- Kui koodi pushimine gitiga ei õnnestu siis saada failid kokku pakitult (zip/rar/tar) mulle meilile: krister.viirsaar@itcollege.ee. Kaasneb 5p penalt. Copy-paste koodi ma vastu ei võta.
+- Kui oled valmis, lae lahendused üles samasse reposse, kust nad said. Kui laed GitHubi või mujale avalikku kohta on tegu plagiaadi kaasa aitamises. Lahendusi võid jagada märtsis, kui kõik eksamid on ära olnud.
+- Kui koodi pushimine gitiga ei õnnestu, siis saada failid kokku pakitult (zip/rar/tar) mulle meilile: krister.viirsaar@itcollege.ee. Kaasneb 5p penalt. Copy-paste koodi ma vastu ei võta.
 - Õppejõud ei kontrolli, kas su töö läks gitti üles. Seda saad ise teha.
 - Küsimusi võib küsida, aga tõenäoliselt oled ise midagi valesti teinud :)
 
@@ -150,9 +150,9 @@ Nonii. "Ükskõik kui keeruline või lihtne" on tore, aga mille eest reaalselt h
 
 - Tule klassi palju varem ja kinnita, et Intellij on seadistatud.
 - Kui ülesanne on üle jõu siis lihtsusta enda jaoks, aga ära jäta programmi katki.
-- Ära copy-paste! Ülesanded on piisavalt lihtsad, et ajavõitu ei ole. Aga kui sa ei tea täpselt mis teed siis nüüd kaotad aega.
+- Ära copy-paste! Ülesanded on piisavalt lihtsad, et ajavõitu ei ole. Aga kui sa ei tea täpselt, mis teed, siis nüüd kaotad aega.
 - Ära kiirusta, mõtle läbi. Alati on lihtsam ja kergem lahendus olemas.
-- Kui googeldad, siis ära otsi lahendusi ülesandele vaid vastuseid oma küsimustele!
+- Kui googeldad, siis ära otsi lahendusi ülesandele, vaid vastuseid oma küsimustele!
 
 ## Väliseid ressursse
 
@@ -205,13 +205,13 @@ Paljud materjalid on hoopis Pythoni kesksed. See on väga hea. Python on hea alg
 
 On mõned põhitõed, mida enne päris maailmas tegutsemist tavaliselt ei õpi. Siin on kiire ülevaade.
 
-1.  Programmeerimine on katse-eksitus meetodi maailm, ehk seda teevad nii algajad kui ka profid. Seega proovi ja katseta. Tee vigu, arvuti sinust ei tüdine. Kui lõpuks midagi tööle saad on võit tööd väärt.
+1.  Programmeerimine on katse-eksitus meetodi maailm ehk seda teevad nii algajad kui ka profid. Seega proovi ja katseta. Tee vigu, arvuti sinust ei tüdine. Kui lõpuks midagi tööle saad, on võit tööd väärt.
 2.  Ära karda programmi uuesti kirjutamist. Iga ümberkirjutamisega tuleb sul parem arusaam, kuidas asi tegelikult peaks olema. Alguses proovi lihtsalt midagi tööle saada.
 3.  Kolmandal ümberkirjutamisel on sul juba päris hea programm.
-4.  Google on progeja parim sõber. Internet on suur teadmiste pank ja pole kedagi, kes kõike peast teaks. Kuid tark ei kopeeri pimesi koodi vaid õpib seda mõistma ja kasutab vaid vajalike osi.
-5.  Iga programm võtab kordades rohkem aega kui oskasid arvata. [Optimism on elukutsega kaasnev oht](http://blog.codinghorror.com/defeating-optimism/).
+4.  Google on progeja parim sõber. Internet on suur teadmiste pank ja pole kedagi, kes kõike peast teaks. Kuid tark ei kopeeri pimesi koodi, vaid õpib seda mõistma ja kasutab vaid vajalike osi.
+5.  Iga programm võtab kordades rohkem aega, kui oskasid arvata. [Optimism on elukutsega kaasnev oht](http://blog.codinghorror.com/defeating-optimism/).
 6.  Efektiivse programmi loomine algab korralikust eeltööst. Pea ees sisse hüpates saad katsetada ja mängida, aga mitte midagi tõsist teha. Läbi on vaja mõelda nii otstarve, funktsionaalsus, kujundus kui ka programmi enda arhitektuur.
-7.  Juunior / arendaja / Senior on kolm tiitlit, mida võid omistada. Juunior on muidugi õpilane. "Arendaja" oled siis, kui saad iseseisvalt hakkama ja senioril on kuskil 7 aastat kogemust ja oskab ka kõige keerulisemaid probleeme lahendada. Kuskil seda kirjas muidugi ei ole ja antud kirjeldus on vaid mulje.
+7.  Juunior / arendaja / senior on kolm tiitlit, mida võid omistada. Juunior on muidugi õpilane. "Arendaja" oled siis, kui saad iseseisvalt hakkama ja senioril on kuskil 7 aastat kogemust ja oskab ka kõige keerulisemaid probleeme lahendada. Kuskil seda kirjas muidugi ei ole ja antud kirjeldus on vaid mulje.
 8.  Arvuti ei tee vigu. Inimesed teevad vigu. Inimene oled sina, olen mina ja on kõik need, kes on Java ja kõik muu tarkvara kirjutanud. Aga enne kui teisi süüdistad, tee 100% kindlaks, et viga pole sinu enda koodis.
 9.  Tarkvara arendaja on küll ainus meeskonnaliige, kes on hädavajalik, et tarkvara toode valmis saada, aga ta kindlasti pole ainuke oluline. Et tootest asja saaks on vaja disaini, äri, arhitektuuri, kasutajatoe ja muid inimesi.
 
@@ -250,7 +250,7 @@ Programmi käivitamiseks on lihtne otsetee `ctrl + shift + f10`. Kui oled juba �
 
 ##### Debug
 
-Kui soovid näha kuidas täpselt su programm jookseb - rida rea haaval - siis Debug funktsioon on selle jaoks. Hoiatan, et erinevalt programmi tavapärasest käivitamisest võib see väga kaua aega võtta. Uuri lähemalt [Debug videos](/Videod).
+Kui soovid näha, kuidas täpselt su programm jookseb - rida rea haaval - siis Debug funktsioon on selle jaoks. Hoiatan, et erinevalt programmi tavapärasest käivitamisest võib see väga kaua aega võtta. Uuri lähemalt [Debug videos](/Videod).
 
 ##### Failide vaade
 
@@ -300,7 +300,7 @@ Mine pärinevuse juurde.
 
 `ctrl + space`
 
-Autocomplete, ehk soovita midagi mis siia võiks sobida.
+Autocomplete ehk soovita midagi, mis siia võiks sobida.
 
 `ctrl + w`
 
@@ -439,11 +439,11 @@ Näitena võib tuua [javaHarjutused repositooriumi](https://github.com/KristerV/
 
 Muutuja on sisuliselt nagu kast, kuhu saad ühe asja sisse panna. Sa pead ütlema, kuidas kasti nimetada ja mis tüüpi asju sa sinna sisse tahad panna.
 
-Näiteks kui soovime lapse vanust salvestada, siis sobib selleks int (integer, ehk täisarv) tüüp ja "mikuVanus" nimetus, siis Javas kirjutame seda järgnevalt:
+Näiteks kui soovime lapse vanust salvestada, siis sobib selleks int (integer ehk täisarv) tüüp ja "mikuVanus" nimetus, siis Javas kirjutame seda järgnevalt:
 
     int vanus = 5;
 
-Kui sooviksin selle lapse nime salvestada, kasutaksin tüüpi String, ehk sõne:
+Kui sooviksin selle lapse nime salvestada, kasutaksin tüüpi String ehk sõne:
 
     String nimi = "Mikk";
 
@@ -554,7 +554,7 @@ Muuda tüüpi
 
     int c = (int) a;
 
-typecast `(int)` ei ümarda arve vaid raiub julmalt koma maha. `double 8.76` on `int 8`. Ümardamiseks kasuta `Math.round()`.
+typecast `(int)` ei ümarda arve, vaid raiub julmalt koma maha. `double 8.76` on `int 8`. Ümardamiseks kasuta `Math.round()`.
 
 #### BigDecimal
 
@@ -562,7 +562,7 @@ kõik arvud (arvu suurust limiteerib vaid arvuti mälu)
 
 BigDecimal on vajalik, et reaalarvudega täpseid arvutusi teha.
 
-NB! Et arvutused oleksid täpsed, peavad arvud olema jutumärkides, ehk sõne kujul.
+NB! Et arvutused oleksid täpsed, peavad arvud olema jutumärkides ehk sõne kujul.
 
 **Kasutamine**
 
@@ -582,7 +582,7 @@ Matemaatika
 
 a.divide() annab errori, kui ei saa täpselt arvutada. Tuleb kasutada formaati
 
-`a.divide(b, 3, BigDecimal.ROUND_HALF_UP)`, ehk
+`a.divide(b, 3, BigDecimal.ROUND_HALF_UP)` ehk
 
 `a.divide(jagaja, komakohti, ümardamise valem)`.
 
@@ -622,7 +622,7 @@ Võrdlemine
 
 #### String
 
-Sõne, ehk jutumärkide vahele saab panna kõiki sümboleid
+Sõne ehk jutumärkide vahele saab panna kõiki sümboleid
 
 Kindlasti kasuta topelt jutumärke!
 
@@ -692,7 +692,7 @@ Mis täht asub indeksil 0?
 
 #### boolean
 
-tõene või väär, ehk `true` või `false`.
+tõene või väär ehk `true` või `false`.
 
 **Kasutamine**
 
@@ -707,9 +707,9 @@ Võrdlemine
     true == true && false == false;
     true == false || false == false;
 
-`&&` on loogiline "ja", ehk mõlemad tingimused peavad olema tõesed.
+`&&` on loogiline "ja" ehk mõlemad tingimused peavad olema tõesed.
 
-`||` on nagu "või", ehk üks tingimustest peab olema tõene.
+`||` on nagu "või" ehk üks tingimustest peab olema tõene.
 
 `||` ei ole LL, ega ii. `||` on "pipe" ehk `AltGr + <`;
 
@@ -750,7 +750,7 @@ Kui andmete kogus suureneb oleks mõistlik saja muutuja asemel kasutada ühte ni
 
     int[] võistleja1 = {76, 56, 75, 45, 56, 76, 65, 67, 45, 54};
 
-Kujuta ette, kui võistlejaid on samuti kümme ja igaühel on 10 tulemust. Siis jällegi ei ole meil tarvis kümmet muutujat vaid ühte head HashMapi, mille sees on omakorda ArrayList:
+Kujuta ette, kui võistlejaid on samuti kümme ja igaühel on 10 tulemust. Siis jällegi ei ole meil tarvis kümmet muutujat, vaid ühte head HashMapi, mille sees on omakorda ArrayList:
 
     HashMap tulemused = new HashMap();                  // Loo HashMap
     ArrayList voistleja = new ArrayList();              // Loo ArrayList
@@ -938,7 +938,7 @@ Hoiab <võti, väärtus> andmeid.
 
 - keeruline kasutada
 
-Siin ei ole indekseid, ehk ei ole ka võtmete järjekorda võimalik määrata.
+Siin ei ole indekseid ehk ei ole ka võtmete järjekorda võimalik määrata.
 
 **Lihtsam näide <String, Integer> andmestruktuurist.**
 
@@ -1048,7 +1048,7 @@ Näidis kood koos seletustega on siin: [Andmebaasi näidisprogramm](https://gith
 
 ### Primitiivid ja Objektid
 
-Kui võtame suvalise hunniku Java andmetüüpe [int, double, String, ArrayList], siis näeme, et osad on suure algustähtedega, osad on väiksega. See ei ole programmeerija suva järgi vaid tuleneb selle tüübi võimalustest. Näiteks int tüüpi muutuja on lihtsalt täisarv ja temaga ei saagi peale arvutamise midagi teha. String on aga sõne ja temaga saab igast pulli teha:
+Kui võtame suvalise hunniku Java andmetüüpe [int, double, String, ArrayList], siis näeme, et osad on suure algustähtedega, osad on väiksega. See ei ole programmeerija suva järgi, vaid tuleneb selle tüübi võimalustest. Näiteks int tüüpi muutuja on lihtsalt täisarv ja temaga ei saagi peale arvutamise midagi teha. String on aga sõne ja temaga saab igast pulli teha:
 
     String nimi = "Krister";          // Teen uue muutuja
     nimi = nimi.replace('r', 'l');    // muudan kõik 'r' tähed 'l' tähtedeks
@@ -1058,7 +1058,7 @@ Kui võtame suvalise hunniku Java andmetüüpe [int, double, String, ArrayList],
 
 ## Juhtimine
 
-Juhtimisstruktuurid on programmeerija põhilised tööriistad, nagu ehitajal on haamer ja kruvikeeraja. Siin käsitleme kahte liiki: "kui" ja "kuni", ehk "kui" tingimus on täidetud käitu sedasi ja "kuni" tingimus on täidetud käitu sedasi. Muud neil vahet polegi, kui ühed juhivad programmi kulgemist vaid ühe korra ja teised panevad ühe koodi jupi tsükliliselt kordama.
+Juhtimisstruktuurid on programmeerija põhilised tööriistad, nagu ehitajal on haamer ja kruvikeeraja. Siin käsitleme kahte liiki: "kui" ja "kuni" ehk "kui" tingimus on täidetud käitu sedasi ja "kuni" tingimus on täidetud käitu sedasi. Muud neil vahet polegi, kui ühed juhivad programmi kulgemist vaid ühe korra ja teised panevad ühe koodi jupi tsükliliselt kordama.
 
 "Kui" tüüpi **valikud** on `if`, `switch` ja `try-catch`. "Kuni" tüüpi **tsüklid** on `while`, `for`, `for each` ja `do..while`.
 
@@ -1099,7 +1099,7 @@ Lahendus koodis
 
 Point
 
-Teha paljude variantidega, aga lihtsama tingimusega (ainult ==), valikuid.
+Teha paljude variantidega aga lihtsama tingimusega (ainult ==) valikuid.
 
 Süntaks
 
@@ -1158,7 +1158,7 @@ Lahendus koodis
 
 ### Tsüklid
 
-Kui programmil on vaja nüüd mitte lihtsalt hargneda (otsus langetada) vaid ühte koodijuppi käiata kümneid või isegi tuhandeid kordi, siis on tsüklid selle jaoks. While tsükkel on selles mõttes universaalne, et sellega saab kõike teha, mida teistegagi. Teiste tsüklite mõte on lihtsustada kindlaid igapäevaseid toiminguid. Näiteks kui sul on vaja just numbritega mängida, siis saad for tsükliga kiiremini asja tehtud. Kui soovid massiivi väärtustega tegeleda, on 'for each' ideaalne.
+Kui programmil on vaja nüüd mitte lihtsalt hargneda (otsus langetada), vaid ühte koodijuppi käiata kümneid või isegi tuhandeid kordi, siis on tsüklid selle jaoks. While tsükkel on selles mõttes universaalne, et sellega saab kõike teha, mida teistegagi. Teiste tsüklite mõte on lihtsustada kindlaid igapäevaseid toiminguid. Näiteks kui sul on vaja just numbritega mängida, siis saad for tsükliga kiiremini asja tehtud. Kui soovid massiivi väärtustega tegeleda, on 'for each' ideaalne.
 
 #### while
 
@@ -1333,7 +1333,7 @@ tulemus:
 
 %s
 
-String, ehk sõne
+String ehk sõne
 
     String nimi = "Peeter";
     System.out.printf("Tere, %s, võta istet.", nimi)
@@ -1341,7 +1341,7 @@ String, ehk sõne
 
 %d
 
-int, ehk täisarv
+int ehk täisarv
 
     int yhendus = 4;
     System.out.printf("Mul on %dG ühendus!", yhendus)
@@ -1349,7 +1349,7 @@ int, ehk täisarv
 
 %f
 
-float või double, ehk reaalarv
+float või double ehk reaalarv
 
     double pappi = 64.55;
     System.out.printf("Saan %.2f euroga Berliini.", pappi);
@@ -1591,7 +1591,7 @@ See fail sisaldab endast kolme andmekogu: 0.5, 3 ja 5 kg saadetise andmed - need
         }
     }
 
-    // Need kaks klassi määravad ära mis muutujaid salvestada.
+    // Need kaks klassi määravad ära, mis muutujaid salvestada.
     // Selle struktuur vastab 1:1 JSONi sisuga.
     // ehk KaaluObjekt[] on KaaluObjekt'ide massiiv.
     // KaaluObjektil on muutujad kg, estonia, latvia.
@@ -1766,7 +1766,7 @@ JavaFX on paindlik kasutajaliidese ja graafika kuvaja, samas on ta _mõistlikult
 
 Kindlasti tundub see teema esialgu keeruline, aga kui töötad ühe korra asja läbi leiad, et tegelikult on kõik parajalt lihtne ja loogiline.
 
-[Inglise keelne video õpetus.](https://www.youtube.com/watch?v=FLkOX4Eez6o)
+[Ingliskeelne video õpetus.](https://www.youtube.com/watch?v=FLkOX4Eez6o)
 
 Lihtne näide ühest JavaFX programmist on järgmine.
 
@@ -1798,7 +1798,7 @@ See programm joonistab lihtsalt ühe ringi.
 
 #### Application
 
-Esimene asi mis tuleb mõista on, et JavaFX ei ole su programmis enne, kui sa oma põhilist klassi laiendanud (`extends`) klassiga `Application`.
+Esimene asi, mis tuleb mõista on, et JavaFX ei ole su programmis enne, kui sa oma põhilist klassi laiendanud (`extends`) klassiga `Application`.
 
     public class MinuKlass extends Application {
     }
@@ -1813,9 +1813,9 @@ Teine tähtis asi on see, et Application klassi laiendades ei alusta sa oma prog
 
 `@Override` on märge, mis ütleb, et käesolev meetod on super klassist (Application) üle kirjutatud. Nimelt Application klassis on meetod start() juba olemas, aga meie kirjutame selle tegevused enda vajaduse järgi üle.
 
-**primaryStage** on meie esimene Stage, ehk lava, ehk aken, ehk Window. Võid, kuid ei pea seda kasutama.
+**primaryStage** on meie esimene Stage ehk lava ehk aken ehk Window. Võid, kuid ei pea seda kasutama.
 
-Kui JavaFX ülesehitust teatriga võrrelda, siis **Stage** on lava ja **Scene** on stseen. Lavakujunduseks on **Layout**, ehk kuidas esemed paigutuvad stseenis, ja esemed, ehk **Node**, ise.
+Kui JavaFX ülesehitust teatriga võrrelda, siis **Stage** on lava ja **Scene** on stseen. Lavakujunduseks on **Layout** ehk kuidas esemed paigutuvad stseenis, ja esemed ehk **Node** ise.
 
 #### Stage
 
@@ -1859,7 +1859,7 @@ Peida aken
 
 #### Scene
 
-Scene on stseen, ehk nagu tühi konteiner, kus saab action toimuma hakata. Selline vahelüli on vajalik selleks, et saaks ühe käsuga kogu akna sisu ära vahetada. Näiteks kui avaneb programmi aken login vaatesse, siis edukalt sisse logides vahetad login vaate välja programmi vastu.
+Scene on stseen ehk nagu tühi konteiner, kus saab action toimuma hakata. Selline vahelüli on vajalik selleks, et saaks ühe käsuga kogu akna sisu ära vahetada. Näiteks kui avaneb programmi aken login vaatesse, siis edukalt sisse logides vahetad login vaate välja programmi vastu.
 
 Loo uus stseen
 
@@ -2098,7 +2098,7 @@ Kindlasti impordi ainult javafx pakettidest!!
 
 **Järgnevad näited kehtivad kõikidele kasutajaliidese tüüpi elementidele!**
 
-Proovime läbi kuidas ühte lihtsat kasutajaliidese tüüp elementi kasutada.
+Proovime läbi, kuidas ühte lihtsat kasutajaliidese tüüp elementi kasutada.
 
 Loo uus
 
@@ -2133,11 +2133,11 @@ Kõikidest võimalustest räägib täpsemalt [Oracle UI Controls](https://docs.o
 
 ![](images/javafx/UI/Label.png)
 
-Label, ehk silt, on lihtne tekst, mida tüüpiliselt lisatakse mingi interaktiivse elemendi selgitamiseks.
+Label ehk silt on lihtne tekst, mida tüüpiliselt lisatakse mingi interaktiivse elemendi selgitamiseks.
 
 Vt. ka [Kasutajaliidese üldine kasutamine](/#Kasutajaliides).
 
-Määra tekst, ehk Label sisu.
+Määra tekst ehk Label sisu.
 
     a.setText("Keegi on su selja taga!");
 
@@ -2178,7 +2178,7 @@ Kui soovid `enter` vajutamisele reageerida
 
 ![](images/javafx/UI/PasswordField.png)
 
-Täpselt nagu TextField, ainult, et kirjutatud tähtede asemel näidatakse tärne.
+Täpselt nagu TextField, ainult et kirjutatud tähtede asemel näidatakse tärne.
 
 Vt. ka [Kasutajaliidese üldine kasutamine](/#Kasutajaliides).
 
@@ -2206,7 +2206,7 @@ Määra nupu tekst
 
     btn.setText("Vajuta siia!");
 
-Määra mis juhtub kui nuppu vajutatakse
+Määra, mis juhtub, kui nuppu vajutatakse
 
     btn.setOnAction((event) -> {
         public void handle(ActionEvent e) {
@@ -2222,7 +2222,7 @@ Eriline nupp, mis jääb sisse. Kasutatakse selleks, et näiteks mõne programmi
 
 Vt. ka [Kasutajaliidese üldine kasutamine](/#Kasutajaliides).
 
-Kui gruppi ei kasuta on üks nupp sisse/välja lülitatav.
+Kui gruppi ei kasuta, on üks nupp sisse/välja lülitatav.
 
     ToggleButton nupp = new ToggleButton("üksik toggle");
 
@@ -2308,7 +2308,7 @@ Loo ChoiceBox kolme variandiga
     );
     pane.getChildren().add(cb);
 
-Küsi milline variant on valitud
+Küsi, milline variant on valitud
 
     cb.getValue();
 
@@ -2443,7 +2443,7 @@ Pööra 45 kraadi.
 
 ![](images/javafx/Shapes/Line.png)
 
-Joonista joon. Määrama peab kust->kuhu kordinaadid, ehk new Line(kustX, kustY, kuhuX, kuhuY).
+Joonista joon. Määrama peab kust->kuhu kordinaadid ehk new Line(kustX, kustY, kuhuX, kuhuY).
 
 Vt. ka [Joonistamise põhitõed](/#Joonistamine).
 
@@ -2463,7 +2463,7 @@ Sama asi eraldi käskudena
 
 ![](images/javafx/Shapes/Rectangle.png)
 
-Ristkülik. Määrata tuleb alguskoordinaadid ja laius/kõrgus, ehk new Rectangle(algX, algY, laius, kõrgus).
+Ristkülik. Määrata tuleb alguskoordinaadid ja laius/kõrgus ehk new Rectangle(algX, algY, laius, kõrgus).
 
 Vt. ka [Joonistamise põhitõed](/#Joonistamine).
 
@@ -2572,7 +2572,7 @@ Tõrge näeb välja selline:
 > 'javac' is not recognized as an internal or external command,
 > operable program or batch file.
 
-Windows süsteemidel otsitakse käsurealt programme käivitades programmi konkreetsest kaustast kus sa hetkel viibid või kaustadest, mis on lisatud *PATH* muutujasse. *javac* ei lisandu automaatselt kahjuks sinu *PATH* reale.
+Windows süsteemidel otsitakse käsurealt programme käivitades programmi konkreetsest kaustast, kus sa hetkel viibid või kaustadest, mis on lisatud *PATH* muutujasse. *javac* ei lisandu automaatselt kahjuks sinu *PATH* reale.
 Seda saab parandada:
 1. Otsi ülesse kaust, kuhu installisid Java SDK. Leia üles */bin* kaust. Näiteks *C:\Program Files\Java\jdk1.8.0_101\bin*
 2. Win7/8/10 korral Start nupp - parem hiire klikk *My Computer* (Või *This PC*)
@@ -2585,11 +2585,11 @@ Seda saab parandada:
 
 ### Undo
 
-Esimene asi mis tee on vajuta `ctrl + z`, et oma käike tagasi võtta. Pole mõtet juurde kirjutada koodi kui olemasolev ei tööta. Kui lähed undoga liiale, saad `ctrl + shift + z` vajutusega ajaloos edasi minna.
+Esimene asi, mis tee, on vajuta `ctrl + z`, et oma käike tagasi võtta. Pole mõtet juurde kirjutada koodi, kui olemasolev ei tööta. Kui lähed undoga liiale, saad `ctrl + shift + z` vajutusega ajaloos edasi minna.
 
 ### Kontrolli süntaksit
 
-Algajatel juhtub tihti, et Java süntaksit ei järgita. [Süntaks](http://et.wikipedia.org/wiki/S%C3%BCntaks) on ka programmeerimises grammatika osa. Need on need reeglid, ilma milleta arvuti lihtsalt ei saa aru millest sa räägid. Kontrolli üle järgnevad korduma kippuvad vead:
+Algajatel juhtub tihti, et Java süntaksit ei järgita. [Süntaks](http://et.wikipedia.org/wiki/S%C3%BCntaks) on ka programmeerimises grammatika osa. Need on need reeglid, ilma milleta arvuti lihtsalt ei saa aru, millest sa räägid. Kontrolli üle järgnevad korduma kippuvad vead:
 
 Kui sulud on korras vajuta `ctrl + alt + l`, et treppimine automaatselt korda seada.
 
@@ -2661,11 +2661,11 @@ Tihti annab IDE (Intellij) sulle teada, kus viga on.
 
 Sul tuleb vaid punaseid märguandeid otsida ja hiirega peale minna (mitte vajutada), et lugeda kasulikku vihjet.
 
-Vahel oskab IDE sulle vea isegi ära parandada. Näiteks kui oled unustanud midagi importida siis kliki punasele joonele ja kas `alt + enter` vajutades või punasele pirnile klikkides saad kasutada võimalike lahendusi.
+Vahel oskab IDE sulle vea isegi ära parandada. Näiteks kui oled unustanud midagi importida, siis kliki punasele joonele ja kas `alt + enter` vajutades või punasele pirnile klikkides saad kasutada võimalike lahendusi.
 
 ![](images/muu/IDEaitab.png)
 
-Muidugi peaksid ikka umbes teadma mida need lahendused teevad, vahel võib kood hullemaks ka minna.
+Muidugi peaksid ikka umbes teadma, mida need lahendused teevad, vahel võib kood hullemaks ka minna.
 
 ### Kompileerija errorid
 
@@ -2693,7 +2693,7 @@ Kui programm käivitub, aga tulemus ei ole see, mida ootasid.
 
 ### Prindi kõike
 
-Eesmärgiks on saada teada täpselt **mis tulemuse iga koodirida annab**.
+Eesmärgiks on saada teada täpselt, **mis tulemuse iga koodirida annab**.
 
 Kui enne oli kood:
 
@@ -2712,15 +2712,15 @@ Siis nüüd on kõik võimalikud pesad välja prinditud:
     }
     System.out.println("a = " + a);
 
-Antud näide on veidi ekstreemne (esimene print on üleliigne) aga vahel tuleb vea leidmiseks olla ekstreemne.
+Antud näide on veidi ekstreemne (esimene print on üleliigne), aga vahel tuleb vea leidmiseks olla ekstreemne.
 
 ### Debug
 
-Debug on lahe funktsioon, kus näed rida rea haaval kuidas programm jookseb. Vaata täpsemalt [Debuggimine](/#Debug).
+Debug on lahe funktsioon, kus näed rida rea haaval, kuidas programm jookseb. Vaata täpsemalt [Debuggimine](/#Debug).
 
 ### Googelda
 
-Google on meie parim sõber, Googelda nii kuis jaksad. Tihtipeale satud lehele nimega StackOverflow ja see on teine parim abimees.
+Google on meie parim sõber, Googelda nii, kuis jaksad. Tihtipeale satud lehele nimega StackOverflow ja see on teine parim abimees.
 
 ### Küsi foorumist
 
