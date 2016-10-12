@@ -217,10 +217,110 @@ On mõned põhitõed, mida enne päris maailmas tegutsemist tavaliselt ei õpi. 
 
 # Peatükid
 
-Aine peatükid avalduvad http://kommuun.koodikool.ee foorumis.
+## Weekly 1
 
-- [Weekly 1](http://kommuun.koodikool.ee/t/week-1-introduction)
-- [Weekly 2](http://kommuun.koodikool.ee/t/weekly-2)
+Tsau!
+
+Lahe on näha nii palju huvilisi programmeerimisele. Pole meist keegi nii hipi, et ei kasutaks nutitelefoni, arvutit või internetti. Kuidas on siis võimalik, et suurem osa meist ei oska ise 21. sajandi kirjaoskust? Pole ime, et programmeerijatel nii vinged palgad on - neid on ju igas ettevõttes vaja. Postiteenusest arstideni. Igasugune automaatika on aja, ehk raha, võit. Kas kuskil Eestis on veel ettevõte, kellel ei ole kodulehte? Okei ma mõnda isegi tean, aga tegu ei ole kasvavate ettevõtetega.
+
+Märkusena lisaksin, et teen seda kursust käigu pealt ja põlve otsast, põhitöö kõrvalt. Okei roolis ma ei tee midagi. Mida see tähendab on see, et kohati on videote kvaliteet vahel madal ja kohati on asjad läbimõtlemata. Aga mis veel tähtsam - **anna igal võimalusel tagasisidet**, et kuidas see aine sulle on kujunenud. Mis jäi arusaamatuks, mida oleks veel vaja. Mida rohkem küsid/räägid, seda parem kursus see meile kõigile tuleb!
+
+### Challenge
+
+*Selle weekly ülesanded. Kui hätta jääd hüppa "õpetused" sektsiooni.*
+
+1. Installi [Java 8](http://i200.itcollege.ee/#Arenduskeskkond)
+1. Kirjuta [Hello World](http://blog.hackerrank.com/the-history-of-hello-world/) programm kasutades mingit suvalist text editori. 
+
+    ```
+    public class HelloWorld {
+        public static void main(String args[]) {
+            System.out.println("Hello World!");
+        }
+    }
+    ```
+
+1. Kompileeri ja käivita see programm nii, et näed tulemust. ([Windowsis](http://kommuun.koodikool.ee/t/windows-ja-java/292))
+1. [Installi git.](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+1. Tee omale GitHub.com konto ja lae oma projekt gitiga sinna üles.
+1. Loo oma repositooriumi ka README.md, kus seletad oma projekti olemust.
+1. Kui tahad tagasisidet oma projekti mahule/keerukusele, siis tee uus topic ja viita README-le.
+1. Boonus: Installi [IDE](http://www.dummies.com/programming/java/what-is-an-integrated-development-environment/), millega hakkad koodi kirjutama. Kasuta mida tahad, aga soovitan [IntelliJ Community Edition](https://www.jetbrains.com/idea/). Ja käivita seal samas ka see programm.
+
+### Õpetused
+
+1. [Sissejuhatus](https://youtu.be/S6mzCU4zZaQ?list=PLWkgPad9kpY3IWcuywjrCVQgFiF5MhEMp) (tudengitel läbitud loeng)
+1. [Programmeerimisest üldisemalt](https://youtu.be/6WOof5MfHow?list=PLWkgPad9kpY3IWcuywjrCVQgFiF5MhEMp).
+1. LaevadePommitamine: [Git ja Hello World](https://youtu.be/P1s2_MQqskQ) ([kood](https://github.com/KristerV/javaLaevadePommitamine/tree/week1))
+
+### Väliseid linke:
+
+[Eli the Computer Guy](https://www.youtube.com/watch?v=lJnvq0A_7WQ)
+[i200 materjalides](http://i200.itcollege.ee/#Vliseid_ressursse)
+[SoloLearn](http://kommuun.koodikool.ee/t/week-1-introduction/49/26?u=kristerv)
+*Kui leiad mõne hea materjali siis täienda materjale!*
+
+## Weekly 2
+
+Tundub, et saime äkki selle küsimise soone lahti. Kui ma selle aasta kursust kujundama hakkasin alguses, tahtsin tegelikult tehagi ainult küsimus-vastus kursuse. Ehk, et saaksite ise ainet juhtida (muidugi räägiksin ikkagi kõik olulised asjad ära). Eelmise aasta tudengid tegid aga selgeks, et lahtiste juhtmetega aine ei ole piisav. Seega otsustasin vähe traditsioonilisema teekonna kasuks.
+
+### Challenge
+
+*Codingbat pakub harjutusülesandeid, neid kõik pole vaja ära teha, aga et kinnitada oskusi on hea valida mõned välja ja ära teha.*
+
+- [javaHarjutused](https://github.com/KristerV/javaHarjutused) Teema 1
+- Tee oma projektist konsoolipõhine esimene versioon.
+- Lisaharjutusi: [Codingbat 1](http://codingbat.com/java/Warmup-1) ja [Codingbat 2](http://codingbat.com/java/Warmup-2)
+
+### Õpetused
+
+- [Windowsi nõuandeid](http://kommuun.koodikool.ee/t/windows-ja-java/292/5)
+- [Progemise algõpe](https://www.youtube.com/playlist?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
+- [Booleanid ja operaatorid](https://youtu.be/gjxBTo37n8M) (lisaks [nimekiri kõikidest operaatoritest](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/opsummary.html))
+- Projekti ülesehitus (lükatud Weekly 3)
+- Laevade Pommitamine: [Konsooli programm](https://youtu.be/WZdx5IJKuPE) ([kood](https://github.com/KristerV/javaLaevadePommitamine/blob/week2/src/Main.java))
+- Mis asi on [.gitignore](https://youtu.be/ln1Sa0aFhH4)
+
+*NB! Kui sa veel `javac` käsuga toime ei tulnud, siis ära sellega rohkem tegele. See oli vaid harjutus, et mõista kompileerimise olemust ja edaspidi me seda ei kasuta.*
+
+### KKK
+
+#### Kuidas ma projekti struktuuri ehitan?
+
+Praegu me ei ole veel sinna jõudnud. Võta rahulikult ja ehita projekt konsooliprogrammina esiteks valmis.
+
+#### Kuidas ma objekte kasutan?
+
+Vt. eelmist küsimust.
+
+#### Kui ma kasutaja sisestatud andmed salvestan, faili?
+
+[SQLite](http://www.sqlitetutorial.net/sqlite-java/) on hea andmebaas, aga jällegi - tee esiteks omale algoritmid selgeks.
+
+### Tudengitele
+
+#### Lisapunkte ei saa küsimuste vaid topicute eest
+Vabandan, et kohe omale selgeks ei teinud. Ma lihtsalt et saa küsijaid siin foorumis kuidagi premeerida - tehniline keerukus. Seega, **punkti saab hoopis [topicu alustaja](http://i200.itcollege.ee/#Hindamine)**. Eriti ebaaus on see vastajatele. Juba nüüd on olnud väga häid vastuseid näha ja ma annaksin hea meelega punkte selle eest, aga selle info välja kloppimine on liiga keeruline. Aga abistada on enivei väga mõnus :) Muide - jah, kui tegid projekti topicu siis see saab ka punkti.
+
+#### Vaheetapp 7. oktoober
+
+Selleks ajaks tahan kahte asja: 
+
+1. Kirjuta oma giti link siia: [Google Forms](https://goo.gl/forms/1zfgeq7Suy567mow1).
+1. Et seal projektis oleks Hello World tehtud.
+
+[Vaheetapi KKK](http://kommuun.koodikool.ee/t/kusimus-giti-lingi-kopimine/320).
+
+#### Praktikum on konsultatsiooni aeg
+
+Praktikum, mis meid nädalavahetusel ees ootab, on ennekõike konsultatsioonideks. Vahet pole mis staadiumis su projekt on, kas ta üldse alustatud on, tule ja räägime sellest. Ma pole detailides kindel kuidas asja läbi viia, aga kõige halvemal juhul saad sa lihtsalt oma projekti kallal tööd teha.
+
+Kaasa võta kas oma arvuti või kasuta kooli oma - su enda valida. Intellij ja Git on Linuxis täitsa olemas (ja seda ei pea kartma).
+
+#### Edasijõudnutele
+
+Tere sina, kes sa oled juba jagad Objekte ja kasutajaliideseid. Palun praktikumis sinu abi. Nimelt inimesi on väga palju ja oleks tore, kui aitaksid mul selle läbi viia. Eesmärgiks on harida võimalikult palju algajaid ja sealjuures oma suhtlemise/seletamise oskusi täiendada. Jagan ka punkte. Tule tunni alguses kohe mu jutule ja paneme mingi plaani paika!
+
 
 # Tööriistad
 
