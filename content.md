@@ -277,8 +277,7 @@ Tundub, et saime äkki selle küsimise soone lahti. Kui ma selle aasta kursust k
 - [Windowsi nõuandeid](http://kommuun.koodikool.ee/t/windows-ja-java/292/5)
 - [Progemise algõpe](https://www.youtube.com/playlist?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
 - [Booleanid ja operaatorid](https://youtu.be/gjxBTo37n8M) (lisaks [nimekiri kõikidest operaatoritest](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/opsummary.html))
-- Projekti ülesehitus (lükatud Weekly 3)
-- Laevade Pommitamine: [Konsooli programm](https://youtu.be/WZdx5IJKuPE) ([kood](https://github.com/KristerV/javaLaevadePommitamine/blob/week2/src/Main.java))
+- Laevade Pommitamine: [Konsooli programm, for tsükkel, maatriks](https://youtu.be/WZdx5IJKuPE) ([kood](https://github.com/KristerV/javaLaevadePommitamine/blob/week2/src/Main.java))
 - Mis asi on [.gitignore](https://youtu.be/ln1Sa0aFhH4)
 
 *NB! Kui sa veel `javac` käsuga toime ei tulnud, siis ära sellega rohkem tegele. See oli vaid harjutus, et mõista kompileerimise olemust ja edaspidi me seda ei kasuta.*
