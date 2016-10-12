@@ -6,7 +6,6 @@ qazy.qazy_image = "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAE
 qazy.view_elements = [];
 
 qazy.reveal = function(){
-	return
 	for(var count = 0; count < qazy.view_elements.length; count++)
 	{
 		var offsetParentTop = 0;

@@ -1,4 +1,5 @@
 var elementScrolls = []
+window.initialScrollDone = false;
 
 function insertMarkdownToDocument(content) {
 	var md = window.markdownit({
@@ -19,10 +20,13 @@ function insertMarkdownToDocument(content) {
 		hljs.initHighlighting()
 
 		// Scroll to position
-		if (document.location.hash.length)
-			window.scrollTo(0, $(document.location.hash).offset().top)
+		if (document.location.hash.length) {
+			var scrollTop = $(document.location.hash).offset().top + $(window).scrollTop()
+			window.scrollTo(0, scrollTop)
+			initialScrollDone = true;
+		}
 		refreshTOC()
-	}, 300);
+	}, 1);
 
 }
 

@@ -4,6 +4,7 @@ $(window).on('hashchange',function(){
 
 // Change hash on scroll
 $(document).scroll(_.throttle(function() {
+	if (!initialScrollDone) return
 	var winTop = $(this).scrollTop()
 	var winHeight = $(window).height()
 	var headers = $(':header:not(.toc)')
@@ -18,7 +19,6 @@ $(document).scroll(_.throttle(function() {
 			break
 		}
 	}
-
 
 }, 200));
 
