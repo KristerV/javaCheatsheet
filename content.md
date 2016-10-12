@@ -320,6 +320,39 @@ Kaasa võta kas oma arvuti või kasuta kooli oma - su enda valida. Intellij ja G
 
 Tere sina, kes sa oled juba jagad Objekte ja kasutajaliideseid. Palun praktikumis sinu abi. Nimelt inimesi on väga palju ja oleks tore, kui aitaksid mul selle läbi viia. Eesmärgiks on harida võimalikult palju algajaid ja sealjuures oma suhtlemise/seletamise oskusi täiendada. Jagan ka punkte. Tule tunni alguses kohe mu jutule ja paneme mingi plaani paika!
 
+## Weekly 3
+
+Kuna vahepeal oli tudengitel õppimise nädalavahetus, siis on weekly veidi lahjem. Aga siiski oluline - räägime kasutajaliidesest. Ühtlasi otsustasin kolida weeklydega siia lehele, sest on materjal vähe rohkem käepärast ja ka kõigi poolt muudetav (kui tekib tahtmine midagi täiendada).
+
+### Challenge
+
+- [javaHarjutused](https://github.com/KristerV/javaHarjutused) Teema 2
+- Kirjutada oma projektile kasutajaliides - kõik funktsionaalsused ei pea toimima. Pealselt, et kuskile liikuda saab (kasutaja protsessi mõttes).
+
+### Õpetused
+
+- [Massiivid, ArrayListid ja HashMapid](https://youtu.be/kb9IRtb_pRY)
+- [JavaFX](https://youtu.be/OXIgXp64LXk)
+- LaevadePommitamine: JavaFX
+
+## Weekly 4
+
+**Käesolev weekly on veel arendamisel**
+
+### Õpetused
+
+- Meetod, klass, objekt
+- UML ja projekti struktuur
+- LaevadePommitamine: objektideks
+
+## Weekly 5
+
+**Käesolev weekly on veel arendamisel**
+
+### Õpetused
+
+- Rekursioon
+- Automaattestid ja TDD
 
 # Tööriistad
 
