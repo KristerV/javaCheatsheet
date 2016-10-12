@@ -761,8 +761,10 @@ Kujuta ette, kui võistlejaid on samuti kümme ja igaühel on 10 tulemust. Siis 
         for (int j = 0; j < 10; j++) {                  // iga katse kohta
             voistleja.add((int) (Math.random() * 100)); // genereeri katse tulemus
         }
-
-        tulemused.put("võistleja"+i, voistleja);        // salvesta tulemus
+        ArrayList<String> ajutine = new ArrayList<String>(voistleja);  //kopeerin tulemused ajutisse muutujasse
+                                                                       //vastasel juhul läheb HashMap'i viide viimastest
+                                                                       //genereeritud tulemustest
+        tulemused.put("võistleja"+i, ajutine);        // salvesta tulemus
     }
 
     System.out.println("tulemused = " + tulemused);
@@ -770,17 +772,17 @@ Kujuta ette, kui võistlejaid on samuti kümme ja igaühel on 10 tulemust. Siis 
 Antud koodi on raske mõista, aga tulemuseks on ilus tabel:
 
     tulemused = {
-        võistleja2 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54],
-        võistleja1 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54],
-        võistleja0 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54],
-        võistleja6 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54],
-        võistleja5 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54],
-        võistleja4 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54],
-        võistleja3 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54],
-        võistleja9 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54],
-        võistleja8 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54],
-        võistleja7 = [54, 17, 25, 16, 10, 98, 86, 92, 10, 54]
-    }
+        võistleja2=[7, 4, 31, 16, 11, 90, 60, 25, 31, 76], 
+        võistleja1=[46, 6, 75, 73, 7, 33, 74, 11, 19, 83], 
+        võistleja0=[9, 59, 40, 9, 72, 72, 43, 32, 8, 70], 
+        võistleja6=[73, 83, 39, 54, 37, 71, 37, 91, 39, 40], 
+        võistleja5=[11, 23, 38, 84, 94, 8, 34, 60, 67, 12], 
+        võistleja4=[84, 11, 7, 79, 51, 89, 17, 77, 42, 58], 
+        võistleja3=[85, 10, 8, 52, 62, 10, 68, 59, 0, 49], 
+        võistleja9=[64, 75, 27, 28, 67, 65, 72, 31, 82, 34], 
+        võistleja8=[79, 52, 61, 60, 87, 52, 88, 10, 54, 14], 
+        võistleja7=[47, 68, 82, 7, 0, 93, 24, 45, 29, 81]
+        }
 
 Kui mul on siis hiljem vaja näiteks võistleja nr 6 tulemust nr 7, siis küsin selle välja ühe reaga:
 
