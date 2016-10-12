@@ -1,6 +1,6 @@
 body {
-	margin-left: calc(30%);
-	max-width: 900px;
+	margin-left: calc(20%);
+	max-width: 800px;
 	width: 70%;
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 14px;
@@ -10,6 +10,15 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	margin-top: 30px;
 	margin-bottom: 10px;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+	margin-top: 0px;
+}
+
+li > p {
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
 img {

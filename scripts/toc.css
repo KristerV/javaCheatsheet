@@ -1,12 +1,12 @@
 /* General */
 .toc {
 	position: fixed;
-	width: 30%;
+	width: 20%;
 	left: 0;
 	top: 0;
 	overflow: auto;
 	height: 100%;
-	font-size: 1.1em;
+	font-size: 1.2em;
 }
 
 .toc a {
