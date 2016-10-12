@@ -9,16 +9,21 @@ $(document).scroll(_.throttle(function() {
 	var winHeight = $(window).height()
 	var headers = $(':header:not(.toc)')
 
+	// Find first visible
+	var firstVisible;
 	for (var i = 0; i < headers.length; i++) {
 		var top = $(headers[i]).position().top
-		if (top > winTop - 25 && top < winTop + (winHeight / 4)) { // 25 is because of elem margin
-			var topic = $(headers[i]).children("a").attr("id")
-			topic = topic || ''
-			history.pushState(null, null, '#'+topic)
-			refreshTOC()
+		if (top < winTop)
+			firstVisible = $(headers[i]);
+		else
 			break
-		}
 	}
+
+	// Change hash
+	var topic = firstVisible.children("a").attr("id")
+	topic = topic || ''
+	history.pushState(null, null, '#'+topic)
+	refreshTOC()
 
 }, 200));
 
