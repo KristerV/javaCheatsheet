@@ -2,7 +2,14 @@ body {
 	margin-left: calc(30%);
 	max-width: 900px;
 	width: 70%;
-	font-family: Verdana, Arial;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 19px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 30px;
+	margin-bottom: 10px;
 }
 
 img {
@@ -44,4 +51,9 @@ img[src$=".svg"] {
 .ribbon a {
 	color: white;
 	text-decoration: none;
+}
+
+a, a:active, a:hover, a:visited {
+	text-decoration: none;
+	color: #08c;
 }
