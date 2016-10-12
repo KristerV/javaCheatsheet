@@ -4,7 +4,7 @@ $(window).on('hashchange',function(){
 
 // Change hash on scroll
 $(document).scroll(_.throttle(function() {
-	if (!initialScrollDone) return
+	if (!window.initialScrollDone) return
 	var winTop = $(this).scrollTop()
 	var winHeight = $(window).height()
 	var headers = $(':header:not(.toc)')
@@ -12,16 +12,21 @@ $(document).scroll(_.throttle(function() {
 	// Find first visible
 	var firstVisible;
 	for (var i = 0; i < headers.length; i++) {
-		var top = $(headers[i]).position().top
-		if (top < winTop)
-			firstVisible = $(headers[i]);
+		var elem = $(headers[i])
+		var top = elem.position().top
+		if (!elem.children('a[id]').length)
+			continue
+		else if (top < winTop)
+			firstVisible = elem;
 		else
 			break
 	}
 
 	// Change hash
-	var topic = firstVisible.children("a").attr("id")
-	topic = topic || ''
+	var topic = ''
+	if (firstVisible) {
+		topic = firstVisible.children("a").attr("id")
+	}
 	history.pushState(null, null, '#'+topic)
 	refreshTOC()
 

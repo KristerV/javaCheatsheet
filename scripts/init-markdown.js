@@ -23,9 +23,9 @@ function insertMarkdownToDocument(content) {
 		if (document.location.hash.length) {
 			var scrollTop = $(document.location.hash).offset().top + $(window).scrollTop()
 			window.scrollTo(0, scrollTop)
-			initialScrollDone = true;
 		}
 		refreshTOC()
+		initialScrollDone = true;
 	}, 1);
 
 }
