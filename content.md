@@ -217,6 +217,8 @@ On mõned põhitõed, mida enne päris maailmas tegutsemist tavaliselt ei õpi. 
 
 # Peatükid
 
+Peatükid on iganädalased õppematerjalid ja harjutused. Võta aga esimene ette ja hakka õppima :)
+
 ## Weekly 1
 
 Tsau!
@@ -253,7 +255,7 @@ Märkusena lisaksin, et teen seda kursust käigu pealt ja põlve otsast, põhit�
 1. [Programmeerimisest üldisemalt](https://youtu.be/6WOof5MfHow?list=PLWkgPad9kpY3IWcuywjrCVQgFiF5MhEMp).
 1. LaevadePommitamine: [Git ja Hello World](https://youtu.be/P1s2_MQqskQ) ([kood](https://github.com/KristerV/javaLaevadePommitamine/tree/week1))
 
-### Väliseid linke:
+### Lingid
 
 [Eli the Computer Guy](https://www.youtube.com/watch?v=lJnvq0A_7WQ)
 [i200 materjalides](http://i200.itcollege.ee/#Vliseid_ressursse)
@@ -265,8 +267,6 @@ Märkusena lisaksin, et teen seda kursust käigu pealt ja põlve otsast, põhit�
 Tundub, et saime äkki selle küsimise soone lahti. Kui ma selle aasta kursust kujundama hakkasin alguses, tahtsin tegelikult tehagi ainult küsimus-vastus kursuse. Ehk, et saaksite ise ainet juhtida (muidugi räägiksin ikkagi kõik olulised asjad ära). Eelmise aasta tudengid tegid aga selgeks, et lahtiste juhtmetega aine ei ole piisav. Seega otsustasin vähe traditsioonilisema teekonna kasuks.
 
 ### Challenge
-
-*Codingbat pakub harjutusülesandeid, neid kõik pole vaja ära teha, aga et kinnitada oskusi on hea valida mõned välja ja ära teha.*
 
 - [javaHarjutused](https://github.com/KristerV/javaHarjutused) Teema 1
 - Tee oma projektist konsoolipõhine esimene versioon.
