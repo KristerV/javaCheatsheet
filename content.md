@@ -333,7 +333,7 @@ Kuna vahepeal oli tudengitel õppimise nädalavahetus, siis on weekly veidi lahj
 
 - [Massiivid, ArrayListid ja HashMapid](https://youtu.be/kb9IRtb_pRY)
 - [JavaFX](https://youtu.be/OXIgXp64LXk)
-- LaevadePommitamine: JavaFX
+- [LaevadePommitamine: JavaFX](https://youtu.be/PmzFed2tdq8) ja [kood](https://github.com/KristerV/javaLaevadePommitamine/blob/JavaFX/src/Main.java)
 
 ## Weekly 4
 
