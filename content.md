@@ -382,7 +382,7 @@ Programmi käivitamiseks on lihtne otsetee `ctrl + shift + f10`. Kui oled juba �
 
 ##### Debug
 
-Kui soovid näha, kuidas täpselt su programm jookseb - rida rea haaval - siis Debug funktsioon on selle jaoks. Hoiatan, et erinevalt programmi tavapärasest käivitamisest võib see väga kaua aega võtta. Uuri lähemalt [Debug videos](/Videod).
+Kui soovid näha, kuidas täpselt su programm jookseb - rida rea haaval - siis Debug funktsioon on selle jaoks. Hoiatan, et erinevalt programmi tavapärasest käivitamisest võib see väga kaua aega võtta. Uuri lähemalt [Debug videos](/#Videod).
 
 ##### Failide vaade
 
