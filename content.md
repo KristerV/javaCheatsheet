@@ -378,7 +378,7 @@ Esmane käivitus võib olla vähe keeruline - järgime [piltidega õpetust siin]
 
 ##### Jooksuta programm
 
-Programmi käivitamiseks on lihtne otsetee `ctrl + shift + f10`. Kui oled juba ühe korra käivitanud oma programmi, piisab ka lühemast `ctrl + f10` otseteest. Vt. ka [kiirklahve](/#Kiirklahvid)
+Programmi käivitamiseks on lihtne otsetee `ctrl + shift + f10`. Kui oled juba ühe korra käivitanud oma programmi, piisab ka lühemast `shift + f10` otseteest. Vt. ka [kiirklahve](/#Kiirklahvid)
 
 ##### Debug
 
