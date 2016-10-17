@@ -32,6 +32,10 @@ Kordussooritusi on kaks. Kolmandat kindlasti ei tule.
 
 Praktikum ei olegi tegelt üldse praktikum. See on hoopis konsultatsioon. Tule oma arvutiga või kasuta kooli oma, aga lõpuks teeme tööd su enda projekti kallal.
 
+**Vaheetapp 1** on Hello World. Ehk tahan näha, et sul on projekt seadistatud ja see suudab `System.out.println('midaiganes');` väljastada.
+
+**Vaheetapp 2** on JavaFXi basic lahendus. Su projekt peab ekraanile reaalselt mingi ringi või tekstivälja joonistama. Ühest asjast piisab. See on nagu Hello World JavaFX'ile.
+
 ## Hindamine
 
 - 60 punkti tuleb projekti eest
