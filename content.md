@@ -257,6 +257,7 @@ Märkusena lisaksin, et teen seda kursust käigu pealt ja põlve otsast, põhit�
 
 1. [Sissejuhatus](https://youtu.be/S6mzCU4zZaQ?list=PLWkgPad9kpY3IWcuywjrCVQgFiF5MhEMp) (tudengitel läbitud loeng)
 1. [Programmeerimisest üldisemalt](https://youtu.be/6WOof5MfHow?list=PLWkgPad9kpY3IWcuywjrCVQgFiF5MhEMp).
+1. Agiilne lähenemine
 1. LaevadePommitamine: [Git ja Hello World](https://youtu.be/P1s2_MQqskQ) ([kood](https://github.com/KristerV/javaLaevadePommitamine/tree/week1))
 
 ### Lingid
@@ -341,22 +342,21 @@ Kuna vahepeal oli tudengitel õppimise nädalavahetus, siis on weekly veidi lahj
 
 ## Weekly 4
 
-**Käesolev weekly on veel arendamisel**
-
-### Õpetused
-
 - Meetod, klass, objekt
+- Objektidest lähemalt
 - UML ja projekti struktuur
 - LaevadePommitamine: objektideks
 
 ## Weekly 5
 
-**Käesolev weekly on veel arendamisel**
+- Andmebaasid (SQLite)
+- try-catch
 
-### Õpetused
+## Weekly 6
 
 - Rekursioon
 - Automaattestid ja TDD
+- .jar file
 
 # Tööriistad
 
