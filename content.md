@@ -2161,7 +2161,7 @@ Paigutab elemendid vasakult paremale ja ei katke.
 
 Loo uus
 
-    Hbox hbox = new Hbox();
+    HBox hbox = new HBox();
 
 Lisa 2 pikslit vahet igale elemendile
 
