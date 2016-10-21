@@ -167,11 +167,12 @@ Paljud materjalid on hoopis Pythoni kesksed. See on väga hea. Python on hea alg
 ### Videod
 
 *   [i200 õppevideod](https://www.youtube.com/playlist?list=PLWkgPad9kpY1Ns3Q23g1qAlE9vQbmpSKn)
+*   [Harvadi 2016 loengud Pythoni põhjal](https://youtu.be/BAs4VyEN-SM)
 *   [Bucky Roberts](https://www.youtube.com/watch?v=Hl-zzrqQoSE&list=PLFE2CE09D83EE3E28) Üks tudengi lemmik
 *   [Udemy](https://www.udemy.com/java-tutorial/) väga hea kursus
 *   [Stanford](http://web.stanford.edu/class/cs106a/)i ülipopulaarne kursus
 *   [Java Programming - Step by Step](https://www.youtube.com/watch?v=3u1fu6f8Hto)
-*   [Why is programming hard?https://youtu.be/BRaBWIcAqlQ
+*   [Why is programming hard](https://youtu.be/BRaBWIcAqlQ)
 *   [PluralSight](http://www.pluralsight.com/)
 *   [Coursera](https://www.coursera.org/course/pythonlearn)
 *   [Khan Academy](https://www.khanacademy.org/computing/computer-programming)
