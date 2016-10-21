@@ -498,6 +498,7 @@ Giti kasutamine on lausa hädavajalik ja olen isiklikult näinud vaid ühte prof
 Gitiga võid hoida oma koodi ükskõik kus - meeskonna liikmete arvutites, oma serveris, mõnes pilveteenuses. Üks populaarsemaid pilveteenuseid avatud lähtekoodiga tarkvaral on [GitHub.com](https://github.com/).
 
 Siin on mõned välised ressursid, mis aitavad teemat mõista:
+*   [CodeCademy Giti kursus](https://www.codecademy.com/learn/learn-git)
 *   [https://try.github.io/](https://try.github.io/) - proovi ja harjuta git'i käsurida brauseris.
 *   [git-scm.com](http://git-scm.com/doc) - sõbralik ja põhjalik ametlik dokumentatsioon.
 *   [try.github.io](http://try.github.io) - Interaktiivne õpetus.
