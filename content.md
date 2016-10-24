@@ -36,6 +36,8 @@ Krister ja tudengid :)
 
 # Aineprogramm
 
+Paljud asjad siin sektsioonis on ainult tudengitele.
+
 ## Ajagraafik
 
 25 september - Sissejuhatav loeng
