@@ -220,6 +220,20 @@ On mõned põhitõed, mida enne päris maailmas tegutsemist tavaliselt ei õpi. 
 8.  Arvuti ei tee vigu. Inimesed teevad vigu. Inimene oled sina, olen mina ja on kõik need, kes on Java ja kõik muu tarkvara kirjutanud. Aga enne kui teisi süüdistad, tee 100% kindlaks, et viga pole sinu enda koodis.
 9.  Tarkvara arendaja on küll ainus meeskonnaliige, kes on hädavajalik, et tarkvara toode valmis saada, aga ta kindlasti pole ainuke oluline. Et tootest asja saaks on vaja disaini, äri, arhitektuuri, kasutajatoe ja muid inimesi.
 
+### Esimesed sammud
+
+Kui sulle on kood veel segane ja kusagilt tööga peale hakata ei oska, siis mõtle lihtsamate mõistetega välja, kuidas võiks programmi kirjutamine välja näha juhul, kui sa keelt valdaksid. Näiteks:
+
+Laevade pommitamine:
+
+1.  Esiteks teen tekstipõhise konsooliversiooni. Loon mänguväljaku, kus iga ruutu tähistab number. Väljak koosneb puhtalt nullidest.
+2.  Lisan väljakule enda valitud ruudule arvu arvu 1 (0 on meri, 1 on laev, 2 saab olema pihta saanud laev).
+3.  Testimiseks on kindlasti ise tüütu arve sisestada. Genereerin 1'd väljakule suvaliselt.
+4.  Lisan võimaluse ruute pommitada. Kui laev saab pihta, ilmub pihta saanud sektsioonil 1 asemel 2.
+5.  Peidan laua ära, et saaksin pimesi pommitada nagu päris mängus.
+
+Kui palju sellised esialgsed mõtted töö käigus muutuvad ja täpsustuvad, võid vaadata [laevade pommitamise videost](https://www.youtube.com/watch?v=WZdx5IJKuPE).
+
 # Peatükid
 
 Peatükid on iganädalased õppematerjalid ja harjutused. Võta aga esimene ette ja hakka õppima :)
