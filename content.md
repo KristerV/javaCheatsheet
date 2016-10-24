@@ -9,7 +9,11 @@ Tere,
 
 Kui soovid programmeerijaks õppida, oled õiges kohas. Käesolevad materjalid on loodud IT Kolledži tarbeks, aga siht on võimaldada igaühel programmeerimist õppida *põhjalikult*. Materjalid pole veel valmis, aga võid juba proovida, kuidas hammas peale hakkab ja tagasiside kirjuta foorumisse.
 
-Meie ühine vestlusplatvorm küsimuste ja muu teemakohase loba jaoks on [kommuun.koodikool.ee](http://kommuun.koodikool.ee).
+**Kust alustada**
+
+Käesoleval lehel on põhjalik ülevaade Java maailmast just algaja vaatepunktist. Esimese sammuna tee läbi Peatükid -> Weekly 1. Meil on [foorum](http://kommuun.koodikool.ee) vestluste ja küsimuste jaoks. Vahelduva eduga on aktiivne ka [chat](https://gitter.im/KristerV/i200).
+
+Tunne end mõnusalt ja ole foorumis aktiivne. Kursus on põhjalik ja teekond ei ole veel välja lihvitud. Programmeerimise õppimine on üleüldse keeruline tegevus ja kõige parem abivahend on üks aktiivne seltskond, kelle käest abi küsida.
 
 Krister
 
