@@ -380,6 +380,22 @@ Kuna vahepeal oli tudengitel õppimise nädalavahetus, siis on weekly veidi lahj
 
 ## Weekly 4
 
+### Challenge
+
+### Õpetused
+
+- [Objektorienteeritusest]
+- [Klassi importimine]
+- [Klassi laiendamine]
+- [Projekti struktuur]
+- [LP OOP]
+
+### Lisamaterjale
+
+- [Näide private klassi otstarbest](https://docs.oracle.com/javase/tutorial/java/javaOO/innerclasses.html) (ei julgusta kasutamist)
+- [Tabel public/private ulatustest](https://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html)
+- [OOPist eesti keeles](http://enos.itcollege.ee/~jpoial/java/i200loeng3.html)
+
 - Meetod, klass, objekt
 - Objektidest lähemalt
 - UML ja projekti struktuur
