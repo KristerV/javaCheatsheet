@@ -11,24 +11,24 @@ Kui soovid programmeerijaks õppida, oled õiges kohas. Käesolevad materjalid o
 
 **Kuidas siin orienteeruda**
 
-1. Põhilised materjalid ja *Weekly ülesanded
+1. **Põhilised materjalid ja Weekly ülesanded**
 http://i200.itcollege.ee (käesolev lehekülg)
 Detailne ülevaade, olulised lingid, pluss kohustuslikud tööd
 
-2. Kommuun küsimuste ja vestluste jaoks 
+2. **Kommuun küsimuste ja vestluste jaoks**
 http://kommuun.koodikool.ee
 Kõikide projektid, mida keegi arendab ning sellega seonduv pidev arutelu. 
 Foorumite jaotus teemad ja sildid all.
 
-3. Chat
+3. **Chat**
 https://gitter.im/KristerV/i200
 Kui vajad koheset vastust võid esiteks siit proovida.
 
-4. Kristeri youtube videod
+4. **Kristeri youtube videod**
 https://www.youtube.com/user/krivar/playlists
 Need on ka Weekly ülesannetes kirjas, aga need videod on põhilised õpetused.
 
-5. Välislingid ehk materjale maailmast
+5. **Välislingid ehk materjale maailmast**
 http://i200.itcollege.ee/#Vliseid_ressursse
 Kõigile ei sobigi üks õppimise metoodika, vali oma lemmik.
 
