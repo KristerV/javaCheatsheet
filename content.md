@@ -585,6 +585,10 @@ Näiteks Java projekti puhul tahad salvestada src/ kausta, aga mitte out/ ega .i
 
 Näitena võib tuua [javaHarjutused repositooriumi](https://github.com/KristerV/javaHarjutused).
 
+#### Veel abi
+
+Kui õpetus ikka veel segaseks jääb, võib uurida ka [I253 Informaatika eelkursuse materjale](https://wiki.itcollege.ee/index.php/I253_Informatika_eelkursus#Neljas_teema:_Git_ja_SSH_v.C3.B5tmed)
+
 ## Muutujad
 
 ![](images/muutujad/kast.svg)
