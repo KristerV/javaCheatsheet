@@ -9,13 +9,30 @@ Tere,
 
 Kui soovid programmeerijaks õppida, oled õiges kohas. Käesolevad materjalid on loodud IT Kolledži tarbeks, aga siht on võimaldada igaühel programmeerimist õppida *põhjalikult*. Materjalid pole veel valmis, aga võid juba proovida, kuidas hammas peale hakkab ja tagasiside kirjuta foorumisse.
 
-**Kust alustada**
+**Kuidas siin orienteeruda**
 
-Käesoleval lehel on põhjalik ülevaade Java maailmast just algaja vaatepunktist. Esimese sammuna tee läbi Peatükid -> Weekly 1. Meil on [foorum](http://kommuun.koodikool.ee) vestluste ja küsimuste jaoks. Vahelduva eduga on aktiivne ka [chat](https://gitter.im/KristerV/i200).
+1. Põhilised materjalid ja *Weekly ülesanded
+http://i200.itcollege.ee (käesolev lehekülg)
+Detailne ülevaade, olulised lingid, pluss kohustuslikud tööd
 
-Tunne end mõnusalt ja ole foorumis aktiivne. Kursus on põhjalik ja teekond ei ole veel välja lihvitud. Programmeerimise õppimine on üleüldse keeruline tegevus ja kõige parem abivahend on üks aktiivne seltskond, kelle käest abi küsida.
+2. Kommuun küsimuste ja vestluste jaoks 
+http://kommuun.koodikool.ee
+Kõikide projektid, mida keegi arendab ning sellega seonduv pidev arutelu. 
+Foorumite jaotus teemad ja sildid all.
 
-Krister
+3. Chat
+https://gitter.im/KristerV/i200
+Kui vajad koheset vastust võid esiteks siit proovida.
+
+4. Kristeri youtube videod
+https://www.youtube.com/user/krivar/playlists
+Need on ka Weekly ülesannetes kirjas, aga need videod on põhilised õpetused.
+
+5. Välislingid ehk materjale maailmast
+http://i200.itcollege.ee/#Vliseid_ressursse
+Kõigile ei sobigi üks õppimise metoodika, vali oma lemmik.
+
+Krister ja tudengid :)
 
 # Aineprogramm
 
