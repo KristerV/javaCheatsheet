@@ -7,7 +7,7 @@
 
 Tere,
 
-Kui soovid programmeerijaks õppida, oled õiges kohas. Käesolevad materjalid on loodud IT Kolledži tarbeks, aga siht on võimaldada igaühel programmeerimist õppida *põhjalikult*. Materjalid pole veel valmis, aga võid juba proovida, kuidas hammas peale hakkab ja tagasiside kirjuta foorumisse.
+Kui soovid programmeerijaks õppida, oled õiges kohas. Käesolevad materjalid on loodud IT Kolledži tarbeks, aga siht on võimaldada igaühel programmeerimist õppida *põhjalikult*. Materjalid pole veel valmis, aga võid juba proovida kuidas hammas peale hakkab (tagasiside kirjuta foorumisse).
 
 **Kuidas siin orienteeruda**
 
