@@ -382,7 +382,7 @@ Kuna vahepeal oli tudengitel õppimise nädalavahetus, siis on weekly veidi lahj
 
 Käesolev weekly on viimane hädavajalik, et projekt ära teha. Viiendas Weeklys räägime veel andmebaasidest, aga kõigil seda vaja ei ole.
 
-Muide, programmi jooniseid on väga mugav ehitada kasutades [Gliffy veebilehte](www.gliffy.com).
+Muide, programmi jooniseid on väga mugav ehitada kasutades [Gliffy veebilehte](https://www.gliffy.com).
 
 ### Challenge
 
