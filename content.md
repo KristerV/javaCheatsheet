@@ -384,22 +384,18 @@ Kuna vahepeal oli tudengitel õppimise nädalavahetus, siis on weekly veidi lahj
 
 ### Õpetused
 
-- [Objektorienteeritusest]
-- [Klassi importimine]
-- [Klassi laiendamine]
-- [Projekti struktuur]
-- [LP OOP]
+- [Objektorienteeritusest](https://youtu.be/cGUMn0gzWvg)
+- [Objekti konstruktor](https://youtu.be/9A4xoUL1m6w)
+- [Klassi importimine](https://youtu.be/AEokWVy-8Oc)
+- [Klassi laiendamine](https://youtu.be/GoYXVcT2H5w)
+- [Projekti struktuur](https://youtu.be/WRzm1Kuy03I)
+- [LaevadePommitamine OOP]
 
 ### Lisamaterjale
 
 - [Näide private klassi otstarbest](https://docs.oracle.com/javase/tutorial/java/javaOO/innerclasses.html) (ei julgusta kasutamist)
 - [Tabel public/private ulatustest](https://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html)
 - [OOPist eesti keeles](http://enos.itcollege.ee/~jpoial/java/i200loeng3.html)
-
-- Meetod, klass, objekt
-- Objektidest lähemalt
-- UML ja projekti struktuur
-- LaevadePommitamine: objektideks
 
 ## Weekly 5
 
