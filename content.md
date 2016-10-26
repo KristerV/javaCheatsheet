@@ -386,7 +386,7 @@ Muide, programmi jooniseid on väga mugav ehitada kasutades [Gliffy veebilehte](
 
 ### Challenge
 
-- Kirjuta Raamatukogu programm kasutades järgnevat pilti aluseks. Nimelt tuleb luua kaks objekti: Raamatukogu ja Raamat. Mõlemad hoiavad endas mingit infot (väljad, ehk muutujad klassi küljes) ja mõlemal on mingid oskused (meetodid). **Tulemuses peab olema raamatuid vähemalt 3 tükki**. "Askukoht" võib olla näiteks "Riiul 3".
+- Kirjuta Raamatukogu programm kasutades järgnevat pilti aluseks. Nimelt tuleb luua kaks objekti: Raamatukogu ja Raamat. Mõlemad hoiavad endas mingit infot (väljad, ehk muutujad klassi küljes) ja mõlemal on mingid oskused (meetodid). **Tulemuses peab olema raamatuid vähemalt 3 tükki**. "Asukoht" võib olla näiteks "Riiul 3".
 
     ![raamaturkogu UML](images/muu/weekly4uml1.png)
 
