@@ -382,6 +382,8 @@ Kuna vahepeal oli tudengitel õppimise nädalavahetus, siis on weekly veidi lahj
 
 Käesolev weekly on viimane hädavajalik, et projekt ära teha. Viiendas Weeklys räägime veel andmebaasidest, aga kõigil seda vaja ei ole.
 
+Muide, programmi jooniseid on väga mugav ehitada kasutades [Gliffy veebilehte](www.gliffy.com).
+
 ### Challenge
 
 - Kirjuta Raamatukogu programm kasutades järgnevat pilti aluseks. Nimelt tuleb luua kaks objekti: Raamatukogu ja Raamat. Mõlemad hoiavad endas mingit infot (väljad, ehk muutujad klassi küljes) ja mõlemal on mingid oskused (meetodid). **Tulemuses peab olema raamatuid vähemalt 3 tükki**. "Askukoht" võib olla näiteks "Riiul 3".
