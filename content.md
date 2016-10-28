@@ -2822,7 +2822,7 @@ Kirjaviga muutujas
     public class KosmoseAgentuur  {
         public static void main(String[] args) {
             int aasta = 2030;
-            if (aasta > 2000) { // aasla => aasta
+            if (aasla > 2000) { // aasla => aasta
                 int millennium = 2;
             }
         }
