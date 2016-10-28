@@ -2794,6 +2794,19 @@ Seda saab parandada:
 5. Otsi üles *PATH* ja Win7 puhul lisage *;C:\Program Files\Java\jdk1.8.0_101\bin*; PATH muutuja lõppu. Win10 puhul *New* ning kleebi Java SDK asukoht.
 6. Sulge OK abil ning katseta terminalis *javac -version*.
 
+## Projekti push-imisel GitHubi ilmub veateade "Permission denied (publickey)..."
+
+Algajana võib ette tulla järgnev olukord.
+Oled jõudnud GitHubis "New Repository" juurde ning võtnud sealt terminali sisestamiseks "koodid" kujul: 
+git remote add origin git@github.com:username/projekt.git
+git push -u origin master
+
+Neid terminali sisestades ilmub aga veateade:
+> Permission denied (publickey). 
+> fatal: Could not read from remote repository. Please make sure you have the correct access rights and the repository exists.
+
+Lahenduseks on vaadata uuesti seda lehekülge, kus eelpool mainitud "koodid" asuvad, pealkirja "Quick setup — if you’ve done this kind of thing before" all näed nuppe HTTPS ja SSH. Vajuta nupule "HTTPS", seejärel näed, et terminali sisestatav "kood" on võtnud kuju "git remote add origin https://github.com/username/projekt.git". Just see "kood" tulebki nüüd terminali sisestada. Võimalik, et sulle öeldakse, et ühendus on juba loodud vms, ehk et oled taas ummikus. Sellisel juhul tasub kogu protsess uuesti läbi käia ja kohe alguses hankida GitHubist "HTTPS" kood.
+
 ## Programm ei käivitu
 
 ### Undo
