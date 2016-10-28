@@ -2016,7 +2016,7 @@ Esimene asi, mis tuleb mõista on, et JavaFX ei ole su programmis enne, kui sa o
     public class MinuKlass extends Application {
     }
 
-Teine tähtis asi on see, et Application klassi laiendades ei alusta sa oma programmi mitte main() meetodiga, vaid start() meetodiga. Muud loogikat siin pole, kui ei Application lihtsalt töötab selliselt.
+Teine tähtis asi on see, et Application klassi laiendades ei alusta sa oma programmi mitte main() meetodiga, vaid start() meetodiga. Muud loogikat siin pole, kui et Application lihtsalt töötab selliselt.
 
     public class MinuKlass extends Application {
         @Override
@@ -2118,7 +2118,7 @@ Lisa sisu hulka mitu elementi korraga.
 
     pane.getChildren().addAll(element, element, element);
 
-Positsioneeri sialduvad elemendid alla keskele.
+Positsioneeri sisalduvad elemendid alla keskele.
 
     pane.setAlignment(Pos.BOTTOM_CENTER);
 
