@@ -693,9 +693,9 @@ Byte tähendab seda, et ta ei võta mälus rohkem ruumi kui 1 byte ehk 8 bitti, 
 
 Kui muutujale omistatakse väärtus `byte number = 1;` siis hoolimata sellest kas väärtus on 1 või 100 võtab ta mälus ühepalju ruumi, kuna mälus on need representeeritud 10 jadana, st 1 == 00000001 ja 100 on näiteks 10100110.
 
-Kui sa deklareerid `int number = 1;` siis googleset leidub, et ta võtab 32 bitti ehk 8 byte-i ruumi (tegelt vist oleneb see protsessory arhitektuurist, aga jääme näites 32 bitti ehk 8 byte juurde) st nüüd on sul mälus okupeeritud ruumi number 1 jaoks 8 bytei ehk 32 bitti, ehk suvaline binaarne kuju mälus 0000 0000 0000 0000 0000 0000 0000 0001.
+Kui sa deklareerid `int number = 1;` siis googleset leidub, et ta võtab 32 bitti ehk 8 byte-i ruumi (tegelt vist oleneb see protsessori arhitektuurist, aga jääme näites 32 bitti ehk 8 byte juurde) st nüüd on sul mälus okupeeritud ruumi number 1 jaoks 8 byte'i ehk 32 bitti, ehk suvaline binaarne kuju mälus 0000 0000 0000 0000 0000 0000 0000 0001.
 
-Byte kasutatakse mälu optimeerimisel ja näiteks andmebaasi mahu vähendamisel. Kui andmebaasis on kirjeid mirjardeid, siis on suur vahe kas kasutad 0-100 väärtuste salvestamiseks byte või int tüüpi väärtusi.
+Byte kasutatakse mälu optimeerimisel ja näiteks andmebaasi mahu vähendamisel. Kui andmebaasis on kirjeid miljardeid, siis on suur vahe kas kasutad 0-100 väärtuste salvestamiseks byte või int tüüpi väärtusi.
 
 #### int
 
