@@ -1940,7 +1940,7 @@ Vt. [.schedule()](/#schedule). Ainuke vahe on see, et fixed rate käivitub ajali
 
 ### Arrays
 
-Arrays klass on massiividega manipuleerimiseks. Kuna massiiv (näiteks in[]) on primitiiv, siis tal ei ole enda meetoode. Nagu ArrayListil on täitsa enda .equals() olemas, siis massiivi puhul võtamegi abiks Arrays klassi sama toimingu jaoks.
+Arrays klass on massiividega manipuleerimiseks. Kuna massiiv (näiteks int[]) on primitiiv, siis tal ei ole enda meetodeid. Nagu ArrayListil on täitsa enda .equals() olemas, siis massiivi puhul võtamegi abiks Arrays klassi sama toimingu jaoks.
 
 #### Arrays.sort()
 
