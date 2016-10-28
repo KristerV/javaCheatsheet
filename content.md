@@ -1179,9 +1179,9 @@ Tulemus:
 
 Ettevalmistus:
 
-    HashMap<String, HashMap> a = new HashMap<>());
-    HashMap milvi_andmed = new HashMap();
-    HashMap laika_andmed = new HashMap();
+    HashMap<String, HashMap> a = new HashMap<>();
+    HashMap milvi_andmed = new HashMap<>();
+    HashMap laika_andmed = new HashMap<>();
 
     milvi_andmed.put("vanus", 25);
     milvi_andmed.put("elukoht", "Põlva");
@@ -1210,8 +1210,8 @@ Tulemus:
 
 Loo uus
 
-    HashMap a = new HashMap();
-    HashMap<String, Integer%gt; a = new HasMap<%gt;();
+    HashMap a = new HashMap<>();
+    HashMap<String, Integer> a = new HasMap<>();
 
 Mis väärtus on võtmel
 
