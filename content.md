@@ -941,7 +941,7 @@ Näiteks, kui tegin ise klassi Hobune:
         }
     }
 
-siis nüüd saan oma main meetodi sees luua "Hobune" klassist uue objekti ja kasutada tema `public` meetoode.
+siis nüüd saan oma main meetodi sees luua "Hobune" klassist uue objekti ja kasutada tema `public` meetodeid.
 
     public class MinuProgramm {
         public static void main(String[] args) {
