@@ -1641,13 +1641,13 @@ Genereeri reaalarv 30st 40ni.
 
 #### Integer.MIN_VALUE
 
-Integer või int kõige väiksem võimalik värtus. Vaata ka [Ohukoht1](/#NB_Arvude_piirangud)
+Integer või int kõige väiksem võimalik väärtus. Vaata ka [Ohukoht1](/#NB_Arvude_piirangud)
 
     Integer.MIN_VALUE; // -2147483648
 
 #### Integer.MAX_VALUE
 
-Integer või int kõige suurem võimalik värtus. Vaata ka [Ohukoht1](/#NB_Arvude_piirangud)
+Integer või int kõige suurem võimalik väärtus. Vaata ka [Ohukoht1](/#NB_Arvude_piirangud)
 
     Integer.MAX_VALUE; // 2147483647
 
@@ -1661,13 +1661,13 @@ Kui sul on arv sõne kujul "25", siis parseInt muudab selle int'iks.
 
 #### Double.MIN_VALUE
 
-Double või double kõige väiksem võimalik värtus. Vaata ka [Ohukoht1](/#NB_Arvude_piirangud)
+Double või double kõige väiksem võimalik väärtus. Vaata ka [Ohukoht1](/#NB_Arvude_piirangud)
 
     Double.MIN_VALUE; // -2147483648
 
 #### Double.MAX_VALUE
 
-Double või double kõige suurem võimalik värtus. Vaata ka [Ohukoht1](/#NB_Arvude_piirangud)
+Double või double kõige suurem võimalik väärtus. Vaata ka [Ohukoht1](/#NB_Arvude_piirangud)
 
     Double.MAX_VALUE; // 2147483647
 
