@@ -734,7 +734,7 @@ Muuda tüüpi
 
 #### double
 
-reaalarvud (komakohaga) (alates -4.9*10^324 kuni 1.79*10^308)
+reaalarvud (komakohaga) (alates -4.9\*10^324 kuni 1.79\*10^308)
 
 Reaalarvudega arvutamine on ebatäpne, vt. [Ohukoht2](/#NB_Arvude_piirangud)
 
