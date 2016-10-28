@@ -1267,7 +1267,7 @@ Kui võtame suvalise hunniku Java andmetüüpe [int, double, String, ArrayList],
     nimi = nimi.replace('r', 'l');    // muudan kõik 'r' tähed 'l' tähtedeks
     System.out.println(nimi);         // Nimi on nüüd "Klistel" - hahaha!
 
-.replace() on meetod. Ja meetodid saavad ainult objektidel olla. Seega suure algustähega tüübid on objektid ja väikesega on primitiivid. Primitiivil ei ole meetoode ja objektidel on.
+.replace() on meetod. Ja meetodid saavad ainult objektidel olla. Seega suure algustähega tüübid on objektid ja väikesega on primitiivid. Primitiivil ei ole meetodeid ja objektidel on.
 
 ## Juhtimine
 
