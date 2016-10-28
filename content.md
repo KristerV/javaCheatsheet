@@ -1255,7 +1255,7 @@ kas on tühi?
 
 ##### SQL andmebaas
 
-Andmebaas on andmete hoidmise viis sarnaselt massiiv, ArrayList või HashMap. Vahe on nüüd selles, et andmebaasi andmed jäävad kõvakettale alles ka siis, kui su programm vahepeal sulgeb. Andmebaas on reeglina serveris täiesti eraldi seisev programm, lisaks sinu Java programmile. Aga et me ei peaks midagi seadistama võime projekti tarvis kasutada faili põhist lihtsat süsteemi nagu näiteks SQLite. Selle pead alla laadima ja installima. SQL on spetsiaalne andmebaasiga suhtlemise keel. Õnneks mitte väga keeruline. Andmebaasi käima saamine on aga ilma näidiseta paras piin.
+Andmebaas on andmete hoidmise viis sarnaselt massiivile, ArrayList'ile või HashMap'ile. Vahe on nüüd selles, et andmebaasi andmed jäävad kõvakettale alles ka siis, kui su programm vahepeal sulgub. Andmebaas on reeglina serveris täiesti eraldiseisev programm, lisaks sinu Java programmile. Aga et me ei peaks midagi seadistama võime projekti tarvis kasutada failipõhist lihtsat süsteemi nagu näiteks SQLite. Selle pead alla laadima ja installima. SQL on spetsiaalne andmebaasiga suhtlemise keel. Õnneks mitte väga keeruline. Andmebaasi käima saamine on aga ilma näidiseta paras piin.
 
 Näidis kood koos seletustega on siin: [Andmebaasi näidisprogramm](https://github.com/KristerV/javaHarjutused/tree/lahendused/src/teema3/SQL_Login)
 
