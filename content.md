@@ -376,6 +376,8 @@ Kuna vahepeal oli tudengitel õppimise nädalavahetus, siis on weekly veidi lahj
 
 - [Massiivid, ArrayListid ja HashMapid](https://youtu.be/kb9IRtb_pRY)
 - [JavaFX](https://youtu.be/OXIgXp64LXk)
+- Evendid ja JavaFXi thread
+- AnimationTimer, ehk hüppa ja liiguta
 - [LaevadePommitamine: JavaFX](https://youtu.be/PmzFed2tdq8) ja [kood](https://github.com/KristerV/javaLaevadePommitamine/blob/JavaFX/src/Main.java)
 
 ## Weekly 4
@@ -399,7 +401,7 @@ Muide, programmi jooniseid on väga mugav ehitada kasutades [Gliffy veebilehte](
 - [Klassi importimine](https://youtu.be/AEokWVy-8Oc)
 - [Klassi laiendamine](https://youtu.be/GoYXVcT2H5w)
 - [Projekti struktuur](https://youtu.be/WRzm1Kuy03I)
-- [LaevadePommitamine OOP]
+- [LaevadePommitamine OOP](https://youtu.be/aSA9moS5MiI)
 
 ### Lisamaterjale
 
