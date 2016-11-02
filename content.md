@@ -696,9 +696,9 @@ Byte tähendab seda, et ta ei võta mälus rohkem ruumi kui 1 byte ehk 8 bitti, 
 
 Kui muutujale omistatakse väärtus `byte number = 1;` siis hoolimata sellest kas väärtus on 1 või 100 võtab ta mälus ühepalju ruumi, kuna mälus on need representeeritud 10 jadana, st 1 == 00000001 ja 100 on näiteks 10100110.
 
-Kui sa deklareerid `int number = 1;` siis googleset leidub, et ta võtab 32 bitti ehk 8 byte-i ruumi (tegelt vist oleneb see protsessory arhitektuurist, aga jääme näites 32 bitti ehk 8 byte juurde) st nüüd on sul mälus okupeeritud ruumi number 1 jaoks 8 bytei ehk 32 bitti, ehk suvaline binaarne kuju mälus 0000 0000 0000 0000 0000 0000 0000 0001.
+Kui sa deklareerid `int number = 1;` siis googleset leidub, et ta võtab 32 bitti ehk 8 byte-i ruumi (tegelt vist oleneb see protsessori arhitektuurist, aga jääme näites 32 bitti ehk 8 byte juurde) st nüüd on sul mälus okupeeritud ruumi number 1 jaoks 8 byte'i ehk 32 bitti, ehk suvaline binaarne kuju mälus 0000 0000 0000 0000 0000 0000 0000 0001.
 
-Byte kasutatakse mälu optimeerimisel ja näiteks andmebaasi mahu vähendamisel. Kui andmebaasis on kirjeid mirjardeid, siis on suur vahe kas kasutad 0-100 väärtuste salvestamiseks byte või int tüüpi väärtusi.
+Byte kasutatakse mälu optimeerimisel ja näiteks andmebaasi mahu vähendamisel. Kui andmebaasis on kirjeid miljardeid, siis on suur vahe kas kasutad 0-100 väärtuste salvestamiseks byte või int tüüpi väärtusi.
 
 #### int
 
@@ -737,7 +737,7 @@ Muuda tüüpi
 
 #### double
 
-reaalarvud (komakohaga) (alates -4.9*10^324 kuni 1.79*10^308)
+reaalarvud (komakohaga) (alates -4.9\*10^324 kuni 1.79\*10^308)
 
 Reaalarvudega arvutamine on ebatäpne, vt. [Ohukoht2](/#NB_Arvude_piirangud)
 
@@ -944,7 +944,7 @@ Näiteks, kui tegin ise klassi Hobune:
         }
     }
 
-siis nüüd saan oma main meetodi sees luua "Hobune" klassist uue objekti ja kasutada tema `public` meetoode.
+siis nüüd saan oma main meetodi sees luua "Hobune" klassist uue objekti ja kasutada tema `public` meetodeid.
 
     public class MinuProgramm {
         public static void main(String[] args) {
@@ -1182,9 +1182,9 @@ Tulemus:
 
 Ettevalmistus:
 
-    HashMap<String, HashMap> a = new HashMap<>());
-    HashMap milvi_andmed = new HashMap();
-    HashMap laika_andmed = new HashMap();
+    HashMap<String, HashMap> a = new HashMap<>();
+    HashMap milvi_andmed = new HashMap<>();
+    HashMap laika_andmed = new HashMap<>();
 
     milvi_andmed.put("vanus", 25);
     milvi_andmed.put("elukoht", "Põlva");
@@ -1213,8 +1213,8 @@ Tulemus:
 
 Loo uus
 
-    HashMap a = new HashMap();
-    HashMap<String, Integer%gt; a = new HasMap<%gt;();
+    HashMap a = new HashMap<>();
+    HashMap<String, Integer> a = new HasMap<>();
 
 Mis väärtus on võtmel
 
@@ -1258,7 +1258,7 @@ kas on tühi?
 
 ##### SQL andmebaas
 
-Andmebaas on andmete hoidmise viis sarnaselt massiiv, ArrayList või HashMap. Vahe on nüüd selles, et andmebaasi andmed jäävad kõvakettale alles ka siis, kui su programm vahepeal sulgeb. Andmebaas on reeglina serveris täiesti eraldi seisev programm, lisaks sinu Java programmile. Aga et me ei peaks midagi seadistama võime projekti tarvis kasutada faili põhist lihtsat süsteemi nagu näiteks SQLite. Selle pead alla laadima ja installima. SQL on spetsiaalne andmebaasiga suhtlemise keel. Õnneks mitte väga keeruline. Andmebaasi käima saamine on aga ilma näidiseta paras piin.
+Andmebaas on andmete hoidmise viis sarnaselt massiivile, ArrayList'ile või HashMap'ile. Vahe on nüüd selles, et andmebaasi andmed jäävad kõvakettale alles ka siis, kui su programm vahepeal sulgub. Andmebaas on reeglina serveris täiesti eraldiseisev programm, lisaks sinu Java programmile. Aga et me ei peaks midagi seadistama võime projekti tarvis kasutada failipõhist lihtsat süsteemi nagu näiteks SQLite. Selle pead alla laadima ja installima. SQL on spetsiaalne andmebaasiga suhtlemise keel. Õnneks mitte väga keeruline. Andmebaasi käima saamine on aga ilma näidiseta paras piin.
 
 Näidis kood koos seletustega on siin: [Andmebaasi näidisprogramm](https://github.com/KristerV/javaSQLNaide)
 
@@ -1270,7 +1270,7 @@ Kui võtame suvalise hunniku Java andmetüüpe [int, double, String, ArrayList],
     nimi = nimi.replace('r', 'l');    // muudan kõik 'r' tähed 'l' tähtedeks
     System.out.println(nimi);         // Nimi on nüüd "Klistel" - hahaha!
 
-.replace() on meetod. Ja meetodid saavad ainult objektidel olla. Seega suure algustähega tüübid on objektid ja väikesega on primitiivid. Primitiivil ei ole meetoode ja objektidel on.
+.replace() on meetod. Ja meetodid saavad ainult objektidel olla. Seega suure algustähega tüübid on objektid ja väikesega on primitiivid. Primitiivil ei ole meetodeid ja objektidel on.
 
 ## Juhtimine
 
@@ -1644,13 +1644,13 @@ Genereeri reaalarv 30st 40ni.
 
 #### Integer.MIN_VALUE
 
-Integer või int kõige väiksem võimalik värtus. Vaata ka [Ohukoht1](/#NB_Arvude_piirangud)
+Integer või int kõige väiksem võimalik väärtus. Vaata ka [Ohukoht1](/#NB_Arvude_piirangud)
 
     Integer.MIN_VALUE; // -2147483648
 
 #### Integer.MAX_VALUE
 
-Integer või int kõige suurem võimalik värtus. Vaata ka [Ohukoht1](/#NB_Arvude_piirangud)
+Integer või int kõige suurem võimalik väärtus. Vaata ka [Ohukoht1](/#NB_Arvude_piirangud)
 
     Integer.MAX_VALUE; // 2147483647
 
@@ -1664,13 +1664,13 @@ Kui sul on arv sõne kujul "25", siis parseInt muudab selle int'iks.
 
 #### Double.MIN_VALUE
 
-Double või double kõige väiksem võimalik värtus. Vaata ka [Ohukoht1](/#NB_Arvude_piirangud)
+Double või double kõige väiksem võimalik väärtus. Vaata ka [Ohukoht1](/#NB_Arvude_piirangud)
 
     Double.MIN_VALUE; // -2147483648
 
 #### Double.MAX_VALUE
 
-Double või double kõige suurem võimalik värtus. Vaata ka [Ohukoht1](/#NB_Arvude_piirangud)
+Double või double kõige suurem võimalik väärtus. Vaata ka [Ohukoht1](/#NB_Arvude_piirangud)
 
     Double.MAX_VALUE; // 2147483647
 
@@ -1947,7 +1947,7 @@ Vt. [.schedule()](/#schedule). Ainuke vahe on see, et fixed rate käivitub ajali
 
 ### Arrays
 
-Arrays klass on massiividega manipuleerimiseks. Kuna massiiv (näiteks in[]) on primitiiv, siis tal ei ole enda meetoode. Nagu ArrayListil on täitsa enda .equals() olemas, siis massiivi puhul võtamegi abiks Arrays klassi sama toimingu jaoks.
+Arrays klass on massiividega manipuleerimiseks. Kuna massiiv (näiteks int[]) on primitiiv, siis tal ei ole enda meetodeid. Nagu ArrayListil on täitsa enda .equals() olemas, siis massiivi puhul võtamegi abiks Arrays klassi sama toimingu jaoks.
 
 #### Arrays.sort()
 
@@ -2023,7 +2023,7 @@ Esimene asi, mis tuleb mõista on, et JavaFX ei ole su programmis enne, kui sa o
     public class MinuKlass extends Application {
     }
 
-Teine tähtis asi on see, et Application klassi laiendades ei alusta sa oma programmi mitte main() meetodiga, vaid start() meetodiga. Muud loogikat siin pole, kui ei Application lihtsalt töötab selliselt.
+Teine tähtis asi on see, et Application klassi laiendades ei alusta sa oma programmi mitte main() meetodiga, vaid start() meetodiga. Muud loogikat siin pole, kui et Application lihtsalt töötab selliselt.
 
     public class MinuKlass extends Application {
         @Override
@@ -2125,7 +2125,7 @@ Lisa sisu hulka mitu elementi korraga.
 
     pane.getChildren().addAll(element, element, element);
 
-Positsioneeri sialduvad elemendid alla keskele.
+Positsioneeri sisalduvad elemendid alla keskele.
 
     pane.setAlignment(Pos.BOTTOM_CENTER);
 
@@ -2842,7 +2842,7 @@ Kirjaviga muutujas
     public class KosmoseAgentuur  {
         public static void main(String[] args) {
             int aasta = 2030;
-            if (aasta > 2000) { // aasla => aasta
+            if (aasla > 2000) { // aasla => aasta
                 int millennium = 2;
             }
         }
