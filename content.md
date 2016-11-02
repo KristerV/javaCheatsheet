@@ -411,8 +411,9 @@ Muide, programmi jooniseid on väga mugav ehitada kasutades [Gliffy veebilehte](
 
 ## Weekly 5
 
-- Andmebaasid (SQLite)
-- try-catch
+- [SQLite andmebaas Javas](https://youtu.be/_mFnk9S1pXg)
+- [SQL põhjalikum õpetus](http://www.w3schools.com/sql/sql_create_table.asp)
+- [SQLi harjutamise keskkond](http://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all)
 
 ## Weekly 6
 
@@ -1259,7 +1260,7 @@ kas on tühi?
 
 Andmebaas on andmete hoidmise viis sarnaselt massiiv, ArrayList või HashMap. Vahe on nüüd selles, et andmebaasi andmed jäävad kõvakettale alles ka siis, kui su programm vahepeal sulgeb. Andmebaas on reeglina serveris täiesti eraldi seisev programm, lisaks sinu Java programmile. Aga et me ei peaks midagi seadistama võime projekti tarvis kasutada faili põhist lihtsat süsteemi nagu näiteks SQLite. Selle pead alla laadima ja installima. SQL on spetsiaalne andmebaasiga suhtlemise keel. Õnneks mitte väga keeruline. Andmebaasi käima saamine on aga ilma näidiseta paras piin.
 
-Näidis kood koos seletustega on siin: [Andmebaasi näidisprogramm](https://github.com/KristerV/javaHarjutused/tree/lahendused/src/teema3/SQL_Login)
+Näidis kood koos seletustega on siin: [Andmebaasi näidisprogramm](https://github.com/KristerV/javaSQLNaide)
 
 ### Primitiivid ja Objektid
 
