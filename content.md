@@ -1878,6 +1878,10 @@ Võtab kasutajalt täisarvu. Kui kasutaja sisestab täisarvu asemel midagi muud,
 
 Võtab kasutajalt reaalarvu. Kui kasutaja sisestab reaalarvu asemel midagi muud, tuleb error.
 
+#### NB! Ohukoht
+
+Kui kasutad `nextLine()` pärast `nextInt()`, siis programm võib nextLinest üle hüpata. Lahenduses [pane vahele üks .nextLine()](http://stackoverflow.com/questions/7877529/java-string-scanner-input-does-not-wait-for-info-moves-directly-to-next-stateme);
+
 ### Thread
 
 #### Thread.sleep(msec)
