@@ -1330,6 +1330,8 @@ Süntaks
         case väärtus4:
             tegevus4;
             break;
+        default: 
+            tegevus5;
     }
 
 Näite ülesanne
@@ -1350,6 +1352,8 @@ Lahendus koodis
         case "sügis":
             System.out.println("Sajab vihma");
             break;
+        default: 
+            System.out.println("Temperatuur on -32 ja 27 kraadi vahel");
     }
 
 #### try-catch
