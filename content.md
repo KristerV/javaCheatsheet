@@ -415,12 +415,6 @@ Muide, programmi jooniseid on väga mugav ehitada kasutades [Gliffy veebilehte](
 - [SQL põhjalikum õpetus](http://www.w3schools.com/sql/sql_create_table.asp)
 - [SQLi harjutamise keskkond](http://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all)
 
-## Weekly 6
-
-- Rekursioon
-- Automaattestid ja TDD
-- .jar file
-
 # Tööriistad
 
 ## Arenduskeskkond
