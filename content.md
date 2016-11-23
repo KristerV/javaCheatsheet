@@ -65,7 +65,7 @@ Praktikum ei olegi tegelt üldse praktikum. See on hoopis konsultatsioon. Tule o
     - 5p garanteerib esimene vaheetapp
     - 10p garanteerib teine vaheetapp
     - ehk kui 15p on käes, siis kaitsmisel otsustatakse ülejäänud 45p üle
-    - kui 15p garantii jääb saamata, siis kaitstakse tervet 60p
+    - kui 15p garantii on jäänud saamata, siis kaitstakse tervet 60p
 - 40 punkti eksami eest
     - Lävend 50%
     - Kui < 50%, siis on kogu aine 0
