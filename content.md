@@ -613,6 +613,105 @@ Tühista salvestamata muudatused
 
     git checkout .
 
+### Veel käskluseid
+
+#### Diff
+View staged differences
+
+    git diff --staged
+
+Differences between last commit and current state
+
+    git diff HEAD
+ 
+Differences between two branches
+
+    git diff <branch1 name> <branch2 name>
+ 
+#### Different ways to ADD
+Add the list of files
+
+    git add <list of files>
+
+Add all txt files in current directory
+
+    git add *.txt
+    
+Add all files in src/ directory
+
+    git add src/
+    
+Add all txt files in the whole project
+
+    git add "*.txt"
+    
+#### Useful commands (don't do these after you push)
+Undo last commit, put changes into staging
+
+    git reset --soft HEAD^
+    
+Change the last commit
+
+    git commit --amend -m "New message"
+    
+Undo last commit and all changes
+
+    git reset --hard HEAD^ 
+    
+Undo last 2 commits and all changes
+
+    git reset --hard HEAD^^ 
+
+#### Working with remotes
+To add new remotes
+
+    git remote add <name> <address>
+ 
+Show remote repositories
+
+    git remote -v
+    
+Remove remotes
+
+    git remote rm <name>
+ 
+Pushing to remote
+
+    git push -u <remote repository name> <local branch to push>
+
+#### Working with branches
+Cloning someone's repository to own folder (then probably you will need to create new branch)
+
+    git clone <address> <local folder name>
+   
+Creating new branch
+
+    git branch <name>
+
+Switching to new branch
+
+    git checkout <new branch name>
+    
+Switching back to master branch
+
+    git checkout master
+
+Merge brings one branch's changes into another
+
+    git checkout <new branch name>
+
+To create and check out new branch
+
+    git checkout -b <new branch name>
+    
+When you're done with a branch, you can safely remove it
+
+    git branch -d <new branch name> 
+        
+List all remote branches
+
+    git branch -r
+    
 #### .gitignore
 
 Kõiki faile ei ole meil vaja Gitti salvestada. Näiteks on Javas kompileeritud .class failid, millest pole hiljem kuigi palju kasu.
