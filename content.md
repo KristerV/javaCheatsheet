@@ -169,7 +169,7 @@ Nonii. "Ükskõik kui keeruline või lihtne" on tore, aga mille eest reaalselt h
 - Tohid kasutada internetti k.a. Google.
 - Üleüldised sohi tegemise reeglid kehtivad (nt. naabrilt maha kirjutamine).
 - Kõik ülesanded peavad olema lahendatud kasutades päris programmeerimise võtteid ja mitte lihtsalt näilisi lahendusi kirjutades.
-- Aega on 3 tundi.
+- Aega on 1.5 tundi.
 - Kui oled valmis, lae lahendused üles samasse reposse, kust nad said. Kui laed GitHubi või mujale avalikku kohta on tegu plagiaadi kaasa aitamises. Lahendusi võid jagada märtsis, kui kõik eksamid on ära olnud.
 - Kui koodi pushimine gitiga ei õnnestu, siis saada failid kokku pakitult (zip/rar/tar) mulle meilile: krister.viirsaar@itcollege.ee. Kaasneb 5p penalt. Copy-paste koodi ma vastu ei võta.
 - Õppejõud ei kontrolli, kas su töö läks gitti üles. Seda saad ise teha.
