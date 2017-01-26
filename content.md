@@ -229,7 +229,9 @@ Paljud materjalid on hoopis Pythoni kesksed. See on väga hea. Python on hea alg
 
 ### Muu
 
+*   Koodiõpetuse kogumik algajatele, Githubis [Cave of Programming](https://github.com/caveofprogramming/java-beginners)
 *   [Don't Call Yourself A Programmer, And Other Career Advice](http://www.kalzumeus.com/2011/10/28/dont-call-yourself-a-programmer/)
+
 
 ## Progemine praktikas
 
@@ -315,7 +317,7 @@ Tundub, et saime äkki selle küsimise soone lahti. Kui ma selle aasta kursust k
 
 - [javaHarjutused](https://github.com/KristerV/javaHarjutused) Teema 1
 - Tee oma projektist konsoolipõhine esimene versioon.
-- Lisaharjutusi: [Codingbat 1](http://codingbat.com/java/Warmup-1) ja [Codingbat 2](http://codingbat.com/java/Warmup-2)
+- Lisaharjutused, kus näitab ka võimalikku õiget koodilahendust: [Codingbat 1](http://codingbat.com/java/Warmup-1) ja [Codingbat 2](http://codingbat.com/java/Warmup-2)
 
 ### Õpetused
 
