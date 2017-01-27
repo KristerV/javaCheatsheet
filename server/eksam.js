@@ -21,33 +21,33 @@ Meteor.methods({
     getGitLink: function(studentName) {
         check(studentName, String)
         if (!studentName) throw new Meteor.Error("Need student name")
-        var examPath = "/srv/eksam/"
+        var examPath = "/home/git/"
 
         var hash = ExamCollection.insert({
             studentName: studentName,
             createdAt: new Date(),
         })
-        console.log("HASH",hash);
+        console.log("Link id:",hash);
 
         // Get repos
-        var rawPath = examPath + "toores/"
-        console.log("rawPath", rawPath);
-        var ls = fs.readdirSync(rawPath).filter(function(file) {
-            return fs.statSync(path.join(rawPath, file)).isDirectory();
+        var sourcePath = examPath + "toores/"
+        console.log("sourcePath", sourcePath);
+        var ls = fs.readdirSync(sourcePath).filter(function(file) {
+            return fs.statSync(path.join(sourcePath, file)).isDirectory();
         });
-        var themes = ['Algoritm', 'OOP', 'JavaFX', 'Maatriks']
-        var secretRawRepo = path.join(rawPath, ls[Math.floor(Math.random()*ls.length)])
+        var randomSourceName = path.join(sourcePath, ls[Math.floor(Math.random()*ls.length)])
 
         // Copy repo to temp
         var tempRepo = path.join(examPath, 'temp', hash)
         console.log("tempRepo", tempRepo);
         try {
-            wrench.copyDirSyncRecursive(secretRawRepo, tempRepo);
+            wrench.copyDirSyncRecursive(randomSourceName, tempRepo);
         } catch (e) {
             throw new Meteor.Error("chmod error", e)
         }
 
         // Delete all but one file in each exercise type
+		/*
         var srcPath = path.join(tempRepo, "src")
         console.log("srcPath", srcPath);
         var allTypes = fs.readdirSync(srcPath).filter(function(file){
@@ -68,6 +68,7 @@ Meteor.methods({
                 fs.unlink(path.join(fullPath, file))
             })
         })
+		*/
 
         // Reinit git
         var initCmd = "cd "+tempRepo+" && rm -rf .git && git init && git add --all"
@@ -86,7 +87,7 @@ Meteor.methods({
         result = execSync.exec('cd '+tempRepo+" && git config user.name server")
         result = execSync.exec('cd '+tempRepo+" && git config user.email server@server.com")
         console.log("COMMIT");
-        var commitCmd = 'cd '+tempRepo+' && git commit -m "see repo on spetsiaalselt sulle valmistatud :)"'
+        var commitCmd = 'cd '+tempRepo+' && git commit -m "edu eksamiga!"'
         result = execSync.exec(commitCmd)
         console.log(result.code);
         console.log(result.stdout);
@@ -112,7 +113,7 @@ Meteor.methods({
         }
 
         console.log("Give student the git repo link");
-        return {gitlink: "git@i200.itcollege.ee:tudeng/" + hash + ".git"}
+        return {gitlink: "git@eksam.koodikool.ee:tudeng/" + hash + ".git"}
     },
     updatePoints: function(id, value) {
         check(this.userId, String);
