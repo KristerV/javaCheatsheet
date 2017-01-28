@@ -2,12 +2,16 @@ template(name="eksam")
     div
         +loginButtons
         .eksam.center-block.max500
-			p Reeglid on kirjas <a href="http://i200.itcollege.ee/#Eksam" target="_blank">i200 lehel</a>, ole teadlik.
-			p Sulle antakse probleem (YLESANNE.md) ja soovitud lahendus. Sinu, nagu igapäevase programmeerija, tööks on luua lahendus probleemile. Ülesande looja tavaliselt ei olegi üldse IT inimene ja ei oska väga täpselt öelda mida tal vaja on, seega pead ise lüngad täitma.
-			p Hinnatakse nii tehnilist lähenemist kui ka loovust probleemi lahendamisel. Tehniliselt on oluline, et kood oleks hallatav (objektorienteeritus) ja lahendusel on oluline, et asi oleks kasutatav (JavaFX). Kui mõnda aspekti ei oska mõtle sellele lihtsam asendus, tee kasvõi konsooli programm. Kõige tähtsam on muidugi esiteks see, et lahendus töötaks - olgugi siis nii puudulik kui on.
-			p Objektorienteerituse koha pealt on siiski üks nõudmine: <b>objekti klass ei tohi olla JavaFXiga seotud.</b> Objektid on ainult andmete töötlemiseks.
-			p Nii nagu programmeerimise maailmas ei ole siin ette antud täpseid lahenduse nõudeid, programmeerija peab ise teadma mis on hea kood ja kuidas probleeme lahendada. Tee niihea lahendus, kui oskad (vaata, et 10 minuti pärast oleks juba midagi töötavat olemas) ja kui aega üle jääb võid alati lahendust täiendada.
-			p Reeglite üle kordamiseks: Google on lubatud, suhtlemine mitte.
+            h2 Reeglid
+            p Reeglid on kirjas <a href="http://i200.itcollege.ee/#Eksam" target="_blank">i200 lehel</a>, ole teadlik.
+            p Põhi punkti üle kordamiseks: Google on lubatud, suhtlemine mitte.
+            h2 Ülesande olemusest
+            p Sulle antakse probleem (YLESANNE.md) ja soovitud lahendus. Sinu, nagu igapäevase programmeerija, tööks on luua lahendus probleemile. Ülesande looja tavaliselt ei olegi üldse IT inimene ja ei oska väga täpselt öelda mida tal vaja on, seega pead ise lüngad täitma.
+            p Hinnatakse nii tehnilist lähenemist kui ka loovust probleemi lahendamisel. Tehniliselt on oluline, et kood oleks hallatav (objektorienteeritus) ja lahendusel on oluline, et asi oleks kasutatav (JavaFX). Kui mõnda aspekti ei oska mõtle sellele lihtsam asendus, tee kasvõi konsooli programm. Kõige tähtsam on muidugi esiteks see, et lahendus töötaks - olgugi siis nii puudulik kui on.
+            p <b>Objektorienteerituse koha pealt on siiski üks nõudmine: objekti klass ei tohi olla JavaFXiga seotud.</b> Objektid on ainult andmete töötlemiseks.
+            p Nii nagu programmeerimise maailmas ei ole siin ette antud täpseid lahenduse nõudeid, programmeerija peab ise teadma mis on hea kood ja kuidas probleeme lahendada. Kohati tuleb telljia eest mõelda, et mida tal veel vaja võiks minna, seega kui said lahenduse valmis arenda aga edasi.
+            h2 Hea hinde saamiseks
+            p Lahendad probleemi kasutades JavaFX ja objektorienteeritust. Nagu ka projektil peab su programm lahendama probleemi võimalikult hästi. Hindamisel võetakse arvesse tudengite üldist taset. Kui ülesanne peaks mega keeruline olema, siis looda, et teised samamoodi arvavad.
             if examOpen 
                 h2 Eksam on <span class="text-success">avatud</span>
                 if gitlink
