@@ -2,27 +2,12 @@ template(name="eksam")
     div
         +loginButtons
         .eksam.center-block.max500
-            h2 Eksami reeglid
-            ol
-                li <b>Eksam toimub klassi arvutis.</b>
-                li <b>Arvesse läheb ainult esimene giti link - valida ei saa.</b>
-                li <b>Ei tohi kellegagi suhelda ei netis ega mujal v.a. õppejõuga.</b>
-                li <b>Hilinejaid sisse ei lubata</b>
-                li Telefoni ei näpi. Nimelt on kooli arvuti ainuke ekraan sinu elus.
-                li Tohid kasutada internetti k.a. Google.
-                li Üleüldised sohi tegemise reeglid kehtivad (nt. naabrilt maha kirjutamine).
-                li Kõik ülesanded peavad olema lahendatud kasutades päris programmeerimise võtteid ja mitte lihtsalt näiliselt lahendades vastust kirjutades.
-                li Aega on 3 tundi.
-                li Kui oled valmis lae lahendused üles samasse reposse kust nad said. Kui laed GitHubi või mujale avalikku kohta on tegu plagiaadi kaasa aitamises. Lahendusi võid jagada märtsis, kui kõik eksamid on ära olnud.
-                li Kui koodi üles laadimine gitiga ei õnnestu siis saada failid kokku pakitult (zip/rar/tar) mulle meilile: krister.viirsaar@itcollege.ee. Aga copy-paste koodi ma vastu ei võta.
-                li Õppejõud ei kontrolli, kas su töö läks gitti üles. Seda saad ise teha.
-                li Küsimusi võib küsida, aga kui peaksid ise teadma siis ei aita.
-            h2 Soovitusi
-            ul
-                li Tule klassi palju varem ja kinnita, et Intellij on seadistatud.
-                li Kui ülesanne on üle jõu siis lihtsusta enda jaoks, aga ära jäta programmi katki.
-                li Ära copy-paste! Ülesanded on piisavalt lihtsad, et ajavõitu ei ole. Aga kui sa ei tea täpselt mis teed siis nüüd kaotad aega.
-                li Ära kiirusta, mõtle läbi. Alati on lihtsam ja kergem lahendus olemas.
+			p Reeglid on kirjas <a href="http://i200.itcollege.ee/#Eksam" target="_blank">i200 lehel</a>, ole teadlik.
+			p Sulle antakse probleem (YLESANNE.md) ja soovitud lahendus. Sinu, nagu igapäevase programmeerija, tööks on luua lahendus probleemile. Ülesande looja tavaliselt ei olegi üldse IT inimene ja ei oska väga täpselt öelda mida tal vaja on, seega pead ise lüngad täitma.
+			p Hinnatakse nii tehnilist lähenemist kui ka loovust probleemi lahendamisel. Tehniliselt on oluline, et kood oleks hallatav (objektorienteeritus) ja lahendusel on oluline, et asi oleks kasutatav (JavaFX). Kui mõnda aspekti ei oska mõtle sellele lihtsam asendus, tee kasvõi konsooli programm. Kõige tähtsam on muidugi esiteks see, et lahendus töötaks - olgugi siis nii puudulik kui on.
+			p Objektorienteerituse koha pealt on siiski üks nõudmine: <b>objekti klass ei tohi olla JavaFXiga seotud.</b> Objektid on ainult andmete töötlemiseks.
+			p Nii nagu programmeerimise maailmas ei ole siin ette antud täpseid lahenduse nõudeid, programmeerija peab ise teadma mis on hea kood ja kuidas probleeme lahendada. Tee niihea lahendus, kui oskad (vaata, et 10 minuti pärast oleks juba midagi töötavat olemas) ja kui aega üle jääb võid alati lahendust täiendada.
+			p Reeglite üle kordamiseks: Google on lubatud, suhtlemine mitte.
             if examOpen 
                 h2 Eksam on <span class="text-success">avatud</span>
                 if gitlink
