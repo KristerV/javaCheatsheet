@@ -227,6 +227,7 @@ Paljud materjalid on hoopis Pythoni kesksed. See on väga hea. Python on hea alg
 
 *   Head First Java
 *   [Learn Java the Hard Way](https://learnjavathehardway.org/)
+*   [Thinking in Java](http://www.agentgroup.unimore.it/~nicola/courses/IngegneriaDelSoftware/java/books/ThinkingInJava.pdf)
 
 ### Muu
 
