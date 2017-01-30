@@ -210,6 +210,7 @@ Paljud materjalid on hoopis Pythoni kesksed. See on väga hea. Python on hea alg
 *   [CodeCombat](https://codecombat.com/)
 *   [Programming Basics](http://www.programmingbasics.org/en/)
 *	[CodingGame](https://www.codingame.com)
+*	[JavaRush](http://javarush.net/)
 
 ### Tekstipõhine
 
@@ -227,6 +228,7 @@ Paljud materjalid on hoopis Pythoni kesksed. See on väga hea. Python on hea alg
 *   Head First Java
 *   [Learn Java the Hard Way](https://learnjavathehardway.org/)
 *   [Learn JavaFX 8](http://185.49.84.138/ebooks/Learn-JavaFX-8[ebooksfeed.com].pdf)
+*   [Thinking in Java](http://www.agentgroup.unimore.it/~nicola/courses/IngegneriaDelSoftware/java/books/ThinkingInJava.pdf)
 
 ### Muu
 
