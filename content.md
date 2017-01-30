@@ -210,6 +210,7 @@ Paljud materjalid on hoopis Pythoni kesksed. See on väga hea. Python on hea alg
 *   [CodeCombat](https://codecombat.com/)
 *   [Programming Basics](http://www.programmingbasics.org/en/)
 *	[CodingGame](https://www.codingame.com)
+*	[JavaRush](http://javarush.net/)
 
 ### Tekstipõhine
 
