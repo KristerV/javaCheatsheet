@@ -7,7 +7,7 @@
 
 Tere
 
-Kui soovid programmeerijaks õppida, oled õiges kohas. Käesolevad materjalid on loodud IT Kolledži tarbeks, aga siht on võimaldada igaühel programmeerimist õppida *põhjalikult*. Materjalid pole veel valmis, aga võid juba proovida kuidas hammas peale hakkab (tagasiside kirjuta foorumisse).
+Kui soovid programmeerijaks õppida, oled õiges kohas. Käesolevad materjalid on loodud IT Kolledži tarbeks, aga siht on võimaldada igaühel programmeerimist õppida *põhjalikult*. Materjalid on konarlikud ja auklikud, kuid samas ka üsna põhjalikud. Kui miski valmistab probleeme võid kirjutada [GitHubi issue](https://github.com/KristerV/javaCheatsheet/issues).
 
 **Kuidas siin orienteeruda**
 
@@ -15,20 +15,14 @@ Kui soovid programmeerijaks õppida, oled õiges kohas. Käesolevad materjalid o
 http://i200.itcollege.ee (käesolev lehekülg)
 Detailne ülevaade, olulised lingid, pluss kohustuslikud tööd
 
-2. **Kommuun küsimuste ja vestluste jaoks**
-http://kommuun.koodikool.ee
-Kõikide projektid, mida keegi arendab ning sellega seonduv pidev arutelu. 
-Foorumite jaotus teemad ja sildid all.
+2. **Chat & foorum**
+Hetkel kuskil keskset kohta polegi, aga võid [Kristeriga](https://krister.ee) otse ühendust võtta ja küsimusi küsida. Ta on alati valmis olema mentor, kui keegi soovib õppida.
 
-3. **Chat**
-https://gitter.im/KristerV/i200
-Kui vajad koheset vastust võid esiteks siit proovida.
-
-4. **Kristeri youtube videod**
+3. **Kristeri youtube videod**
 https://www.youtube.com/user/krivar/playlists
 Need on ka Weekly ülesannetes kirjas, aga need videod on põhilised õpetused.
 
-5. **Välislingid ehk materjale maailmast**
+4. **Välislingid ehk materjale maailmast**
 http://i200.itcollege.ee/#Vliseid_ressursse
 Kõigile ei sobigi üks õppimise metoodika, vali oma lemmik.
 
